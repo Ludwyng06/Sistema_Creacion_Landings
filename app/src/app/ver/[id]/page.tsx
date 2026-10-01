@@ -7,7 +7,7 @@ import { aItemVisor, dispositivoDe } from "@/lib/visor";
 // El visor lee la base en cada visita: muestra lo último que se guardó.
 export const dynamic = "force-dynamic";
 
-type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ dispositivo?: string; detalles?: string; entrega?: string }> };
+type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ dispositivo?: string; detalles?: string; entrega?: string}> };
 
 async function cargar(id: string): Promise<LandingCompleta | null> {
   try {

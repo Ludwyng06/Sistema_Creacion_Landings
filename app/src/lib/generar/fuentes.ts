@@ -68,6 +68,6 @@ export function enrutarFuentes(p: { tipo: TipoLanding; tematica: Tematica; descr
   const generico = !espacial && p.tipo !== "producto";
   if (generico) fuentes.push("openverse", "wikimedia");
   fuentes.push("flux");
-  const imagenes: FuenteId[] = [...(espacial ? (["nasa-images"] as FuenteId[]) : []), ...(generico ? (["openverse", "wikimedia"] as FuenteId[]) : []), "flux"];
+  const imagenes: FuenteId[] = [...(espacial ? (["nasa-images", "apod", "wikimedia"] as FuenteId[]) : []), ...(generico ? (["openverse", "wikimedia"] as FuenteId[]) : []), "flux"];
   return { fuentes: [...new Set(fuentes)], widget, datosEnVivo: widget ? [VIVO_DE_WIDGET[widget]] : [], imagenes };
 }

@@ -1,6 +1,7 @@
 import { fuentesDe, tematicaDe, type Tematica } from "@/lib/banco";
 import type { BloquePrompt, Critica } from "@/lib/contratos";
 import { datosPorCompletar, type DatoPendiente } from "@/lib/entrega/completar";
+import { marcadoresSinFoto } from "@/lib/entrega/generacion";
 import { listaDeRevision, type Revision } from "@/lib/entrega/revision";
 import type { LandingCompleta } from "@/lib/landings";
 import { registro } from "@/secciones/registro";
@@ -42,6 +43,8 @@ export interface ItemVisor {
   mejoras: string[];
   /** Los [COMPLETAR] que quedan, con su sección. */
   completar: DatoPendiente[];
+  /** Slots de imagen sin archivo (marcadores): activan «Buscar fotos». */
+  sinFoto?: number;
   /** La lista de revisión previa a guardar o publicar (§12.2). */
   revision: Revision;
 }
@@ -75,6 +78,7 @@ export function aItemVisor(l: LandingCompleta): ItemVisor {
     estado: l.estado,
     mejoras: (l.doc.critica?.correcciones ?? []).map((c) => humanizarCorreccion(c, l.doc)),
     completar: datosPorCompletar(l.doc),
+    sinFoto: marcadoresSinFoto(l.doc),
     revision: listaDeRevision(l.doc),
   };
 }

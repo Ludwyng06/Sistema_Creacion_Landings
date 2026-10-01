@@ -186,4 +186,15 @@ describe("/crear de un solo campo", () => {
     expect(screen.getByLabelText("¿Qué landing quieres?")).toBeTruthy();
     expect(empujar).not.toHaveBeenCalled();
   });
+  it("con el crítico pendiente o secciones sin cuota se queda en /crear con el aviso y no pierde la landing", async () => {
+    apiGenerar([[{ tipo: "etapa", etapa: "intake", mensaje: "Entendiendo tu idea…" }, { tipo: "listo", id: "landing-9", criticoPendiente: true, seccionesPorCompletar: ["faq", "oferta"] } as EventoGenerar]]);
+    render(<CrearRapido />);
+    fireEvent.change(screen.getByLabelText("¿Qué landing quieres?"), { target: { value: "Landing para una agencia de tours de auroras" } });
+    fireEvent.click(screen.getByRole("button", { name: "Crear mi landing" }));
+    expect(await screen.findByText(/Tu landing está guardada/)).toBeTruthy();
+    expect(screen.getByText(/2 secciones quedaron por completar/)).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Reintentar el crítico" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Ver la landing" }).getAttribute("href")).toBe("/ver/landing-9");
+    expect(empujar).not.toHaveBeenCalled();
+  });
 });

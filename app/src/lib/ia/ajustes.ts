@@ -4,6 +4,7 @@ import { obtenerDepsEnrutador } from "./deps";
 import {
   TABLA_TAREAS_POR_DEFECTO,
   cargarConfigIA,
+  CLAVE_CASCADA_OPENAI,
   cargarTablaTareas,
   ejecutar,
   guardarTablaTareas,
@@ -15,7 +16,7 @@ import { limiteDe, resumirUso } from "./uso";
 // Lógica de /ajustes (docs/07): proveedores con semáforo, prueba de conexión, modo, cascada y tabla de tareas.
 // Las claves nunca salen de aquí: solo se informa si existen.
 
-export const PROVEEDORES_CON_CLAVE = ["gemini", "cerebras", "groq", "openrouter"] as const;
+export const PROVEEDORES_CON_CLAVE = ["openai", "gemini", "cerebras", "groq", "openrouter"] as const;
 export const TODOS_LOS_PROVEEDORES: readonly ProveedorId[] = [...PROVEEDORES_CON_CLAVE, "manual"];
 export const TAREAS: readonly TareaIA[] = Object.keys(TABLA_TAREAS_POR_DEFECTO) as TareaIA[];
 export const MODOS_IA: readonly ModoIA[] = ["cascada", "simultaneo", "duelo"];
@@ -169,7 +170,7 @@ export async function obtenerModo(env: Record<string, string | undefined> = proc
 
 export async function guardarModo(m: ModoCascada): Promise<void> {
   const guardar = (clave: string, valor: string) => db.ajuste.upsert({ where: { clave }, update: { valor }, create: { clave, valor } });
-  await Promise.all([guardar("ia.modo", m.modo), guardar("ia.cascada", JSON.stringify(m.cascada))]);
+  await Promise.all([guardar("ia.modo", m.modo), guardar("ia.cascada", JSON.stringify(m.cascada)), guardar(CLAVE_CASCADA_OPENAI, "1")]);
 }
 
 // ---------- Tabla tarea → proveedor ----------

@@ -11,7 +11,9 @@ import { Grano } from "@/efectos/Grano";
 import { ProveedorMovimiento } from "@/efectos/movimiento";
 import { Revelar } from "@/efectos/Revelar";
 import { componentesSeccion } from "@/secciones/componentes";
-import { CLASE_FONDO_SUAVE, clasesDePresentacion, fondoDeBorde, idsConFondoSuave, leerPresentacion, variablesDeTamano, variablesGlobales } from "@/secciones/presentacion";
+import { clasesDePresentacion, fondoDeBorde, leerPresentacion, variablesDeTamano, variablesGlobales } from "@/secciones/presentacion";
+import { fondosDeRitmo } from "@/secciones/fondos";
+import { personalidadDe } from "@/secciones/personalidad";
 import { TamanosDeBloque } from "./TamanosDeBloque";
 import { ProveedorLanding } from "./contexto-landing";
 import { Entrada } from "./Entrada";
@@ -48,7 +50,8 @@ type Props = {
  */
 export function LandingRender({ doc, urlFuentes: urlDeFuentes = null, reducirMovimiento = false, landingId, vistaPrevia = false, onBuscarBancos, morph = false, diferirSecciones = false }: Props) {
   // El tamaño de letra de toda la landing (adaptador en la presentación del héroe) pisa la escala de los tokens.
-  const variables = useMemo(() => ({ ...tokensAVariables(doc.tokens), ...variablesGlobales(doc.secciones) }), [doc.tokens, doc.secciones]);
+  const personalidad = personalidadDe(doc.meta.semilla?.estilo);
+  const variables = useMemo(() => ({ ...tokensAVariables(doc.tokens, personalidad), ...variablesGlobales(doc.secciones) }), [doc.tokens, doc.secciones, personalidad]);
   const valor = useMemo(
     () => ({
       assets: doc.assets,
@@ -68,7 +71,7 @@ export function LandingRender({ doc, urlFuentes: urlDeFuentes = null, reducirMov
       console.warn(`LandingRender: la landing declara más de 3 efectos de nivel 3; se omiten ${recortados.join(", ")}.`);
     }
   }, [recortados]);
-  const suaves = useMemo(() => idsConFondoSuave(doc.secciones), [doc.secciones]);
+  const fondos = useMemo(() => fondosDeRitmo(doc.secciones, doc.meta.semilla?.estilo, doc.meta.semilla?.numero), [doc.secciones, doc.meta.semilla]);
   const movimiento = useMemo(() => ({ forzarReducido: reducirMovimiento }), [reducirMovimiento]);
 
   return (
@@ -79,6 +82,7 @@ export function LandingRender({ doc, urlFuentes: urlDeFuentes = null, reducirMov
           className="landing relative bg-fondo font-cuerpo text-cuerpo text-texto"
           style={variables}
           data-imagen={doc.tokens.imagen}
+          data-estilo={personalidad}
           data-intensidad={doc.tokens.intensidad}
           data-morph={morph ? "" : undefined}
           data-reducido={reducirMovimiento ? "" : undefined}
@@ -128,7 +132,6 @@ export function LandingRender({ doc, urlFuentes: urlDeFuentes = null, reducirMov
                     [
                       diferirSecciones && posicion > 0 && !SECCIONES_FIJAS.includes(seccion.tipo) && !activos.some((id) => CATALOGO_CLIENTE[id].nivel === 3) ? "seccion-diferida" : "",
                       clasesDePresentacion(presentacion),
-                      suaves.has(seccion.id) ? CLASE_FONDO_SUAVE : "",
                     ]
                       .filter(Boolean)
                       .join(" ") || undefined
@@ -136,6 +139,7 @@ export function LandingRender({ doc, urlFuentes: urlDeFuentes = null, reducirMov
                   style={Object.keys(tamanosSeccion).length > 0 ? (tamanosSeccion as CSSProperties) : undefined}
                   data-peso-titulo={presentacion.pesoTitular !== "heredado" ? "" : undefined}
                   data-seccion-id={seccion.id}
+                  data-fondo={fondos.get(seccion.id)}
                   data-tipo={seccion.tipo}
                   data-efectos={activos.join(" ") || undefined}
                 >

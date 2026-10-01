@@ -1,10 +1,13 @@
 // Encargo de /crear (tarea-16.md). Los tipos de contrato (`TipoLanding`, `Faltante`) y los eventos de `POST /api/generar`
 // vienen de A; aquí quedan solo las opciones de la pantalla.
 import { TIPOS_LANDING, type Faltante, type TipoLanding } from "@/lib/contratos";
-import type { Etapa, EventoGenerar } from "@/lib/generar/pipeline";
+import type { Etapa as EtapaPipeline, EventoGenerar } from "@/lib/generar/pipeline";
+
+/** Las etapas del pipeline más «imagenes» (24-A): el motor la emite en paralelo con la redacción y el tipo de A todavía no la lista. */
+export type Etapa = EtapaPipeline | "imagenes";
 
 export { TIPOS_LANDING };
-export type { Etapa, EventoGenerar, Faltante, TipoLanding };
+export type { EventoGenerar, Faltante, TipoLanding };
 
 export const NOMBRE_TIPO: Record<TipoLanding, string> = {
   producto: "Producto",
@@ -65,13 +68,14 @@ export const EJEMPLOS_ENCARGO: { id: string; tipo: TipoLanding; etiqueta: string
 // Una línea por evento (`EventoGenerar` de A): las etapas narran el avance, `faltantes` pide datos que el intake no puede
 // inventar, `listo` trae el id de la landing guardada.
 
-export const ETAPAS: readonly Etapa[] = ["intake", "fuentes", "estrategia", "redaccion", "critico"];
+export const ETAPAS: readonly Etapa[] = ["intake", "fuentes", "estrategia", "redaccion", "imagenes", "critico"];
 
 export const NOMBRE_ETAPA: Record<Etapa, string> = {
   intake: "Entendiendo tu idea",
   fuentes: "Buscando datos e imágenes",
   estrategia: "Definiendo la estrategia",
   redaccion: "Escribiendo las secciones",
+  imagenes: "Buscando y generando las fotos",
   critico: "Revisando como director creativo",
 };
 

@@ -54,21 +54,21 @@ exports[`combinar · snapshot > snapshot del prompt estructurado y de aTexto 1`]
       "texto": "Tokens de la semilla (fuente única de verdad visual):
 {
   "colores": {
-    "fondo": "#1A1A1A",
-    "superficie": "#262626",
-    "texto": "#F2EDE4",
-    "textoSuave": "#B5AEA2",
-    "acento": "#F0503F",
-    "acentoTexto": "#111111",
-    "borde": "#3D3D3D"
+    "fondo": "#ECF8F5",
+    "superficie": "#FFFFFF",
+    "texto": "#0C2420",
+    "textoSuave": "#4B6B65",
+    "acento": "#0F766E",
+    "acentoTexto": "#FFFFFF",
+    "borde": "#C6E4DE"
   },
   "tipografia": {
     "titulos": "Instrument Serif",
     "cuerpo": "Geist",
     "escala": "amplia"
   },
-  "radio": 4,
-  "espaciado": "normal",
+  "radio": 0,
+  "espaciado": "aireado",
   "borde": "ninguno",
   "imagen": "natural",
   "intensidad": 3
@@ -77,7 +77,7 @@ exports[`combinar · snapshot > snapshot del prompt estructurado y de aTexto 1`]
     {
       "bloque": "contexto",
       "tecnica": "semilla",
-      "texto": "Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.",
+      "texto": "Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta menta-tech, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.",
     },
     {
       "bloque": "formato",
@@ -185,27 +185,27 @@ Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brie
 Tokens de la semilla (fuente única de verdad visual):
 {
   "colores": {
-    "fondo": "#1A1A1A",
-    "superficie": "#262626",
-    "texto": "#F2EDE4",
-    "textoSuave": "#B5AEA2",
-    "acento": "#F0503F",
-    "acentoTexto": "#111111",
-    "borde": "#3D3D3D"
+    "fondo": "#ECF8F5",
+    "superficie": "#FFFFFF",
+    "texto": "#0C2420",
+    "textoSuave": "#4B6B65",
+    "acento": "#0F766E",
+    "acentoTexto": "#FFFFFF",
+    "borde": "#C6E4DE"
   },
   "tipografia": {
     "titulos": "Instrument Serif",
     "cuerpo": "Geist",
     "escala": "amplia"
   },
-  "radio": 4,
-  "espaciado": "normal",
+  "radio": 0,
+  "espaciado": "aireado",
   "borde": "ninguno",
   "imagen": "natural",
   "intensidad": 3
 }
 
-Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
+Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta menta-tech, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
 
 Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.
 Patrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».
@@ -385,27 +385,27 @@ Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brie
 Tokens de la semilla (fuente única de verdad visual):
 {
   "colores": {
-    "fondo": "#1A1A1A",
-    "superficie": "#262626",
-    "texto": "#F2EDE4",
-    "textoSuave": "#B5AEA2",
-    "acento": "#F0503F",
-    "acentoTexto": "#111111",
-    "borde": "#3D3D3D"
+    "fondo": "#ECF8F5",
+    "superficie": "#FFFFFF",
+    "texto": "#0C2420",
+    "textoSuave": "#4B6B65",
+    "acento": "#0F766E",
+    "acentoTexto": "#FFFFFF",
+    "borde": "#C6E4DE"
   },
   "tipografia": {
     "titulos": "Instrument Serif",
     "cuerpo": "Geist",
     "escala": "amplia"
   },
-  "radio": 4,
-  "espaciado": "normal",
+  "radio": 0,
+  "espaciado": "aireado",
   "borde": "ninguno",
   "imagen": "natural",
   "intensidad": 3
 }
 
-Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
+Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta menta-tech, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
 
 Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.
 Patrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».

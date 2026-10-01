@@ -20,6 +20,8 @@ export interface OpcionesLlamada {
   rapido?: boolean;
   /** Imagen que acompaña al mensaje (tarea `identificar-producto`). */
   imagen?: ImagenIA;
+  /** Varias imágenes en un solo mensaje (miniaturas de candidatas): solo las atienden los proveedores con `soportaVariasImagenes`. */
+  imagenes?: ImagenIA[];
 }
 
 /** `ProveedorIA` con lo que los adaptadores reales exponen de más. Los proveedores simulados de los tests siguen valiendo. */
@@ -29,6 +31,8 @@ export type ProveedorAmpliado = Omit<ProveedorIA, "generarJSON"> & {
   limiteTokensMinuto?: number;
   /** Entiende imágenes en el mensaje (Gemini). Las tareas con imagen solo se envían a estos proveedores. */
   soportaImagen?: boolean;
+  /** Entiende varias imágenes en un mismo mensaje (OpenAI, Gemini). */
+  soportaVariasImagenes?: boolean;
   generarJSON<T>(
     p: { sistema: string; usuario: string; esquema: ZodType<T>; maxTokens?: number; temperatura?: number } & OpcionesLlamada,
   ): Promise<ResultadoIA<T>>;

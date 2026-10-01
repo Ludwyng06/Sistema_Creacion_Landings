@@ -4,7 +4,7 @@ import { useEffect, useMemo } from "react";
 import type { Seccion } from "@/lib/contratos";
 import { registro } from "@/secciones/registro";
 import { METAS } from "@/secciones/metas";
-import { tieneVariantes } from "@/secciones/catalogo-variantes";
+import { campoDeVariante, tieneVariantes } from "@/secciones/catalogo-variantes";
 import { BOTON_SECUNDARIO, BOTON_PEQUENO } from "../crear/estilos";
 import { ControlCampo, type ContextoSlots } from "./ControlCampo";
 import { ajustesDeBloqueNuevo, erroresDeSeccion, generarFormulario, type CampoForm } from "./esquema-form";
@@ -73,7 +73,7 @@ export function PanelAjustes({ seccion, slots, onCambio, bloqueSeleccionado = nu
     <div className="flex flex-col gap-5" data-panel-ajustes={seccion.tipo}>
       {formulario.ajustes
         // La disposición es la variante: se elige con miniaturas en «Diseño».
-        .filter((c) => !(c.clave === "disposicion" && tieneVariantes(seccion.tipo)))
+        .filter((c) => !(c.clave === campoDeVariante(seccion.tipo) && tieneVariantes(seccion.tipo)))
         .filter((c) => !soloTextos || c.clase === "texto" || c.clase === "textoLargo")
         .map((c) =>
         campo(

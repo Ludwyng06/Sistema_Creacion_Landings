@@ -61,11 +61,11 @@ describe("GET /api/ajustes/proveedores", () => {
     expect(texto).not.toMatch(/secreto/);
   });
 
-  it("lista los 5 proveedores con modelo, clave, estado, uso y límite", async () => {
+  it("lista los 6 proveedores con modelo, clave, estado, uso y límite", async () => {
     process.env.GROQ_MODEL = "modelo-groq-x";
     const { proveedores } = await (await PROVEEDORES()).json();
     delete process.env.GROQ_MODEL;
-    expect(proveedores.map((p: { id: string }) => p.id)).toEqual(["gemini", "cerebras", "groq", "openrouter", "manual"]);
+    expect(proveedores.map((p: { id: string }) => p.id)).toEqual(["openai", "gemini", "cerebras", "groq", "openrouter", "manual"]);
     const por = Object.fromEntries(proveedores.map((p: { id: string }) => [p.id, p]));
     expect(por.groq).toMatchObject({ nombre: "Groq", modelo: "modelo-groq-x", tieneClave: true, estado: "sin-probar", usoHoy: 0, limiteDiario: 1000 });
     expect(por.openrouter).toMatchObject({ tieneClave: false, estado: "sin-clave", limiteDiario: 50 });
@@ -107,7 +107,7 @@ describe("POST /api/ajustes/probar", () => {
     expect(res.status).toBe(200);
     const { resultados } = await res.json();
     const por = Object.fromEntries(resultados.map((r: { id: string }) => [r.id, r]));
-    expect(resultados).toHaveLength(4);
+    expect(resultados).toHaveLength(5);
     expect(por.gemini).toMatchObject({ ok: true });
     expect(por.cerebras.ok).toBe(true);
     expect(por.groq.ok).toBe(false);
@@ -133,7 +133,7 @@ describe("POST /api/ajustes/probar", () => {
     expect(llamados).toEqual(["gemini"]);
     llamados.length = 0;
     const todos = await PROBAR(new Request("http://localhost/x", { method: "POST" }));
-    expect((await todos.json()).resultados).toHaveLength(4);
+    expect((await todos.json()).resultados).toHaveLength(5);
     expect(llamados.sort()).toEqual(["cerebras", "gemini", "groq"]); // openrouter no tiene clave: ni se llama
   });
 
@@ -151,7 +151,7 @@ describe("POST /api/ajustes/probar", () => {
 
 describe("/api/ajustes/modo", () => {
   it("por defecto usa el entorno y PUT lo guarda con prioridad sobre IA_MODO e IA_CASCADA", async () => {
-    expect(await (await MODO_GET()).json()).toEqual({ modo: "cascada", cascada: ["cerebras", "gemini", "groq", "openrouter"] });
+    expect(await (await MODO_GET()).json()).toEqual({ modo: "cascada", cascada: ["openai", "cerebras", "gemini", "groq", "openrouter"] });
     process.env.IA_MODO = "duelo";
     process.env.IA_CASCADA = "groq,gemini";
     expect(await (await MODO_GET()).json()).toEqual({ modo: "duelo", cascada: ["groq", "gemini"] });
@@ -198,18 +198,18 @@ describe("/api/ajustes/modo", () => {
 });
 
 describe("/api/ajustes/tareas", () => {
-  it("GET devuelve las 18 tareas con los valores por defecto", async () => {
+  it("GET devuelve las 19 tareas con los valores por defecto", async () => {
     const { tareas } = await (await TAREAS_GET()).json();
-    expect(Object.keys(tareas).sort()).toEqual(["corregir-lista-negra", "critico", "dato-curioso", "describir-medio", "estrategia", "humanizar", "identificar-producto", "intake", "investigar", "juez-duelo", "landing", "mejorar-prompt", "objeciones", "plan-secciones", "prompts-grok", "prompts-imagen", "redactar-seccion", "validar-imagen"]);
-    expect(tareas.landing).toBe("cerebras");
-    expect(tareas.critico).toBe("cerebras");
+    expect(Object.keys(tareas).sort()).toEqual(["corregir-lista-negra", "critico", "dato-curioso", "describir-medio", "elegir-imagen", "estrategia", "humanizar", "identificar-producto", "intake", "investigar", "juez-duelo", "landing", "mejorar-prompt", "objeciones", "plan-secciones", "prompts-grok", "prompts-imagen", "redactar-seccion", "validar-imagen"]);
+    expect(tareas.landing).toBe("openai");
+    expect(tareas.critico).toBe("openai");
   });
 
   it("PUT guarda solo lo indicado y el resto conserva su valor", async () => {
     const put = await TAREAS_PUT(req({ tareas: { landing: "cerebras", humanizar: "groq" } }, "PUT"));
     expect(put.status).toBe(200);
     const { tareas } = await put.json();
-    expect(tareas).toMatchObject({ landing: "cerebras", humanizar: "groq", critico: "cerebras", objeciones: "cerebras" });
+    expect(tareas).toMatchObject({ landing: "cerebras", humanizar: "groq", critico: "openai", objeciones: "openai" });
     expect((await (await TAREAS_GET()).json()).tareas.landing).toBe("cerebras");
     expect(JSON.parse((await db.ajuste.findUnique({ where: { clave: "ia.tareas" } }))!.valor)).toEqual({ landing: "cerebras", humanizar: "groq" });
   });

@@ -19,6 +19,7 @@ import { ejemploDeSeccion } from "@/lib/ia/prompts/seccion";
 import type { ProveedorIA } from "@/lib/ia/tipos";
 import { obtenerPorSlug } from "@/lib/landings";
 import { fijarDepsEnrutador } from "@/lib/ia/deps";
+import { mulberry32 } from "@/lib/tecnicas/semillas";
 
 const DESCRIPCIONES: Record<TipoLanding, string> = {
   evento: "Landing para una noche de observación de la lluvia de meteoros en Villa de Leyva",
@@ -123,6 +124,7 @@ async function correr(tipo: TipoLanding, opciones: Parameters<typeof simulado>[2
     ejecucion: { almacen: almacenMemoria() },
     dirMedia: b.dirMedia,
     candidatos: async () => [],
+    azar: mulberry32(3), // semilla reproducible: la diversidad (24-A) elige al azar y estos tests miran un héroe con imagen
     generar: b.generar,
     guardar: async (p) => ((guardado = { doc: p.doc }), { id: "id-1", slug: p.doc.meta.slug }),
   });
@@ -244,7 +246,7 @@ describe("16-A · enrutamiento de fuentes por temática", () => {
     expect(e.fuentes).toEqual(expect.arrayContaining(["nasa-images", "apod", "neows", "noaa-kp", "usno-luna", "iss", "lanzamientos", "datos-curiosos", "flux"]));
     expect(e.fuentes).not.toContain("openverse");
     expect(e.widget).toBe("fase-lunar");
-    expect(e.imagenes).toEqual(["nasa-images", "flux"]);
+    expect(e.imagenes).toEqual(["nasa-images", "apod", "wikimedia", "flux"]);
   });
 
   it("producto → Google Shopping (y Open Food o Beauty Facts si aplica); no usa Openverse", () => {

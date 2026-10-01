@@ -24,6 +24,10 @@ import {
   type TipoLanding,
 } from "./encargo";
 import { generarLanding } from "./generar";
+import { aplicarEtapa } from "./progreso-etapas";
+import { AvisoGeneracion } from "@/componentes/entrega/AvisoGeneracion";
+import type { LandingDoc } from "@/lib/contratos";
+import { SIN_SENAL, hayAvisoGeneracion, marcadoresSinFoto, senalDeListo, type SenalGeneracion } from "@/lib/entrega/generacion";
 
 const CHIP =
   "inline-flex min-h-11 items-center gap-2 rounded-full border border-linea px-4 text-sm aria-pressed:border-marca aria-pressed:bg-marca aria-pressed:text-marca-texto hover:bg-papel-hondo focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-marca";
@@ -36,6 +40,17 @@ const AVANZADOS: { clave: string; etiqueta: string; tipo?: string }[] = [
   { clave: "fecha", etiqueta: "Fecha" },
   { clave: "lugar", etiqueta: "Lugar" },
 ];
+
+/** Slots de imagen sin archivo de una landing guardada; 0 si no se pudo leer. */
+async function contarMarcadores(id: string): Promise<number> {
+  try {
+    const r = await fetch(`/api/landings/${id}`);
+    if (!r.ok) return 0;
+    return marcadoresSinFoto(((await r.json()) as { doc: LandingDoc }).doc);
+  } catch {
+    return 0;
+  }
+}
 
 const MAX_FOTOS = 3;
 const MAX_BYTES = 4 * 1024 * 1024;
@@ -50,7 +65,8 @@ function leerComoDataUrl(archivo: File): Promise<string> {
 }
 
 interface Progreso {
-  activa: Etapa | null;
+  /** Etapas en marcha ahora: varias a la vez cuando el generador trabaja en paralelo. */
+  activas: Etapa[];
   hechas: Etapa[];
   mensaje: string;
   n?: number;
@@ -59,9 +75,11 @@ interface Progreso {
   detectado?: string;
   error: string | null;
   listo: { id: string } | null;
+  /** Generación a medias (sin cuota): el crítico o secciones quedaron pendientes. */
+  senal: SenalGeneracion;
 }
 
-const PROGRESO_VACIO: Progreso = { activa: null, hechas: [], mensaje: "Preparando…", faltantes: [], error: null, listo: null };
+const PROGRESO_VACIO: Progreso = { activas: [], hechas: [], mensaje: "Preparando…", faltantes: [], error: null, listo: null, senal: SIN_SENAL };
 
 function Grupo({ titulo, children }: { titulo: string; children: React.ReactNode }) {
   return (
@@ -111,14 +129,15 @@ export function CrearRapido() {
     (e: EventoGenerar) => {
       setProgreso((p) => {
         if (e.tipo === "etapa") {
-          const indice = ETAPAS.indexOf(e.etapa);
-          return { ...p, activa: e.etapa, hechas: ETAPAS.slice(0, indice), mensaje: e.mensaje, n: e.n, total: e.total };
+          return aplicarEtapa(p, e, ETAPAS);
         }
         if (e.tipo === "faltantes") return { ...p, faltantes: e.faltantes, detectado: e.detectado?.tipo ?? p.detectado };
         if (e.tipo === "error") return { ...p, error: e.mensaje };
-        return { ...p, hechas: [...ETAPAS], activa: null, mensaje: "Listo. Abriendo tu landing…", listo: { id: e.id } };
+        const senal = senalDeListo(e);
+        return { ...p, hechas: [...ETAPAS], activas: [], mensaje: hayAvisoGeneracion(senal) ? "Tu landing quedó guardada." : "Listo. Abriendo tu landing…", listo: { id: e.id }, senal };
       });
-      if (e.tipo === "listo") router.push(`/ver/${e.id}`);
+      // Con el crítico o secciones pendientes se queda aquí para contarlo; si no, abre el visor.
+      if (e.tipo === "listo" && !hayAvisoGeneracion(senalDeListo(e))) router.push(`/ver/${e.id}`);
     },
     [router],
   );
@@ -134,11 +153,13 @@ export function CrearRapido() {
     setRespuestas({});
     let faltantesVistos: Faltante[] = [];
     let listo: string | null = null;
+    let ultimoListo: EventoGenerar | null = null;
     await generarLanding(armarEncargo(), (e) => {
       if (e.tipo === "faltantes") faltantesVistos = e.faltantes;
       // Se guarda el «listo» para decidir después si hay que rehacer con los datos que llenó la persona.
       if (e.tipo === "listo") {
         listo = e.id;
+        ultimoListo = e;
         return;
       }
       alEvento(e);
@@ -147,11 +168,13 @@ export function CrearRapido() {
     // Si la persona llenó algún faltante mientras se generaba, se vuelve a generar una vez con esos datos.
     const llenados = Object.fromEntries(faltantesVistos.map((f) => [f.clave, respuestasRef.current[f.clave]?.trim() ?? ""]).filter(([, v]) => v !== ""));
     if (Object.keys(llenados).length > 0) {
-      setProgreso((p) => ({ ...p, faltantes: [], hechas: [], activa: "intake", mensaje: "Aplicando tus datos…" }));
+      setProgreso((p) => ({ ...p, faltantes: [], hechas: [], activas: ["intake"], mensaje: "Aplicando tus datos…" }));
       await generarLanding(armarEncargo(llenados), alEvento, { senal });
       return;
     }
-    alEvento({ tipo: "listo", id: listo });
+    // Las fotos que no llegaron se ven en la landing guardada: si faltan, se avisa y se ofrece «Buscar fotos».
+    const fotosPendientes = await contarMarcadores(listo);
+    alEvento({ ...(ultimoListo ?? { tipo: "listo", id: listo }), fotosPendientes } as EventoGenerar);
   }
 
   function cancelar() {
@@ -185,11 +208,11 @@ export function CrearRapido() {
         <ol className="flex flex-col gap-2" aria-label="Etapas">
           {ETAPAS.map((etapa) => {
             const hecha = progreso.hechas.includes(etapa);
-            const activa = progreso.activa === etapa;
+            const activa = progreso.activas.includes(etapa);
             return (
               <li key={etapa} data-etapa={etapa} data-estado={hecha ? "hecha" : activa ? "activa" : "pendiente"} className={`flex items-center gap-3 rounded-md border p-3 ${activa ? "border-marca" : "border-linea"} ${hecha || activa ? "" : "opacity-60"}`}>
                 <span aria-hidden="true" className={`grid size-7 shrink-0 place-items-center rounded-full border ${hecha ? "border-marca bg-marca text-marca-texto" : "border-linea"}`}>
-                  {hecha ? <Icono nombre="check" className="size-4" /> : activa ? <span className="size-2 rounded-full bg-marca motion-safe:animate-pulse" /> : null}
+                  {hecha ? <Icono nombre="check" className="size-4" /> : activa ? <span className="size-4 rounded-full border-2 border-marca border-t-transparent motion-safe:animate-spin motion-reduce:border-t-marca" /> : null}
                 </span>
                 <span>{NOMBRE_ETAPA[etapa]}</span>
               </li>
@@ -230,8 +253,16 @@ export function CrearRapido() {
           </section>
         )}
 
+        {progreso.listo && hayAvisoGeneracion(progreso.senal) && (
+          <AvisoGeneracion landingId={progreso.listo.id} senal={progreso.senal} alReintentar={() => router.push(`/ver/${progreso.listo!.id}`)}>
+            <Link href={`/ver/${progreso.listo.id}`} className={BOTON_SECUNDARIO} data-abrir-landing>
+              Ver la landing
+            </Link>
+          </AvisoGeneracion>
+        )}
+
         {progreso.error && (
-          <div role="alert" className="flex flex-col gap-3 rounded-md border border-error p-4 text-error">
+          <div role="alert"className="flex flex-col gap-3 rounded-md border border-error p-4 text-error">
             <p>{progreso.error}</p>
             <button type="button" className={`${BOTON_SECUNDARIO} self-start`} onClick={cancelar}>
               Volver y reintentar

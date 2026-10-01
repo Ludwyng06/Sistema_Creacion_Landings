@@ -1,21 +1,24 @@
+import { contadorCompartido } from "./gasto";
 import { colaCompartida } from "./cola-rpm";
+import { guardiaCompartida } from "./cupo-dia";
 import { crearGemini } from "./gemini";
 import { crearProveedorCompatible } from "./openai-compat";
 import type { ProveedorIA, ProveedorId } from "./tipos";
 
 type Env = Record<string, string | undefined>;
 
-const CASCADA_POR_DEFECTO = "cerebras,gemini,groq,openrouter";
+const CASCADA_POR_DEFECTO = "openai,cerebras,gemini,groq,openrouter";
 
 const COMPATIBLES = {
+  openai: { prefijo: "OPENAI", baseUrl: "https://api.openai.com/v1", modelo: "gpt-5.4-mini" },
   groq: { prefijo: "GROQ", baseUrl: "https://api.groq.com/openai/v1", modelo: "openai/gpt-oss-120b" },
   cerebras: { prefijo: "CEREBRAS", baseUrl: "https://api.cerebras.ai/v1", modelo: "gpt-oss-120b" },
   openrouter: { prefijo: "OPENROUTER", baseUrl: "https://openrouter.ai/api/v1", modelo: "poolside/laguna-xs-2.1:free" },
 } as const;
 
-export const CASCADA_ID_POR_DEFECTO: ProveedorId[] = ["cerebras", "gemini", "groq", "openrouter"];
+export const CASCADA_ID_POR_DEFECTO: ProveedorId[] = ["openai", "cerebras", "gemini", "groq", "openrouter"];
 
-const NOMBRES: Record<ProveedorId, string> = { gemini: "Google Gemini", groq: "Groq", cerebras: "Cerebras", openrouter: "OpenRouter", manual: "Manual" };
+const NOMBRES: Record<ProveedorId, string> = { openai: "OpenAI", gemini: "Google Gemini", groq: "Groq", cerebras: "Cerebras", openrouter: "OpenRouter", manual: "Manual" };
 
 /** Nombre, modelo configurado y si hay clave, sin exponer nunca la clave. */
 export function infoProveedor(id: ProveedorId, env: Env = process.env): { id: ProveedorId; nombre: string; modelo: string; tieneClave: boolean } {
@@ -32,7 +35,7 @@ function numeroPositivo(v?: string): number | undefined {
 
 function construir(id: ProveedorId, env: Env): ProveedorIA | null {
   if (id === "gemini") return crearGemini(env);
-  if (id === "groq" || id === "cerebras" || id === "openrouter") {
+  if (id === "openai" || id === "groq" || id === "cerebras" || id === "openrouter") {
     const c = COMPATIBLES[id];
     return crearProveedorCompatible({
       id,
@@ -40,7 +43,14 @@ function construir(id: ProveedorId, env: Env): ProveedorIA | null {
       clave: env[`${c.prefijo}_API_KEY`],
       modelo: env[`${c.prefijo}_MODEL`] || c.modelo,
       // Cerebras gratuito: 5 peticiones por minuto. Una cola compartida las reparte en vez de dejar que fallen con 429.
-      ...(id === "cerebras" && { cola: colaCompartida("cerebras", numeroPositivo(env.CEREBRAS_RPM) ?? 5), timeoutMs: numeroPositivo(env.CEREBRAS_TIMEOUT_MS) ?? 120_000 }),
+      ...(id === "cerebras" && { cupoDia: guardiaCompartida("cerebras"), cola: colaCompartida("cerebras", numeroPositivo(env.CEREBRAS_RPM) ?? 5), timeoutMs: numeroPositivo(env.CEREBRAS_TIMEOUT_MS) ?? 120_000 }),
+      ...(id === "openai" && {
+        soportaImagen: true,
+        soportaVariasImagenes: true,
+        gasto: contadorCompartido("openai"),
+        timeoutMs: numeroPositivo(env.OPENAI_TIMEOUT_MS) ?? 90_000,
+        modelosRespaldo: (env.OPENAI_MODEL_RESPALDO ?? "gpt-4.1-mini").split(",").map((m) => m.trim()).filter(Boolean),
+      }),
       ...(id === "groq" && { limiteTokensMinuto: numeroPositivo(env.GROQ_TPM) ?? 8000 }),
       // Los modelos gratuitos de OpenRouter razonan y tardan: ~1 min para una landing completa.
       // Menos razonamiento = respuestas mucho más rápidas para un JSON que ya viene guiado por el esquema.

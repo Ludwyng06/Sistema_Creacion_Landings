@@ -15,6 +15,7 @@ export const FUENTES_MEDIO = [
   "pixabay",
   "usuario",
   "ia-flux",
+  "ia-openai",
 ] as const;
 export const FuenteMedio = z.enum(FUENTES_MEDIO);
 export type FuenteMedio = z.infer<typeof FuenteMedio>;

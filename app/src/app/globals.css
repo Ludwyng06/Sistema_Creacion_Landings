@@ -15,7 +15,7 @@
   /* Los 4 bloques del prompt (Rol azul, Tarea naranja, Contexto verde, Formato morado). */
   --bloque-rol: #1d4f8c;
   --bloque-rol-suave: #e4edf7;
-  --bloque-tarea: #b5570f;
+  --bloque-tarea: #a64f0d;
   --bloque-tarea-suave: #f8eadb;
   --bloque-contexto: #2b6b3f;
   --bloque-contexto-suave: #e3f0e7;
@@ -93,17 +93,31 @@ body {
   font-family: var(--font-ui);
 }
 
-/* Tratamiento de imagen según `tokens.imagen`. */
-.landing[data-imagen="duotono"] .media-slot img {
-  filter: grayscale(1) contrast(1.08);
+/* Tratamiento de imagen según `tokens.imagen` (las imágenes de fondo a sangre, `h-full`, no se tocan). */
+.landing[data-imagen="duotono"] .media-slot:not(.h-full) {
+  background: var(--c-fondo);
+  isolation: isolate;
 }
-.landing[data-imagen="marco"] .media-slot {
-  padding: 0.5rem;
+.landing[data-imagen="duotono"] .media-slot:not(.h-full) img {
+  filter: grayscale(1) contrast(1.15);
+}
+.landing[data-imagen="duotono"] .media-slot:not(.h-full)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--c-acento);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.landing[data-imagen="marco"] .media-slot:not(.h-full) {
+  padding: 0.75rem;
   background: var(--c-superficie);
-  border: var(--borde-ancho) solid var(--c-borde);
+  border: max(var(--borde-ancho), 2px) solid var(--c-texto);
+  box-shadow: inset 0 0 0 1px var(--c-borde);
 }
-.landing[data-imagen="recorte"] .media-slot {
-  border-radius: 0 0 var(--radius-tarjeta) 0;
+.landing[data-imagen="recorte"] .media-slot:not(.h-full) {
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 3rem) 100%, 0 100%);
 }
 
 /* Indicador de scroll del héroe «problema-primero». */
@@ -232,3 +246,227 @@ body {
 /* Tamaño de letra (17-B): un titular nunca se sale de su contenedor y el peso se puede elegir por sección. */
 .landing :is(h1, h2, h3) { overflow-wrap: anywhere; hyphens: manual; }
 .landing [data-peso-titulo] :is(h1, h2) { font-weight: var(--peso-titulo); }
+
+/* Fondos de sección con personalidad según el estilo de la semilla (`secciones/fondos.ts`). Solo mezclas de tokens, muy suaves:
+   el contraste AA del texto sobre ellos no baja. */
+.landing [data-fondo="suave"] {
+  background-color: color-mix(in oklab, var(--c-superficie) 60%, var(--c-fondo));
+}
+.landing [data-fondo="acento-suave"] {
+  background-color: color-mix(in oklab, var(--c-acento) 7%, var(--c-fondo));
+}
+.landing [data-fondo="linea"] {
+  border-top: 1px solid var(--c-borde);
+  background-color: color-mix(in oklab, var(--c-superficie) 35%, var(--c-fondo));
+}
+.landing [data-fondo="linea-gruesa"] {
+  border-top: 3px solid var(--c-texto);
+  background-color: var(--c-fondo);
+}
+.landing [data-fondo^="textura-"] {
+  background-color: color-mix(in oklab, var(--c-superficie) 45%, var(--c-fondo));
+  --t: color-mix(in oklab, var(--c-texto) 9%, transparent);
+}
+.landing [data-fondo="textura-puntos"] {
+  background-image: radial-gradient(var(--t) 1.5px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+.landing [data-fondo="textura-cuadricula"] {
+  background-image: linear-gradient(var(--t) 1px, transparent 1px), linear-gradient(90deg, var(--t) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.landing [data-fondo="textura-diagonal"] {
+  background-image: repeating-linear-gradient(135deg, var(--t) 0 1px, transparent 1px 14px);
+}
+.landing [data-fondo="textura-lineas"] {
+  background-image: repeating-linear-gradient(0deg, var(--t) 0 1px, transparent 1px 18px);
+}
+
+/* Las tarjetas que no traen borde propio siguen `tokens.borde` (ninguno, fino o grueso); las imágenes, `tokens.imagen`. */
+:where(.landing .rounded-tarjeta:not(.borde-token, .media-slot, [class*="border"])) {
+  border: var(--borde-ancho) solid var(--c-borde);
+}
+
+/* ── Personalidad por estilo de la semilla (`secciones/personalidad.ts`). Solo variables de los tokens, sin hex. ── */
+
+/* Brutalismo: bordes gruesos, sombras duras, mayúsculas y bloques de acento tras los títulos. */
+.landing[data-estilo="brutal"] :is(h1, h2, h3) {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+.landing[data-estilo="brutal"] h2 {
+  display: inline-block;
+  background: var(--c-acento);
+  color: var(--c-acento-texto);
+  padding: 0.08em 0.3em;
+  box-shadow: 4px 4px 0 var(--c-texto);
+}
+.landing[data-estilo="brutal"] :is(a, button)[data-cursor] {
+  border: 3px solid var(--c-texto);
+  border-radius: 0;
+  box-shadow: 4px 4px 0 var(--c-texto);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.landing[data-estilo="brutal"] :is(.rounded-tarjeta, .media-slot):not(.h-full) {
+  border: 3px solid var(--c-texto);
+  border-radius: 0;
+  box-shadow: 4px 4px 0 var(--c-texto);
+}
+.landing[data-estilo="brutal"] [data-seccion-id] + [data-seccion-id] {
+  border-top: 3px solid var(--c-texto);
+}
+
+/* Japonés ma: aire, peso ligero, sin cajas y una sola línea fina de acento. */
+.landing[data-estilo="ma"] :is(h1, h2, h3) {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+.landing[data-estilo="ma"] h2::before {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 1px;
+  margin-bottom: 1.5rem;
+  background: var(--c-texto);
+}
+.landing[data-estilo="ma"] [class*="text-center"] h2::before {
+  margin-inline: auto;
+}
+.landing[data-estilo="ma"] :is(.borde-token, .rounded-tarjeta):not(.media-slot) {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.landing[data-estilo="ma"] :is(a, button)[data-cursor] {
+  background: transparent;
+  color: var(--c-texto);
+  border: 1px solid var(--c-texto);
+  border-radius: 0;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.landing[data-estilo="ma"] .media-slot:not(.h-full) {
+  max-width: 24rem;
+  margin-inline: auto;
+}
+
+/* Memphis: píldoras y círculos, duotono, formas geométricas y colores vivos. */
+.landing[data-estilo="memphis"] :is(h1, h2, h3) {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.landing[data-estilo="memphis"] :is(a, button)[data-cursor] {
+  border-radius: 999px;
+  border: 3px solid var(--c-texto);
+  box-shadow: 3px 3px 0 var(--c-texto);
+  font-weight: 700;
+}
+.landing[data-estilo="memphis"] :is(.rounded-tarjeta):not(.media-slot) {
+  border-radius: 2rem;
+  border: 2px solid var(--c-texto);
+}
+.landing[data-estilo="memphis"] .media-slot:not(.h-full) {
+  border-radius: 999px;
+  background: var(--c-fondo);
+  isolation: isolate;
+}
+.landing[data-estilo="memphis"] .media-slot:not(.h-full) img {
+  filter: grayscale(1) contrast(1.15);
+}
+.landing[data-estilo="memphis"] .media-slot:not(.h-full)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--c-acento);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.landing[data-estilo="memphis"] [data-seccion-id]:nth-of-type(3n + 1),
+.landing[data-estilo="memphis"] [data-seccion-id]:nth-of-type(3n + 2) {
+  position: relative;
+  isolation: isolate;
+}
+.landing[data-estilo="memphis"] [data-seccion-id]:nth-of-type(3n + 1)::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 999px;
+  background: var(--c-acento);
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: -1;
+}
+.landing[data-estilo="memphis"] [data-seccion-id]:nth-of-type(3n + 2)::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  width: 7rem;
+  height: 1.25rem;
+  background: repeating-linear-gradient(135deg, var(--c-texto) 0 3px, transparent 3px 9px);
+  pointer-events: none;
+  z-index: -1;
+}
+.landing[data-estilo="memphis"] [data-seccion-id]:nth-of-type(3n + 2)::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background: radial-gradient(var(--c-texto) 2px, transparent 2.5px) 0 0 / 14px 14px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Catálogo de patentes: líneas finas, monoespaciada en etiquetas y cifras, figuras numeradas y cuadrícula técnica. */
+.landing[data-estilo="patente"] {
+  counter-reset: figura;
+  background-image: linear-gradient(color-mix(in oklab, var(--c-texto) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--c-texto) 6%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.landing[data-estilo="patente"] :is(dt, dd, th, figcaption, label, .uppercase, .tabular-nums, [class*="tracking-widest"], [data-seccion-id] ul li::marker) {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+.landing[data-estilo="patente"] :is(h1, h2, h3) {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--c-texto);
+  padding-bottom: 0.35em;
+  display: inline-block;
+}
+.landing[data-estilo="patente"] [data-seccion-id] + [data-seccion-id] {
+  border-top: 1px solid var(--c-texto);
+}
+.landing[data-estilo="patente"] :is(a, button)[data-cursor] {
+  border: 1px solid var(--c-texto);
+  border-radius: 0;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.landing[data-estilo="patente"] .media-slot:not(.h-full) {
+  counter-increment: figura;
+  padding: 0.6rem 0.6rem 2rem;
+  background: var(--c-superficie);
+  border: 1px solid var(--c-texto);
+  border-radius: 0;
+}
+.landing[data-estilo="patente"] .media-slot:not(.h-full)::after {
+  content: "Fig. " counter(figura);
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.45rem;
+  font: 0.75rem/1 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  letter-spacing: 0.1em;
+  color: var(--c-texto);
+}

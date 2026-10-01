@@ -5,7 +5,8 @@ import { generarImagen, type OpcionesFlux, type Relacion } from "@/lib/imagenes/
 import { validarImagen } from "@/lib/imagenes/validar";
 import { ErrorFuente } from "@/lib/fuentes/tipos";
 import { join } from "node:path";
-import { rankearMedios, type RolSlot } from "./medios";
+import { coincidencias, rankearMedios, type RolSlot } from "./medios";
+import { guionDeSlot } from "./imagenes-sin-ia";
 import type { EntradaVitrina } from "./tipos";
 
 // Imágenes que corresponden al producto. Orden de fuentes por slot: banco o API real relevante, validado con visión
@@ -71,6 +72,8 @@ export interface DepsImagenes {
   maxValidaciones?: number;
   /** Se inyectan en los tests. */
   validar?: (ruta: string, esperado: string) => Promise<{ apta: boolean; motivo: string }>;
+  /** Espera antes de reintentar la visión (los tests la ponen en 0). */
+  esperaReintentoMs?: number;
   generar?: (prompt: string, relacion: Relacion) => Promise<{ ruta: string }>;
 }
 
@@ -104,80 +107,103 @@ export async function resolverImagenes(slots: SlotVitrina[], prompts: PromptsIma
   const porSlot = new Map(prompts.slots.map((s) => [s.slot, s]));
   let fluxCaido = false;
 
+  let visionCaida = false;
+  const contexto = { nombre: e.brief.nombre, descripcion: e.brief.problema, tematica: e.tematica, colores: undefined as { fondo: string; acento: string } | undefined };
+  contexto.colores = { fondo: "#F4EFE6", acento: deps.acento };
+  const porRol = new Map<string, number>();
+
   for (const s of slots) {
     const previo = previos.get(s.slot);
     if (previo) {
       assets.push(previo);
       continue;
     }
-    const guion = porSlot.get(s.slot);
+    const i = porRol.get(s.rol) ?? 0;
+    porRol.set(s.rol, i + 1);
+    // Sin prompt de la IA (cuota caída o slot omitido) el prompt sale de la plantilla: nunca se queda sin prompts.
+    const guion = porSlot.get(s.slot) ?? guionDeSlot(s, contexto, i);
     let asset: Asset | null = null;
+    try {
 
     if (s.origen === "banco") {
       const ranking = rankearMedios(s.rol, deps.candidatos, { entrada: e, acento: deps.acento, usados }, deBanco).slice(0, deps.maxValidaciones ?? MAX_VALIDACIONES);
+      const comoAsset = (c: (typeof ranking)[number]): Asset => {
+        usados.add(c.medio.id);
+        deBanco.set(c.medio.bancoId, (deBanco.get(c.medio.bancoId) ?? 0) + 1);
+        return {
+          slot: s.slot,
+          tipo: "imagen",
+          relacion: relacionAsset(c.medio.orientacion === "vertical" ? "4:5" : c.medio.orientacion === "cuadrada" ? "1:1" : "16:9"),
+          promptGrok: s.esperado,
+          ruta: c.medio.ruta,
+          alt: recortar(`Foto real de ambiente, no es el producto: ${c.medio.titulo}. ${c.medio.descripcion}`.trim(), 200),
+          fuente: c.medio.fuente,
+          credito: c.medio.credito,
+          licencia: c.medio.licencia,
+          ...(c.medio.urlOrigen ? { urlOrigen: c.medio.urlOrigen } : {}),
+          bancoId: c.medio.bancoId,
+        };
+      };
       let vistas = 0;
       for (const c of ranking) {
         vistas++;
-        try {
-          const v = await validar(c.medio.ruta, s.esperado).catch(async () => {
-            await new Promise((r) => setTimeout(r, 2500)); // un solo reintento: el proveedor con visión suele responder 503 en picos
-            return validar(c.medio.ruta, s.esperado);
-          });
-          if (!v.apta) {
-            log(`  ${s.slot}: ${c.medio.idFuente} no apta (${recortar(v.motivo, 80)})`);
-            continue;
+        if (!visionCaida) {
+          try {
+            const v = await validar(c.medio.ruta, s.esperado).catch(async () => {
+              await new Promise((r) => setTimeout(r, deps.esperaReintentoMs ?? 2500)); // un solo reintento: el proveedor con visión suele responder 503 en picos
+              return validar(c.medio.ruta, s.esperado);
+            });
+            if (!v.apta) {
+              log(`  ${s.slot}: ${c.medio.idFuente} no apta (${recortar(v.motivo, 80)})`);
+              continue;
+            }
+            asset = comoAsset(c);
+            break;
+          } catch (err) {
+            visionCaida = true;
+            avisos.push(`Sin cupo de visión (${err instanceof Error ? err.message.split("\n")[0] : String(err)}): los candidatos se aceptan por palabras clave, validada: false.`);
           }
-          usados.add(c.medio.id);
-          deBanco.set(c.medio.bancoId, (deBanco.get(c.medio.bancoId) ?? 0) + 1);
-          asset = {
-            slot: s.slot,
-            tipo: "imagen",
-            relacion: relacionAsset(c.medio.orientacion === "vertical" ? "4:5" : c.medio.orientacion === "cuadrada" ? "1:1" : "16:9"),
-            promptGrok: s.esperado,
-            ruta: c.medio.ruta,
-            alt: recortar(`Foto real de ambiente, no es el producto: ${c.medio.titulo}. ${c.medio.descripcion}`.trim(), 200),
-            fuente: c.medio.fuente,
-            credito: c.medio.credito,
-            licencia: c.medio.licencia,
-            ...(c.medio.urlOrigen ? { urlOrigen: c.medio.urlOrigen } : {}),
-            bancoId: c.medio.bancoId,
-          };
+        }
+        // Sin visión: se acepta el candidato por coincidencia de palabras clave en título y etiquetas (la licencia ya la filtró la fuente).
+        const hits = coincidencias(c.medio, e.claves);
+        if (hits >= 1 && c.medio.usoComercial !== false) {
+          asset = comoAsset(c);
+          avisos.push(`«${s.slot}»: ${c.medio.fuente} aceptada sin validar con visión (validada: false), coincide con ${hits} palabra(s) clave.`);
           break;
-        } catch (err) {
-          avisos.push(`Sin visión para ${s.slot}: ${err instanceof Error ? err.message.split("\n")[0] : String(err)}`);
-          break; // sin visión no se puede validar: se genera en vez de aceptar a ciegas
         }
       }
       if (!asset) log(`  ${s.slot}: ${vistas} candidato(s) del banco descartados; se genera`);
     }
 
     if (!asset && !fluxCaido) {
-      const prompt = guion ? promptFinal(guion.prompt) : null;
-      if (prompt) {
-        try {
-          const g = await generar(prompt, s.relacion);
-          asset = {
-            slot: s.slot,
-            tipo: "imagen",
-            relacion: relacionAsset(s.relacion),
-            promptGrok: prompt,
-            ruta: g.ruta,
-            alt: guion!.alt,
-            fuente: "ia-flux",
-            credito: "Imagen generada con IA (FLUX.1-schnell)",
-            licencia: "generada",
-            generada: true,
-          };
-          log(`  ${s.slot}: generada con FLUX`);
-        } catch (err) {
-          if (err instanceof ErrorFuente && (err.tipo === "cupo" || err.tipo === "deshabilitada" || err.tipo === "auth")) fluxCaido = true;
-          avisos.push(`No se pudo generar ${s.slot}: ${err instanceof Error ? err.message : String(err)}`);
-        }
+      const prompt = promptFinal(guion.prompt);
+      try {
+        const g = await generar(prompt, s.relacion);
+        asset = {
+          slot: s.slot,
+          tipo: "imagen",
+          relacion: relacionAsset(s.relacion),
+          promptGrok: prompt,
+          ruta: g.ruta,
+          alt: guion.alt,
+          fuente: "ia-flux",
+          credito: "Imagen generada con IA (FLUX.1-schnell)",
+          licencia: "generada",
+          generada: true,
+        };
+        log(`  ${s.slot}: generada con FLUX`);
+      } catch (err) {
+        if (err instanceof ErrorFuente && (err.tipo === "cupo" || err.tipo === "deshabilitada" || err.tipo === "auth")) fluxCaido = true;
+        avisos.push(`No se pudo generar ${s.slot}: ${err instanceof Error ? err.message : String(err)}`);
       }
+    }
+    } catch (err) {
+      // Falla por slot, no en bloque: los demás siguen.
+      avisos.push(`El slot «${s.slot}» falló y queda con su marcador: ${err instanceof Error ? err.message.split("\n")[0] : String(err)}`);
     }
 
     // Sin imagen real ni generada queda el marcador con su prompt (nunca en el héroe: `ajustarHeroe` cambia de variante).
-    assets.push(asset ?? { slot: s.slot, tipo: "imagen", relacion: relacionAsset(s.relacion), promptGrok: guion ? promptFinal(guion.prompt) : s.que, alt: guion?.alt ?? recortar(s.que, 200) });
+    assets.push(asset ?? { slot: s.slot, tipo: "imagen", relacion: relacionAsset(s.relacion), promptGrok: promptFinal(guion.prompt), alt: guion.alt });
   }
   const conRuta = assets.filter((a) => a.ruta);
   return { assets, reales: conRuta.filter((a) => !a.generada).length, generadas: conRuta.filter((a) => a.generada).length, marcadores: assets.length - conRuta.length, avisos };

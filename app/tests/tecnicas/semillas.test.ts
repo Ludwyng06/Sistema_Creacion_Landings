@@ -8,6 +8,9 @@ import {
   PALETAS,
   TIPOGRAFIAS,
   aplicarColoresMarca,
+  cambiosDeEstilo,
+  deltaE,
+  otraSemillaDistinta,
   contraste,
   semillaManual,
   tirarSemilla,
@@ -126,5 +129,65 @@ describe("aplicarColoresMarca", () => {
     const t = tokensParaBrief(semilla, { ...briefCorrector, intensidad: 2, coloresMarca: ["#0055AA"] });
     expect(t.intensidad).toBe(2);
     expect(t.colores.acento).toBe("#0055AA");
+  });
+});
+
+describe("tarea 25 · colores que cambian", () => {
+  const marca = { intensidad: 3 as const, coloresMarca: ["#ffb454", "#0b1020"] };
+  const semilla = tirarSemilla(1).semilla;
+
+  it("respetarMarca: false ignora los colores de marca; por defecto los respeta", () => {
+    const conMarca = tokensParaBrief(semilla, marca);
+    const sinMarca = tokensParaBrief(semilla, marca, { respetarMarca: false });
+    expect(conMarca.colores.acento).toBe("#FFB454");
+    expect(conMarca.colores.fondo).toBe("#0B1020");
+    const paletaBase = PALETAS.find((p) => p.id === semilla.paletaId)!;
+    expect(sinMarca.colores.fondo).toBe(paletaBase.colores.fondo);
+    expect(sinMarca.colores.acento).toBe(paletaBase.colores.acento);
+  });
+
+  it("hay al menos 30 paletas, 10 oscuras, todas con AA y tono coherente", () => {
+    expect(PALETAS.length).toBeGreaterThanOrEqual(30);
+    expect(PALETAS.filter((p) => p.tono === "oscuro").length).toBeGreaterThanOrEqual(10);
+    for (const p of PALETAS) {
+      expect(contraste(p.colores.texto, p.colores.fondo)).toBeGreaterThanOrEqual(4.5);
+      expect(contraste(p.colores.acentoTexto, p.colores.acento)).toBeGreaterThanOrEqual(4.5);
+      expect(contraste(p.colores.textoSuave, p.colores.fondo)).toBeGreaterThanOrEqual(CONTRASTE_SUAVE);
+    }
+  });
+
+  it("la temática espacio prefiere paletas oscuras sin excluir las claras", () => {
+    const tonos = Array.from({ length: 600 }, (_, i) => PALETAS.find((p) => p.id === tirarSemilla(i, 3, Math.random, "espacio").semilla.paletaId)!.tono);
+    const oscuras = tonos.filter((t) => t === "oscuro").length;
+    const base = PALETAS.filter((p) => p.tono === "oscuro").length / PALETAS.length;
+    expect(oscuras / 600).toBeGreaterThan(base + 0.1);
+    expect(oscuras).toBeLessThan(600);
+  });
+
+  it("una temática con etiqueta pondera esas paletas y la firma sin temática no cambia", () => {
+    const belleza = Array.from({ length: 600 }, (_, i) => PALETAS.find((p) => p.id === tirarSemilla(i, 3, Math.random, "belleza").semilla.paletaId)!);
+    const base = PALETAS.filter((p) => p.etiquetas?.includes("belleza")).length / PALETAS.length;
+    expect(belleza.filter((p) => p.etiquetas?.includes("belleza")).length / 600).toBeGreaterThan(base + 0.1);
+    expect(tirarSemilla(7)).toEqual(tirarSemilla(7, 3, Math.random, undefined));
+  });
+});
+
+describe("otraSemillaDistinta", () => {
+  it("cada clic cambia paleta (ΔE ≥ 20), tipografía, estilo y ≥ 3 de 5 tokens de estilo", () => {
+    for (let arranque = 0; arranque < 8; arranque++) {
+      let actual = tirarSemilla(arranque * 977);
+      for (let i = 0; i < 5; i++) {
+        const nueva = otraSemillaDistinta(actual, { intensidad: 3 });
+        expect(nueva.semilla.estilo).not.toBe(actual.semilla.estilo);
+        expect(nueva.semilla.tipografiaId).not.toBe(actual.semilla.tipografiaId);
+        expect(cambiosDeEstilo(actual.tokens, nueva.tokens)).toBeGreaterThanOrEqual(3);
+        for (const k of ["fondo", "superficie", "texto", "textoSuave", "acento", "acentoTexto", "borde"] as const) {
+          expect(nueva.tokens.colores[k].toUpperCase()).not.toBe(actual.tokens.colores[k].toUpperCase());
+        }
+        expect(deltaE(nueva.tokens.colores.fondo, actual.tokens.colores.fondo)).toBeGreaterThanOrEqual(20);
+        expect(deltaE(nueva.tokens.colores.acento, actual.tokens.colores.acento)).toBeGreaterThanOrEqual(20);
+        actual = nueva;
+      }
+    }
   });
 });

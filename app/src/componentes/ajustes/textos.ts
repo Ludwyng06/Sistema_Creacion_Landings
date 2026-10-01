@@ -2,9 +2,10 @@ import type { ModoIA, ProveedorId, TareaIA } from "@/lib/contratos";
 
 // Textos de /ajustes. Los motivos de cada tarea salen de docs/07 §5.
 
-export const PROVEEDORES_EDITABLES: readonly Exclude<ProveedorId, "manual">[] = ["gemini", "cerebras", "groq", "openrouter"];
+export const PROVEEDORES_EDITABLES: readonly Exclude<ProveedorId, "manual">[] = ["openai", "gemini", "cerebras", "groq", "openrouter"];
 
 export const NOMBRE_PROVEEDOR: Record<ProveedorId, string> = {
+  openai: "OpenAI",
   gemini: "Google Gemini",
   cerebras: "Cerebras",
   groq: "Groq",

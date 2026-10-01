@@ -1,6 +1,6 @@
 import type { ZodType } from "zod";
 
-export type ProveedorId = "gemini" | "groq" | "cerebras" | "openrouter" | "manual";
+export type ProveedorId = "openai" | "gemini" | "groq" | "cerebras" | "openrouter" | "manual";
 
 export type ModoIA = "cascada" | "simultaneo" | "duelo";
 
@@ -22,7 +22,8 @@ export type TareaIA =
   | "redactar-seccion"
   | "prompts-imagen"
   | "validar-imagen"
-  | "intake";
+  | "intake"
+  | "elegir-imagen";
 
 export interface ResultadoIA<T> {
   datos: T;

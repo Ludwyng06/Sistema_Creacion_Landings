@@ -29,7 +29,7 @@ async function revisar(p: Page, pantalla: string, ancho: number) {
     const desborde = document.documentElement.scrollWidth > window.innerWidth + 1 ? `scroll horizontal (${document.documentElement.scrollWidth} px > ${window.innerWidth} px)` : null;
     // Texto cortado: elementos con overflow oculto cuyo contenido es más ancho o alto que la caja (sin `truncate` a propósito).
     const cortados = [...document.querySelectorAll<HTMLElement>("h1, h2, h3, p, button, a, label, span, li")]
-      .filter((e) => visible(e) && !e.closest(".sr-only, [hidden]") && e.children.length === 0 && (e.textContent ?? "").trim().length > 2)
+      .filter((e) => visible(e) && e.getBoundingClientRect().width > 1 && !e.closest(".sr-only, [hidden]") && e.children.length === 0 && (e.textContent ?? "").trim().length > 2)
       .filter((e) => {
         const s = getComputedStyle(e);
         const oculto = s.overflowX === "hidden" || s.overflowY === "hidden";

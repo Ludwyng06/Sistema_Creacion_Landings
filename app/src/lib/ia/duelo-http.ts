@@ -3,7 +3,7 @@ import { PeticionConstruir, type EventoDuelo } from "@/lib/contratos";
 import { construirDuelo } from "./duelo";
 import type { DepsEnrutador } from "./enrutador";
 
-const Proveedor = z.enum(["gemini", "groq", "cerebras", "openrouter"]);
+const Proveedor = z.enum(["openai", "gemini", "groq", "cerebras", "openrouter"]);
 
 export const PeticionDuelo = PeticionConstruir.extend({ proveedores: z.tuple([Proveedor, Proveedor]).optional() });
 

@@ -35,6 +35,7 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
 
   const { ajustes } = datosSeccion;
   const obligatorios = obligatoriosDe(ajustes);
+  const dividido = seccion.variante === "dividido";
 
   async function alEnviar(evento: FormEvent<HTMLFormElement>) {
     evento.preventDefault();
@@ -65,10 +66,18 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
   }
 
   return (
-    <section id={anclaFormulario} className="scroll-mt-4 px-5 py-espacio">
-      <div className="borde-token mx-auto max-w-xl rounded-tarjeta bg-superficie p-6 md:p-10">
-        <Titular className="text-balance font-titulos text-h2 font-semibold tracking-tight">{ajustes.titulo}</Titular>
-        {ajustes.subtitulo && <p className="mt-3 text-pretty text-lead text-suave">{ajustes.subtitulo}</p>}
+    <section id={anclaFormulario} className="scroll-mt-4 px-5 py-espacio" data-variante={dividido ? "dividido" : "tarjeta"}>
+      <div className={dividido ? "mx-auto grid max-w-5xl items-start gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-14" : undefined}>
+        {dividido && (
+          <div className="md:sticky md:top-8">
+            <Titular className="text-balance font-titulos text-h2 font-semibold tracking-tight">{ajustes.titulo}</Titular>
+            {ajustes.subtitulo && <p className="mt-4 text-pretty text-lead text-suave">{ajustes.subtitulo}</p>}
+            <p className="mt-6 hidden border-l-4 border-acento pl-4 text-sm text-suave md:block">{ajustes.privacidad}</p>
+          </div>
+        )}
+      <div className={`borde-token rounded-tarjeta bg-superficie p-6 md:p-10 ${dividido ? "" : "mx-auto max-w-xl"}`}>
+        {!dividido && <Titular className="text-balance font-titulos text-h2 font-semibold tracking-tight">{ajustes.titulo}</Titular>}
+        {!dividido && ajustes.subtitulo && <p className="mt-3 text-pretty text-lead text-suave">{ajustes.subtitulo}</p>}
 
         {enviado ? (
           <p role="status" className="mt-8 rounded-token bg-fondo p-5 text-lead text-texto">
@@ -128,9 +137,10 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
             >
               {enviando ? "Enviando…" : ajustes.textoBoton}
             </button></Magnetico>
-            <p className="text-sm text-suave">{ajustes.privacidad}</p>
+            <p className={`text-sm text-suave ${dividido ? "md:hidden" : ""}`}>{ajustes.privacidad}</p>
           </form>
         )}
+      </div>
       </div>
     </section>
   );

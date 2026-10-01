@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import type { Tokens } from "@/lib/contratos";
+import { variablesDePersonalidad, type Personalidad } from "@/secciones/personalidad";
 
 // Familias que la app ya carga con next/font (ver layout.tsx): el nombre del token
 // se resuelve a su variable CSS; el resto cae a una pila genérica.
@@ -37,7 +38,7 @@ const ANCHO_BORDE: Record<Tokens["borde"], string> = {
 };
 
 /** Única puerta entre `doc.tokens` y el CSS: los componentes solo leen estas variables. */
-export function tokensAVariables(tokens: Tokens): CSSProperties {
+export function tokensAVariables(tokens: Tokens, personalidad: Personalidad = "base"): CSSProperties {
   const { colores, tipografia } = tokens;
   const variables: Record<string, string> = {
     "--c-fondo": colores.fondo,
@@ -57,5 +58,5 @@ export function tokensAVariables(tokens: Tokens): CSSProperties {
     "--escala-s": "var(--escala)",
     "--borde-ancho": ANCHO_BORDE[tokens.borde],
   };
-  return variables as CSSProperties;
+  return { ...variables, ...variablesDePersonalidad(personalidad, variables["--espacio"]) } as CSSProperties;
 }

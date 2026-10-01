@@ -26,8 +26,8 @@ import { EJEMPLO_POR_TIPO, ASSETS_POR_TIPO } from "./ejemplos-por-tipo";
 // Una miniatura por variante: cada variante de cada sección con su `ejemplo.ts`. El modal «Añadir sección» y el
 // selector visual del inspector las pintan a escala con el mismo render de producción.
 
-/** Dónde vive la variante: en `seccion.variante` (héroe y secciones nuevas) o en `ajustes.disposicion`. */
-export type CampoVariante = "variante" | "disposicion";
+/** Dónde vive la variante: en `seccion.variante` (héroe y secciones nuevas), en `ajustes.disposicion` o en `ajustes.estilo`. */
+export type CampoVariante = "variante" | "disposicion" | "estilo";
 
 export interface VarianteCatalogo {
   tipo: TipoSeccion;
@@ -38,6 +38,17 @@ export interface VarianteCatalogo {
   assets: Asset[];
 }
 
+/** Una variante nueva a partir del ejemplo base del tipo: solo cambia el campo de la variante. */
+function derivar(base: Seccion, variantes: Record<string, string | undefined>, campo: CampoVariante = "variante"): Record<string, Seccion> {
+  return Object.fromEntries(
+    Object.entries(variantes).map(([clave, sufijo]) => {
+      const id = `${base.id}-${clave}`;
+      const seccion = campo === "variante" ? { ...base, id, variante: sufijo ?? clave } : { ...base, id, ajustes: { ...base.ajustes, [campo]: sufijo ?? clave } };
+      return [clave, seccion as Seccion];
+    }),
+  );
+}
+
 const MAPAS: Partial<Record<TipoSeccion, { campo: CampoVariante; ejemplos: Record<string, Seccion>; assets: Asset[] }>> = {
   heroe: { campo: "variante", ejemplos: ej_heroe, assets: as_heroe },
   beneficios: { campo: "disposicion", ejemplos: { ...ej_beneficios, ...VARIANTES_CON_IMAGEN.beneficios }, assets: ASSETS_DE_VARIANTES_CON_IMAGEN },
@@ -46,7 +57,14 @@ const MAPAS: Partial<Record<TipoSeccion, { campo: CampoVariante; ejemplos: Recor
   oferta: { campo: "variante", ejemplos: VARIANTES_CON_IMAGEN.oferta, assets: ASSETS_DE_VARIANTES_CON_IMAGEN },
   faq: { campo: "variante", ejemplos: VARIANTES_CON_IMAGEN.faq, assets: ASSETS_DE_VARIANTES_CON_IMAGEN },
   incluye: { campo: "variante", ejemplos: VARIANTES_CON_IMAGEN.incluye, assets: ASSETS_DE_VARIANTES_CON_IMAGEN },
-  comparativa: { campo: "disposicion", ejemplos: ej_comparativa, assets: [] },
+  comparativa: { campo: "estilo", ejemplos: ej_comparativa, assets: [] },
+  "cinta-anuncio": { campo: "estilo", ejemplos: derivar(EJEMPLO_POR_TIPO["cinta-anuncio"], { solido: undefined, contorno: undefined }, "estilo"), assets: [] },
+  "cuenta-regresiva": { campo: "estilo", ejemplos: derivar(EJEMPLO_POR_TIPO["cuenta-regresiva"], { bloques: undefined, linea: undefined }, "estilo"), assets: [] },
+  cifras: { campo: "variante", ejemplos: derivar(EJEMPLO_POR_TIPO.cifras, { franja: undefined, tarjetas: undefined }), assets: [] },
+  "problema-solucion": { campo: "variante", ejemplos: derivar(EJEMPLO_POR_TIPO["problema-solucion"], { columna: undefined, dividida: undefined }), assets: ASSETS_POR_TIPO["problema-solucion"] ?? [] },
+  "antes-despues": { campo: "variante", ejemplos: derivar(EJEMPLO_POR_TIPO["antes-despues"], { deslizador: undefined, "lado-a-lado": undefined }), assets: ASSETS_POR_TIPO["antes-despues"] ?? [] },
+  video: { campo: "variante", ejemplos: derivar(EJEMPLO_POR_TIPO.video, { centrado: undefined, lado: undefined }), assets: ASSETS_POR_TIPO.video ?? [] },
+  "formulario-lead": { campo: "variante", ejemplos: derivar(EJEMPLO_POR_TIPO["formulario-lead"], { tarjeta: undefined, dividido: undefined }), assets: [] },
   galeria: { campo: "disposicion", ejemplos: ej_galeria, assets: as_galeria },
   testimonios: { campo: "disposicion", ejemplos: ej_testimonios, assets: [] },
   "dato-en-vivo": { campo: "variante", ejemplos: ej_datoEnVivo, assets: [] },
@@ -86,7 +104,7 @@ export function campoDeVariante(tipo: TipoSeccion): CampoVariante | null {
 export function varianteActual(seccion: Seccion): string | null {
   const campo = campoDeVariante(seccion.tipo);
   if (!campo) return null;
-  const valor = campo === "variante" ? seccion.variante : seccion.ajustes.disposicion;
+  const valor = campo === "variante" ? seccion.variante : seccion.ajustes[campo];
   const claves = Object.keys(MAPAS[seccion.tipo]!.ejemplos);
   return typeof valor === "string" && claves.includes(valor) ? valor : (claves[0] ?? null);
 }
@@ -95,7 +113,7 @@ export function varianteActual(seccion: Seccion): string | null {
 export function conVariante(seccion: Seccion, clave: string): Seccion {
   const campo = campoDeVariante(seccion.tipo);
   if (!campo) return seccion;
-  return campo === "variante" ? { ...seccion, variante: clave } : { ...seccion, ajustes: { ...seccion.ajustes, disposicion: clave } };
+  return campo === "variante" ? { ...seccion, variante: clave } : { ...seccion, ajustes: { ...seccion.ajustes, [campo]: clave } };
 }
 
 /** Categorías del modal «Añadir sección». */
@@ -108,3 +126,15 @@ export const CATEGORIAS = [
   { id: "espacio", nombre: "Espacio", tipos: ["dato-en-vivo", "dato-curioso"] },
   { id: "cierre", nombre: "Cierre y fijos", tipos: ["resumen", "resumen", "formulario-lead", "creditos", "cta-fija", "html-libre"] },
 ] as const;
+
+/**
+ * Para el motor de diversidad: por tipo, dónde se guarda la variante (`seccion.variante`, `ajustes.disposicion` o `ajustes.estilo`)
+ * y las claves posibles (la primera es la de por defecto). Los tipos sin variantes no aparecen.
+ */
+export function variantesPorTipo(): Partial<Record<TipoSeccion, { campo: CampoVariante; claves: string[] }>> {
+  return Object.fromEntries(
+    (Object.entries(MAPAS) as [TipoSeccion, NonNullable<(typeof MAPAS)[TipoSeccion]>][])
+      .filter(([, m]) => Object.keys(m.ejemplos).length > 1)
+      .map(([tipo, m]) => [tipo, { campo: m.campo, claves: Object.keys(m.ejemplos) }]),
+  );
+}

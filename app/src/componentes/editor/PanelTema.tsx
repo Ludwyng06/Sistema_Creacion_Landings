@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { ColorHex, type Brief, type Tokens } from "@/lib/contratos";
-import { CONTRASTE_TEXTO, PALETAS, contraste, tirarSemilla, TIPOGRAFIAS, tokensParaBrief } from "@/lib/tecnicas/semillas";
+import { CONTRASTE_TEXTO, PALETAS, aplicarColoresMarca, contraste, otraSemillaDistinta, pesoPaleta, TIPOGRAFIAS, tokensParaBrief, type Paleta } from "@/lib/tecnicas/semillas";
 import type { LandingDoc } from "@/lib/contratos";
 import { BOTON_SECUNDARIO, CLASE_CONTROL } from "../crear/estilos";
 import { marcaDeTiempo, type AccionEditor } from "./estado-editor";
@@ -63,6 +64,16 @@ function titularDe(doc: LandingDoc): string {
 
 export function PanelTema({ doc, brief, onAccion }: Props) {
   const { tokens } = doc;
+  const [mantenerMarca, setMantenerMarca] = useState(false);
+  const raiz = useRef<HTMLElement>(null);
+  const coloresClave = Object.values(tokens.colores).join("|");
+  // Animación corta de 150 ms en las muestras cuando cambian los colores (se omite con prefers-reduced-motion).
+  useEffect(() => {
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+    raiz.current?.querySelectorAll<HTMLElement>("[data-color-token] input[type=color]").forEach((el) => {
+      el.animate?.([{ transform: "scale(0.8)", opacity: 0.4 }, { transform: "scale(1)", opacity: 1 }], { duration: 150, easing: "ease-out" });
+    });
+  }, [coloresClave]);
 
   const cambiar = (nuevo: Tokens, clave: string) => onAccion({ tipo: "editar-tokens", tokens: nuevo, clave, t: marcaDeTiempo() });
   const pares = paresSugeridos();
@@ -87,26 +98,85 @@ export function PanelTema({ doc, brief, onAccion }: Props) {
     cambiar({ ...tokens, tipografia: { ...tokens.tipografia, titulos: parSemilla.titulos, cuerpo: parSemilla.cuerpo } }, "tipografia");
   };
 
+  const hayMarca = (brief.coloresMarca?.length ?? 0) > 0;
+  // Si la landing es oscura se prefieren paletas oscuras (temática «espacio»); ponderado, no excluyente.
+  const tematica = contraste(tokens.colores.fondo, "#000000") < 3 ? "espacio" : undefined;
+  const fondoActual = tokens.colores.fondo.toUpperCase();
+
+  const otraSemilla = () => {
+    const usarMarca = mantenerMarca && hayMarca;
+    const tirada = otraSemillaDistinta(
+      { semilla: doc.meta.semilla, tokens },
+      { intensidad: tokens.intensidad, coloresMarca: usarMarca ? brief.coloresMarca : undefined },
+    );
+    const par = TIPOGRAFIAS.find((t) => t.id === tirada.semilla.tipografiaId);
+    if (par) {
+      cargarFuente(par.titulos);
+      cargarFuente(par.cuerpo);
+    }
+    onAccion({ tipo: "editar-tokens", tokens: tokensParaBrief(tirada.semilla, { ...brief, intensidad: tokens.intensidad }, { respetarMarca: usarMarca }), semilla: tirada.semilla });
+  };
+
+  /** Cambia solo los colores: la tipografía y el resto de los tokens se quedan. */
+  const aplicarPaleta = (p: Paleta) => {
+    const colores = mantenerMarca && hayMarca ? aplicarColoresMarca({ ...tokens, colores: { ...p.colores } }, brief.coloresMarca ?? []).colores : { ...p.colores };
+    onAccion({ tipo: "editar-tokens", tokens: aplicarColoresMarca({ ...tokens, colores }, []), semilla: { ...doc.meta.semilla, paletaId: p.id } });
+  };
+  const otraPaleta = () => {
+    const otras = PALETAS.filter((p) => p.colores.fondo.toUpperCase() !== fondoActual);
+    const pesos = otras.map((p) => pesoPaleta(p, tematica));
+    let punto = Math.random() * pesos.reduce((a, b) => a + b, 0);
+    const elegida = otras.find((_, i) => (punto -= pesos[i]) < 0) ?? otras[0];
+    aplicarPaleta(elegida);
+  };
+
   return (
-    <section aria-labelledby="titulo-tema" className="flex flex-col gap-4" data-panel-tema>
+    <section ref={raiz} aria-labelledby="titulo-tema" className="flex flex-col gap-4" data-panel-tema>
       <h2 id="titulo-tema" className="font-editorial text-lg font-semibold">
         Tema
       </h2>
 
       <div className="flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          className={BOTON_SECUNDARIO}
-          onClick={() => {
-            const { semilla } = tirarSemilla(Math.floor(Math.random() * 1_000_000), tokens.intensidad);
-            onAccion({ tipo: "editar-tokens", tokens: tokensParaBrief(semilla, { ...brief, intensidad: tokens.intensidad }), semilla });
-          }}
-        >
+        <button type="button" className={BOTON_SECUNDARIO} onClick={otraSemilla} data-otra-semilla>
           Otra semilla
+        </button>
+        <button type="button" className={BOTON_SECUNDARIO} onClick={otraPaleta} data-otra-paleta>
+          Otra paleta
         </button>
         <p className="text-sm text-tinta-suave" data-semilla-actual>
           {doc.meta.semilla.estilo} × {doc.meta.semilla.industria}
         </p>
+      </div>
+
+      {hayMarca && (
+        <label className="flex items-center gap-2 text-sm" data-mantener-marca>
+          <input type="checkbox" className="size-5" checked={mantenerMarca} onChange={(e) => setMantenerMarca(e.target.checked)} />
+          Mantener mis colores de marca
+        </label>
+      )}
+
+      <div className="flex flex-col gap-2" data-paletas>
+        <h3 className="text-sm font-medium">Paletas</h3>
+        <ul className="grid grid-cols-2 gap-2">
+          {PALETAS.map((p) => (
+            <li key={p.id}>
+              <button
+                type="button"
+                className="flex w-full flex-col gap-1 rounded border border-linea p-2 text-left text-xs hover:border-contexto aria-pressed:border-contexto aria-pressed:bg-contexto-suave"
+                aria-pressed={doc.meta.semilla.paletaId === p.id}
+                data-paleta={p.id}
+                onClick={() => aplicarPaleta(p)}
+              >
+                <span className="flex h-6 overflow-hidden rounded" aria-hidden="true">
+                  {[p.colores.fondo, p.colores.superficie, p.colores.texto, p.colores.acento].map((c, i) => (
+                    <span key={i} className="flex-1" style={{ background: c }} />
+                  ))}
+                </span>
+                {p.nombre}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="flex flex-col gap-3">

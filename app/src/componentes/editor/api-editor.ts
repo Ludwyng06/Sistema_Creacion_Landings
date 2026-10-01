@@ -89,3 +89,23 @@ export const subirArchivo = (landingId: string, slot: string, archivo: File) => 
   formulario.set("archivo", archivo);
   return solicitar<{ ruta: string; tipo: "imagen" | "video"; slot: string }>("POST", "/api/assets", { formulario });
 };
+
+/**
+ * Vuelve a correr el crítico sobre la landing guardada (`POST /api/landings/[id]/critico` de A). Con 503 todavía no hay cupo:
+ * la landing sigue pendiente y se puede volver a intentar.
+ */
+export const reintentarCritico = (id: string) => solicitar<{ landing: LandingCompleta; puntaje: number | null; bajoUmbral: boolean }>("POST", `/api/landings/${id}/critico`, { cuerpo: {} });
+
+/** Llena los marcadores de una landing guardada con fotos de los bancos o de FLUX (`POST /api/landings/[id]/imagenes` de A, sin cuota de texto). */
+export const buscarFotos = (id: string) => solicitar<unknown>("POST", `/api/landings/${id}/imagenes`, { cuerpo: {} });
+
+export interface EstadoCritico {
+  criticoPendiente: boolean;
+  puntaje: number | null;
+  /** `null` en las landings que no salieron del generador (manuales, semilla): no tienen crítico que reintentar. */
+  etapa: string | null;
+  avisos: string[];
+  seccionesPorCompletar: string[];
+}
+
+export const leerEstadoCritico = (id: string) => solicitar<EstadoCritico>("GET", `/api/landings/${id}/critico`);

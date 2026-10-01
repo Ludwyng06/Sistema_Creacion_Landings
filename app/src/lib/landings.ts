@@ -28,6 +28,8 @@ export interface ResumenLanding {
   slug: string;
   tecnicas: TecnicaId[];
   puntaje: number | null;
+  /** Sin nota del crítico (falló por cuota al generar): se reintenta con `POST /api/landings/[id]/critico`. */
+  criticoPendiente: boolean;
   favorita: boolean;
   estado: EstadoLanding;
   proveedor: string;
@@ -85,6 +87,7 @@ function aResumen(f: FilaLanding): ResumenLanding {
     slug: f.slug,
     tecnicas: JSON.parse(f.tecnicas) as TecnicaId[],
     puntaje: f.puntaje,
+    criticoPendiente: f.puntaje === null,
     favorita: f.favorita,
     estado: f.estado as EstadoLanding,
     proveedor: f.proveedor,
@@ -322,6 +325,7 @@ export async function alternarFavorita(id: string): Promise<LandingCompleta> {
 export async function eliminarLanding(id: string): Promise<void> {
   await fila(id);
   await db.landing.delete({ where: { id } });
+  await db.ajuste.deleteMany({ where: { clave: `checkpoint:${id}` } }); // checkpoint de la generación (20-A)
 }
 
 export async function actualizarMiniatura(id: string, ruta: string): Promise<void> {

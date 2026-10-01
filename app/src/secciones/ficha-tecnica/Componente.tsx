@@ -32,7 +32,8 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
         <Titular className="text-balance font-titulos text-h2 font-semibold tracking-tight">{ajustes.titulo}</Titular>
 
         {variante === "tabla" ? (
-          <table className="mt-8 w-full border-collapse text-left">
+          <div className="borde-token mt-8 overflow-x-auto rounded-tarjeta px-3 md:px-5">
+          <table className="w-full border-collapse text-left">
             <caption className="sr-only">{ajustes.titulo}</caption>
             <tbody>
               {especificaciones.map((esp) => (
@@ -47,6 +48,7 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
               ))}
             </tbody>
           </table>
+          </div>
         ) : (
           <dl className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
             {especificaciones.map((esp) => (

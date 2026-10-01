@@ -14,6 +14,7 @@
     "db:semilla": "tsx scripts/semilla-db.ts",
     "media": "tsx scripts/media.ts",
     "bancos": "tsx scripts/bancos.ts",
+    "limpiar:pruebas": "tsx scripts/limpiar-pruebas.ts",
     "critico:visual": "tsx scripts/critico-visual.ts",
     "vitrina": "tsx scripts/vitrina.ts",
     "fotogramas": "tsx scripts/fotogramas.ts",
@@ -23,6 +24,7 @@
     "capturas": "tsx scripts/capturas.ts",
     "fuentes": "tsx scripts/fuentes.ts",
     "capturas:banco": "tsx scripts/capturas-banco.ts",
+    "prueba:dia24": "tsx scripts/prueba-dia24.ts",
     "ia:probar": "tsx scripts/probar-proveedores.ts",
     "e2e": "playwright test"
   },

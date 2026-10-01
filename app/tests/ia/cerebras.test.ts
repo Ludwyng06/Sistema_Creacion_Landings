@@ -58,16 +58,14 @@ describe("Cerebras como proveedor principal de texto", () => {
     expect(eventos).toEqual(["cola", "http"]);
   });
 
-  it("la cascada por defecto empieza por Cerebras y deja a Gemini, Groq y OpenRouter de respaldo", () => {
-    expect(CASCADA_ID_POR_DEFECTO).toEqual(["cerebras", "gemini", "groq", "openrouter"]);
-    const ids = proveedoresDisponibles({ CEREBRAS_API_KEY: "a", GEMINI_API_KEY: "b", GROQ_API_KEY: "c", OPENROUTER_API_KEY: "d" }).map((x) => x.id);
-    expect(ids).toEqual(["cerebras", "gemini", "groq", "openrouter"]);
-    expect(proveedoresDisponibles({ GEMINI_API_KEY: "b", GROQ_API_KEY: "c" }).map((x) => x.id)).toEqual(["gemini", "groq"]); // sin clave de Cerebras no entra
+  it("la cascada por defecto empieza por OpenAI y deja a Cerebras, Gemini, Groq y OpenRouter de respaldo", () => {
+    expect(CASCADA_ID_POR_DEFECTO).toEqual(["openai", "cerebras", "gemini", "groq", "openrouter"]);
+    const ids = proveedoresDisponibles({ OPENAI_API_KEY: "z", CEREBRAS_API_KEY: "a", GEMINI_API_KEY: "b", GROQ_API_KEY: "c", OPENROUTER_API_KEY: "d" }).map((x) => x.id);
+    expect(ids).toEqual(["openai", "cerebras", "gemini", "groq", "openrouter"]);
+    expect(proveedoresDisponibles({ CEREBRAS_API_KEY: "a", GEMINI_API_KEY: "b" }).map((x) => x.id)).toEqual(["cerebras", "gemini"]); // sin clave de OpenAI no entra
   });
 
-  it("la tabla de tareas manda el texto a Cerebras y la visión a Gemini", () => {
-    for (const t of ["estrategia", "plan-secciones", "redactar-seccion", "critico", "intake", "landing", "humanizar", "corregir-lista-negra"] as const) expect(TABLA_TAREAS_POR_DEFECTO[t], t).toBe("cerebras");
-    expect(TABLA_TAREAS_POR_DEFECTO["validar-imagen"]).toBe("gemini");
-    expect(TABLA_TAREAS_POR_DEFECTO["identificar-producto"]).toBe("gemini");
+  it("la tabla de tareas manda el texto y la visión a OpenAI", () => {
+    for (const t of ["estrategia", "plan-secciones", "redactar-seccion", "critico", "intake", "landing", "validar-imagen"] as const) expect(TABLA_TAREAS_POR_DEFECTO[t], t).toBe("openai");
   });
 });

@@ -102,7 +102,8 @@ export function planBlueprint(tipo: TipoLanding, brief: Pick<BriefGeneral, "pone
   const delSistema = [...bp.delSistema.filter((t) => t !== "sellos-confianza" && t !== "ficha-tecnica" || tipo === "producto")];
   if (conWidget) delSistema.unshift("dato-en-vivo");
   // Ponentes solo con personas reales dadas por quien encarga: nunca se inventan.
-  const opcionales = bp.opcionales.filter((t) => t !== "ponentes" || (brief.ponentes?.length ?? 0) > 0);
+  // La garantía con días solo existe en productos: ningún otro tipo trae ese dato y un [COMPLETAR] visible resta confianza.
+  const opcionales = bp.opcionales.filter((t) => (t !== "ponentes" || (brief.ponentes?.length ?? 0) > 0) && (t !== "garantia" || tipo === "producto"));
   const obligatorias = [...bp.obligatorias];
   const libres = Math.min(bp.rango[1], MAX_SECCIONES) - delSistema.length - obligatorias.length;
   return { obligatorias, opcionales: libres > 0 ? opcionales.slice(0, libres) : [], delSistema };

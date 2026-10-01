@@ -2,7 +2,7 @@ import { z } from "zod";
 import { probarProveedores } from "@/lib/ia/ajustes";
 import { json, leerCuerpo, manejar } from "../../_util";
 
-const Cuerpo = z.object({ proveedor: z.enum(["gemini", "cerebras", "groq", "openrouter"]).optional() });
+const Cuerpo = z.object({ proveedor: z.enum(["openai", "gemini", "cerebras", "groq", "openrouter"]).optional() });
 
 /**
  * `POST { proveedor? }` prueba uno o todos (en paralelo, 15 s de tope) → `{ resultados: [{ id, ok, ms, error? }] }`.

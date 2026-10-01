@@ -40,6 +40,8 @@ export interface PeticionIA<T> {
   rapido?: boolean;
   /** Imagen del mensaje: la tarea solo se envía a proveedores con `soportaImagen` y la caché distingue una imagen de otra. */
   imagen?: ImagenIA;
+  /** Varias imágenes (miniaturas de candidatas): solo van a proveedores que las soportan. */
+  imagenes?: ImagenIA[];
 }
 
 /** Caché de respuestas validadas, por hash de (sistema + usuario + proveedor + modelo + tarea). */
@@ -71,28 +73,31 @@ export type TablaTareas = Partial<Record<TareaIA, ProveedorId>>;
 
 /** Proveedor preferido por tarea en modo simultáneo (docs/07 §5). */
 export const TABLA_TAREAS_POR_DEFECTO: Record<TareaIA, ProveedorId> = {
-  // Texto: Cerebras (gpt-oss-120b, 1.000.000 de tokens al día, cola de 5 por minuto). Gemini queda para visión y de respaldo.
-  objeciones: "cerebras",
-  landing: "cerebras",
-  "prompts-grok": "cerebras",
-  "corregir-lista-negra": "cerebras",
-  humanizar: "cerebras",
-  critico: "cerebras",
-  "mejorar-prompt": "cerebras",
-  "juez-duelo": "groq",
-  investigar: "groq",
-  "identificar-producto": "gemini",
-  "describir-medio": "groq",
-  "dato-curioso": "groq",
-  estrategia: "cerebras",
-  "plan-secciones": "cerebras",
-  "redactar-seccion": "cerebras",
-  "prompts-imagen": "cerebras",
-  "validar-imagen": "gemini",
-  intake: "cerebras",
+  // OpenAI (gpt-5.4-mini, con gpt-4.1-mini de respaldo) primero en texto y visión, con tope diario en USD. Cerebras, Gemini, Groq y OpenRouter siguen de respaldo automático.
+  objeciones: "openai",
+  landing: "openai",
+  "prompts-grok": "openai",
+  "corregir-lista-negra": "openai",
+  humanizar: "openai",
+  critico: "openai",
+  "mejorar-prompt": "openai",
+  "juez-duelo": "openai",
+  investigar: "openai",
+  "identificar-producto": "openai",
+  "describir-medio": "openai",
+  "dato-curioso": "openai",
+  estrategia: "openai",
+  "plan-secciones": "openai",
+  "redactar-seccion": "openai",
+  "prompts-imagen": "openai",
+  "validar-imagen": "openai",
+  intake: "openai",
+  "elegir-imagen": "openai",
 };
 
 const CLAVE_TABLA = "ia.tareas";
+/** Marca: la cascada guardada ya se decidió con OpenAI en la lista (se guarda desde /ajustes). */
+export const CLAVE_CASCADA_OPENAI = "ia.cascada.con-openai";
 
 /** Lee la tabla guardada en `Ajuste` (clave `ia.tareas`) sobre los valores por defecto. */
 export async function cargarTablaTareas(): Promise<Record<TareaIA, ProveedorId>> {
@@ -121,13 +126,16 @@ export interface ConfigIA {
 export async function cargarConfigIA(): Promise<ConfigIA> {
   try {
     const { db } = await import("@/lib/db");
-    const filas = await db.ajuste.findMany({ where: { clave: { in: ["ia.modo", "ia.cascada"] } } });
+    const filas = await db.ajuste.findMany({ where: { clave: { in: ["ia.modo", "ia.cascada", CLAVE_CASCADA_OPENAI] } } });
     const valor = (k: string) => filas.find((f) => f.clave === k)?.valor;
     const modo = valor("ia.modo");
     const cascada = valor("ia.cascada");
+    const guardada = cascada ? (JSON.parse(cascada) as ProveedorId[]) : undefined;
+    // Una cascada guardada antes de la 24-A no conoce a OpenAI: entra primero, salvo que la persona ya la haya guardado después (marca).
+    const migrada = guardada && !guardada.includes("openai") && !valor(CLAVE_CASCADA_OPENAI) ? (["openai", ...guardada] as ProveedorId[]) : guardada;
     return {
       ...(modo && MODOS.includes(modo as ModoIA) && { modo: modo as ModoIA }),
-      ...(cascada && { cascada: JSON.parse(cascada) as ProveedorId[] }),
+      ...(migrada && { cascada: migrada }),
     };
   } catch {
     return {};
@@ -249,6 +257,7 @@ async function cascada<T>(
         temperatura: p.temperatura,
         ...(p.rapido && { rapido: true }),
         ...(p.imagen && { imagen: p.imagen }),
+        ...(p.imagenes && { imagenes: p.imagenes }),
         ...((limite !== Infinity || p.plazoIntentoMs !== undefined) && { timeoutMs: Math.max(1, Math.floor(Math.min(restante(), p.plazoIntentoMs ?? Infinity))) }),
       });
       salida = { ok: true, resultado };
@@ -321,7 +330,8 @@ export async function ejecutar<T>(p: PeticionIA<T>, deps: DepsEnrutador = {}): P
   const almacen = deps.cache ?? (deps.proveedores ? undefined : almacenCacheAjuste);
   const cache = almacen && env.IA_CACHE !== "0" && !p.sinCache ? { almacen, ahora: deps.ahora ?? Date.now } : null;
   const conForzado = p.forzar ? proveedores.filter((x) => x.id === p.forzar) : proveedores;
-  const candidatos = p.imagen ? conForzado.filter((x) => (x as ProveedorAmpliado).soportaImagen) : conForzado;
+  const conImagen = p.imagen ? conForzado.filter((x) => (x as ProveedorAmpliado).soportaImagen) : conForzado;
+  const candidatos = p.imagenes?.length ? conImagen.filter((x) => (x as ProveedorAmpliado).soportaVariasImagenes) : conImagen;
   const pedido = deps.modo ?? config.modo ?? env.IA_MODO;
   const modo: ModoIA = MODOS.includes(pedido as ModoIA) ? (pedido as ModoIA) : "cascada";
 

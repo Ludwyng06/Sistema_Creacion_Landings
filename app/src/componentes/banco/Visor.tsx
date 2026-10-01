@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Icono } from "@/componentes/Icono";
 import { BOTON_PEQUENO } from "@/componentes/crear/estilos";
+import { AvisoGeneracion } from "@/componentes/entrega/AvisoGeneracion";
 import { PanelEntrega } from "@/componentes/entrega/PanelEntrega";
+import { hayAvisoGeneracion, useSenalGeneracion } from "@/lib/entrega/useSenalGeneracion";
 import { BLOQUES_PROMPT, NOMBRE_TEMATICA } from "@/lib/banco";
 import {
   DISPOSITIVOS,
@@ -196,6 +198,8 @@ export function Visor({ items, inicialId, dispositivoInicial = "escritorio", det
   const raiz = useRef<HTMLDivElement>(null);
   const escenario = useRef<HTMLDivElement>(null);
   const item = items[indice];
+  // El crítico falta cuando la landing no trae informe; las secciones por completar por cuota llegan de `/crear` en la URL.
+  const senal = { ...useSenalGeneracion(item.id), fotosPendientes: item.sinFoto ?? 0 };
   const medida = MEDIDA_DISPOSITIVO[dispositivo];
   const escala = useEscala(escenario, medida);
   // El servidor da por buena la pantalla completa; el navegador dice si de verdad se puede.
@@ -377,6 +381,8 @@ export function Visor({ items, inicialId, dispositivoInicial = "escritorio", det
           className="z-20 max-h-[55dvh] overflow-y-auto border-t border-linea bg-papel-hondo shadow-xl max-lg:absolute max-lg:inset-x-0 max-lg:bottom-0 lg:max-h-none lg:w-[26rem] lg:border-l lg:border-t-0 lg:shadow-none"
         />
       </div>
+
+      {!pantallaCompleta && hayAvisoGeneracion(senal) && <AvisoGeneracion key={item.id} landingId={item.id} senal={senal} alReintentar={() => window.location.reload()} compacto />}
 
       {!pantallaCompleta && <PanelEntrega key={item.id} item={item} abierto={entrega} onAlternar={() => setEntrega((a) => !a)} destino={destinoEntrega} />}
 

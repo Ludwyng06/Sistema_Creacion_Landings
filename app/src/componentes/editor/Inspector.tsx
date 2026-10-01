@@ -170,7 +170,7 @@ export function Inspector(p: Props) {
       {!p.soloTextos && (
         <>
           <Grupo id="diseno" titulo="Diseño">
-            {tieneVariantes(seccion.tipo) && <SelectorVariante doc={doc} seccion={seccion} onCambio={(s) => p.onCambioSeccion(s, campoDeVariante(seccion.tipo) === "variante" ? "variante" : "ajustes.disposicion")} />}
+            {tieneVariantes(seccion.tipo) && <SelectorVariante doc={doc} seccion={seccion} onCambio={(s) => p.onCambioSeccion(s, campoDeVariante(seccion.tipo) === "variante" ? "variante" : `ajustes.${campoDeVariante(seccion.tipo)}`)} />}
             <Segmentado etiqueta="Fondo" opciones={FONDOS} valor={presentacion.fondo} nombres={NOMBRE_FONDO} onCambio={(fondo) => cambiarPresentacion({ fondo }, "fondo")} />
             <Segmentado etiqueta="Alineación" opciones={ALINEACIONES} valor={presentacion.alineacion} nombres={NOMBRE_ALINEACION} onCambio={(alineacion) => cambiarPresentacion({ alineacion }, "alineacion")} />
             <div className="flex flex-col gap-3 border-t border-linea pt-3" data-tamanos-seccion>

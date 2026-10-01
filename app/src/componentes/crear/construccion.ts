@@ -85,6 +85,7 @@ export const NOMBRE_TAREA: Record<TareaIA, string> = {
   "prompts-imagen": "Prompts de imagen",
   "validar-imagen": "Validar una imagen",
   intake: "Entender la idea",
+  "elegir-imagen": "Elegir la mejor imagen",
 };
 
 export const NOMBRE_ESTADO_TAREA: Record<EventoTarea["estado"], string> = {

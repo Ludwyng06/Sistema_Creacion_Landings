@@ -37,7 +37,8 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
         <Titular className="text-balance font-titulos text-h2 font-semibold tracking-tight">
           {ajustes.titulo}
         </Titular>
-        <table className="mt-10 w-full border-collapse text-left text-sm md:text-cuerpo">
+        <div className="borde-token mt-10 overflow-x-auto rounded-tarjeta px-3 md:px-5">
+        <table className="w-full border-collapse text-left text-sm md:text-cuerpo">
           <caption className="sr-only">{ajustes.titulo}</caption>
           <thead>
             <tr className="border-b-2 border-texto">
@@ -71,6 +72,7 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     </section>
   );

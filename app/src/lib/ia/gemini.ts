@@ -51,6 +51,7 @@ export function crearGemini(env: Env = process.env, cliente?: ClienteGemini): Pr
     id: "gemini",
     modelo,
     soportaImagen: true,
+    soportaVariasImagenes: true,
     disponible: () => Boolean(clave),
     async generarJSON<T>(p: {
       sistema: string;
@@ -71,8 +72,8 @@ export function crearGemini(env: Env = process.env, cliente?: ClienteGemini): Pr
         try {
           const r = await ai.models.generateContent({
             model: m,
-            contents: p.imagen
-              ? [{ role: "user", parts: [{ text: p.usuario }, { inlineData: { mimeType: p.imagen.mimeType, data: p.imagen.base64 } }] }]
+            contents: p.imagen || p.imagenes?.length
+              ? [{ role: "user", parts: [{ text: p.usuario }, ...[...(p.imagen ? [p.imagen] : []), ...(p.imagenes ?? [])].map((im) => ({ inlineData: { mimeType: im.mimeType, data: im.base64 } }))] }]
               : p.usuario,
             config: {
               systemInstruction: p.sistema,

@@ -63,9 +63,10 @@ ANTI-PROMEDIO DE IA
 5. Olores de IA prohibidos: tríadas de adjetivos, «no solo X, sino Y», frases que terminan en gerundio, titulares que sirven para cualquier competidor, flecha «→» en cada botón, etiquetas en mayúsculas sobre cada título.
 6. Responde únicamente con JSON válido que cumpla el esquema; sin markdown ni texto antes o después.
 7. La escala y el umbral son los de siempre: no subas la nota por compasión ni la bajes por costumbre; cita evidencia de cada nota.
-8. No penalices la ausencia de testimonios o calificaciones (ver el contexto de fidelidad); sí penaliza cualquier dato inventado, [COMPLETAR] visible, garantía repetida, imagen que no corresponde al producto o texto alternativo pobre.
-9. Cada corrección apunta a una ruta que exista en el documento y trae el texto nuevo, no un consejo vago.
-10. Un elemento de \`porCriterio\` por cada criterio de la rúbrica, con puntajes entre 0 y 10.
+8. No penalices la ausencia de testimonios o calificaciones (ver el contexto de fidelidad); sí penaliza cualquier dato inventado, garantía repetida, un [COMPLETAR] en un dato que el brief SÍ traía, imagen que no corresponde al producto o texto alternativo pobre.
+9. Un [COMPLETAR] en un precio, fecha, lugar o dato que el vendedor no dio es lo correcto según la regla de fidelidad: no lo penalices ni propongas inventar un valor (no corrijas «[COMPLETAR]» por una cifra o un plazo).
+10. Cada corrección apunta a una ruta que exista en el documento y trae el texto nuevo, no un consejo vago.
+11. Un elemento de \`porCriterio\` por cada criterio de la rúbrica, con puntajes entre 0 y 10.
 
 ## FORMATO
 Esquema JSON exacto de la respuesta:
@@ -273,7 +274,7 @@ Preguntas reales de compradores (Google, «La gente también pregunta»):
 - ¿Se ve bien con la luz encendida?
 
 SEMILLA Y TOKENS
-Semilla de estilo: brutalismo tipográfico × empaques de farmacia. Paleta farmacia-suiza, tipografía bricolage-inter. Colores: acento #5EEAD4, fondo #050816, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.",
+Semilla de estilo: brutalismo tipográfico × empaques de farmacia. Paleta uva-beige, tipografía bricolage-inter. Colores: acento #5EEAD4, fondo #050816, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.",
 }
 `;
 
@@ -469,7 +470,7 @@ ESTRATEGIA
 {"avatar":{"quien":"Mariana, 34 años, vive en un apartamento en Envigado y trabaja desde casa con un computador en la sala.","escenaCotidiana":"A las 4 p. m. de un martes se da cuenta de que lleva seis horas sin pararse y la espalda ya le avisa."},"nivelConciencia":"problema","dolorEnEscena":"Cierra el computador con los hombros hacia adelante y camina a la cocina apoyando la mano en la cintura.","deseo":"Terminar la jornada sin dolor y sin acordarse de la postura.","beneficioDelBeneficio":"Llegar a la noche con energía para lo que quiere hacer y no para recuperarse.","mecanismoUnico":{"pensabas":"Pensabas que corregir la postura exige fuerza de voluntad todo el día","pero":"pero una vibración suave te avisa justo cuando te encorvas y tú solo te enderezas","datoReal":"Sensor de inclinación con aviso por vibración (dato del vendedor)."},"objeciones":[{"objecion":"¿Se nota debajo de la ropa?","respuesta":"Va pegado a la espalda, debajo de la camiseta, y no marca la tela."},{"objecion":"¿Y si no llega o llega dañado?","respuesta":"No pagas nada hoy: lo revisas frente al mensajero y solo ahí pagas."},{"objecion":"¿Cuánto dura la batería?","respuesta":"Se carga por USB; la duración exacta es la que da el vendedor en la ficha."},{"objecion":"¿Qué hago si no me sirve?","respuesta":"Tienes 30 días de garantía y 5 días hábiles de retracto por la Ley 1480."}],"oferta":{"principal":"Un corrector con cable de carga y guía de uso","garantia":"30 días: si llega con un defecto de fábrica, lo cambiamos.","porQueAhora":null},"angulos":{"principal":"Autonomía: dejar de pedirle a otra persona que te recuerde sentarte derecho.","alternos":["Costo acumulado de no resolverlo","Prueba de 30 días sin riesgo"]},"tono":"Cercano y directo, de amigo que sabe del tema.","cta":{"texto":"Pedir el mío y pagar al recibir","gana":"Lo revisa antes de pagar"},"precio":"Se muestra $89.900 junto a la contraentrega; enmarcado por día frente al costo de una sesión de fisioterapia si hay dato en la investigación."}
 
 SEMILLA Y TOKENS
-Semilla de estilo: brutalismo tipográfico × empaques de farmacia. Paleta farmacia-suiza, tipografía bricolage-inter. Colores: acento #5EEAD4, fondo #050816, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.
+Semilla de estilo: brutalismo tipográfico × empaques de farmacia. Paleta uva-beige, tipografía bricolage-inter. Colores: acento #5EEAD4, fondo #050816, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.
 
 PRODUCTO (solo lo que el vendedor dijo)
 Proyector blanco compacto

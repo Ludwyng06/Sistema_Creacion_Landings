@@ -1,5 +1,7 @@
 import type { ZodType } from "zod";
 import { instruccionEsquemaCompacta } from "./compactar";
+import type { ContadorGasto } from "./gasto";
+import { crearGuardiaCupoDia, leerCupoDia, type GuardiaCupoDia } from "./cupo-dia";
 import { leerTimeoutMs } from "./entorno";
 import { ErrorNoCabe, motivoLegible, tipoPorEstado } from "./errores-http";
 import { extraerJSON, validar } from "./json";
@@ -18,7 +20,7 @@ const MARGEN_TOKENS = 150;
 const SALIDA_MINIMA_TOKENS = 2400;
 
 export interface OpcionesCompatible {
-  id: "groq" | "cerebras" | "openrouter";
+  id: "openai" | "groq" | "cerebras" | "openrouter";
   baseUrl: string;
   clave?: string;
   modelo: string;
@@ -33,6 +35,13 @@ export interface OpcionesCompatible {
   esperaEntreModelosMs?: number;
   /** Cola que reparte las peticiones por minuto del plan (Cerebras: 5). Cada intento HTTP espera su turno. */
   cola?: { esperar(): Promise<void> };
+  /** Lee `x-ratelimit-remaining-*-day` de cada respuesta y salta a otro proveedor antes de agotar el cupo del día (Cerebras). */
+  cupoDia?: boolean | GuardiaCupoDia;
+  /** Entiende imágenes en el mensaje (OpenAI): las tareas con imagen se le envían y el mensaje lleva `image_url`. */
+  soportaImagen?: boolean;
+  soportaVariasImagenes?: boolean;
+  /** Cuenta tokens y USD por día y salta a otro proveedor al llegar al presupuesto (OpenAI). */
+  gasto?: ContadorGasto;
   /** Solo para tests; por defecto `globalThis.fetch`. */
   fetchFn?: typeof fetch;
 }
@@ -42,16 +51,32 @@ interface RespuestaChat {
   usage?: { prompt_tokens?: number; completion_tokens?: number };
 }
 
+/** Desde esta temperatura (con OpenAI y un modelo que admite «none») la petición pasa a razonamiento «none» + `temperature`; por debajo va con «low» y sin temperatura. */
+export const TEMPERATURA_CREATIVA_MIN = 0.6;
+
+/** gpt-5.x y la serie o: razonan, usan `max_completion_tokens` y no aceptan `temperature` distinta de 1. */
+export function esModeloConRazonamiento(modelo: string): boolean {
+  return /^(gpt-5|o\d)/i.test(modelo) && !/chat/i.test(modelo);
+}
+
+/** gpt-5.1 en adelante aceptan `reasoning_effort: "none"`; el gpt-5 original no. */
+export function admiteSinRazonamiento(modelo: string): boolean {
+  return /^gpt-5\.\d/i.test(modelo);
+}
+
 function esAbort(e: unknown): boolean {
   return e instanceof Error && (e.name === "AbortError" || e.name === "TimeoutError");
 }
 
 /** Un solo adaptador para Groq, Cerebras y OpenRouter (API compatible con OpenAI). */
 export function crearProveedorCompatible(op: OpcionesCompatible): ProveedorAmpliado & { id: OpcionesCompatible["id"]; modelo: string } {
+  const guardia = op.cupoDia === true ? crearGuardiaCupoDia() : op.cupoDia || null;
   return {
     id: op.id,
     modelo: op.modelo,
     limiteTokensMinuto: op.limiteTokensMinuto,
+    ...(op.soportaImagen && { soportaImagen: true }),
+    ...(op.soportaVariasImagenes && { soportaVariasImagenes: true }),
     disponible: () => Boolean(op.clave),
     async generarJSON<T>(p: {
       sistema: string;
@@ -77,17 +102,44 @@ export function crearProveedorCompatible(op: OpcionesCompatible): ProveedorAmpli
           );
         maxTokens = Math.min(pedidos, cabe);
       }
-      const cuerpoPara = (modelo: string) => ({
-        model: modelo,
-        messages: [
-          { role: "system", content: sistema },
-          { role: "user", content: p.usuario },
-        ],
-        response_format: { type: "json_object" },
-        ...op.cuerpoExtra,
-        ...(maxTokens !== undefined && { max_tokens: maxTokens }),
-        ...(p.temperatura !== undefined && { temperature: p.temperatura }),
-      });
+      if (op.gasto) {
+        const motivo = await op.gasto.bloqueo();
+        if (motivo) throw new ErrorNoCabe(`${op.id}: presupuesto diario agotado (${motivo}); se pasa a otro proveedor.`);
+      }
+      const todasLasImagenes = [...(p.imagen ? [p.imagen] : []), ...(p.imagenes ?? [])];
+      // Varias imágenes (miniaturas de candidatas) van con detalle bajo: cuestan una fracción de los tokens.
+      const usuarioMensaje = todasLasImagenes.length
+        ? [
+            { type: "text", text: p.usuario },
+            ...todasLasImagenes.map((im) => ({ type: "image_url", image_url: { url: `data:${im.mimeType};base64,${im.base64}`, ...(p.imagenes?.length ? { detail: "low" } : {}) } })),
+          ]
+        : p.usuario;
+      const cuerpoPara = (modelo: string) => {
+        const esOpenai = op.id === "openai";
+        const razona = esOpenai && esModeloConRazonamiento(modelo);
+        // Medido contra la API: gpt-5.4-mini rechaza `temperature` 0.9 con razonamiento «low» y la acepta con «none».
+        // La redacción creativa (temperatura ≥ 0,6) usa «none» + temperatura para que dos landings del mismo encargo salgan distintas.
+        const creativa = razona && admiteSinRazonamiento(modelo) && (p.temperatura ?? 0) >= TEMPERATURA_CREATIVA_MIN;
+        // gpt-5 y serie o: `max_completion_tokens`, sin `temperature` distinta de 1 y con razonamiento bajo para ahorrar.
+        const { reasoning_effort: esfuerzo, ...extra } = (op.cuerpoExtra ?? {}) as Record<string, unknown>;
+        return {
+          model: modelo,
+          messages: [
+            { role: "system", content: sistema },
+            { role: "user", content: usuarioMensaje },
+          ],
+          response_format: { type: "json_object" },
+          ...extra,
+          ...(razona ? { reasoning_effort: creativa ? "none" : (esfuerzo ?? "low") } : esfuerzo !== undefined && !esOpenai ? { reasoning_effort: esfuerzo } : {}),
+          ...(maxTokens !== undefined && (esOpenai ? { max_completion_tokens: maxTokens } : { max_tokens: maxTokens })),
+          ...(p.temperatura !== undefined && (!razona || creativa) && { temperature: p.temperatura }),
+        };
+      };
+
+      if (guardia) {
+        const motivo = guardia.bloqueo(Math.ceil((sistema.length + p.usuario.length) / CARACTERES_POR_TOKEN) + (p.maxTokens ?? SALIDA_ESPERADA_TOKENS));
+        if (motivo) throw new ErrorNoCabe(`${op.id}: cupo del día casi agotado (${motivo}); se pasa a otro proveedor.`);
+      }
 
       const pedir = async (modelo: string): Promise<RespuestaChat> => {
         let datosRespuesta: RespuestaChat;
@@ -99,6 +151,7 @@ export function crearProveedorCompatible(op: OpcionesCompatible): ProveedorAmpli
             body: JSON.stringify(cuerpoPara(modelo)),
             signal: AbortSignal.timeout(Math.min(p.timeoutMs ?? Infinity, op.timeoutMs ?? leerTimeoutMs())),
           });
+          guardia?.registrar(leerCupoDia(res.headers));
           if (!res.ok) {
             const motivo = motivoLegible(await res.text().catch(() => ""), [op.clave]);
             // Groq responde 400 cuando el modelo no llegó a cerrar un JSON válido (p. ej. se quedó sin tokens): se corrige como un `json`.
@@ -146,6 +199,8 @@ export function crearProveedorCompatible(op: OpcionesCompatible): ProveedorAmpli
       if (!contenido && !razonamiento) throw new ErrorIA("json", `${op.id}: la respuesta llegó sin contenido.`);
       const datos = validar(p.esquema, extraerJSON(contenido || razonamiento || ""));
       const uso = datosRespuesta.usage;
+      if (op.gasto && uso?.prompt_tokens !== undefined && uso.completion_tokens !== undefined)
+        await op.gasto.registrar(modeloUsado, { entrada: uso.prompt_tokens, salida: uso.completion_tokens });
       return {
         datos,
         proveedor: op.id,

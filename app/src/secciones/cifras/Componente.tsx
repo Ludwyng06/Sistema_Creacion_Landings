@@ -13,6 +13,7 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
   if (!datos) return <SeccionInvalida tipo="cifras" />;
 
   const { ajustes, bloques } = datos;
+  const tarjetas = seccion.variante === "tarjetas";
 
   return (
     <section className="px-5 py-espacio">
@@ -20,9 +21,9 @@ export function Componente({ seccion }: { seccion: Seccion; tokens: Tokens }) {
         <Titular className="text-balance text-center font-titulos text-h2 font-semibold tracking-tight">
           {ajustes.titulo}
         </Titular>
-        <dl className="mt-10 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]">
+        <dl className={tarjetas ? "mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(11rem,1fr))]" : "mt-10 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"} data-variante={tarjetas ? "tarjetas" : "franja"}>
           {bloques.map((bloque) => (
-            <div key={bloque.id} className="border-t-2 border-texto pt-4 text-center">
+            <div key={bloque.id} className={tarjetas ? "borde-token rounded-tarjeta bg-superficie p-6 text-left" : "border-t-2 border-texto pt-4 text-center"}>
               <dd className="font-titulos text-[calc(clamp(2.25rem,9vw,4.5rem)*var(--escala-t,var(--escala)))] font-bold leading-none text-acento">
                 <Dato>{bloque.ajustes.valor}</Dato>
               </dd>

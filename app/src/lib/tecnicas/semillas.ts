@@ -32,19 +32,30 @@ export const INDUSTRIAS = [
 
 type Colores = Tokens["colores"];
 
+export type TonoPaleta = "claro" | "oscuro";
+
 export interface Paleta {
   id: string;
   nombre: string;
   colores: Colores;
+  tono: TonoPaleta;
+  /** Temáticas afines (`espacio`, `belleza`, `alimentos`, `tecnologia`…); opcionales. */
+  etiquetas?: readonly string[];
 }
+
+/** Tono según la luminancia del fondo. */
+const tonoDe = (fondo: string): TonoPaleta => (luminancia(`#${fondo}`) < 0.2 ? "oscuro" : "claro");
 
 const paleta = (
   id: string,
   nombre: string,
   [fondo, superficie, texto, textoSuave, acento, acentoTexto, borde]: string[],
+  etiquetas?: readonly string[],
 ): Paleta => ({
   id,
   nombre,
+  tono: tonoDe(fondo),
+  ...(etiquetas ? { etiquetas } : {}),
   colores: {
     fondo: `#${fondo}`,
     superficie: `#${superficie}`,
@@ -67,7 +78,36 @@ export const PALETAS: readonly Paleta[] = [
   paleta("memphis-01", "Crema y magenta contenido", ["FFF6EA", "FFFFFF", "1E1B3A", "5B5878", "C42B63", "FFFFFF", "EBD9C3"]),
   paleta("ma-japones", "Lino y verde musgo", ["F5F3EE", "FFFFFF", "22221F", "63625C", "3E5C4A", "FFFFFF", "DCD8CE"]),
   paleta("constructivismo", "Carbón y rojo agitprop", ["1A1A1A", "262626", "F2EDE4", "B5AEA2", "F0503F", "111111", "3D3D3D"]),
-  paleta("farmacia-suiza", "Blanco clínico y verde botica", ["F2F8F4", "FFFFFF", "10261D", "4C6357", "0E7A5A", "FFFFFF", "CFE0D6"]),
+  paleta("farmacia-suiza", "Blanco clínico y verde botica", ["F2F8F4", "FFFFFF", "10261D", "4C6357", "0E7A5A", "FFFFFF", "CFE0D6"], ["belleza"]),
+  // Oscuras, aptas para el espacio.
+  paleta("noche-ambar", "Noche y ámbar", ["0B1020", "141B33", "F3EFE6", "AEB6CC", "FFB454", "0B1020", "27304F"], ["espacio", "tecnologia"]),
+  paleta("nebulosa-violeta", "Nebulosa violeta", ["140B26", "1E1338", "F1EAFB", "B9A9D6", "B388FF", "140B26", "33224F"], ["espacio", "belleza"]),
+  paleta("aurora-verde", "Aurora verde", ["06201A", "0C2D25", "E6F7EF", "A3C9B9", "3DDC97", "06201A", "164236"], ["espacio", "alimentos"]),
+  paleta("azul-cian", "Azul profundo y cian", ["04162B", "0A2240", "E8F4FB", "9DB9CF", "22D3EE", "04162B", "143757"], ["espacio", "tecnologia"]),
+  paleta("carbon-coral", "Carbón y coral", ["1C1C1F", "26262A", "F5F1EC", "B8B3AD", "FF6F61", "1C1C1F", "3A3A40"], ["espacio", "belleza"]),
+  paleta("rojo-marte", "Rojo Marte", ["1E0F0C", "2B1713", "F7EAE3", "C9ADA2", "FF7A45", "1E0F0C", "442620"], ["espacio", "alimentos"]),
+  paleta("luna-plata", "Luna y plata", ["101214", "191C1F", "EEF1F3", "A9B1B7", "C7D2DA", "101214", "2A2F33"], ["espacio", "tecnologia"]),
+  paleta("galaxia-rosa", "Galaxia rosa", ["1B0A1F", "291230", "FBEAF6", "C9A6C4", "FF5CAA", "1B0A1F", "43204A"], ["espacio", "belleza"]),
+  paleta("pino-miel", "Pino y miel", ["10231C", "183228", "F2EBD8", "B7C4B4", "E3B341", "10231C", "28463A"], ["alimentos", "espacio"]),
+  paleta("violeta-electrico", "Violeta eléctrico", ["0D0B1F", "17142E", "ECEBFF", "A9A6D4", "7C83FF", "0D0B1F", "2A2650"], ["espacio", "tecnologia"]),
+  paleta("grafito-lima", "Grafito y lima", ["121412", "1B1E1B", "EFF3EA", "ABB3A5", "B8F04A", "121412", "2C312B"], ["tecnologia", "espacio"]),
+  paleta("vino-oro", "Vino y oro", ["220C14", "2F1420", "F8EDE4", "CDB0B0", "E2B76B", "220C14", "4A2432"], ["belleza", "alimentos"]),
+  paleta("tinta-turquesa", "Tinta y turquesa", ["071E24", "0D2D35", "E4F5F4", "9FC3C4", "2DD4BF", "071E24", "17434C"], ["espacio", "tecnologia"]),
+  // Claras con temática.
+  paleta("rosa-peonia", "Rosa peonía", ["FDF1F1", "FFFFFF", "2B1519", "6E4A50", "B8325A", "FFFFFF", "EBD0D3"], ["belleza"]),
+  paleta("melocoton", "Melocotón", ["FFF3EA", "FFFFFF", "2E1A10", "6F5242", "C2552B", "FFFFFF", "EFD7C5"], ["belleza", "alimentos"]),
+  paleta("lavanda-spa", "Lavanda spa", ["F5F1FA", "FFFFFF", "221A33", "5F5575", "6B46C1", "FFFFFF", "DDD3EB"], ["belleza"]),
+  paleta("salvia", "Salvia", ["EFF3EC", "FFFFFF", "1B261C", "55645A", "4F7A4C", "FFFFFF", "D2DCCD"], ["belleza", "alimentos"]),
+  paleta("limon", "Limón", ["FFFBE6", "FFFFFF", "2A2508", "645D35", "F2C200", "1A1600", "EBE3B5"], ["alimentos"]),
+  paleta("tomate-albahaca", "Tomate", ["FFF5EE", "FFFFFF", "2B1410", "6B4A42", "C8321E", "FFFFFF", "F0D8CC"], ["alimentos"]),
+  paleta("cafe-crema", "Café con crema", ["F3EBE0", "FFFAF2", "2A1D14", "6A5848", "7A4A2A", "FFFFFF", "DCCDB8"], ["alimentos"]),
+  paleta("cielo-tecnologia", "Cielo y azul eléctrico", ["EEF4FB", "FFFFFF", "0F1B2D", "4A5B72", "1D4ED8", "FFFFFF", "CFDAEA"], ["tecnologia"]),
+  paleta("menta-tech", "Menta técnica", ["ECF8F5", "FFFFFF", "0C2420", "4B6B65", "0F766E", "FFFFFF", "C6E4DE"], ["tecnologia"]),
+  paleta("arena-terracota", "Arena y terracota", ["F6EDE3", "FFFFFF", "2B1F17", "6C5A4C", "A8431F", "FFFFFF", "E2D2BF"], ["alimentos"]),
+  paleta("gris-naranja", "Gris humo y naranja", ["F1F3F5", "FFFFFF", "14181C", "515A63", "C2410C", "FFFFFF", "D5DADF"], ["tecnologia"]),
+  paleta("oliva-aceite", "Oliva y aceite", ["F5F3E4", "FFFFFF", "20230F", "5E6240", "5C6B14", "FFFFFF", "DEDDC0"], ["alimentos"]),
+  paleta("marino-hueso", "Marino sobre hueso", ["FAF7F0", "FFFFFF", "10203A", "51607A", "1E3A8A", "FFFFFF", "E0DAC8"], ["tecnologia"]),
+  paleta("uva-beige", "Uva y beige", ["FAF3EE", "FFFFFF", "2A1522", "6E5163", "9D174D", "FFFFFF", "E8D6CC"], ["belleza"]),
 ];
 
 export interface ParTipografico {
@@ -90,6 +130,40 @@ const ESCALAS = ["compacta", "normal", "amplia"] as const;
 const ESPACIADOS = ["denso", "normal", "aireado"] as const;
 const BORDES = ["ninguno", "fino", "grueso"] as const;
 const IMAGENES = ["natural", "duotono", "recorte", "marco"] as const;
+
+type Radio = Tokens["radio"];
+type Escala = Tokens["tipografia"]["escala"];
+type Espaciado = Tokens["espaciado"];
+type Borde = Tokens["borde"];
+type ModoImagen = Tokens["imagen"];
+
+/** Lo que el estilo de la semilla permite en cada token: la tirada elige dentro de estas listas y no de constantes sueltas. */
+interface PerfilEstilo {
+  radios: readonly Radio[];
+  escalas: readonly Escala[];
+  espaciados: readonly Espaciado[];
+  bordes: readonly Borde[];
+  imagenes: readonly ModoImagen[];
+}
+
+const PERFIL_LIBRE: PerfilEstilo = { radios: RADIOS, escalas: ESCALAS, espaciados: ESPACIADOS, bordes: BORDES, imagenes: IMAGENES };
+
+export const PERFILES_ESTILO: Record<(typeof ESTILOS)[number], PerfilEstilo> = {
+  "Bauhaus funcional": { radios: [0, 4], escalas: ["normal", "amplia"], espaciados: ["normal", "denso"], bordes: ["fino", "grueso"], imagenes: ["recorte", "natural"] },
+  "Swiss International": { radios: [0, 4], escalas: ["normal", "compacta"], espaciados: ["normal", "aireado"], bordes: ["ninguno", "fino"], imagenes: ["natural", "recorte"] },
+  "editorial de revista de los 70": { radios: [0, 4, 8], escalas: ["amplia", "normal"], espaciados: ["normal", "aireado"], bordes: ["fino", "ninguno"], imagenes: ["natural", "marco", "duotono"] },
+  "brutalismo tipográfico": { radios: [0], escalas: ["amplia", "compacta"], espaciados: ["denso", "normal"], bordes: ["grueso"], imagenes: ["natural", "recorte"] },
+  "Art Déco geométrico": { radios: [0, 8], escalas: ["normal", "amplia"], espaciados: ["normal", "aireado"], bordes: ["fino", "grueso"], imagenes: ["marco", "duotono"] },
+  "catálogo técnico de patentes de los 50": { radios: [0, 4], escalas: ["compacta", "normal"], espaciados: ["denso", "normal"], bordes: ["fino"], imagenes: ["natural", "marco"] },
+  "Memphis contenido": { radios: [999, 16], escalas: ["normal", "amplia"], espaciados: ["normal", "aireado"], bordes: ["grueso", "fino"], imagenes: ["duotono", "recorte"] },
+  "japonés ma (espacio negativo)": { radios: [0, 4, 8], escalas: ["normal", "amplia"], espaciados: ["aireado"], bordes: ["ninguno"], imagenes: ["natural", "marco"] },
+  "constructivismo ruso": { radios: [0], escalas: ["amplia", "normal"], espaciados: ["denso", "normal"], bordes: ["grueso", "fino"], imagenes: ["duotono", "recorte"] },
+  "cartel suizo de farmacia": { radios: [4, 8, 16], escalas: ["normal", "compacta"], espaciados: ["normal", "denso"], bordes: ["fino", "ninguno"], imagenes: ["natural", "recorte"] },
+  "manual de instrucciones industrial": { radios: [0, 4], escalas: ["compacta", "normal"], espaciados: ["denso", "normal"], bordes: ["fino", "grueso"], imagenes: ["natural", "marco"] },
+  "minimalismo de museo": { radios: [0, 4, 8], escalas: ["normal", "amplia"], espaciados: ["aireado", "normal"], bordes: ["ninguno", "fino"], imagenes: ["natural", "marco"] },
+};
+
+const perfilDe = (estilo: string): PerfilEstilo => (PERFILES_ESTILO as Record<string, PerfilEstilo>)[estilo] ?? PERFIL_LIBRE;
 
 // ---------- Contraste WCAG ----------
 
@@ -157,6 +231,23 @@ function elegir<T>(azar: () => number, lista: readonly T[]): T {
   return lista[Math.floor(azar() * lista.length)];
 }
 
+/** Peso de una paleta para una temática: las afines y, en `espacio`, las oscuras pesan 3; las demás 1 (ponderado, no excluyente). */
+export function pesoPaleta(p: Paleta, tematica?: string): number {
+  if (!tematica) return 1;
+  return p.etiquetas?.includes(tematica) || (tematica === "espacio" && p.tono === "oscuro") ? 3 : 1;
+}
+
+/** Elige una paleta gastando un solo número del flujo de azar, ponderando por temática. */
+export function elegirPaleta(azar: () => number, tematica?: string): Paleta {
+  const pesos = PALETAS.map((p) => pesoPaleta(p, tematica));
+  let punto = azar() * pesos.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < PALETAS.length; i++) {
+    punto -= pesos[i];
+    if (punto < 0) return PALETAS[i];
+  }
+  return PALETAS[PALETAS.length - 1];
+}
+
 // ---------- Tokens ----------
 
 type Intensidad = Tokens["intensidad"];
@@ -167,13 +258,14 @@ function construirTokens(semilla: Semilla, intensidad: Intensidad): Tokens {
   if (!p) throw new Error(`Paleta desconocida: ${semilla.paletaId}`);
   if (!t) throw new Error(`Tipografía desconocida: ${semilla.tipografiaId}`);
   const azar = mulberry32(semilla.numero + 1); // flujo aparte del que elige estilo, paleta y tipografía
+  const perfil = perfilDe(semilla.estilo);
   return {
     colores: { ...p.colores },
-    tipografia: { titulos: t.titulos, cuerpo: t.cuerpo, escala: elegir(azar, ESCALAS) },
-    radio: elegir(azar, RADIOS),
-    espaciado: elegir(azar, ESPACIADOS),
-    borde: elegir(azar, BORDES),
-    imagen: elegir(azar, IMAGENES),
+    tipografia: { titulos: t.titulos, cuerpo: t.cuerpo, escala: elegir(azar, perfil.escalas) },
+    radio: elegir(azar, perfil.radios),
+    espaciado: elegir(azar, perfil.espaciados),
+    borde: elegir(azar, perfil.bordes),
+    imagen: elegir(azar, perfil.imagenes),
     intensidad,
   };
 }
@@ -184,13 +276,13 @@ export interface ResultadoSemilla {
 }
 
 /** Tirada reproducible: el mismo número da la misma semilla y los mismos tokens. */
-export function tirarSemilla(numero?: number, intensidad: Intensidad = 3): ResultadoSemilla {
-  const n = numero ?? Math.floor(Math.random() * 1_000_000);
+export function tirarSemilla(numero?: number, intensidad: Intensidad = 3, azarNumero: () => number = Math.random, tematica?: string): ResultadoSemilla {
+  const n = numero ?? Math.floor(azarNumero() * 1_000_000);
   const azar = mulberry32(n);
   const semilla: Semilla = {
     estilo: elegir(azar, ESTILOS),
     industria: elegir(azar, INDUSTRIAS),
-    paletaId: elegir(azar, PALETAS).id,
+    paletaId: elegirPaleta(azar, tematica).id,
     tipografiaId: elegir(azar, TIPOGRAFIAS).id,
     numero: n,
   };
@@ -245,6 +337,80 @@ export function aplicarColoresMarca(tokens: Tokens, hex: string[]): Tokens {
 }
 
 /** Tokens finales de una semilla para un brief: intensidad y colores de marca incluidos. */
-export function tokensParaBrief(semilla: Semilla, brief: Pick<Brief, "intensidad" | "coloresMarca">): Tokens {
-  return aplicarColoresMarca(construirTokens(semilla, brief.intensidad), brief.coloresMarca ?? []);
+export function tokensParaBrief(
+  semilla: Semilla,
+  brief: Pick<Brief, "intensidad" | "coloresMarca">,
+  { respetarMarca = true }: { respetarMarca?: boolean } = {},
+): Tokens {
+  const tokens = construirTokens(semilla, brief.intensidad);
+  // Sin marca, `aplicarColoresMarca` con lista vacía solo garantiza el contraste AA de `acentoTexto`.
+  return aplicarColoresMarca(tokens, respetarMarca ? (brief.coloresMarca ?? []) : []);
 }
+
+// ---------- «Otra semilla» que se nota (tarea 25) ----------
+
+function aLab(hex: string): [number, number, number] {
+  const [r, g, b] = canales(hex).map((v) => {
+    const c = v / 255;
+    return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  const f = (t: number) => (t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116);
+  const x = f((0.4124 * r + 0.3576 * g + 0.1805 * b) / 0.95047);
+  const y = f(0.2126 * r + 0.7152 * g + 0.0722 * b);
+  const z = f((0.0193 * r + 0.1192 * g + 0.9505 * b) / 1.08883);
+  return [116 * y - 16, 500 * (x - y), 200 * (y - z)];
+}
+
+/** Diferencia de color CIE76 (ΔE) entre dos colores hex. */
+export function deltaE(a: string, b: string): number {
+  const [l1, a1, b1] = aLab(a);
+  const [l2, a2, b2] = aLab(b);
+  return Math.hypot(l1 - l2, a1 - a2, b1 - b2);
+}
+
+export const DELTA_E_MINIMO = 20;
+const CLAVES_ESTILO_VISUAL = ["radio", "espaciado", "borde", "imagen"] as const;
+
+/** Cuántos de radio, espaciado, borde, imagen y escala son distintos entre dos juegos de tokens. */
+export function cambiosDeEstilo(a: Tokens, b: Tokens): number {
+  return CLAVES_ESTILO_VISUAL.filter((k) => a[k] !== b[k]).length + (a.tipografia.escala !== b.tipografia.escala ? 1 : 0);
+}
+
+export interface OpcionesOtraSemilla {
+  intensidad: Intensidad;
+  /** Con marca, los colores quedan fijos y no se exige cambio de paleta. */
+  coloresMarca?: string[];
+  azar?: () => number;
+}
+
+/**
+ * Una semilla que se nota frente a la actual: otra paleta (fondo y acento con ΔE ≥ 20, y el tono claro/oscuro alterna),
+ * otro par tipográfico, otro estilo y al menos 3 de 5 entre radio, espaciado, borde, imagen y escala.
+ */
+export function otraSemillaDistinta(actual: { semilla: Semilla; tokens: Tokens }, o: OpcionesOtraSemilla): ResultadoSemilla {
+  const azar = o.azar ?? Math.random;
+  const marca = (o.coloresMarca?.length ?? 0) > 0;
+  const paletaActual = PALETAS.find((p) => p.id === actual.semilla.paletaId);
+  const tonoActual: TonoPaleta = paletaActual?.tono ?? tonoDe(actual.tokens.colores.fondo.replace("#", ""));
+  const cumple = (r: ResultadoSemilla, exigente: boolean): boolean => {
+    const { semilla, tokens } = r;
+    if (semilla.estilo === actual.semilla.estilo || semilla.tipografiaId === actual.semilla.tipografiaId) return false;
+    if (cambiosDeEstilo(actual.tokens, tokens) < 3) return false;
+    if (marca) return true;
+    const p = PALETAS.find((x) => x.id === semilla.paletaId);
+    if (!p || semilla.paletaId === actual.semilla.paletaId) return false;
+    if (CLAVES_COLOR.some((k) => p.colores[k].toUpperCase() === actual.tokens.colores[k].toUpperCase())) return false;
+    if (deltaE(p.colores.fondo, actual.tokens.colores.fondo) < DELTA_E_MINIMO || deltaE(p.colores.acento, actual.tokens.colores.acento) < DELTA_E_MINIMO) return false;
+    return !exigente || p.tono !== tonoActual;
+  };
+  let ultima = tirarSemilla(Math.floor(azar() * 1_000_000), o.intensidad, azar);
+  for (let i = 0; i < 400; i++) {
+    const intento = tirarSemilla(Math.floor(azar() * 1_000_000), o.intensidad, azar);
+    ultima = intento;
+    // Primero exige alternar claro/oscuro; si no hay, relaja esa condición.
+    if (cumple(intento, i < 300)) return intento;
+  }
+  return ultima;
+}
+
+const CLAVES_COLOR = ["fondo", "superficie", "texto", "textoSuave", "acento", "acentoTexto", "borde"] as const;

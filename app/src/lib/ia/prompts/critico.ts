@@ -39,7 +39,8 @@ export function promptCritico(e: EntradaCritico): PromptProfesional {
     restricciones: [
       ...RESTRICCIONES_COMUNES.filter((r) => !r.startsWith("Español")),
       "La escala y el umbral son los de siempre: no subas la nota por compasión ni la bajes por costumbre; cita evidencia de cada nota.",
-      "No penalices la ausencia de testimonios o calificaciones (ver el contexto de fidelidad); sí penaliza cualquier dato inventado, [COMPLETAR] visible, garantía repetida, imagen que no corresponde al producto o texto alternativo pobre.",
+      "No penalices la ausencia de testimonios o calificaciones (ver el contexto de fidelidad); sí penaliza cualquier dato inventado, garantía repetida, un [COMPLETAR] en un dato que el brief SÍ traía, imagen que no corresponde al producto o texto alternativo pobre.",
+      "Un [COMPLETAR] en un precio, fecha, lugar o dato que el vendedor no dio es lo correcto según la regla de fidelidad: no lo penalices ni propongas inventar un valor (no corrijas «[COMPLETAR]» por una cifra o un plazo).",
       "Cada corrección apunta a una ruta que exista en el documento y trae el texto nuevo, no un consejo vago.",
       "Un elemento de `porCriterio` por cada criterio de la rúbrica, con puntajes entre 0 y 10.",
     ],

@@ -1,10 +1,13 @@
 import { join } from "node:path";
 import { z } from "zod";
 import { Encargo } from "@/lib/contratos";
-import { crearLanding } from "@/lib/landings";
+import { generarImagenOpenAI } from "@/lib/imagenes/openai";
+import { actualizarDoc, crearLanding, listarLandings } from "@/lib/landings";
+import { almacenCheckpointAjuste } from "./checkpoint";
 import { crearFuentes } from "@/lib/fuentes/registro";
 import { obtenerDepsEnrutador } from "@/lib/ia/deps";
 import { candidatosPorDefecto } from "./candidatos";
+import { HISTORIAL } from "./diversidad";
 import { generarLanding, type DepsGenerar, type EventoGenerar } from "./pipeline";
 
 /**
@@ -34,6 +37,10 @@ export function crearManejadorGenerar(sobre: Partial<DepsGenerar> = {}) {
         const creada = await crearLanding({ brief: p.brief, tecnicas: p.tecnicas, prompt: p.prompt, doc: p.doc, proveedor: p.proveedor });
         return { id: creada.id, slug: creada.slug };
       },
+      generarOpenAI: (prompt, relacion) => generarImagenOpenAI(prompt, relacion, { dirMedia }),
+      actualizar: async (id, doc) => void (await actualizarDoc(id, doc)),
+      checkpoint: almacenCheckpointAjuste,
+      historial: async () => (await listarLandings({ conDoc: true })).slice(0, HISTORIAL).map((l) => l.doc),
       ...sobre,
     };
 
@@ -43,7 +50,7 @@ export function crearManejadorGenerar(sobre: Partial<DepsGenerar> = {}) {
         const emitir = (e: EventoGenerar) => controlador.enqueue(codificador.encode(`${JSON.stringify(e)}\n`));
         try {
           const res = await generarLanding(r.data, emitir, deps);
-          emitir({ tipo: "listo", id: res.id, slug: res.slug });
+          emitir({ tipo: "listo", id: res.id, slug: res.slug, criticoPendiente: res.criticoPendiente, ...(res.seccionesPorCompletar.length && { seccionesPorCompletar: res.seccionesPorCompletar }), ...(res.avisos.length && { avisos: res.avisos }) });
         } catch (e) {
           emitir({ tipo: "error", mensaje: e instanceof Error ? e.message : String(e) });
         } finally {
