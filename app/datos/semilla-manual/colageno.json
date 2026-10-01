@@ -1,0 +1,357 @@
+{
+  "version": 1,
+  "meta": {
+    "nombre": "Colágeno hidrolizado",
+    "slug": "colageno",
+    "producto": "Colágeno hidrolizado",
+    "tecnicas": [
+      "ambicioso",
+      "semilla",
+      "negativas",
+      "humana"
+    ],
+    "semilla": {
+      "estilo": "japonés ma (espacio negativo)",
+      "industria": "empaques de farmacia",
+      "paletaId": "constructivismo",
+      "tipografiaId": "bricolage-inter",
+      "numero": 145
+    },
+    "nivelConciencia": "solucion",
+    "marco": "AIDA",
+    "eliminadas": [
+      {
+        "tipo": "video",
+        "motivo": "El diseño sustractivo prioriza la claridad estática sobre el movimiento para mantener el enfoque editorial."
+      },
+      {
+        "tipo": "cuenta-regresiva",
+        "motivo": "No existen fechas límite de oferta en el brief proporcionado."
+      }
+    ]
+  },
+  "tokens": {
+    "colores": {
+      "fondo": "#1A1A1A",
+      "superficie": "#262626",
+      "texto": "#F2EDE4",
+      "textoSuave": "#B5AEA2",
+      "acento": "#F0503F",
+      "acentoTexto": "#111111",
+      "borde": "#3D3D3D"
+    },
+    "tipografia": {
+      "titulos": "Bricolage Grotesque",
+      "cuerpo": "Inter",
+      "escala": "compacta"
+    },
+    "radio": 0,
+    "espaciado": "denso",
+    "borde": "grueso",
+    "imagen": "marco",
+    "intensidad": 2
+  },
+  "secciones": [
+    {
+      "id": "hero",
+      "tipo": "heroe",
+      "variante": "producto-monumental",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Captar atención inmediata con la promesa principal del producto",
+        "emocion": "confianza"
+      },
+      "ajustes": {
+        "titular": "Nutrición esencial para tu piel y articulaciones en un solo paso",
+        "subtitular": "Disfruta el beneficio del colágeno sin alterar el sabor de tus bebidas favoritas.",
+        "textoBoton": "¡Obtén tu colágeno ahora y ahorra!",
+        "slot": "producto-main"
+      },
+      "bloques": [
+        {
+          "id": "b1",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Sin sabor para mezclar libremente"
+          }
+        },
+        {
+          "id": "b2",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "30 porciones para un mes completo"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0
+      },
+      "efectos": [
+        "titular-cinetico",
+        "boton-magnetico"
+      ]
+    },
+    {
+      "id": "ps",
+      "tipo": "problema-solucion",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Validar la frustración de buscar suplementos complejos",
+        "emocion": "alivio"
+      },
+      "ajustes": {
+        "titulo": "Cuidarte no debería ser una tarea complicada",
+        "historia": "Buscas mejorar tu piel y articulaciones cada día, pero encuentras suplementos pesados o con sabores extraños que terminan abandonados en la alacena.",
+        "giro": "Nuestro colágeno hidrolizado disuelve esa dificultad ofreciéndote una medida diaria sin sabor que se integra a cualquier bebida."
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.2
+      }
+    },
+    {
+      "id": "beneficios",
+      "tipo": "beneficios",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Explicar las características clave del producto",
+        "emocion": "seguridad"
+      },
+      "ajustes": {
+        "titulo": "Simple por diseño",
+        "disposicion": "tarjetas-apiladas"
+      },
+      "bloques": [
+        {
+          "id": "f1",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Versatilidad total",
+            "texto": "Su fórmula se disuelve completamente en agua fría, caliente, jugos o incluso en tu café matutino."
+          }
+        },
+        {
+          "id": "f2",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Medición precisa",
+            "texto": "Cada frasco incluye su medida dosificadora para garantizar que tomas la dosis correcta cada día."
+          }
+        },
+        {
+          "id": "f3",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Suministro mensual",
+            "texto": "Con 30 porciones por frasco tienes la cantidad exacta para cubrir todas tus necesidades durante un mes."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0.4
+      }
+    },
+    {
+      "id": "oferta-main",
+      "tipo": "oferta",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Cerrar la venta mediante el anclaje de precio",
+        "emocion": "urgencia",
+        "objecionQueResponde": "Precio"
+      },
+      "ajustes": {
+        "titulo": "Tu inversión en bienestar",
+        "precio": 99900,
+        "precioAnterior": 129900,
+        "moneda": "COP",
+        "textoBoton": "Quiero mi frasco ahora"
+      },
+      "bloques": [
+        {
+          "id": "o1",
+          "tipo": "opcion-cantidad",
+          "ajustes": {
+            "unidades": 1,
+            "precio": 99900,
+            "etiqueta": "Frasco mensual"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "escala",
+        "retraso": 0.2
+      },
+      "efectos": [
+        "precio-cae",
+        "boton-magnetico"
+      ]
+    },
+    {
+      "id": "faq-seccion",
+      "tipo": "faq",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Resolver objeciones técnicas antes de la compra",
+        "objecionQueResponde": "Registro, sabor, resultados"
+      },
+      "ajustes": {
+        "titulo": "Preguntas frecuentes"
+      },
+      "bloques": [
+        {
+          "id": "q1",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Tiene registro sanitario?",
+            "respuesta": "Sí, el producto cuenta con el respaldo sanitario requerido para garantizar su calidad y seguridad de consumo."
+          }
+        },
+        {
+          "id": "q2",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Sabe a algo o se puede mezclar con café?",
+            "respuesta": "Es un polvo sin sabor diseñado para ser invisible en tu bebida. Puedes mezclarlo con café caliente sin alterar su gusto."
+          }
+        },
+        {
+          "id": "q3",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Cuánto tiempo tarda en notarse?",
+            "respuesta": "La constancia es la clave. Recomendamos su consumo diario ininterrumpido durante el primer mes para empezar a notar sus beneficios."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garantia-sec",
+      "tipo": "garantia",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Reducir la fricción final",
+        "emocion": "paz mental"
+      },
+      "ajustes": {
+        "titulo": "Compra con tranquilidad",
+        "texto": "Tu bienestar es nuestra prioridad y respaldamos cada frasco que llega a tus manos.",
+        "dias": 30,
+        "icono": "shield"
+      },
+      "bloques": [
+        {
+          "id": "g1",
+          "tipo": "promesa",
+          "ajustes": {
+            "texto": "Garantía de satisfacción por 30 días"
+          }
+        },
+        {
+          "id": "g3",
+          "tipo": "promesa",
+          "ajustes": {
+            "texto": "Certificado por INVIMA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "formulario",
+      "tipo": "formulario-lead",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Captar datos del interesado",
+        "emocion": "expectativa"
+      },
+      "ajustes": {
+        "titulo": "Comienza hoy mismo",
+        "campos": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "obligatorios": [
+          "correo"
+        ],
+        "textoBoton": "Quiero que me contacten hoy",
+        "mensajeGracias": "Gracias, nos comunicaremos contigo pronto.",
+        "privacidad": "Tus datos personales son privados y no serán compartidos con terceros."
+      },
+      "bloques": [],
+      "efectos": [
+        "boton-magnetico"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "slot": "producto-main",
+      "tipo": "imagen",
+      "relacion": "1:1",
+      "promptGrok": "[SUJETO] collagen bottle opened, revealing 30 sachets, [ESCENA] sleek bathroom vanity with marble surface, [LUZ] soft natural window light, [CÁMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] background #1A1A1A, surface #262626, text #F2EDE4, soft text #B5AEA2, accent #F0503F, accent text #111111, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] centered with clear negative space at bottom for price tag, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+      "alt": "Frasco de colágeno hidrolizado sin sabor, 30 porciones, sobre fondo oscuro"
+    }
+  ],
+  "critica": {
+    "puntaje": 8.1,
+    "porCriterio": [
+      {
+        "criterio": "Claridad en 3 s",
+        "puntaje": 9,
+        "evidencia": "secciones[0].ajustes.titular y subtitular"
+      },
+      {
+        "criterio": "Fricción",
+        "puntaje": 6,
+        "evidencia": "secciones[6] (formulario de lead al final, muy largo)"
+      },
+      {
+        "criterio": "Móvil",
+        "puntaje": 8,
+        "evidencia": "tokens.tipografia.escala (compacta)"
+      },
+      {
+        "criterio": "Confianza",
+        "puntaje": 9,
+        "evidencia": "secciones[5].bloques (Garantía e INVIMA)"
+      },
+      {
+        "criterio": "Persuasión",
+        "puntaje": 8,
+        "evidencia": "secciones[1].ajustes.giro"
+      },
+      {
+        "criterio": "Originalidad",
+        "puntaje": 9,
+        "evidencia": "meta.semilla.estilo"
+      },
+      {
+        "criterio": "Factor asombro",
+        "puntaje": 7,
+        "evidencia": "secciones[0].efectos (titular-cinetico)"
+      },
+      {
+        "criterio": "Accesibilidad",
+        "puntaje": 8,
+        "evidencia": "tokens.colores (buen contraste)"
+      }
+    ],
+    "problemas": [
+      "secciones[6].ajustes.campos: El formulario solicita demasiada información (nombre, correo, teléfono) lo que aumenta la tasa de rebote.",
+      "secciones[3].ajustes: La oferta de precio está desconectada visualmente del formulario final, perdiendo impulso de conversión.",
+      "secciones[0].ajustes.textoBoton: El CTA de la sección hero es genérico y demasiado largo."
+    ],
+    "correcciones": [
+      "secciones[6].ajustes.campos: [\"correo\"]",
+      "secciones[0].ajustes.textoBoton: \"Quiero mi colágeno\"",
+      "secciones[3].ajustes.textoBoton: \"Comprar ahora por $99.900\""
+    ]
+  }
+}

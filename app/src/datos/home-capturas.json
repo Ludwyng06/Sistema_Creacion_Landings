@@ -1,0 +1,285 @@
+{
+  "ensamblaje": {
+    "slug": "timbre-inteligente-vitrina",
+    "secciones": [
+      {
+        "tipo": "heroe",
+        "etiqueta": "Héroe",
+        "archivo": "/media/home/capturas/ensamblaje-heroe.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 580
+      },
+      {
+        "tipo": "sellos-confianza",
+        "etiqueta": "Sellos de confianza",
+        "archivo": "/media/home/capturas/ensamblaje-sellos-confianza.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 411
+      },
+      {
+        "tipo": "problema-solucion",
+        "etiqueta": "Problema y solución",
+        "archivo": "/media/home/capturas/ensamblaje-problema-solucion.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 845
+      },
+      {
+        "tipo": "beneficios",
+        "etiqueta": "Beneficios",
+        "archivo": "/media/home/capturas/ensamblaje-beneficios.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 934
+      },
+      {
+        "tipo": "galeria",
+        "etiqueta": "Galería",
+        "archivo": "/media/home/capturas/ensamblaje-galeria.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 747
+      },
+      {
+        "tipo": "oferta",
+        "etiqueta": "Oferta",
+        "archivo": "/media/home/capturas/ensamblaje-oferta.webp",
+        "ancho": 390,
+        "top": 0,
+        "alto": 444
+      }
+    ]
+  },
+  "semilla": {
+    "slug": "cepillo-dental-electrico-vitrina",
+    "url": "/l/cepillo-dental-electrico-vitrina",
+    "escritorio": [
+      {
+        "archivo": "/media/home/capturas/semilla-1-escritorio.webp",
+        "ancho": 1280,
+        "alto": 3213,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 788
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 788,
+            "alto": 245
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1032,
+            "alto": 550
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1583,
+            "alto": 889
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2472,
+            "alto": 741
+          }
+        ]
+      },
+      {
+        "archivo": "/media/home/capturas/semilla-2-escritorio.webp",
+        "ancho": 1280,
+        "alto": 3346,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 850
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 850,
+            "alto": 245
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1094,
+            "alto": 614
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1709,
+            "alto": 953
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2662,
+            "alto": 684
+          }
+        ]
+      },
+      {
+        "archivo": "/media/home/capturas/semilla-3-escritorio.webp",
+        "ancho": 1280,
+        "alto": 3090,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 786
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 786,
+            "alto": 245
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1030,
+            "alto": 550
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1581,
+            "alto": 889
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2470,
+            "alto": 620
+          }
+        ]
+      }
+    ],
+    "movil": [
+      {
+        "archivo": "/media/home/capturas/semilla-1-movil.webp",
+        "ancho": 390,
+        "alto": 3075,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 700
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 700,
+            "alto": 417
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1117,
+            "alto": 737
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1854,
+            "alto": 657
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2511,
+            "alto": 564
+          }
+        ]
+      },
+      {
+        "archivo": "/media/home/capturas/semilla-2-movil.webp",
+        "ancho": 390,
+        "alto": 3241,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 728
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 728,
+            "alto": 446
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1174,
+            "alto": 769
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1943,
+            "alto": 689
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2632,
+            "alto": 609
+          }
+        ]
+      },
+      {
+        "archivo": "/media/home/capturas/semilla-3-movil.webp",
+        "ancho": 390,
+        "alto": 2959,
+        "secciones": [
+          {
+            "tipo": "heroe",
+            "etiqueta": "Héroe",
+            "top": 0,
+            "alto": 664
+          },
+          {
+            "tipo": "sellos-confianza",
+            "etiqueta": "Sellos de confianza",
+            "top": 664,
+            "alto": 417
+          },
+          {
+            "tipo": "beneficios",
+            "etiqueta": "Beneficios",
+            "top": 1081,
+            "alto": 708
+          },
+          {
+            "tipo": "galeria",
+            "etiqueta": "Galería",
+            "top": 1789,
+            "alto": 617
+          },
+          {
+            "tipo": "oferta",
+            "etiqueta": "Oferta",
+            "top": 2406,
+            "alto": 553
+          }
+        ]
+      }
+    ]
+  }
+}

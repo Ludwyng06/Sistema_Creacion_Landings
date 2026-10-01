@@ -1,0 +1,524 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`combinar · snapshot > snapshot del prompt estructurado y de aTexto 1`] = `
+{
+  "aportes": [
+    {
+      "bloque": "rol",
+      "tecnica": "ambicioso",
+      "texto": "estratega de conversión especializado en productos físicos",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "ambicioso",
+      "texto": "Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "ambicioso",
+      "texto": "Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía).",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "ambicioso",
+      "texto": "Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido.",
+    },
+    {
+      "bloque": "contexto",
+      "tecnica": "ambicioso",
+      "texto": "Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta.",
+    },
+    {
+      "bloque": "formato",
+      "tecnica": "ambicioso",
+      "texto": "Cada sección lleva \`intencion: { objetivo, emocion, objecionQueResponde? }\` y cada objeción del brief queda respondida en al menos una sección.",
+    },
+    {
+      "bloque": "rol",
+      "tecnica": "semilla",
+      "texto": "director de arte que aplica la semilla «japonés ma (espacio negativo) × tipografía de periódico» como sistema visual",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "semilla",
+      "texto": "Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "semilla",
+      "texto": "Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados.",
+    },
+    {
+      "bloque": "contexto",
+      "tecnica": "semilla",
+      "texto": "Tokens de la semilla (fuente única de verdad visual):
+{
+  "colores": {
+    "fondo": "#1A1A1A",
+    "superficie": "#262626",
+    "texto": "#F2EDE4",
+    "textoSuave": "#B5AEA2",
+    "acento": "#F0503F",
+    "acentoTexto": "#111111",
+    "borde": "#3D3D3D"
+  },
+  "tipografia": {
+    "titulos": "Instrument Serif",
+    "cuerpo": "Geist",
+    "escala": "amplia"
+  },
+  "radio": 4,
+  "espaciado": "normal",
+  "borde": "ninguno",
+  "imagen": "natural",
+  "intensidad": 3
+}",
+    },
+    {
+      "bloque": "contexto",
+      "tecnica": "semilla",
+      "texto": "Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.",
+    },
+    {
+      "bloque": "formato",
+      "tecnica": "semilla",
+      "texto": "Incluye \`tokens\` y \`meta.semilla\` completos y usa solo esos valores en todo el documento.",
+    },
+    {
+      "bloque": "rol",
+      "tecnica": "negativas",
+      "texto": "editor de estilo que mantiene el texto libre de tics de IA",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "negativas",
+      "texto": "Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "negativas",
+      "texto": "Usa signos de exclamación simples y un guion largo por párrafo como máximo.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "negativas",
+      "texto": "Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "negativas",
+      "texto": "Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado.",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "negativas",
+      "texto": "En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles.",
+    },
+    {
+      "bloque": "contexto",
+      "tecnica": "negativas",
+      "texto": "Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.
+Patrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».
+Estilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos.",
+    },
+    {
+      "bloque": "formato",
+      "tecnica": "negativas",
+      "texto": "Todos los textos del documento pasan el linter de lista negra con cero infracciones.",
+    },
+    {
+      "bloque": "rol",
+      "tecnica": "critico",
+      "texto": "auditor senior de UX y CRO",
+    },
+    {
+      "bloque": "tarea",
+      "tecnica": "critico",
+      "texto": "Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte.",
+    },
+    {
+      "bloque": "contexto",
+      "tecnica": "critico",
+      "texto": "Rúbrica del auditor (puntaje total de 0 a 10, ponderado):
+Claridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.
+Fricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.
+Móvil (15 %): jerarquía, tamaños y orden a 390 px.
+Confianza (15 %): garantía, prueba social real y datos concretos.
+Persuasión (15 %): beneficio antes que característica y objeciones respondidas.
+Originalidad (5 %): se nota la semilla y se evita el look genérico.
+Factor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.
+Accesibilidad (5 %): contraste, textos alternativos, tamaño táctil y \`reduced-motion\`.",
+    },
+    {
+      "bloque": "formato",
+      "tecnica": "critico",
+      "texto": "No incluyas el campo \`critica\` en tu respuesta: lo completa el auditor en una llamada aparte.",
+    },
+  ],
+  "contexto": "Brief del producto (única fuente de datos):
+{
+  "nombre": "Corrector de postura inteligente",
+  "categoria": "salud-y-bienestar",
+  "problema": "Pasas ocho horas sentado y la espalda te duele al final del día.",
+  "publico": "Trabajadores de oficina de 25 a 45 años que usan computador todo el día.",
+  "beneficios": [
+    "Vibra cuando te encorvas",
+    "Se usa bajo la ropa",
+    "Carga por USB"
+  ],
+  "precio": {
+    "valor": 129000,
+    "anterior": 169000,
+    "moneda": "COP"
+  },
+  "objeciones": [
+    "¿Se nota bajo la ropa?",
+    "¿Cuánto dura la batería?",
+    "¿Cómo lo devuelvo?"
+  ],
+  "nivelConciencia": "problema",
+  "intensidad": 3
+}
+
+Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta.
+
+Tokens de la semilla (fuente única de verdad visual):
+{
+  "colores": {
+    "fondo": "#1A1A1A",
+    "superficie": "#262626",
+    "texto": "#F2EDE4",
+    "textoSuave": "#B5AEA2",
+    "acento": "#F0503F",
+    "acentoTexto": "#111111",
+    "borde": "#3D3D3D"
+  },
+  "tipografia": {
+    "titulos": "Instrument Serif",
+    "cuerpo": "Geist",
+    "escala": "amplia"
+  },
+  "radio": 4,
+  "espaciado": "normal",
+  "borde": "ninguno",
+  "imagen": "natural",
+  "intensidad": 3
+}
+
+Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
+
+Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.
+Patrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».
+Estilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos.
+
+Rúbrica del auditor (puntaje total de 0 a 10, ponderado):
+Claridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.
+Fricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.
+Móvil (15 %): jerarquía, tamaños y orden a 390 px.
+Confianza (15 %): garantía, prueba social real y datos concretos.
+Persuasión (15 %): beneficio antes que característica y objeciones respondidas.
+Originalidad (5 %): se nota la semilla y se evita el look genérico.
+Factor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.
+Accesibilidad (5 %): contraste, textos alternativos, tamaño táctil y \`reduced-motion\`.
+
+Tipos de sección disponibles:
+- \`heroe\`: primera sección; dice qué es, para quién y el beneficio principal (exige \`variante\`)
+- \`cinta-anuncio\`: franja breve con la oferta o el beneficio del momento
+- \`problema-solucion\`: narra la frustración concreta y el alivio antes de hablar de características
+- \`beneficios\`: traduce cada función en un beneficio concreto (3 a 6 bloques \`beneficio\`)
+- \`como-funciona\`: explica el uso en 3 o 4 pasos
+- \`antes-despues\`: muestra el resultado visible con dos imágenes
+- \`comparativa\`: compara el producto con las alternativas en 4 a 7 filas
+- \`galeria\`: imágenes del producto en uso
+- \`video\`: clip corto del producto en uso
+- \`testimonios\`: opiniones reales del brief; si faltan, \`[COMPLETAR]\`
+- \`cifras\`: 2 a 4 cifras reales del brief
+- \`oferta\`: precio, precio anterior real y opciones de cantidad
+- \`incluye\`: lista de lo que trae la caja o el regalo
+- \`cuenta-regresiva\`: solo con una fecha de oferta real del brief
+- \`faq\`: responde las objeciones antes de que el lector las piense (3 a 8 preguntas)
+- \`garantia\`: promesas de confianza con los días y condiciones del brief
+- \`formulario-lead\`: acción final; aparece exactamente una vez, cerca del final
+- \`html-libre\`: solo lo agrega una persona en el editor; la IA no lo usa
+
+Variantes de héroe aprobadas (todas con el contenido centrado, superpuesto o apilado):
+- \`producto-monumental\`: producto grande y centrado con el titular encima y el CTA debajo; útil para comprador consciente del producto
+- \`poster-a-sangre\`: imagen a sangre con el titular y el CTA superpuestos en el tercio inferior; útil para estilo editorial
+- \`titular-tipografico\`: titular gigante centrado arriba con el producto debajo, sin solaparse; útil para brutalismo y semillas suizas
+- \`problema-primero\`: solo texto con una pregunta de dolor centrada; útil para nivel inconsciente o de problema (PAS)
+- \`antes-despues-heroe\`: titular centrado y slider comparativo a todo el ancho; útil para productos de resultado visible
+- \`video-inmersivo\`: clip en loop a sangre con titular centrado y CTA; útil para productos en uso y movimiento
+- \`orbita-beneficios\`: producto al centro y 3 o 4 beneficios alrededor; útil para productos con varias funciones
+- \`mosaico-editorial\`: collage asimétrico con el titular en una franja que lo cruza; útil para moda y estilo de vida
+
+Ajustes y bloques válidos por tipo de sección (usa solo estos campos y valores; todo campo sin ? es obligatorio, no omitas ninguno; los textos respetan el máximo indicado; el signo ? marca un campo opcional):
+- \`heroe\`: ajustes { titular: texto, máx. 120 caracteres, p. ej. «Titular del héroe»; subtitular?: texto, máx. 240 caracteres; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; slot?: nombre de un slot de \`assets\`; slots?: nombre de un slot de \`assets\`; sello?: texto, máx. 80 caracteres }; bloques \`beneficio-corto\` (0 a 4) { texto: texto, máx. 60 caracteres, p. ej. «Beneficio» }
+- \`cinta-anuncio\`: ajustes { textos: lista de textos; velocidad: número de 1 a 10; estilo: "solido"|"contorno" }; sin bloques
+- \`problema-solucion\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Una escena que ya conoces»; historia: texto; giro: texto, máx. 200 caracteres; imagen?: nombre de un slot de \`assets\` }; sin bloques
+- \`beneficios\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cambia en tu día»; disposicion: "lista-grande"|"tarjetas-apiladas"|"numerada"|"carrusel" }; bloques \`beneficio\` (3 a 6) { icono: texto, p. ej. «check»; titulo: texto, máx. 60 caracteres, p. ej. «Beneficio»; texto: texto, máx. 200 caracteres, p. ej. «Cuenta qué gana la persona.»; imagen?: nombre de un slot de \`assets\` }
+- \`como-funciona\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Cómo funciona»; disposicion: "pasos-verticales"|"linea-tiempo" }; bloques \`paso\` (3 a 4) { titulo: texto, máx. 60 caracteres, p. ej. «Paso»; texto: texto, máx. 220 caracteres, p. ej. «Describe qué hace la persona.» }
+- \`antes-despues\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Mira la diferencia»; imagenAntes: nombre de un slot de \`assets\`; imagenDespues: nombre de un slot de \`assets\`; etiquetaAntes: texto, máx. 30 caracteres, p. ej. «Antes»; etiquetaDespues: texto, máx. 30 caracteres, p. ej. «Después» }; sin bloques
+- \`comparativa\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Por qué este y no otro»; nombreNuestro: texto, máx. 40 caracteres, p. ej. «Nuestro»; nombreOtros: texto, máx. 40 caracteres, p. ej. «Otros»; estilo: "minimal"|"resaltado" }; bloques \`fila\` (4 a 7) { caracteristica: texto, máx. 80 caracteres, p. ej. «Característica»; nuestro: texto; otros: texto }
+- \`galeria\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Míralo de cerca»; disposicion: "carrusel"|"mosaico"|"historias" }; bloques \`imagen\` (3 a 8) { slot: nombre de un slot de \`assets\`; pie?: texto, máx. 100 caracteres }
+- \`video\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Míralo en uso»; slot: nombre de un slot de \`assets\`; poster?: nombre de un slot de \`assets\`; autoplay: true o false }; sin bloques
+- \`testimonios\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cuentan quienes lo usan»; disposicion: "muro"|"carrusel"|"destacado" }; bloques \`testimonio\` (3 a 6) { nombre: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; ciudad: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; texto: texto, máx. 400 caracteres, p. ej. «[COMPLETAR]»; estrellas: número; foto?: nombre de un slot de \`assets\` }
+- \`cifras\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Resultados reales» }; bloques \`cifra\` (2 a 4) { valor: texto, máx. 30 caracteres, p. ej. «[COMPLETAR]»; etiqueta: texto, máx. 80 caracteres, p. ej. «Personas que lo probaron» }
+- \`oferta\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Llévalo hoy»; precio: número; precioAnterior?: número; moneda: "COP"|"USD"|"MXN"|"EUR"; textoBoton?: texto, máx. 40 caracteres, p. ej. «Quiero aprovecharlo» }; bloques \`opcion-cantidad\` (1 a 3) { unidades: número de 1 a 12; precio: número; etiqueta?: texto, máx. 30 caracteres }
+- \`incluye\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Qué viene en la caja»; texto: texto, máx. 240 caracteres; imagen: nombre de un slot de \`assets\` }; bloques \`item\` (1 a 5) { texto: texto, máx. 100 caracteres, p. ej. «Elemento» }
+- \`cuenta-regresiva\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «La oferta termina en»; fechaFin: texto, p. ej. «[COMPLETAR]»; estilo: "bloques"|"linea" }; sin bloques
+- \`faq\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Preguntas frecuentes» }; bloques \`pregunta\` (3 a 8) { pregunta: texto, máx. 140 caracteres, p. ej. «¿Cómo funciona?»; respuesta: texto, máx. 500 caracteres, p. ej. «[COMPLETAR]»; objecion?: texto, máx. 80 caracteres }
+- \`garantia\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Compra sin riesgo»; texto: texto, máx. 280 caracteres; dias: número; icono: texto, p. ej. «escudo» }; bloques \`promesa\` (2 a 4) { texto: texto, máx. 120 caracteres, p. ej. «Promesa» }
+- \`formulario-lead\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Recibe el tuyo»; subtitulo?: texto, máx. 200 caracteres; campos: lista con valores de "nombre"|"correo"|"telefono"|"ciudad"|"mensaje"; obligatorios?: lista con valores de "nombre"|"correo"|"telefono"|"ciudad"|"mensaje"; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; mensajeGracias: texto, máx. 200 caracteres, p. ej. «Gracias, te escribimos muy pronto.»; privacidad: texto, máx. 240 caracteres, p. ej. «Usamos tus datos solo para contactarte sobre este producto.» }; sin bloques
+
+Reglas de estructura:
+- El héroe es la primera sección y usa una de las variantes aprobadas.
+- El formulario \`formulario-lead\` aparece exactamente una vez, cerca del final.
+- \`cuenta-regresiva\` solo con una fecha de oferta real del brief; \`testimonios\` y \`cifras\` solo con datos del brief.
+- Todos los colores y tipografías salen de \`tokens\`.
+
+Catálogo de efectos permitido para la intensidad 3 (elige solo de esta lista; máximo 3 de nivel 3 en toda la landing):
+- \`revelar-suave\` · nivel 1 · heroe, cinta-anuncio, problema-solucion, beneficios, como-funciona, antes-despues, comparativa, galeria, video, testimonios, cifras, oferta, incluye, cuenta-regresiva, faq, garantia, formulario-lead, html-libre
+- \`grano\` · nivel 1 · global
+- \`precio-cae\` · nivel 1 · oferta
+- \`titular-cinetico\` · nivel 2 · heroe, problema-solucion, formulario-lead
+- \`mascara-circular\` · nivel 2 · galeria, heroe, incluye
+- \`mascara-persiana\` · nivel 2 · galeria, heroe, incluye
+- \`marquee-reactivo\` · nivel 2 · cinta-anuncio
+- \`boton-magnetico\` · nivel 2 · heroe, oferta, formulario-lead
+- \`cursor-vivo\` · nivel 2 · global
+- \`video-scroll\` · nivel 3 · heroe, video (héroe: video-inmersivo o producto-monumental)
+- \`producto-explotado\` · nivel 3 · heroe, como-funciona (héroe: producto-monumental)
+- \`pin-coreografia\` · nivel 3 · beneficios, como-funciona, antes-despues
+- \`horizontal\` · nivel 3 · galeria, beneficios, testimonios
+- \`shader-ondas\` · nivel 3 · galeria, heroe
+- \`antes-despues-scroll\` · nivel 3 · antes-despues
+
+Ejemplos few-shot:
+Ejemplo A · Copy: «Pasas 8 horas frente al computador y la espalda te lo cobra a las 4 p. m. Este corrector te recuerda enderezarte sin que tengas que pensarlo.»
+Ejemplo B · Botón: «Quiero que me contacten hoy».
+Ejemplo C · Sección del LandingDoc: {"id":"s1","tipo":"heroe","variante":"problema-primero","visible":true,"intencion":{"objetivo":"Que el lector se reconozca en el dolor en menos de 3 s","emocion":"alivio anticipado"},"ajustes":{"titular":"¿A las 4 p. m. ya te duele la espalda?","subtitular":"Hay una forma de enderezarte sin pensarlo.","textoBoton":"Ver cómo funciona"},"bloques":[],"efectos":["titular-cinetico"]}
+Ejemplo D · Héroe: producto centrado ocupando el 60 % del alto, titular centrado encima y CTA debajo; o imagen a sangre con el titular superpuesto en el tercio inferior.",
+  "formato": "Entrega un único objeto JSON \`LandingDoc\`, sin texto antes ni después, con estos campos:
+- \`version\`: 1.
+- \`meta\`: { nombre, slug en kebab-case, producto, tecnicas[], semilla { estilo, industria, paletaId, tipografiaId, numero }, nivelConciencia, marco ('AIDA' o 'PAS'), eliminadas[] }.
+- \`tokens\`: { colores { fondo, superficie, texto, textoSuave, acento, acentoTexto, borde }, tipografia { titulos, cuerpo, escala }, radio, espaciado, borde, imagen, intensidad }.
+- \`secciones[]\` (de 5 a 16): { id, tipo, variante?, visible, intencion { objetivo, emocion?, objecionQueResponde? }, ajustes, bloques[ { id, tipo, ajustes } ], animacion?, efectos?[] }.
+- \`assets[]\`: { slot, tipo ('imagen' o 'video'), relacion, promptGrok, alt }.
+
+Copia \`tokens\` y \`meta.semilla\` tal cual llegan en el contexto.
+
+Cada sección lleva \`intencion: { objetivo, emocion, objecionQueResponde? }\` y cada objeción del brief queda respondida en al menos una sección.
+
+Incluye \`tokens\` y \`meta.semilla\` completos y usa solo esos valores en todo el documento.
+
+Todos los textos del documento pasan el linter de lista negra con cero infracciones.
+
+No incluyas el campo \`critica\` en tu respuesta: lo completa el auditor en una llamada aparte.
+
+Antes de responder, razona paso a paso qué necesita el comprador en cada sección; entrega solo el resultado final en el formato pedido.
+
+Usa exclusivamente los datos del brief para cifras, precios, garantías y testimonios. Cuando un dato falte, marca el campo con \`"[COMPLETAR]"\`.",
+  "rol": "Eres estratega de conversión especializado en productos físicos, director de arte que aplica la semilla «japonés ma (espacio negativo) × tipografía de periódico» como sistema visual y editor de estilo que mantiene el texto libre de tics de IA, y trabajas con un auditor senior de UX y CRO que revisará tu entrega con evidencia.",
+  "tarea": "1. Genera el documento \`LandingDoc\` de una landing para el producto físico del brief.
+2. Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total.
+3. Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía).
+4. Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido.
+5. Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes.
+6. Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados.
+7. Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto.
+8. Usa signos de exclamación simples y un guion largo por párrafo como máximo.
+9. Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief.
+10. Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado.
+11. En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles.
+12. Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte.
+13. Cuando dos indicaciones se crucen, aplica este orden: en colores y tipografías mandan los tokens de la semilla, salvo los colores de marca del brief; en cantidad de secciones y de campos manda el diseño sustractivo sobre el prompt ambicioso; en los textos mandan las reglas de restricciones negativas y de redacción humana. Entrega un único JSON.",
+}
+`;
+
+exports[`combinar · snapshot > snapshot del prompt estructurado y de aTexto 2`] = `
+"### ROL
+Eres estratega de conversión especializado en productos físicos, director de arte que aplica la semilla «japonés ma (espacio negativo) × tipografía de periódico» como sistema visual y editor de estilo que mantiene el texto libre de tics de IA, y trabajas con un auditor senior de UX y CRO que revisará tu entrega con evidencia.
+
+### TAREA
+1. Genera el documento \`LandingDoc\` de una landing para el producto físico del brief.
+2. Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total.
+3. Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía).
+4. Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido.
+5. Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes.
+6. Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados.
+7. Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto.
+8. Usa signos de exclamación simples y un guion largo por párrafo como máximo.
+9. Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief.
+10. Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado.
+11. En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles.
+12. Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte.
+13. Cuando dos indicaciones se crucen, aplica este orden: en colores y tipografías mandan los tokens de la semilla, salvo los colores de marca del brief; en cantidad de secciones y de campos manda el diseño sustractivo sobre el prompt ambicioso; en los textos mandan las reglas de restricciones negativas y de redacción humana. Entrega un único JSON.
+
+### CONTEXTO
+Brief del producto (única fuente de datos):
+{
+  "nombre": "Corrector de postura inteligente",
+  "categoria": "salud-y-bienestar",
+  "problema": "Pasas ocho horas sentado y la espalda te duele al final del día.",
+  "publico": "Trabajadores de oficina de 25 a 45 años que usan computador todo el día.",
+  "beneficios": [
+    "Vibra cuando te encorvas",
+    "Se usa bajo la ropa",
+    "Carga por USB"
+  ],
+  "precio": {
+    "valor": 129000,
+    "anterior": 169000,
+    "moneda": "COP"
+  },
+  "objeciones": [
+    "¿Se nota bajo la ropa?",
+    "¿Cuánto dura la batería?",
+    "¿Cómo lo devuelvo?"
+  ],
+  "nivelConciencia": "problema",
+  "intensidad": 3
+}
+
+Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta.
+
+Tokens de la semilla (fuente única de verdad visual):
+{
+  "colores": {
+    "fondo": "#1A1A1A",
+    "superficie": "#262626",
+    "texto": "#F2EDE4",
+    "textoSuave": "#B5AEA2",
+    "acento": "#F0503F",
+    "acentoTexto": "#111111",
+    "borde": "#3D3D3D"
+  },
+  "tipografia": {
+    "titulos": "Instrument Serif",
+    "cuerpo": "Geist",
+    "escala": "amplia"
+  },
+  "radio": 4,
+  "espaciado": "normal",
+  "borde": "ninguno",
+  "imagen": "natural",
+  "intensidad": 3
+}
+
+Semilla: estilo «japonés ma (espacio negativo)», industria vecina «tipografía de periódico», paleta constructivismo, tipografía instrument-serif-geist, número 42. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.
+
+Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.
+Patrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».
+Estilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos.
+
+Rúbrica del auditor (puntaje total de 0 a 10, ponderado):
+Claridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.
+Fricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.
+Móvil (15 %): jerarquía, tamaños y orden a 390 px.
+Confianza (15 %): garantía, prueba social real y datos concretos.
+Persuasión (15 %): beneficio antes que característica y objeciones respondidas.
+Originalidad (5 %): se nota la semilla y se evita el look genérico.
+Factor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.
+Accesibilidad (5 %): contraste, textos alternativos, tamaño táctil y \`reduced-motion\`.
+
+Tipos de sección disponibles:
+- \`heroe\`: primera sección; dice qué es, para quién y el beneficio principal (exige \`variante\`)
+- \`cinta-anuncio\`: franja breve con la oferta o el beneficio del momento
+- \`problema-solucion\`: narra la frustración concreta y el alivio antes de hablar de características
+- \`beneficios\`: traduce cada función en un beneficio concreto (3 a 6 bloques \`beneficio\`)
+- \`como-funciona\`: explica el uso en 3 o 4 pasos
+- \`antes-despues\`: muestra el resultado visible con dos imágenes
+- \`comparativa\`: compara el producto con las alternativas en 4 a 7 filas
+- \`galeria\`: imágenes del producto en uso
+- \`video\`: clip corto del producto en uso
+- \`testimonios\`: opiniones reales del brief; si faltan, \`[COMPLETAR]\`
+- \`cifras\`: 2 a 4 cifras reales del brief
+- \`oferta\`: precio, precio anterior real y opciones de cantidad
+- \`incluye\`: lista de lo que trae la caja o el regalo
+- \`cuenta-regresiva\`: solo con una fecha de oferta real del brief
+- \`faq\`: responde las objeciones antes de que el lector las piense (3 a 8 preguntas)
+- \`garantia\`: promesas de confianza con los días y condiciones del brief
+- \`formulario-lead\`: acción final; aparece exactamente una vez, cerca del final
+- \`html-libre\`: solo lo agrega una persona en el editor; la IA no lo usa
+
+Variantes de héroe aprobadas (todas con el contenido centrado, superpuesto o apilado):
+- \`producto-monumental\`: producto grande y centrado con el titular encima y el CTA debajo; útil para comprador consciente del producto
+- \`poster-a-sangre\`: imagen a sangre con el titular y el CTA superpuestos en el tercio inferior; útil para estilo editorial
+- \`titular-tipografico\`: titular gigante centrado arriba con el producto debajo, sin solaparse; útil para brutalismo y semillas suizas
+- \`problema-primero\`: solo texto con una pregunta de dolor centrada; útil para nivel inconsciente o de problema (PAS)
+- \`antes-despues-heroe\`: titular centrado y slider comparativo a todo el ancho; útil para productos de resultado visible
+- \`video-inmersivo\`: clip en loop a sangre con titular centrado y CTA; útil para productos en uso y movimiento
+- \`orbita-beneficios\`: producto al centro y 3 o 4 beneficios alrededor; útil para productos con varias funciones
+- \`mosaico-editorial\`: collage asimétrico con el titular en una franja que lo cruza; útil para moda y estilo de vida
+
+Ajustes y bloques válidos por tipo de sección (usa solo estos campos y valores; todo campo sin ? es obligatorio, no omitas ninguno; los textos respetan el máximo indicado; el signo ? marca un campo opcional):
+- \`heroe\`: ajustes { titular: texto, máx. 120 caracteres, p. ej. «Titular del héroe»; subtitular?: texto, máx. 240 caracteres; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; slot?: nombre de un slot de \`assets\`; slots?: nombre de un slot de \`assets\`; sello?: texto, máx. 80 caracteres }; bloques \`beneficio-corto\` (0 a 4) { texto: texto, máx. 60 caracteres, p. ej. «Beneficio» }
+- \`cinta-anuncio\`: ajustes { textos: lista de textos; velocidad: número de 1 a 10; estilo: "solido"|"contorno" }; sin bloques
+- \`problema-solucion\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Una escena que ya conoces»; historia: texto; giro: texto, máx. 200 caracteres; imagen?: nombre de un slot de \`assets\` }; sin bloques
+- \`beneficios\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cambia en tu día»; disposicion: "lista-grande"|"tarjetas-apiladas"|"numerada"|"carrusel" }; bloques \`beneficio\` (3 a 6) { icono: texto, p. ej. «check»; titulo: texto, máx. 60 caracteres, p. ej. «Beneficio»; texto: texto, máx. 200 caracteres, p. ej. «Cuenta qué gana la persona.»; imagen?: nombre de un slot de \`assets\` }
+- \`como-funciona\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Cómo funciona»; disposicion: "pasos-verticales"|"linea-tiempo" }; bloques \`paso\` (3 a 4) { titulo: texto, máx. 60 caracteres, p. ej. «Paso»; texto: texto, máx. 220 caracteres, p. ej. «Describe qué hace la persona.» }
+- \`antes-despues\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Mira la diferencia»; imagenAntes: nombre de un slot de \`assets\`; imagenDespues: nombre de un slot de \`assets\`; etiquetaAntes: texto, máx. 30 caracteres, p. ej. «Antes»; etiquetaDespues: texto, máx. 30 caracteres, p. ej. «Después» }; sin bloques
+- \`comparativa\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Por qué este y no otro»; nombreNuestro: texto, máx. 40 caracteres, p. ej. «Nuestro»; nombreOtros: texto, máx. 40 caracteres, p. ej. «Otros»; estilo: "minimal"|"resaltado" }; bloques \`fila\` (4 a 7) { caracteristica: texto, máx. 80 caracteres, p. ej. «Característica»; nuestro: texto; otros: texto }
+- \`galeria\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Míralo de cerca»; disposicion: "carrusel"|"mosaico"|"historias" }; bloques \`imagen\` (3 a 8) { slot: nombre de un slot de \`assets\`; pie?: texto, máx. 100 caracteres }
+- \`video\`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Míralo en uso»; slot: nombre de un slot de \`assets\`; poster?: nombre de un slot de \`assets\`; autoplay: true o false }; sin bloques
+- \`testimonios\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cuentan quienes lo usan»; disposicion: "muro"|"carrusel"|"destacado" }; bloques \`testimonio\` (3 a 6) { nombre: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; ciudad: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; texto: texto, máx. 400 caracteres, p. ej. «[COMPLETAR]»; estrellas: número; foto?: nombre de un slot de \`assets\` }
+- \`cifras\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Resultados reales» }; bloques \`cifra\` (2 a 4) { valor: texto, máx. 30 caracteres, p. ej. «[COMPLETAR]»; etiqueta: texto, máx. 80 caracteres, p. ej. «Personas que lo probaron» }
+- \`oferta\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Llévalo hoy»; precio: número; precioAnterior?: número; moneda: "COP"|"USD"|"MXN"|"EUR"; textoBoton?: texto, máx. 40 caracteres, p. ej. «Quiero aprovecharlo» }; bloques \`opcion-cantidad\` (1 a 3) { unidades: número de 1 a 12; precio: número; etiqueta?: texto, máx. 30 caracteres }
+- \`incluye\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Qué viene en la caja»; texto: texto, máx. 240 caracteres; imagen: nombre de un slot de \`assets\` }; bloques \`item\` (1 a 5) { texto: texto, máx. 100 caracteres, p. ej. «Elemento» }
+- \`cuenta-regresiva\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «La oferta termina en»; fechaFin: texto, p. ej. «[COMPLETAR]»; estilo: "bloques"|"linea" }; sin bloques
+- \`faq\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Preguntas frecuentes» }; bloques \`pregunta\` (3 a 8) { pregunta: texto, máx. 140 caracteres, p. ej. «¿Cómo funciona?»; respuesta: texto, máx. 500 caracteres, p. ej. «[COMPLETAR]»; objecion?: texto, máx. 80 caracteres }
+- \`garantia\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Compra sin riesgo»; texto: texto, máx. 280 caracteres; dias: número; icono: texto, p. ej. «escudo» }; bloques \`promesa\` (2 a 4) { texto: texto, máx. 120 caracteres, p. ej. «Promesa» }
+- \`formulario-lead\`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Recibe el tuyo»; subtitulo?: texto, máx. 200 caracteres; campos: lista con valores de "nombre"|"correo"|"telefono"|"ciudad"|"mensaje"; obligatorios?: lista con valores de "nombre"|"correo"|"telefono"|"ciudad"|"mensaje"; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; mensajeGracias: texto, máx. 200 caracteres, p. ej. «Gracias, te escribimos muy pronto.»; privacidad: texto, máx. 240 caracteres, p. ej. «Usamos tus datos solo para contactarte sobre este producto.» }; sin bloques
+
+Reglas de estructura:
+- El héroe es la primera sección y usa una de las variantes aprobadas.
+- El formulario \`formulario-lead\` aparece exactamente una vez, cerca del final.
+- \`cuenta-regresiva\` solo con una fecha de oferta real del brief; \`testimonios\` y \`cifras\` solo con datos del brief.
+- Todos los colores y tipografías salen de \`tokens\`.
+
+Catálogo de efectos permitido para la intensidad 3 (elige solo de esta lista; máximo 3 de nivel 3 en toda la landing):
+- \`revelar-suave\` · nivel 1 · heroe, cinta-anuncio, problema-solucion, beneficios, como-funciona, antes-despues, comparativa, galeria, video, testimonios, cifras, oferta, incluye, cuenta-regresiva, faq, garantia, formulario-lead, html-libre
+- \`grano\` · nivel 1 · global
+- \`precio-cae\` · nivel 1 · oferta
+- \`titular-cinetico\` · nivel 2 · heroe, problema-solucion, formulario-lead
+- \`mascara-circular\` · nivel 2 · galeria, heroe, incluye
+- \`mascara-persiana\` · nivel 2 · galeria, heroe, incluye
+- \`marquee-reactivo\` · nivel 2 · cinta-anuncio
+- \`boton-magnetico\` · nivel 2 · heroe, oferta, formulario-lead
+- \`cursor-vivo\` · nivel 2 · global
+- \`video-scroll\` · nivel 3 · heroe, video (héroe: video-inmersivo o producto-monumental)
+- \`producto-explotado\` · nivel 3 · heroe, como-funciona (héroe: producto-monumental)
+- \`pin-coreografia\` · nivel 3 · beneficios, como-funciona, antes-despues
+- \`horizontal\` · nivel 3 · galeria, beneficios, testimonios
+- \`shader-ondas\` · nivel 3 · galeria, heroe
+- \`antes-despues-scroll\` · nivel 3 · antes-despues
+
+Ejemplos few-shot:
+Ejemplo A · Copy: «Pasas 8 horas frente al computador y la espalda te lo cobra a las 4 p. m. Este corrector te recuerda enderezarte sin que tengas que pensarlo.»
+Ejemplo B · Botón: «Quiero que me contacten hoy».
+Ejemplo C · Sección del LandingDoc: {"id":"s1","tipo":"heroe","variante":"problema-primero","visible":true,"intencion":{"objetivo":"Que el lector se reconozca en el dolor en menos de 3 s","emocion":"alivio anticipado"},"ajustes":{"titular":"¿A las 4 p. m. ya te duele la espalda?","subtitular":"Hay una forma de enderezarte sin pensarlo.","textoBoton":"Ver cómo funciona"},"bloques":[],"efectos":["titular-cinetico"]}
+Ejemplo D · Héroe: producto centrado ocupando el 60 % del alto, titular centrado encima y CTA debajo; o imagen a sangre con el titular superpuesto en el tercio inferior.
+
+### FORMATO
+Entrega un único objeto JSON \`LandingDoc\`, sin texto antes ni después, con estos campos:
+- \`version\`: 1.
+- \`meta\`: { nombre, slug en kebab-case, producto, tecnicas[], semilla { estilo, industria, paletaId, tipografiaId, numero }, nivelConciencia, marco ('AIDA' o 'PAS'), eliminadas[] }.
+- \`tokens\`: { colores { fondo, superficie, texto, textoSuave, acento, acentoTexto, borde }, tipografia { titulos, cuerpo, escala }, radio, espaciado, borde, imagen, intensidad }.
+- \`secciones[]\` (de 5 a 16): { id, tipo, variante?, visible, intencion { objetivo, emocion?, objecionQueResponde? }, ajustes, bloques[ { id, tipo, ajustes } ], animacion?, efectos?[] }.
+- \`assets[]\`: { slot, tipo ('imagen' o 'video'), relacion, promptGrok, alt }.
+
+Copia \`tokens\` y \`meta.semilla\` tal cual llegan en el contexto.
+
+Cada sección lleva \`intencion: { objetivo, emocion, objecionQueResponde? }\` y cada objeción del brief queda respondida en al menos una sección.
+
+Incluye \`tokens\` y \`meta.semilla\` completos y usa solo esos valores en todo el documento.
+
+Todos los textos del documento pasan el linter de lista negra con cero infracciones.
+
+No incluyas el campo \`critica\` en tu respuesta: lo completa el auditor en una llamada aparte.
+
+Antes de responder, razona paso a paso qué necesita el comprador en cada sección; entrega solo el resultado final en el formato pedido.
+
+Usa exclusivamente los datos del brief para cifras, precios, garantías y testimonios. Cuando un dato falte, marca el campo con \`"[COMPLETAR]"\`.
+"
+`;

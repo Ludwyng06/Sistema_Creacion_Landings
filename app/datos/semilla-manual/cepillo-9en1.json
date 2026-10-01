@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "meta": {
+    "nombre": "Cepillo eléctrico 9 en 1",
+    "slug": "cepillo-9en1",
+    "producto": "Cepillo eléctrico 9 en 1",
+    "tecnicas": [
+      "semilla",
+      "sustractivo",
+      "negativas",
+      "critico"
+    ],
+    "semilla": {
+      "estilo": "brutalismo tipográfico",
+      "industria": "laboratorio",
+      "paletaId": "ma-japones",
+      "tipografiaId": "syne-manrope",
+      "numero": 161
+    },
+    "nivelConciencia": "producto",
+    "marco": "PAS",
+    "eliminadas": [
+      {
+        "tipo": "cinta-anuncio",
+        "motivo": "Exceso de ruido visual, distrae del mensaje central."
+      },
+      {
+        "tipo": "galeria",
+        "motivo": "Redundancia con las imágenes de beneficios."
+      }
+    ]
+  },
+  "tokens": {
+    "colores": {
+      "fondo": "#F5F3EE",
+      "superficie": "#FFFFFF",
+      "texto": "#22221F",
+      "textoSuave": "#63625C",
+      "acento": "#3E5C4A",
+      "acentoTexto": "#FFFFFF",
+      "borde": "#DCD8CE"
+    },
+    "tipografia": {
+      "titulos": "Syne",
+      "cuerpo": "Manrope",
+      "escala": "amplia"
+    },
+    "radio": 999,
+    "espaciado": "denso",
+    "borde": "fino",
+    "imagen": "natural",
+    "intensidad": 3
+  },
+  "secciones": [
+    {
+      "id": "hero-section",
+      "tipo": "heroe",
+      "variante": "titular-tipografico",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Presentar el producto como la única herramienta necesaria",
+        "emocion": "Claridad"
+      },
+      "ajustes": {
+        "titular": "Limpieza profunda con una sola mano",
+        "subtitular": "Olvídate de acumular cepillos y dedica menos esfuerzo a las tareas del hogar con nuestro motor recargable",
+        "textoBoton": "Quiero mi cepillo"
+      },
+      "bloques": [
+        {
+          "id": "b1",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "9 cabezales para cada rincón"
+          }
+        },
+        {
+          "id": "b2",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Mango largo para evitar molestias"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0
+      },
+      "efectos": []
+    },
+    {
+      "id": "problema-solucion",
+      "tipo": "problema-solucion",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Conectar con el cansancio de usar herramientas inadecuadas",
+        "emocion": "Comprensión"
+      },
+      "ajustes": {
+        "titulo": "Limpiar ya no debe ser un desafío físico",
+        "historia": "Las juntas del baño y la cocina requieren precisión. Usar productos manuales agota tu espalda y ocupa espacio innecesario en tu hogar.",
+        "giro": "Simplifica tu rutina de limpieza con un motor versátil que reemplaza nueve herramientas distintas."
+      },
+      "bloques": []
+    },
+    {
+      "id": "beneficios-lista",
+      "tipo": "beneficios",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Justificar la utilidad mediante datos del brief",
+        "objecionQueResponde": "¿Sirve para todo?"
+      },
+      "ajustes": {
+        "titulo": "Eficiencia en cada detalle",
+        "disposicion": "lista-grande"
+      },
+      "bloques": [
+        {
+          "id": "bf1",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Versatilidad total",
+            "texto": "Nueve cabezales intercambiables listos para cada superficie de tu cocina y baño."
+          }
+        },
+        {
+          "id": "bf2",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Ergonomía real",
+            "texto": "Su mango largo facilita llegar a puntos difíciles sin tener que agacharte."
+          }
+        },
+        {
+          "id": "bf3",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Autonomía completa",
+            "texto": "Motor recargable por USB que mantiene la potencia necesaria en toda tarea."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.2
+      },
+      "efectos": [
+        "pin-coreografia"
+      ]
+    },
+    {
+      "id": "incluye-caja",
+      "tipo": "incluye",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Transparentar el contenido del producto",
+        "emocion": "Satisfacción"
+      },
+      "ajustes": {
+        "titulo": "Qué recibes en casa",
+        "texto": "Todo lo necesario para iniciar la limpieza hoy mismo.",
+        "imagen": "asset-1"
+      },
+      "bloques": [
+        {
+          "id": "i1",
+          "tipo": "item",
+          "ajustes": {
+            "texto": "Cepillo con motor principal"
+          }
+        },
+        {
+          "id": "i2",
+          "tipo": "item",
+          "ajustes": {
+            "texto": "Kit de 9 cabezales especializados"
+          }
+        },
+        {
+          "id": "i3",
+          "tipo": "item",
+          "ajustes": {
+            "texto": "Cable de carga USB estándar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq-info",
+      "tipo": "faq",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Resolver dudas frecuentes para cerrar la venta",
+        "objecionQueResponde": "Resistencia al agua y repuestos"
+      },
+      "ajustes": {
+        "titulo": "Preguntas frecuentes"
+      },
+      "bloques": [
+        {
+          "id": "q1",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿El cepillo es resistente al agua?",
+            "respuesta": "Sí, está diseñado para ser usado en baños y cocinas, permitiendo un uso seguro bajo humedad constante."
+          }
+        },
+        {
+          "id": "q2",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Cómo obtengo repuestos?",
+            "respuesta": "Puedes lavar tus cabezales para extender su vida útil; si necesitas recambios, contáctanos directamente para solicitarlos."
+          }
+        },
+        {
+          "id": "q3",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Sirve para el moho en juntas?",
+            "respuesta": "Sus cabezales de alta fricción están pensados específicamente para remover suciedad acumulada y moho de las juntas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oferta-cierre",
+      "tipo": "oferta",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Mostrar el ahorro real",
+        "emocion": "Ahorro"
+      },
+      "ajustes": {
+        "titulo": "Limpieza sin complicaciones",
+        "precio": 129900,
+        "precioAnterior": 169900,
+        "moneda": "COP",
+        "textoBoton": "Comprar ahora"
+      },
+      "bloques": [
+        {
+          "id": "o1",
+          "tipo": "opcion-cantidad",
+          "ajustes": {
+            "unidades": 1,
+            "precio": 129900,
+            "etiqueta": "Kit completo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lead-form",
+      "tipo": "formulario-lead",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Captar datos del interesado",
+        "emocion": "Seguridad"
+      },
+      "ajustes": {
+        "titulo": "Obtén el tuyo",
+        "campos": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "obligatorios": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "textoBoton": "Pedir información",
+        "mensajeGracias": "Gracias por tu interés, te contactaremos pronto.",
+        "privacidad": "Tus datos personales son privados y solo se usan para gestionar tu pedido."
+      },
+      "bloques": []
+    }
+  ],
+  "assets": [
+    {
+      "slot": "asset-1",
+      "tipo": "imagen",
+      "relacion": "1:1",
+      "promptGrok": "[SUJETO] electric brush 9-in-1 placed beside its USB charging cable, [ESCENA] home bathroom shelf with a plant and towel, [LUZ] soft natural window light, [CÁMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] #F5F3EE, #FFFFFF, #22221F, #63625C, #3E5C4A, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] product centered with clear negative space at top, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+      "alt": "Cepillo eléctrico 9 en 1 con todos sus accesorios incluidos."
+    }
+  ],
+  "critica": {
+    "puntaje": 7.5,
+    "porCriterio": [
+      {
+        "criterio": "Claridad en 3 s",
+        "puntaje": 8,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Fricción",
+        "puntaje": 6,
+        "evidencia": "secciones[6].ajustes.titulo"
+      },
+      {
+        "criterio": "Móvil",
+        "puntaje": 7,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Confianza",
+        "puntaje": 5,
+        "evidencia": "secciones[4].bloques[0].ajustes.respuesta"
+      },
+      {
+        "criterio": "Persuasión",
+        "puntaje": 7,
+        "evidencia": "secciones[2].bloques[0].ajustes.titulo"
+      },
+      {
+        "criterio": "Originalidad",
+        "puntaje": 6,
+        "evidencia": "meta.semilla.estilo"
+      },
+      {
+        "criterio": "Factor asombro",
+        "puntaje": 5,
+        "evidencia": "secciones[0].efectos[0]"
+      },
+      {
+        "criterio": "Accesibilidad",
+        "puntaje": 4,
+        "evidencia": "tokens.colores.texto"
+      }
+    ],
+    "problemas": [
+      "secciones[0].ajustes.titular no menciona explícitamente el público objetivo (público)",
+      "secciones[6].ajustes.titulo carece de garantía o prueba social clara",
+      "tokens.colores.contraste insuficiente entre fondo #F5F3EE y texto #22221F para accesibilidad"
+    ],
+    "correcciones": [
+      "Actualizar secciones[0].ajustes.titular a \"Limpieza profunda con una sola mano, ideal para adultos de 25‑60 años\"",
+      "Añadir a secciones[6].ajustes un campo garantia con valor \"Garantía de 2 años y 1000+ reseñas verificadas\"",
+      "Modificar tokens.colores.texto a \"#111110\" para mejorar contraste con fondo"
+    ]
+  }
+}

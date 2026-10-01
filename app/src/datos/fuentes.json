@@ -1,0 +1,3531 @@
+{
+ "generado": "2026-09-30",
+ "origen": "Google Fonts Developer API (sort=popularity, capability=WOFF2+VF)",
+ "total": 200,
+ "fuentes": [
+  {
+   "familia": "Roboto",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 1,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Open Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 2,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Inter",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 4,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Montserrat",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 5,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Poppins",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 6,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Lato",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    300,
+    400,
+    700,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 7,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Arimo",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 12,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Oswald",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 13,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Noto Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 14,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "DM Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 15,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Raleway",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 16,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Nunito",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 17,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Nunito Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 19,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Rubik",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 22,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Manrope",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 23,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Ubuntu",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 24,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Outfit",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 25,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Work Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 29,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Plus Jakarta Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 31,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Quicksand",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 33,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Figtree",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 35,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Source Sans 3",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 38,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Mulish",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 39,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Archivo",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 41,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Barlow",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 42,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Bricolage Grotesque",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 43,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "IBM Plex Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 44,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Jost",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 46,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Karla",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 50,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Space Grotesk",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 51,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Saira",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 53,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Fira Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 54,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Titillium Web",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    600,
+    700,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 56,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Heebo",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 58,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Smooch Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 63,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Inter Tight",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 66,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Public Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 72,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Libre Franklin",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 73,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Sora",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 79,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Josefin Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 80,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Mukta",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 84,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Schibsted Grotesk",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 85,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Assistant",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 86,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Lexend",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 87,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Geist",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 88,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Urbanist",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 89,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Cabin",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 91,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Dosis",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 99,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Red Hat Display",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 100,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Rajdhani",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 103,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Fredoka",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 104,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Exo 2",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 106,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Oxygen",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 107,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Instrument Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 108,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Hind",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 109,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Merriweather Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 112,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Overpass",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 113,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Orbitron",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 114,
+   "usoSugerido": "ambos",
+   "latinExt": false
+  },
+  {
+   "familia": "Hanken Grotesk",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 127,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Teko",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 136,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Maven Pro",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 140,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Asap",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 144,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Onest",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 156,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Be Vietnam Pro",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 158,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Albert Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 159,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Lexend Deca",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 162,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Exo",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 167,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "League Spartan",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 168,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Alumni Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 169,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Unbounded",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 170,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Syne",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 171,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Geologica",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 175,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Rethink Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 176,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Epilogue",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 179,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Sofia Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 182,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Encode Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 185,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Alegreya Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    300,
+    400,
+    500,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 203,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Signika",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 215,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Montserrat Alternates",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 216,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Red Hat Text",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 224,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Yanone Kaffeesatz",
+   "categoria": "sans-serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 226,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Golos Text",
+   "categoria": "sans-serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 227,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Chivo",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 237,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Noto Sans Display",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 248,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Khand",
+   "categoria": "sans-serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 259,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Kumbh Sans",
+   "categoria": "sans-serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 268,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Playfair Display",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 18,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Roboto Slab",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 21,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Merriweather",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 27,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Lora",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 32,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Noto Serif",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 52,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Libre Baskerville",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 57,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Cormorant Garamond",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 60,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "EB Garamond",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 75,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Fraunces",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 81,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Bitter",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 83,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Source Serif 4",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 101,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Newsreader",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 110,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Crimson Text",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 117,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Cinzel",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 118,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Domine",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 134,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Bodoni Moda",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 141,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Zilla Slab",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 149,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "IBM Plex Serif",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 155,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Spectral",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 164,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Frank Ruhl Libre",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 189,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Roboto Serif",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 198,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Faustina",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 201,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Crimson Pro",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 204,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Vollkorn",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 205,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Andada Pro",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 213,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Literata",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 214,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Playfair",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 222,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Baskervville",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 228,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Alegreya",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 239,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Aleo",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 243,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "STIX Two Text",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 275,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Martel",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 276,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Rokkitt",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 302,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Neuton",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 303,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Josefin Slab",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 309,
+   "usoSugerido": "ambos",
+   "latinExt": false
+  },
+  {
+   "familia": "Gelasio",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 338,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Eczar",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 359,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Kreon",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 369,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Libre Bodoni",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 381,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Petrona",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 382,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Noto Serif Display",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 398,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Besley",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 408,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Kameron",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 440,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Yrsa",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 514,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Enriqueta",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 588,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Inria Serif",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 593,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Hepta Slab",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 595,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Ibarra Real Nova",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 603,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Karma",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 620,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Podkova",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 630,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Halant",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 653,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "BioRhyme",
+   "categoria": "serif",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 660,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Brygada 1918",
+   "categoria": "serif",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 663,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Laila",
+   "categoria": "serif",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 688,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Montagu Slab",
+   "categoria": "serif",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 726,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Comfortaa",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 133,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Baloo 2",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 172,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Rowdies",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 240,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Oxanium",
+   "categoria": "display",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 274,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Passion One",
+   "categoria": "display",
+   "pesos": [
+    400,
+    700,
+    900
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 298,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Gabarito",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 322,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Cinzel Decorative",
+   "categoria": "display",
+   "pesos": [
+    400,
+    700,
+    900
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 356,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Averia Serif Libre",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 432,
+   "usoSugerido": "titulos",
+   "latinExt": false
+  },
+  {
+   "familia": "Grandstander",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 457,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Funnel Display",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 482,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Tektur",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 495,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Londrina Solid",
+   "categoria": "display",
+   "pesos": [
+    100,
+    300,
+    400,
+    900
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 508,
+   "usoSugerido": "titulos",
+   "latinExt": false
+  },
+  {
+   "familia": "MuseoModerno",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 512,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Pixelify Sans",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 533,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Big Shoulders",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 551,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Anybody",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 666,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Shantell Sans",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 673,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "DynaPuff",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 711,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Overlock",
+   "categoria": "display",
+   "pesos": [
+    400,
+    700,
+    900
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 714,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Red Rose",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 744,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Grenze Gotisch",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 755,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Turret Road",
+   "categoria": "display",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 779,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Sansita Swashed",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 793,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Gluten",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 834,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Expletus Sans",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 914,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Karantina",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 1013,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Bitcount Single",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1043,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Bellota",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 1048,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Phudu",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1067,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Life Savers",
+   "categoria": "display",
+   "pesos": [
+    400,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 1096,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Tillana",
+   "categoria": "display",
+   "pesos": [
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 1231,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Tourney",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 1291,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Foldit",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1534,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Redacted Script",
+   "categoria": "display",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 1629,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Kalnia Glaze",
+   "categoria": "display",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1677,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Dancing Script",
+   "categoria": "handwriting",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 70,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Caveat",
+   "categoria": "handwriting",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 95,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Kalam",
+   "categoria": "handwriting",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 187,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Comic Neue",
+   "categoria": "handwriting",
+   "pesos": [
+    300,
+    400,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 249,
+   "usoSugerido": "titulos",
+   "latinExt": false
+  },
+  {
+   "familia": "Merienda",
+   "categoria": "handwriting",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 375,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Playpen Sans",
+   "categoria": "handwriting",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 504,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Edu SA Beginner",
+   "categoria": "handwriting",
+   "pesos": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1031,
+   "usoSugerido": "titulos",
+   "latinExt": false
+  },
+  {
+   "familia": "Playwrite US Trad",
+   "categoria": "handwriting",
+   "pesos": [
+    100,
+    200,
+    300,
+    400
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1126,
+   "usoSugerido": "titulos",
+   "latinExt": false
+  },
+  {
+   "familia": "Cause",
+   "categoria": "handwriting",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 1545,
+   "usoSugerido": "titulos",
+   "latinExt": true
+  },
+  {
+   "familia": "Roboto Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 11,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "JetBrains Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 37,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Inconsolata",
+   "categoria": "monospace",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 45,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Source Code Pro",
+   "categoria": "monospace",
+   "pesos": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 61,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "IBM Plex Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 71,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Geist Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 129,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "DM Mono",
+   "categoria": "monospace",
+   "pesos": [
+    300,
+    400,
+    500
+   ],
+   "variable": false,
+   "cursiva": true,
+   "popularidad": 139,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Fira Code",
+   "categoria": "monospace",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 190,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Fira Mono",
+   "categoria": "monospace",
+   "pesos": [
+    400,
+    500,
+    700
+   ],
+   "variable": false,
+   "cursiva": false,
+   "popularidad": 292,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Azeret Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 470,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Red Hat Mono",
+   "categoria": "monospace",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 485,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Overpass Mono",
+   "categoria": "monospace",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 501,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Spline Sans Mono",
+   "categoria": "monospace",
+   "pesos": [
+    300,
+    400,
+    500,
+    600,
+    700
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 573,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Chivo Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "variable": true,
+   "cursiva": true,
+   "popularidad": 590,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  },
+  {
+   "familia": "Martian Mono",
+   "categoria": "monospace",
+   "pesos": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "variable": true,
+   "cursiva": false,
+   "popularidad": 684,
+   "usoSugerido": "ambos",
+   "latinExt": true
+  }
+ ]
+}

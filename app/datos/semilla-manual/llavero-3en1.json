@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "meta": {
+    "nombre": "Llavero encendedor 3 en 1",
+    "slug": "llavero-3en1",
+    "producto": "Llavero encendedor 3 en 1",
+    "tecnicas": [
+      "ambicioso",
+      "semilla",
+      "sustractivo",
+      "imagenes",
+      "video",
+      "negativas",
+      "humana",
+      "critico"
+    ],
+    "semilla": {
+      "estilo": "constructivismo ruso",
+      "industria": "relojería",
+      "paletaId": "deco-01",
+      "tipografiaId": "fraunces-inter-tight",
+      "numero": 3
+    },
+    "nivelConciencia": "producto",
+    "marco": "AIDA",
+    "eliminadas": [
+      {
+        "tipo": "antes-despues",
+        "motivo": "Exceso de elementos decorativos para un producto utilitario compacto"
+      }
+    ]
+  },
+  "tokens": {
+    "colores": {
+      "fondo": "#0F2A2B",
+      "superficie": "#163B3D",
+      "texto": "#F5EBD3",
+      "textoSuave": "#B8C4BC",
+      "acento": "#D4A94F",
+      "acentoTexto": "#0F2A2B",
+      "borde": "#2C5457"
+    },
+    "tipografia": {
+      "titulos": "Fraunces",
+      "cuerpo": "Inter Tight",
+      "escala": "amplia"
+    },
+    "radio": 4,
+    "espaciado": "denso",
+    "borde": "ninguno",
+    "imagen": "natural",
+    "intensidad": 3
+  },
+  "secciones": [
+    {
+      "id": "hero-section",
+      "tipo": "heroe",
+      "variante": "producto-monumental",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Presentar el producto como la solución definitiva a la falta de accesorios",
+        "emocion": "confianza"
+      },
+      "ajustes": {
+        "titular": "Tres herramientas esenciales integradas en un solo llavero de acero",
+        "subtitular": "Lleva luz, fuego y llaves contigo siempre con un diseño compacto y resistente.",
+        "textoBoton": "Quiero mi llavero ahora",
+        "slot": "producto-main"
+      },
+      "bloques": [
+        {
+          "id": "b1",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Encendedor USB sin gas"
+          }
+        },
+        {
+          "id": "b2",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Linterna LED integrada"
+          }
+        },
+        {
+          "id": "b3",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Acero de alta resistencia"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0
+      },
+      "efectos": [
+        "producto-explotado"
+      ]
+    },
+    {
+      "id": "problema-solucion",
+      "tipo": "problema-solucion",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Conectar con la frustración de llevar demasiados objetos sueltos",
+        "emocion": "alivio"
+      },
+      "ajustes": {
+        "titulo": "Simplifica tu carga diaria",
+        "historia": "Cargas llaves, linterna y encendedor por separado y siempre falta uno cuando lo necesitas.",
+        "giro": "Este llavero condensa todo en un cuerpo metálico que siempre está a mano."
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.2
+      },
+      "efectos": [
+        "revelar-suave"
+      ]
+    },
+    {
+      "id": "beneficios",
+      "tipo": "beneficios",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Detallar las funciones técnicas",
+        "objecionQueResponde": "Resistencia y practicidad"
+      },
+      "ajustes": {
+        "titulo": "Construido para el uso diario",
+        "disposicion": "tarjetas-apiladas"
+      },
+      "bloques": [
+        {
+          "id": "ben1",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "usb",
+            "titulo": "Recarga USB universal",
+            "texto": "Olvídate del gas o el fluido para siempre; recárgalo fácilmente en cualquier puerto USB."
+          }
+        },
+        {
+          "id": "ben2",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "light",
+            "titulo": "Iluminación de emergencia",
+            "texto": "Cuenta con una linterna LED brillante lista para cualquier imprevisto en el camino."
+          }
+        },
+        {
+          "id": "ben3",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "lock",
+            "titulo": "Acero inoxidable duradero",
+            "texto": "Su estructura de acero resiste impactos y el desgaste constante de llevarlo con tus llaves."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.4
+      },
+      "efectos": [
+        "pin-coreografia"
+      ]
+    },
+    {
+      "id": "faq",
+      "tipo": "faq",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Eliminar barreras de compra",
+        "objecionQueResponde": "Autonomía, viento y transporte"
+      },
+      "ajustes": {
+        "titulo": "Preguntas frecuentes"
+      },
+      "bloques": [
+        {
+          "id": "f1",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Cuántos encendidos da por carga?",
+            "respuesta": "La batería de alta densidad permite hasta 50 encendidos completos por cada ciclo de carga."
+          }
+        },
+        {
+          "id": "f2",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Funciona con viento?",
+            "respuesta": "Sí, su tecnología de arco eléctrico no requiere llama abierta, funcionando perfecto bajo cualquier clima."
+          }
+        },
+        {
+          "id": "f3",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Se puede llevar en el avión?",
+            "respuesta": "Al ser un dispositivo recargable sin gas, cumple con las normas generales de transporte manual."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0.2
+      }
+    },
+    {
+      "id": "oferta-cierre",
+      "tipo": "oferta",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Anclar valor y convertir",
+        "emocion": "urgencia"
+      },
+      "ajustes": {
+        "titulo": "Llévatelo hoy mismo",
+        "precio": 49900,
+        "precioAnterior": 69900,
+        "moneda": "COP",
+        "textoBoton": "Quiero mi oferta ahora"
+      },
+      "bloques": [
+        {
+          "id": "op1",
+          "tipo": "opcion-cantidad",
+          "ajustes": {
+            "unidades": 1,
+            "precio": 49900,
+            "etiqueta": "Envío rápido incluido"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "escala",
+        "retraso": 0.5
+      },
+      "efectos": [
+        "precio-cae"
+      ]
+    },
+    {
+      "id": "lead-form",
+      "tipo": "formulario-lead",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Capturar datos del cliente potencial",
+        "emocion": "seguridad"
+      },
+      "ajustes": {
+        "titulo": "Recibe tu pedido",
+        "subtitulo": "Deja tus datos y te contactaremos para confirmar el envío a domicilio.",
+        "campos": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "obligatorios": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "textoBoton": "Quiero que me contacten hoy",
+        "mensajeGracias": "Gracias, un asesor se comunicará contigo pronto.",
+        "privacidad": "Tus datos personales están protegidos con nosotros."
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0.2
+      },
+      "efectos": [
+        "boton-magnetico"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "slot": "producto-main",
+      "tipo": "imagen",
+      "relacion": "1:1",
+      "promptGrok": "[SUJETO] Llavero encendedor 3 en 1 con precio tachado y precio nuevo destacado, [ESCENA] fondo de estudio minimalista con superficie #163B3D, [LUZ] luz de la semilla que crea un suave brillo sobre el metal, [CAMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] fondo #0F2A2B, superficie #163B3D, acento #D4A94F, texto #F5EBD3, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] centered with clear negative space at bottom for text, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+      "alt": "Llavero encendedor 3 en 1 con luz LED encendida"
+    }
+  ],
+  "critica": {
+    "puntaje": 6.9,
+    "porCriterio": [
+      {
+        "criterio": "Claridad en 3 s",
+        "puntaje": 8,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Fricción",
+        "puntaje": 6,
+        "evidencia": "secciones[4].ajustes.campos"
+      },
+      {
+        "criterio": "Móvil",
+        "puntaje": 7,
+        "evidencia": "secciones[0].tipo"
+      },
+      {
+        "criterio": "Confianza",
+        "puntaje": 7,
+        "evidencia": "secciones[3].bloques[0].ajustes.pregunta"
+      },
+      {
+        "criterio": "Persuasión",
+        "puntaje": 7,
+        "evidencia": "secciones[2].bloques[0].ajustes.titulo"
+      },
+      {
+        "criterio": "Originalidad",
+        "puntaje": 6,
+        "evidencia": "meta.semilla.estilo"
+      },
+      {
+        "criterio": "Factor asombro",
+        "puntaje": 5,
+        "evidencia": "secciones[0].efectos[0]"
+      },
+      {
+        "criterio": "Accesibilidad",
+        "puntaje": 6,
+        "evidencia": "assets[0].alt"
+      }
+    ],
+    "problemas": [
+      "secciones[0].ajustes.titular no menciona público objetivo",
+      "falta de garantía explícita en la landing",
+      "primer tercio carece de elemento memorable (hero)",
+      "posible bajo contraste entre tokens.colores.texto y tokens.colores.fondo"
+    ],
+    "correcciones": [
+      "actualizar secciones[0].ajustes.titular a \"Herramientas esenciales para campistas y viajeros: encendedor, linterna y llavero\"",
+      "añadir secciones[5].ajustes.garantia con valor \"Garantía de 12 meses y devolución sin preguntas\"",
+      "agregar secciones[0].efectos.push('destello-heroico') para crear momento asombroso",
+      "cambiar tokens.colores.texto a \"#FFFFFF\" para mayor contraste con fondo #0F2A2B"
+    ]
+  }
+}

@@ -1,0 +1,1074 @@
+{
+  "slug": "kit-cohete-educativo",
+  "numero": 4,
+  "brief": {
+    "nombre": "Kit de cohete educativo para niños",
+    "categoria": "otro",
+    "problema": "Tus hijos pasan horas frente a una pantalla y buscas un plan que les enseñe algo de verdad.",
+    "publico": "Madres, padres y profesores de niños en edad escolar que quieren un plan de ciencia para hacer en familia.",
+    "beneficios": [
+      "Arman su propio cohete y aprenden cómo despega",
+      "Un plan para hacer en familia, al aire libre",
+      "Cada paso se explica con instrucciones claras para niños",
+      "Mezcla juego y ciencia lejos de las pantallas"
+    ],
+    "precio": {
+      "valor": 79900,
+      "anterior": 99900,
+      "moneda": "COP"
+    },
+    "objeciones": [
+      "¿Necesita un adulto para usarlo?",
+      "¿Desde qué edad se puede usar?",
+      "¿Se necesita algo más para lanzarlo?",
+      "¿Sirve para un salón de clase?",
+      "¿Qué pasa si llega incompleto?"
+    ],
+    "nivelConciencia": "solucion",
+    "incluye": [
+      "Piezas del cohete",
+      "Guía de armado en español"
+    ],
+    "garantia": {
+      "dias": 30,
+      "condiciones": "Si llega incompleto o con un defecto de fábrica, lo cambiamos sin costo."
+    },
+    "coloresMarca": [
+      "#ff7a59",
+      "#070b18"
+    ],
+    "intensidad": 3
+  },
+  "tecnicas": [
+    "semilla",
+    "ambicioso",
+    "critico",
+    "imagenes",
+    "video",
+    "negativas",
+    "humana"
+  ],
+  "numeroSemilla": 618,
+  "prompt": {
+    "rol": "Eres estratega de conversión especializado en productos físicos, director de arte que aplica la semilla «Memphis contenido × etiquetado de vino» como sistema visual, director de fotografía de producto que escribe prompts para Grok Imagine, director de movimiento web que elige efectos de un catálogo cerrado, editor de estilo que mantiene el texto libre de tics de IA y redactor de respuesta directa con voz humana en español neutro, y trabajas con un auditor senior de UX y CRO que revisará tu entrega con evidencia.",
+    "tarea": "1. Genera el documento `LandingDoc` de una landing para el producto físico del brief.\n2. Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total.\n3. Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía).\n4. Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido.\n5. Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes.\n6. Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados.\n7. Declara un slot por cada sección que necesite imagen, con relación 1:1, 16:9, 9:16 o 4:5 y una descripción concreta.\n8. Escribe un prompt en inglés por slot con la plantilla de imagen y termina cada uno con el bloque de consistencia.\n9. Deriva la paleta y la luz de la semilla y describe personas diversas y naturales, con expresiones espontáneas y fondos con contexto real.\n10. Mantén siempre la capa de movimiento en código: entradas de sección, parallax suave, contador del precio y microinteracción del botón, con respaldo para `prefers-reduced-motion`.\n11. Si el héroe es «video-inmersivo» o la landing tiene una sección de video, escribe el prompt de un clip corto en loop con la plantilla de clip y regístralo en `assets` con `tipo: 'video'`.\n12. Elige `efectos[]` por sección solo del catálogo permitido para la intensidad del brief, compatibles con el tipo de sección y con un máximo de 3 efectos de nivel 3 en toda la landing.\n13. Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto.\n14. Usa signos de exclamación simples y un guion largo por párrafo como máximo.\n15. Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief.\n16. Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado.\n17. En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles.\n18. Escribe en español neutro y en segunda persona (tú), con frases de 8 a 18 palabras, verbos concretos, un dato por afirmación y cero relleno.\n19. En la sección `problema-solucion` narra primero la frustración concreta y el alivio, y presenta las características después.\n20. Redacta botones que prometen un beneficio o reducen la ansiedad, por ejemplo «Quiero el mío» o «Quiero que me contacten hoy».\n21. Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte.\n22. Cuando dos indicaciones se crucen, aplica este orden: en colores y tipografías mandan los tokens de la semilla, salvo los colores de marca del brief; en cantidad de secciones y de campos manda el diseño sustractivo sobre el prompt ambicioso; en los textos mandan las reglas de restricciones negativas y de redacción humana. Entrega un único JSON.",
+    "contexto": "Brief del producto (única fuente de datos):\n{\n  \"nombre\": \"Kit de cohete educativo para niños\",\n  \"categoria\": \"otro\",\n  \"problema\": \"Tus hijos pasan horas frente a una pantalla y buscas un plan que les enseñe algo de verdad.\",\n  \"publico\": \"Madres, padres y profesores de niños en edad escolar que quieren un plan de ciencia para hacer en familia.\",\n  \"beneficios\": [\n    \"Arman su propio cohete y aprenden cómo despega\",\n    \"Un plan para hacer en familia, al aire libre\",\n    \"Cada paso se explica con instrucciones claras para niños\",\n    \"Mezcla juego y ciencia lejos de las pantallas\"\n  ],\n  \"precio\": {\n    \"valor\": 79900,\n    \"anterior\": 99900,\n    \"moneda\": \"COP\"\n  },\n  \"objeciones\": [\n    \"¿Necesita un adulto para usarlo?\",\n    \"¿Desde qué edad se puede usar?\",\n    \"¿Se necesita algo más para lanzarlo?\",\n    \"¿Sirve para un salón de clase?\",\n    \"¿Qué pasa si llega incompleto?\"\n  ],\n  \"nivelConciencia\": \"solucion\",\n  \"incluye\": [\n    \"Piezas del cohete\",\n    \"Guía de armado en español\"\n  ],\n  \"garantia\": {\n    \"dias\": 30,\n    \"condiciones\": \"Si llega incompleto o con un defecto de fábrica, lo cambiamos sin costo.\"\n  },\n  \"coloresMarca\": [\n    \"#ff7a59\",\n    \"#070b18\"\n  ],\n  \"intensidad\": 3\n}\n\nNivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta.\n\nTokens de la semilla (fuente única de verdad visual):\n{\n  \"colores\": {\n    \"fondo\": \"#070B18\",\n    \"superficie\": \"#111521\",\n    \"texto\": \"#FFFFFF\",\n    \"textoSuave\": \"#A8AAAE\",\n    \"acento\": \"#FF7A59\",\n    \"acentoTexto\": \"#000000\",\n    \"borde\": \"#2F323D\"\n  },\n  \"tipografia\": {\n    \"titulos\": \"Bricolage Grotesque\",\n    \"cuerpo\": \"Inter\",\n    \"escala\": \"normal\"\n  },\n  \"radio\": 8,\n  \"espaciado\": \"denso\",\n  \"borde\": \"ninguno\",\n  \"imagen\": \"duotono\",\n  \"intensidad\": 3\n}\n\nSemilla: estilo «Memphis contenido», industria vecina «etiquetado de vino», paleta farmacia-suiza, tipografía bricolage-inter, número 618. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.\n\nPlantilla del prompt de imagen (en inglés):\n[SUJETO] {producto} {acción o uso concreto}, [ESCENA] {entorno real coherente con la industria vecina}, [LUZ] {luz de la semilla}, [CÁMARA] {lente, ángulo, profundidad de campo}, [PALETA] {colores de tokens en palabras}, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] {relación} with clear negative space at {zona donde irá el texto}, no text, no logos, no watermark.\n\nBloque de consistencia (idéntico en todos los slots):\nConsistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.\n\nPlantilla del prompt de clip (en inglés):\n{duración corta} seamless loop, {movimiento de cámara lento}, {producto en uso real}, {luz de la semilla}, {paleta}, calm pacing, no text, no people looking at camera, no fast cuts, subtle motion suitable as website background.\n\nVocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.\nPatrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».\nEstilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos.\n\nPauta de voz: segunda persona, presente, cifras exactas del brief y una idea por frase; los ejemplos A y B muestran el registro esperado para el copy y los botones.\n\nRúbrica del auditor (puntaje total de 0 a 10, ponderado):\nClaridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.\nFricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.\nMóvil (15 %): jerarquía, tamaños y orden a 390 px.\nConfianza (15 %): garantía, prueba social real y datos concretos.\nPersuasión (15 %): beneficio antes que característica y objeciones respondidas.\nOriginalidad (5 %): se nota la semilla y se evita el look genérico.\nFactor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.\nAccesibilidad (5 %): contraste, textos alternativos, tamaño táctil y `reduced-motion`.\n\nTipos de sección disponibles:\n- `heroe`: primera sección; dice qué es, para quién y el beneficio principal (exige `variante`)\n- `cinta-anuncio`: franja breve con la oferta o el beneficio del momento\n- `problema-solucion`: narra la frustración concreta y el alivio antes de hablar de características\n- `beneficios`: traduce cada función en un beneficio concreto (3 a 6 bloques `beneficio`)\n- `como-funciona`: explica el uso en 3 o 4 pasos\n- `antes-despues`: muestra el resultado visible con dos imágenes\n- `comparativa`: compara el producto con las alternativas en 4 a 7 filas\n- `galeria`: imágenes del producto en uso\n- `video`: clip corto del producto en uso\n- `testimonios`: opiniones reales del brief; si faltan, `[COMPLETAR]`\n- `cifras`: 2 a 4 cifras reales del brief\n- `oferta`: precio, precio anterior real y opciones de cantidad\n- `incluye`: lista de lo que trae la caja o el regalo\n- `cuenta-regresiva`: solo con una fecha de oferta real del brief\n- `faq`: responde las objeciones antes de que el lector las piense (3 a 8 preguntas)\n- `garantia`: promesas de confianza con los días y condiciones del brief\n- `formulario-lead`: acción final; aparece exactamente una vez, cerca del final\n- `html-libre`: solo lo agrega una persona en el editor; la IA no lo usa\n\nVariantes de héroe aprobadas (todas con el contenido centrado, superpuesto o apilado):\n- `producto-monumental`: producto grande y centrado con el titular encima y el CTA debajo; útil para comprador consciente del producto\n- `poster-a-sangre`: imagen a sangre con el titular y el CTA superpuestos en el tercio inferior; útil para estilo editorial\n- `titular-tipografico`: titular gigante centrado arriba con el producto debajo, sin solaparse; útil para brutalismo y semillas suizas\n- `problema-primero`: solo texto con una pregunta de dolor centrada; útil para nivel inconsciente o de problema (PAS)\n- `antes-despues-heroe`: titular centrado y slider comparativo a todo el ancho; útil para productos de resultado visible\n- `video-inmersivo`: clip en loop a sangre con titular centrado y CTA; útil para productos en uso y movimiento\n- `orbita-beneficios`: producto al centro y 3 o 4 beneficios alrededor; útil para productos con varias funciones\n- `mosaico-editorial`: collage asimétrico con el titular en una franja que lo cruza; útil para moda y estilo de vida\n\nAjustes y bloques válidos por tipo de sección (usa solo estos campos y valores; todo campo sin ? es obligatorio, no omitas ninguno; los textos respetan el máximo indicado; el signo ? marca un campo opcional):\n- `heroe`: ajustes { titular: texto, máx. 120 caracteres, p. ej. «Titular del héroe»; subtitular?: texto, máx. 240 caracteres; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; slot?: nombre de un slot de `assets`; slots?: nombre de un slot de `assets`; sello?: texto, máx. 80 caracteres }; bloques `beneficio-corto` (0 a 4) { texto: texto, máx. 60 caracteres, p. ej. «Beneficio» }\n- `cinta-anuncio`: ajustes { textos: lista de textos; velocidad: número de 1 a 10; estilo: \"solido\"|\"contorno\" }; sin bloques\n- `problema-solucion`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Una escena que ya conoces»; historia: texto; giro: texto, máx. 200 caracteres; imagen?: nombre de un slot de `assets` }; sin bloques\n- `beneficios`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cambia en tu día»; disposicion: \"lista-grande\"|\"tarjetas-apiladas\"|\"numerada\"|\"carrusel\" }; bloques `beneficio` (3 a 6) { icono: texto, p. ej. «check»; titulo: texto, máx. 60 caracteres, p. ej. «Beneficio»; texto: texto, máx. 200 caracteres, p. ej. «Cuenta qué gana la persona.»; imagen?: nombre de un slot de `assets` }\n- `como-funciona`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Cómo funciona»; disposicion: \"pasos-verticales\"|\"linea-tiempo\" }; bloques `paso` (3 a 4) { titulo: texto, máx. 60 caracteres, p. ej. «Paso»; texto: texto, máx. 220 caracteres, p. ej. «Describe qué hace la persona.» }\n- `antes-despues`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Mira la diferencia»; imagenAntes: nombre de un slot de `assets`; imagenDespues: nombre de un slot de `assets`; etiquetaAntes: texto, máx. 30 caracteres, p. ej. «Antes»; etiquetaDespues: texto, máx. 30 caracteres, p. ej. «Después» }; sin bloques\n- `comparativa`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Por qué este y no otro»; nombreNuestro: texto, máx. 40 caracteres, p. ej. «Nuestro»; nombreOtros: texto, máx. 40 caracteres, p. ej. «Otros»; estilo: \"minimal\"|\"resaltado\" }; bloques `fila` (4 a 7) { caracteristica: texto, máx. 80 caracteres, p. ej. «Característica»; nuestro: texto; otros: texto }\n- `galeria`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Míralo de cerca»; disposicion: \"carrusel\"|\"mosaico\"|\"historias\" }; bloques `imagen` (3 a 8) { slot: nombre de un slot de `assets`; pie?: texto, máx. 100 caracteres }\n- `video`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Míralo en uso»; slot: nombre de un slot de `assets`; poster?: nombre de un slot de `assets`; autoplay: true o false }; sin bloques\n- `testimonios`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cuentan quienes lo usan»; disposicion: \"muro\"|\"carrusel\"|\"destacado\" }; bloques `testimonio` (3 a 6) { nombre: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; ciudad: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; texto: texto, máx. 400 caracteres, p. ej. «[COMPLETAR]»; estrellas: número; foto?: nombre de un slot de `assets` }\n- `cifras`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Resultados reales» }; bloques `cifra` (2 a 4) { valor: texto, máx. 30 caracteres, p. ej. «[COMPLETAR]»; etiqueta: texto, máx. 80 caracteres, p. ej. «Personas que lo probaron» }\n- `oferta`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Llévalo hoy»; precio: número; precioAnterior?: número; moneda: \"COP\"|\"USD\"|\"MXN\"|\"EUR\"; textoBoton?: texto, máx. 40 caracteres, p. ej. «Quiero aprovecharlo» }; bloques `opcion-cantidad` (1 a 3) { unidades: número de 1 a 12; precio: número; etiqueta?: texto, máx. 30 caracteres }\n- `incluye`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Qué viene en la caja»; texto: texto, máx. 240 caracteres; imagen: nombre de un slot de `assets` }; bloques `item` (1 a 5) { texto: texto, máx. 100 caracteres, p. ej. «Elemento» }\n- `cuenta-regresiva`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «La oferta termina en»; fechaFin: texto, p. ej. «[COMPLETAR]»; estilo: \"bloques\"|\"linea\" }; sin bloques\n- `faq`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Preguntas frecuentes» }; bloques `pregunta` (3 a 8) { pregunta: texto, máx. 140 caracteres, p. ej. «¿Cómo funciona?»; respuesta: texto, máx. 500 caracteres, p. ej. «[COMPLETAR]»; objecion?: texto, máx. 80 caracteres }\n- `garantia`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Compra sin riesgo»; texto: texto, máx. 280 caracteres; dias: número; icono: texto, p. ej. «escudo» }; bloques `promesa` (2 a 4) { texto: texto, máx. 120 caracteres, p. ej. «Promesa» }\n- `formulario-lead`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Recibe el tuyo»; subtitulo?: texto, máx. 200 caracteres; campos: lista con valores de \"nombre\"|\"correo\"|\"telefono\"|\"ciudad\"|\"mensaje\"; obligatorios?: lista con valores de \"nombre\"|\"correo\"|\"telefono\"|\"ciudad\"|\"mensaje\"; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; mensajeGracias: texto, máx. 200 caracteres, p. ej. «Gracias, te escribimos muy pronto.»; privacidad: texto, máx. 240 caracteres, p. ej. «Usamos tus datos solo para contactarte sobre este producto.» }; sin bloques\n\nReglas de estructura:\n- El héroe es la primera sección y usa una de las variantes aprobadas.\n- El formulario `formulario-lead` aparece exactamente una vez, cerca del final.\n- `cuenta-regresiva` solo con una fecha de oferta real del brief; `testimonios` y `cifras` solo con datos del brief.\n- Todos los colores y tipografías salen de `tokens`.\n\nCatálogo de efectos permitido para la intensidad 3 (elige solo de esta lista; máximo 3 de nivel 3 en toda la landing):\n- `revelar-suave` · nivel 1 · heroe, cinta-anuncio, problema-solucion, beneficios, como-funciona, antes-despues, comparativa, galeria, video, testimonios, cifras, oferta, incluye, cuenta-regresiva, faq, garantia, formulario-lead, html-libre\n- `grano` · nivel 1 · global\n- `precio-cae` · nivel 1 · oferta\n- `titular-cinetico` · nivel 2 · heroe, problema-solucion, formulario-lead\n- `mascara-circular` · nivel 2 · galeria, heroe, incluye\n- `mascara-persiana` · nivel 2 · galeria, heroe, incluye\n- `marquee-reactivo` · nivel 2 · cinta-anuncio\n- `boton-magnetico` · nivel 2 · heroe, oferta, formulario-lead\n- `cursor-vivo` · nivel 2 · global\n- `video-scroll` · nivel 3 · heroe, video (héroe: video-inmersivo o producto-monumental)\n- `producto-explotado` · nivel 3 · heroe, como-funciona (héroe: producto-monumental)\n- `pin-coreografia` · nivel 3 · beneficios, como-funciona, antes-despues\n- `horizontal` · nivel 3 · galeria, beneficios, testimonios\n- `shader-ondas` · nivel 3 · galeria, heroe\n- `antes-despues-scroll` · nivel 3 · antes-despues\n\nEjemplos few-shot:\nEjemplo A · Copy: «Pasas 8 horas frente al computador y la espalda te lo cobra a las 4 p. m. Este corrector te recuerda enderezarte sin que tengas que pensarlo.»\nEjemplo B · Botón: «Quiero que me contacten hoy».\nEjemplo C · Sección del LandingDoc: {\"id\":\"s1\",\"tipo\":\"heroe\",\"variante\":\"problema-primero\",\"visible\":true,\"intencion\":{\"objetivo\":\"Que el lector se reconozca en el dolor en menos de 3 s\",\"emocion\":\"alivio anticipado\"},\"ajustes\":{\"titular\":\"¿A las 4 p. m. ya te duele la espalda?\",\"subtitular\":\"Hay una forma de enderezarte sin pensarlo.\",\"textoBoton\":\"Ver cómo funciona\"},\"bloques\":[],\"efectos\":[\"titular-cinetico\"]}\nEjemplo D · Héroe: producto centrado ocupando el 60 % del alto, titular centrado encima y CTA debajo; o imagen a sangre con el titular superpuesto en el tercio inferior.\n\nPLAN DE SECCIONES DE LA VITRINA (obligatorio; manda sobre el presupuesto de secciones):\nEscribe exactamente estas 10 secciones, en este orden de contenido y una sola vez cada una: `cinta-anuncio` → `heroe` → `problema-solucion` → `beneficios` → `galeria` → `incluye` → `oferta` → `garantia` → `faq` → `formulario-lead`.\nHéroe: variante `poster-a-sangre`; el contenido va centrado, nunca partido en dos columnas.\nSlots de imagen (usa estos nombres exactos y declara cada uno en `assets`): héroe → `heroe-fondo`; galería → 4 bloques `imagen` con slots `galeria-1` a `galeria-4` (disposición mosaico); problema-solucion → `imagen: \"problema\"`; incluye → `imagen: \"incluye-empaque\"`.\nEl sistema agrega después, con datos reales, 6 secciones más (`sellos-confianza`, `ficha-tecnica`, `creditos`, `cta-fija`, `dato-en-vivo`, `dato-curioso`): no las escribas ni repitas su contenido (sellos de pago y envío, ficha técnica, créditos).\nLa galería muestra fotos reales del cielo y del espacio como ambiente, no del producto: su título habla del cielo que inspira al producto y no dice que sean fotos del producto. Los pies de foto los pone el sistema.\nFidelidad: usa solo las cifras, precios y fechas del brief; sin testimonios, calificaciones ni número de opiniones; sin logos ni marcas de terceros.\nEl espacio es el ambiente y el producto es el protagonista: los titulares hablan del producto y de lo que cambia en el cuarto, no de la NASA. No sugieras respaldo ni afiliación de ninguna agencia.",
+    "formato": "Entrega un único objeto JSON `LandingDoc`, sin texto antes ni después, con estos campos:\n- `version`: 1.\n- `meta`: { nombre, slug en kebab-case, producto, tecnicas[], semilla { estilo, industria, paletaId, tipografiaId, numero }, nivelConciencia, marco ('AIDA' o 'PAS'), eliminadas[] }.\n- `tokens`: { colores { fondo, superficie, texto, textoSuave, acento, acentoTexto, borde }, tipografia { titulos, cuerpo, escala }, radio, espaciado, borde, imagen, intensidad }.\n- `secciones[]` (de 5 a 16): { id, tipo, variante?, visible, intencion { objetivo, emocion?, objecionQueResponde? }, ajustes, bloques[ { id, tipo, ajustes } ], animacion?, efectos?[] }.\n- `assets[]`: { slot, tipo ('imagen' o 'video'), relacion, promptGrok, alt }.\n\nCopia `tokens` y `meta.semilla` tal cual llegan en el contexto.\n\nCada sección lleva `intencion: { objetivo, emocion, objecionQueResponde? }` y cada objeción del brief queda respondida en al menos una sección.\n\nIncluye `tokens` y `meta.semilla` completos y usa solo esos valores en todo el documento.\n\nCada elemento de `assets[]` lleva { slot, tipo: 'imagen', relacion, promptGrok, alt } y su `promptGrok` incluye el bloque de consistencia completo.\n\nCada sección lleva `animacion` y `efectos[]` con ids del catálogo; los clips van en `assets[]` con `tipo: 'video'`.\n\nTodos los textos del documento pasan el linter de lista negra con cero infracciones.\n\nCada `textoBoton` promete un beneficio y los textos largos promedian entre 8 y 18 palabras por frase.\n\nNo incluyas el campo `critica` en tu respuesta: lo completa el auditor en una llamada aparte.\n\nAntes de responder, razona paso a paso qué necesita el comprador en cada sección; entrega solo el resultado final en el formato pedido.\n\nUsa exclusivamente los datos del brief para cifras, precios, garantías y testimonios. Cuando un dato falte, marca el campo con `\"[COMPLETAR]\"`.",
+    "aportes": [
+      {
+        "tecnica": "ambicioso",
+        "bloque": "rol",
+        "texto": "estratega de conversión especializado en productos físicos"
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía)."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "contexto",
+        "texto": "Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "formato",
+        "texto": "Cada sección lleva `intencion: { objetivo, emocion, objecionQueResponde? }` y cada objeción del brief queda respondida en al menos una sección."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "rol",
+        "texto": "director de arte que aplica la semilla «Memphis contenido × etiquetado de vino» como sistema visual"
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "tarea",
+        "texto": "Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "tarea",
+        "texto": "Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "contexto",
+        "texto": "Tokens de la semilla (fuente única de verdad visual):\n{\n  \"colores\": {\n    \"fondo\": \"#070B18\",\n    \"superficie\": \"#111521\",\n    \"texto\": \"#FFFFFF\",\n    \"textoSuave\": \"#A8AAAE\",\n    \"acento\": \"#FF7A59\",\n    \"acentoTexto\": \"#000000\",\n    \"borde\": \"#2F323D\"\n  },\n  \"tipografia\": {\n    \"titulos\": \"Bricolage Grotesque\",\n    \"cuerpo\": \"Inter\",\n    \"escala\": \"normal\"\n  },\n  \"radio\": 8,\n  \"espaciado\": \"denso\",\n  \"borde\": \"ninguno\",\n  \"imagen\": \"duotono\",\n  \"intensidad\": 3\n}"
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "contexto",
+        "texto": "Semilla: estilo «Memphis contenido», industria vecina «etiquetado de vino», paleta farmacia-suiza, tipografía bricolage-inter, número 618. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "formato",
+        "texto": "Incluye `tokens` y `meta.semilla` completos y usa solo esos valores en todo el documento."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "rol",
+        "texto": "director de fotografía de producto que escribe prompts para Grok Imagine"
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Declara un slot por cada sección que necesite imagen, con relación 1:1, 16:9, 9:16 o 4:5 y una descripción concreta."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Escribe un prompt en inglés por slot con la plantilla de imagen y termina cada uno con el bloque de consistencia."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Deriva la paleta y la luz de la semilla y describe personas diversas y naturales, con expresiones espontáneas y fondos con contexto real."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "contexto",
+        "texto": "Plantilla del prompt de imagen (en inglés):\n[SUJETO] {producto} {acción o uso concreto}, [ESCENA] {entorno real coherente con la industria vecina}, [LUZ] {luz de la semilla}, [CÁMARA] {lente, ángulo, profundidad de campo}, [PALETA] {colores de tokens en palabras}, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] {relación} with clear negative space at {zona donde irá el texto}, no text, no logos, no watermark."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "contexto",
+        "texto": "Bloque de consistencia (idéntico en todos los slots):\nConsistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "formato",
+        "texto": "Cada elemento de `assets[]` lleva { slot, tipo: 'imagen', relacion, promptGrok, alt } y su `promptGrok` incluye el bloque de consistencia completo."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "rol",
+        "texto": "director de movimiento web que elige efectos de un catálogo cerrado"
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Mantén siempre la capa de movimiento en código: entradas de sección, parallax suave, contador del precio y microinteracción del botón, con respaldo para `prefers-reduced-motion`."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Si el héroe es «video-inmersivo» o la landing tiene una sección de video, escribe el prompt de un clip corto en loop con la plantilla de clip y regístralo en `assets` con `tipo: 'video'`."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Elige `efectos[]` por sección solo del catálogo permitido para la intensidad del brief, compatibles con el tipo de sección y con un máximo de 3 efectos de nivel 3 en toda la landing."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "contexto",
+        "texto": "Plantilla del prompt de clip (en inglés):\n{duración corta} seamless loop, {movimiento de cámara lento}, {producto en uso real}, {luz de la semilla}, {paleta}, calm pacing, no text, no people looking at camera, no fast cuts, subtle motion suitable as website background."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "formato",
+        "texto": "Cada sección lleva `animacion` y `efectos[]` con ids del catálogo; los clips van en `assets[]` con `tipo: 'video'`."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "rol",
+        "texto": "editor de estilo que mantiene el texto libre de tics de IA"
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Usa signos de exclamación simples y un guion largo por párrafo como máximo."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "contexto",
+        "texto": "Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.\nPatrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».\nEstilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "formato",
+        "texto": "Todos los textos del documento pasan el linter de lista negra con cero infracciones."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "rol",
+        "texto": "redactor de respuesta directa con voz humana en español neutro"
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "Escribe en español neutro y en segunda persona (tú), con frases de 8 a 18 palabras, verbos concretos, un dato por afirmación y cero relleno."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "En la sección `problema-solucion` narra primero la frustración concreta y el alivio, y presenta las características después."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "Redacta botones que prometen un beneficio o reducen la ansiedad, por ejemplo «Quiero el mío» o «Quiero que me contacten hoy»."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "contexto",
+        "texto": "Pauta de voz: segunda persona, presente, cifras exactas del brief y una idea por frase; los ejemplos A y B muestran el registro esperado para el copy y los botones."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "formato",
+        "texto": "Cada `textoBoton` promete un beneficio y los textos largos promedian entre 8 y 18 palabras por frase."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "rol",
+        "texto": "auditor senior de UX y CRO"
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "tarea",
+        "texto": "Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "contexto",
+        "texto": "Rúbrica del auditor (puntaje total de 0 a 10, ponderado):\nClaridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.\nFricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.\nMóvil (15 %): jerarquía, tamaños y orden a 390 px.\nConfianza (15 %): garantía, prueba social real y datos concretos.\nPersuasión (15 %): beneficio antes que característica y objeciones respondidas.\nOriginalidad (5 %): se nota la semilla y se evita el look genérico.\nFactor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.\nAccesibilidad (5 %): contraste, textos alternativos, tamaño táctil y `reduced-motion`."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "formato",
+        "texto": "No incluyas el campo `critica` en tu respuesta: lo completa el auditor en una llamada aparte."
+      }
+    ]
+  },
+  "doc": {
+    "version": 1,
+    "meta": {
+      "nombre": "Kit de cohete educativo para niños",
+      "slug": "kit-cohete-educativo",
+      "producto": "Kit de cohete educativo para niños",
+      "tecnicas": [
+        "ambicioso",
+        "semilla",
+        "imagenes",
+        "video",
+        "negativas",
+        "humana",
+        "critico"
+      ],
+      "semilla": {
+        "estilo": "Memphis contenido",
+        "industria": "etiquetado de vino",
+        "paletaId": "farmacia-suiza",
+        "tipografiaId": "bricolage-inter",
+        "numero": 618
+      },
+      "nivelConciencia": "solucion",
+      "marco": "AIDA",
+      "eliminadas": [
+        {
+          "tipo": "testimonios",
+          "motivo": "Faltan datos de testimonios en el brief"
+        },
+        {
+          "tipo": "cifras",
+          "motivo": "Faltan datos de cifras en el brief"
+        }
+      ],
+      "tematica": "espacio",
+      "fuentes": [
+        "NASA",
+        "Wikimedia Commons",
+        "The Space Devs"
+      ]
+    },
+    "secciones": [
+      {
+        "id": "heroe",
+        "tipo": "heroe",
+        "variante": "poster-a-sangre",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Presentar el producto y su beneficio central",
+          "emocion": "entusiasmo"
+        },
+        "ajustes": {
+          "titular": "Construye tu propio cohete y lanza la ciencia al cielo",
+          "subtitular": "Un plan para aprender en familia lejos de las pantallas",
+          "textoBoton": "Quiero mi kit",
+          "slot": "heroe-fondo"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Instrucciones claras para niños"
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Aprendizaje real en cada despegue"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.2
+        },
+        "efectos": [
+          "revelar-suave"
+        ]
+      },
+      {
+        "id": "cinta-anuncio",
+        "tipo": "cinta-anuncio",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Generar sentido de oportunidad inmediato"
+        },
+        "ajustes": {
+          "textos": [
+            "Envío gratuito a todo el país hoy",
+            "Descuento especial por lanzamiento limitado"
+          ],
+          "velocidad": 5,
+          "estilo": "solido"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "aparecer",
+          "retraso": 0
+        },
+        "efectos": [
+          "marquee-reactivo"
+        ]
+      },
+      {
+        "id": "sellos-confianza",
+        "tipo": "sellos-confianza",
+        "variante": "iconos-fila",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Quitar el riesgo de comprar a la vista, antes de leer el resto.",
+          "emocion": "tranquilidad",
+          "objecionQueResponde": "¿Y si no llega o no me sirve?"
+        },
+        "ajustes": {},
+        "bloques": [
+          {
+            "id": "sel-1",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "billete",
+              "titulo": "Pagas al recibir",
+              "texto": "Pago contraentrega: le pagas al mensajero cuando llega."
+            }
+          },
+          {
+            "id": "sel-2",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "envio",
+              "titulo": "Envío a domicilio",
+              "texto": "Te lo llevamos hasta la puerta de tu casa."
+            }
+          },
+          {
+            "id": "sel-3",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "escudo",
+              "titulo": "Garantía de 30 días",
+              "texto": "Si llega incompleto o con un defecto de fábrica, lo cambiamos sin costo."
+            }
+          },
+          {
+            "id": "sel-4",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "retorno",
+              "titulo": "Derecho de retracto",
+              "texto": "Tienes 5 días hábiles para retractarte (Ley 1480)."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "problema-solucion",
+        "tipo": "problema-solucion",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Identificar la frustración con las pantallas",
+          "emocion": "alivio",
+          "objecionQueResponde": "¿Por qué elegir este plan?"
+        },
+        "ajustes": {
+          "titulo": "Menos pantallas, más conexiones reales",
+          "historia": "Tus hijos pasan horas frente a una pantalla y buscas un plan que les enseñe algo de verdad.",
+          "giro": "Este kit convierte tu patio en un laboratorio espacial para disfrutar todos juntos.",
+          "imagen": "problema"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "aparecer",
+          "retraso": 0.3
+        }
+      },
+      {
+        "id": "dato-en-vivo",
+        "tipo": "dato-en-vivo",
+        "variante": "cuenta-regresiva-lanzamiento",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Darle vida a la página con un dato real del cielo; se oculta sola si la fuente falla.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "El próximo despegue",
+          "contexto": "Que tus hijos vean el conteo real y armen su propio cohete."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "beneficios",
+        "tipo": "beneficios",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Detallar los valores del producto",
+          "emocion": "curiosidad"
+        },
+        "ajustes": {
+          "titulo": "Ciencia que se siente en las manos",
+          "disposicion": "tarjetas-apiladas"
+        },
+        "bloques": [
+          {
+            "id": "ben1",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Armado guiado",
+              "texto": "Cada paso incluye instrucciones sencillas adaptadas para los niños.",
+              "icono": "check"
+            }
+          },
+          {
+            "id": "ben2",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Aprendizaje activo",
+              "texto": "Comprenden los principios básicos del despegue mientras juegan al aire libre.",
+              "icono": "check"
+            }
+          },
+          {
+            "id": "ben3",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Momentos en familia",
+              "texto": "Crean un proyecto compartido lejos de cualquier dispositivo electrónico.",
+              "icono": "check"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.4
+        },
+        "efectos": [
+          "pin-coreografia"
+        ]
+      },
+      {
+        "id": "galeria",
+        "tipo": "galeria",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Inspirar con un ambiente creativo",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "Cielos que inspiran grandes sueños",
+          "disposicion": "mosaico"
+        },
+        "bloques": [
+          {
+            "id": "g1",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-1",
+              "pie": "Astronauta Suni Williams durante una caminata espacial"
+            }
+          },
+          {
+            "id": "g2",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-2",
+              "pie": "Juguete de hojalata monorraíl Rocket Express"
+            }
+          },
+          {
+            "id": "g3",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-3",
+              "pie": "Juguete de hojalata litografiada cohete monorraíl"
+            }
+          },
+          {
+            "id": "g4",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-4",
+              "pie": "Cohetes SLS y Falcon 9 en el Centro Espacial Kennedy"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "escala",
+          "retraso": 0.5
+        }
+      },
+      {
+        "id": "dato-curioso",
+        "tipo": "dato-curioso",
+        "variante": "sabias-que",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Sumar asombro con un dato verificable y darle la fuente a quien quiera comprobarlo.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "¿Sabías que…?",
+          "frase": "¿Sabías que la constelación Cygnus, conocida como el Cisne, se observa fácilmente en el cielo del hemisferio norte durante el verano?",
+          "fuenteNombre": "NASA · Formación estelar en la constelación del Cisne",
+          "fuenteUrl": "https://images.nasa.gov/details/PIA14102"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "incluye",
+        "tipo": "incluye",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Claridad sobre el contenido del kit",
+          "objecionQueResponde": "¿Se necesita algo más para lanzarlo?"
+        },
+        "ajustes": {
+          "titulo": "Todo lo que recibes en casa",
+          "texto": "Preparamos cada componente para que comiencen a explorar la ciencia apenas llegue el paquete.",
+          "imagen": "incluye-empaque"
+        },
+        "bloques": [
+          {
+            "id": "inc1",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Piezas resistentes del cohete"
+            }
+          },
+          {
+            "id": "inc2",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Guía completa de armado en español"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "aparecer",
+          "retraso": 0.6
+        }
+      },
+      {
+        "id": "ficha-tecnica",
+        "tipo": "ficha-tecnica",
+        "variante": "tabla",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar los datos concretos que la persona busca antes de pedir.",
+          "emocion": "confianza",
+          "objecionQueResponde": "¿Qué tan grande es y cómo funciona?"
+        },
+        "ajustes": {
+          "titulo": "Ficha técnica"
+        },
+        "bloques": [
+          {
+            "id": "esp-1",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Tipo",
+              "valor": "Kit de cohete educativo"
+            }
+          },
+          {
+            "id": "esp-2",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Uso",
+              "valor": "Con supervisión de un adulto"
+            }
+          },
+          {
+            "id": "esp-3",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Edad recomendada",
+              "valor": "[COMPLETAR]",
+              "unidad": "años"
+            }
+          },
+          {
+            "id": "esp-4",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Forma de pago",
+              "valor": "Contraentrega"
+            }
+          },
+          {
+            "id": "esp-5",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Garantía",
+              "valor": "30",
+              "unidad": "días"
+            }
+          },
+          {
+            "id": "esp-6",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Incluye",
+              "valor": "Piezas del cohete, Guía de armado en español"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "oferta",
+        "tipo": "oferta",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Cerrar la venta con anclaje de precio",
+          "emocion": "urgencia"
+        },
+        "ajustes": {
+          "titulo": "Lleva tu aventura espacial",
+          "precio": 79900,
+          "precioAnterior": 99900,
+          "moneda": "COP",
+          "textoBoton": "Quiero comprarlo hoy"
+        },
+        "bloques": [
+          {
+            "id": "o1",
+            "tipo": "opcion-cantidad",
+            "ajustes": {
+              "unidades": 1,
+              "precio": 79900,
+              "etiqueta": "Kit completo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.7
+        },
+        "efectos": [
+          "precio-cae"
+        ]
+      },
+      {
+        "id": "garantia",
+        "tipo": "garantia",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Reducir riesgos de compra",
+          "objecionQueResponde": "¿Qué pasa si llega incompleto?"
+        },
+        "ajustes": {
+          "titulo": "Compra con tranquilidad absoluta",
+          "texto": "Tu satisfacción es lo primero en cada lanzamiento familiar.",
+          "dias": 30,
+          "icono": "escudo"
+        },
+        "bloques": [
+          {
+            "id": "gar1",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Reemplazo sin costo ante cualquier defecto de fábrica"
+            }
+          },
+          {
+            "id": "gar2",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Soporte dedicado si recibes piezas incompletas"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "aparecer",
+          "retraso": 0.8
+        }
+      },
+      {
+        "id": "faq",
+        "tipo": "faq",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Resolver dudas frecuentes",
+          "objecionQueResponde": "Edad, supervisión y salón de clases"
+        },
+        "ajustes": {
+          "titulo": "Resolvemos tus dudas"
+        },
+        "bloques": [
+          {
+            "id": "f1",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Necesita un adulto para usarlo?",
+              "respuesta": "Recomendamos supervisión para los pasos iniciales y el lanzamiento seguro."
+            }
+          },
+          {
+            "id": "f2",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Desde qué edad se puede usar?",
+              "respuesta": "Es ideal para niños en edad escolar que ya disfrutan los proyectos manuales."
+            }
+          },
+          {
+            "id": "f3",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Sirve para un salón de clase?",
+              "respuesta": "Sí, es una herramienta excelente para actividades grupales sobre ciencia y física."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.9
+        }
+      },
+      {
+        "id": "formulario-lead",
+        "tipo": "formulario-lead",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Capturar los datos del interesado",
+          "emocion": "confianza"
+        },
+        "ajustes": {
+          "titulo": "Recibe el kit en tu casa",
+          "campos": [
+            "nombre",
+            "telefono",
+            "ciudad"
+          ],
+          "obligatorios": [
+            "nombre",
+            "telefono"
+          ],
+          "textoBoton": "Enviar pedido",
+          "mensajeGracias": "Gracias, contactaremos contigo pronto para finalizar la entrega.",
+          "privacidad": "Tus datos se usan únicamente para gestionar tu envío."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1
+        },
+        "efectos": [
+          "boton-magnetico"
+        ]
+      },
+      {
+        "id": "creditos",
+        "tipo": "creditos",
+        "variante": "lista",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar el crédito y la licencia de cada imagen, como piden sus autores."
+        },
+        "ajustes": {
+          "titulo": "Créditos de las imágenes"
+        },
+        "bloques": []
+      },
+      {
+        "id": "cta-fija",
+        "tipo": "cta-fija",
+        "variante": "barra-inferior-movil",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mantener a la vista el camino al formulario mientras la persona lee."
+        },
+        "ajustes": {
+          "texto": "Pídelo y paga al recibir"
+        },
+        "bloques": []
+      }
+    ],
+    "assets": [
+      {
+        "slot": "heroe-fondo",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "[SUJETO] rocket kit box with price tag, [ESCENA] studio table with matte neutral backdrop, [LUZ] soft natural window light, [CÁMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] dark background #070B18, surface #111521, accent #FF7A59, text #FFFFFF, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] box centered, clear negative space at bottom for price text, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Aterrizaje del Falcon 9 tras el lanzamiento de la misión Crew-12",
+        "ruta": "/media/vitrina/kit-cohete-educativo/nhq20260213-admin-0009.webp",
+        "fuente": "nasa-images",
+        "credito": "NASA/John Kraus",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/NHQ20260213_admin_0009",
+        "bancoId": "b7"
+      },
+      {
+        "slot": "problema",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "[SUJETO] child holding completed rocket launching, [ESCENA] open park with trees and a launch pad, [LUZ] soft natural window light, [CÁMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] dark background #070B18, surface #111521, accent #FF7A59, text #FFFFFF, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] rocket in foreground with clear negative space at left for bullet points, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Astronauta Scott Tingle durante una caminata espacial",
+        "ruta": "/media/vitrina/kit-cohete-educativo/iss054e022823.webp",
+        "fuente": "nasa-images",
+        "credito": "NASA/JSC",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/iss054e022823",
+        "bancoId": "b7"
+      },
+      {
+        "slot": "galeria-1",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Wide shot of a clear blue sky with fluffy white clouds, high quality, documentary photo, natural film grain, real imperfections, 1:1, Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Astronauta Suni Williams durante una caminata espacial",
+        "ruta": "/media/vitrina/kit-cohete-educativo/iss072e487421.webp",
+        "fuente": "nasa-images",
+        "credito": "NASA/JSC",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/iss072e487421",
+        "bancoId": "b7"
+      },
+      {
+        "slot": "galeria-2",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "View of the horizon during late afternoon, soft light, documentary photo, natural film grain, real imperfections, 1:1, Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Juguete de hojalata monorraíl Rocket Express",
+        "ruta": "/media/vitrina/kit-cohete-educativo/litho-tin-toy-monorail-rocket-ship-linemar-rocket-express-pi.webp",
+        "fuente": "wikimedia",
+        "credito": "Alf van Beem · CC0 · Wikimedia Commons",
+        "licencia": "cc0",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Litho_tin_toy_MONORAIL_ROCKET-SHIP_-_LINEMAR,_Rocket_Express_pic6.JPG",
+        "bancoId": "p-hogar"
+      },
+      {
+        "slot": "galeria-3",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Deep blue sky with subtle star patterns, soft tones, documentary photo, natural film grain, real imperfections, 1:1, Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Juguete de hojalata litografiada cohete monorraíl",
+        "ruta": "/media/vitrina/kit-cohete-educativo/litho-tin-toy-monorail-rocket-ship-linemar-rocket-express-pi.webp",
+        "fuente": "wikimedia",
+        "credito": "Alf van Beem · CC0 · Wikimedia Commons",
+        "licencia": "cc0",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Litho_tin_toy_MONORAIL_ROCKET-SHIP_-_LINEMAR,_Rocket_Express_pic3.JPG",
+        "bancoId": "p-hogar"
+      },
+      {
+        "slot": "galeria-4",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Close up of soft clouds in a golden hour light, documentary photo, natural film grain, real imperfections, 1:1, Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Cohetes SLS y Falcon 9 en el Centro Espacial Kennedy",
+        "ruta": "/media/vitrina/kit-cohete-educativo/nhq202204060003.webp",
+        "fuente": "nasa-images",
+        "credito": "NASA/Joel Kowsky",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/NHQ202204060003",
+        "bancoId": "b7"
+      },
+      {
+        "slot": "incluye-empaque",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "[SUJETO] educational rocket kit for kids assembling, [ESCENA] backyard with grassy field and clear sky, [LUZ] soft natural window light, [CÁMARA] 50mm lens, eye-level angle, shallow depth of field, [PALETA] dark background #070B18, surface #111521, accent #FF7A59, text #FFFFFF, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] centered rocket with clear negative space at top for text, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Juguete de hojalata litografiada monorraíl cohete espacial",
+        "ruta": "/media/vitrina/kit-cohete-educativo/litho-tin-toy-monorail-rocket-ship-linemar-rocket-express-pi.webp",
+        "fuente": "wikimedia",
+        "credito": "Alf van Beem · CC0 · Wikimedia Commons",
+        "licencia": "cc0",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Litho_tin_toy_MONORAIL_ROCKET-SHIP_-_LINEMAR,_Rocket_Express_pic7.JPG",
+        "bancoId": "p-hogar"
+      }
+    ],
+    "tokens": {
+      "colores": {
+        "fondo": "#070B18",
+        "superficie": "#111521",
+        "texto": "#FFFFFF",
+        "textoSuave": "#A8AAAE",
+        "acento": "#FF7A59",
+        "acentoTexto": "#000000",
+        "borde": "#2F323D"
+      },
+      "tipografia": {
+        "titulos": "Bricolage Grotesque",
+        "cuerpo": "Inter",
+        "escala": "normal"
+      },
+      "radio": 8,
+      "espaciado": "denso",
+      "borde": "ninguno",
+      "imagen": "duotono",
+      "intensidad": 3
+    },
+    "critica": {
+      "puntaje": 7.3,
+      "porCriterio": [
+        {
+          "criterio": "Claridad en 3 s",
+          "puntaje": 9,
+          "evidencia": "secciones[0].ajustes.titular y subtitular"
+        },
+        {
+          "criterio": "Fricción",
+          "puntaje": 8,
+          "evidencia": "secciones[12].ajustes.campos"
+        },
+        {
+          "criterio": "Móvil",
+          "puntaje": 7,
+          "evidencia": "secciones[14].variante (barra-inferior-movil)"
+        },
+        {
+          "criterio": "Confianza",
+          "puntaje": 8,
+          "evidencia": "secciones[2].bloques"
+        },
+        {
+          "criterio": "Persuasión",
+          "puntaje": 7,
+          "evidencia": "secciones[3].ajustes.historia"
+        },
+        {
+          "criterio": "Originalidad",
+          "puntaje": 6,
+          "evidencia": "meta.estilo (Memphis contenido)"
+        },
+        {
+          "criterio": "Factor asombro",
+          "puntaje": 6,
+          "evidencia": "secciones[4].tipo (dato-en-vivo)"
+        },
+        {
+          "criterio": "Accesibilidad",
+          "puntaje": 6,
+          "evidencia": "secciones[8].bloques[2].ajustes.valor"
+        }
+      ],
+      "problemas": [
+        "secciones[8].bloques[2].ajustes.valor: El campo de edad recomendada está vacío [COMPLETAR].",
+        "secciones[6].bloques: La galería muestra imágenes genéricas de cohetes (Falcon 9/hojalata) en lugar de fotos reales del producto, lo que reduce la confianza.",
+        "secciones[3].ajustes.historia: La historia es genérica, no personaliza el beneficio para el perfil de 'madres, padres y profesores'."
+      ],
+      "correcciones": [
+        "secciones[8].bloques[2].ajustes.valor: 6-12",
+        "secciones[6].bloques: Reemplazar imágenes de hojalata por fotos de alta calidad del kit armado y familias interactuando con el producto.",
+        "secciones[3].ajustes.historia: ¿Buscas un plan de ciencia para hacer en familia que tus hijos realmente disfruten lejos de las pantallas? Este kit convierte tu patio en un laboratorio espacial."
+      ]
+    }
+  },
+  "proveedor": "gemini",
+  "informe": {
+    "puntaje": 7.3,
+    "rojos": 0,
+    "listaNegra": 0,
+    "medios": {
+      "reales": 7,
+      "marcadores": 0
+    },
+    "widget": "cuenta-regresiva-lanzamiento",
+    "segundos": 84,
+    "intentos": 2,
+    "investigacion": {
+      "consultadoEn": "2026-09-30T15:40:53.929Z",
+      "fuentes": [
+        {
+          "fuente": "nasa-images",
+          "estado": "ok",
+          "detalle": "bancos b7, b1, p-hogar"
+        },
+        {
+          "fuente": "lanzamientos",
+          "estado": "ok",
+          "detalle": "lanzamiento: responde"
+        }
+      ],
+      "preguntas": [],
+      "preciosReferencia": [],
+      "composicionReferencia": [],
+      "widget": {
+        "variante": "cuenta-regresiva-lanzamiento",
+        "responde": true
+      }
+    }
+  }
+}

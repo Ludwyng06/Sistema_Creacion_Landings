@@ -1,0 +1,12 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning": "El usuario pide un titulo. Formato esperado: {\"titulo\": string}. Probemos con {\"titulo\": \"borrador\"}. Version final: {\"titulo\": \"Postura recta, dia largo\", \"extra\": [1, 2, 3]}"
+      }
+    }
+  ],
+  "usage": { "prompt_tokens": 40, "completion_tokens": 90 }
+}

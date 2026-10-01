@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "meta": {
+    "nombre": "Corrector de postura",
+    "slug": "corrector-postura",
+    "producto": "Corrector de postura",
+    "tecnicas": [
+      "ambicioso",
+      "sustractivo",
+      "negativas",
+      "humana"
+    ],
+    "semilla": {
+      "estilo": "manual de instrucciones industrial",
+      "industria": "fichas de museo",
+      "paletaId": "deco-01",
+      "tipografiaId": "space-grotesk-plex",
+      "numero": 30
+    },
+    "nivelConciencia": "problema",
+    "marco": "PAS",
+    "eliminadas": [
+      {
+        "tipo": "cinta-anuncio",
+        "motivo": "Exceso de ruido visual que distrae del problema central."
+      },
+      {
+        "tipo": "video",
+        "motivo": "Redundancia de contenido respecto a la galería visual."
+      }
+    ]
+  },
+  "tokens": {
+    "colores": {
+      "fondo": "#0F2A2B",
+      "superficie": "#163B3D",
+      "texto": "#F5EBD3",
+      "textoSuave": "#B8C4BC",
+      "acento": "#D4A94F",
+      "acentoTexto": "#0F2A2B",
+      "borde": "#2C5457"
+    },
+    "tipografia": {
+      "titulos": "Space Grotesk",
+      "cuerpo": "IBM Plex Sans",
+      "escala": "amplia"
+    },
+    "radio": 999,
+    "espaciado": "aireado",
+    "borde": "ninguno",
+    "imagen": "duotono",
+    "intensidad": 3
+  },
+  "secciones": [
+    {
+      "id": "s1",
+      "tipo": "heroe",
+      "variante": "problema-primero",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Identificar el dolor lumbar por sedentarismo",
+        "emocion": "Comprensión"
+      },
+      "ajustes": {
+        "titular": "¿Pasas ocho horas sentado y tu espalda te lo cobra al final de la tarde?",
+        "subtitular": "Recupera tu postura natural y trabaja sin molestias con nuestro ajuste ergonómico.",
+        "textoBoton": "Quiero mejorar mi postura"
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0
+      },
+      "efectos": [
+        "titular-cinetico"
+      ]
+    },
+    {
+      "id": "s2",
+      "tipo": "beneficios",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Presentar los beneficios tangibles del producto",
+        "emocion": "Alivio",
+        "objecionQueResponde": "¿Es incómodo llevarlo varias horas?"
+      },
+      "ajustes": {
+        "titulo": "Comodidad diseñada para tu jornada",
+        "disposicion": "tarjetas-apiladas"
+      },
+      "bloques": [
+        {
+          "id": "b1",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Recordatorio constante",
+            "texto": "Te ayuda a mantener la espalda recta sin que tengas que pensarlo durante el día."
+          }
+        },
+        {
+          "id": "b2",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "invisible",
+            "titulo": "Diseño discreto",
+            "texto": "Llévalo debajo de tu camiseta sin que nadie lo note mientras realizas tus labores diarias."
+          }
+        },
+        {
+          "id": "b3",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "ajuste",
+            "titulo": "Ajuste universal",
+            "texto": "Cuenta con un sistema regulable que se adapta perfectamente tanto a hombres como a mujeres."
+          }
+        },
+        {
+          "id": "b4",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "tela",
+            "titulo": "Material transpirable",
+            "texto": "Su tejido ligero permite llevarlo toda la jornada sin generar calor ni irritar la piel."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.2
+      }
+    },
+    {
+      "id": "s3",
+      "tipo": "faq",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Eliminar dudas previas a la compra",
+        "objecionQueResponde": "Resuelve dudas sobre talla, dolor, uso y tallaje"
+      },
+      "ajustes": {
+        "titulo": "Preguntas frecuentes"
+      },
+      "bloques": [
+        {
+          "id": "q1",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Se nota debajo de la ropa?",
+            "respuesta": "Gracias a su diseño compacto y ergonómico se ajusta a tu cuerpo de forma invisible.",
+            "objecion": "¿Se nota debajo de la ropa?"
+          }
+        },
+        {
+          "id": "q2",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Cómo sé cuál es mi talla?",
+            "respuesta": "El corrector tiene un sistema ajustable que permite adaptarlo a cualquier tipo de contextura corporal.",
+            "objecion": "¿Cómo sé cuál es mi talla?"
+          }
+        },
+        {
+          "id": "q3",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Qué pasa si ya tengo dolor de espalda?",
+            "respuesta": "Este soporte ayuda a corregir la postura que origina muchas veces el dolor por mala posición.",
+            "objecion": "¿Sirve si ya tengo dolor de espalda?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "tipo": "garantia",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Generar confianza total en el comprador",
+        "objecionQueResponde": "¿Qué pasa si no me funciona?"
+      },
+      "ajustes": {
+        "titulo": "Compra con tranquilidad",
+        "texto": "Estamos convencidos de la eficacia de tu corrector para mejorar tu bienestar diario.",
+        "dias": 30,
+        "icono": "escudo"
+      },
+      "bloques": [
+        {
+          "id": "g1",
+          "tipo": "promesa",
+          "ajustes": {
+            "texto": "Si no cumples tus objetivos, tienes 30 días para gestionar una solución garantizada."
+          }
+        },
+        {
+          "id": "g2",
+          "tipo": "promesa",
+          "ajustes": {
+            "texto": "Devolución sencilla sin preguntas adicionales por tu parte."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "tipo": "oferta",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Facilitar la decisión de compra con anclaje de precio",
+        "emocion": "Aprovechamiento"
+      },
+      "ajustes": {
+        "titulo": "Empieza hoy tu cambio",
+        "precio": 89900,
+        "precioAnterior": 119900,
+        "moneda": "COP",
+        "textoBoton": "Quiero mi corrector ahora"
+      },
+      "bloques": [
+        {
+          "id": "op1",
+          "tipo": "opcion-cantidad",
+          "ajustes": {
+            "unidades": 1,
+            "precio": 89900,
+            "etiqueta": "Envío disponible"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "tipo": "formulario-lead",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Cerrar la venta contactando al interesado",
+        "emocion": "Resolución"
+      },
+      "ajustes": {
+        "titulo": "Déjanos tus datos para coordinar el envío",
+        "campos": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "obligatorios": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "textoBoton": "Quiero que me contacten hoy",
+        "mensajeGracias": "Hemos recibido tu solicitud y te contactaremos en breve para finalizar tu pedido.",
+        "privacidad": "Tus datos personales son tratados con total confidencialidad para procesar tu orden de compra."
+      },
+      "bloques": []
+    }
+  ],
+  "assets": [
+    {
+      "slot": "producto-principal",
+      "tipo": "imagen",
+      "relacion": "1:1",
+      "promptGrok": "[SUBJECT] Posture corrector being subtly worn under a light shirt, [SCENE] modern home office with a sleek desk and laptop, [LIGHT] soft natural window light, [CAMERA] 50mm lens, eye-level angle, shallow depth of field, [PALETTE] background #0F2A2B, surface #163B3D, text #F5EBD3, soft text #B8C4BC, accent #D4A94F, accent text #0F2A2B, [TEXTURE] documentary photo, natural film grain, real imperfections, [COMPOSITION] centered with clear negative space at top for text, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+      "alt": "Corrector de postura ajustable"
+    }
+  ],
+  "critica": {
+    "puntaje": 7.8,
+    "porCriterio": [
+      {
+        "criterio": "Claridad en 3 s",
+        "puntaje": 8,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Fricción",
+        "puntaje": 6,
+        "evidencia": "secciones[5].ajustes.campos"
+      },
+      {
+        "criterio": "Móvil",
+        "puntaje": 7,
+        "evidencia": "tokens.radio"
+      },
+      {
+        "criterio": "Confianza",
+        "puntaje": 7,
+        "evidencia": "secciones[3].ajustes.texto"
+      },
+      {
+        "criterio": "Persuasión",
+        "puntaje": 7,
+        "evidencia": "secciones[1].intencion.objecionQueResponde"
+      },
+      {
+        "criterio": "Originalidad",
+        "puntaje": 5,
+        "evidencia": "meta.semilla.estilo"
+      },
+      {
+        "criterio": "Factor asombro",
+        "puntaje": 5,
+        "evidencia": "secciones[0].efectos"
+      },
+      {
+        "criterio": "Accesibilidad",
+        "puntaje": 6,
+        "evidencia": "tokens.colores.texto, assets[0].alt"
+      }
+    ],
+    "problemas": [
+      "El botón del héroe no lleva al formulario de captura (secciones[0].ajustes.textoBoton)",
+      "No se especifican tamaños de fuente para dispositivos móviles (tokens.tipografia)",
+      "Los campos del formulario carecen de etiquetas ARIA o descripción accesible (secciones[5].ajustes.campos)",
+      "Falta un elemento visual de prueba social o badge de garantía (secciones[3] carece de imagen)",
+      "Contraste entre fondo y texto no se verifica explícitamente (tokens.colores)"
+    ],
+    "correcciones": [
+      "Actualizar secciones[0].ajustes.textoBoton a \"#formulario\" o enlace al ancla del formulario",
+      "Añadir tokens.tipografia.tamanoMovil con valor adecuado, p.ej. \"16px\"",
+      "Incluir en cada campo de secciones[5].ajustes.campos un atributo \"aria-label\" descriptivo",
+      "Agregar a secciones[3] un bloque tipo \"badge\" con imagen de garantía y alt adecuado",
+      "Comprobar y ajustar tokens.colores.texto y tokens.colores.fondo para cumplir ratio 4.5:1"
+    ]
+  }
+}

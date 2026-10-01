@@ -1,0 +1,245 @@
+[
+  {
+    "id": "b8-01",
+    "frase": "¿Sabías que la región conocida como los Acantilados Cósmicos es el borde de una enorme cavidad gaseosa dentro de NGC 3324, a aproximadamente 7 600 años luz?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Acantilados cósmicos en la Nebulosa de Carina",
+      "url": "https://images.nasa.gov/details/carina_nebula"
+    }
+  },
+  {
+    "id": "b8-02",
+    "frase": "¿Sabías que NGC 3324 fue catalogada por primera vez por James Dunlop en el año 1826?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Acantilados cósmicos en la Nebulosa de Carina",
+      "url": "https://images.nasa.gov/details/carina_nebula"
+    }
+  },
+  {
+    "id": "b8-03",
+    "frase": "¿Sabías que en diciembre de 1968 la tripulación del Apollo 8 se convirtió en la primera en abandonar la Tierra y viajar a otro cuerpo celeste?",
+    "tema": "b3",
+    "fuente": {
+      "nombre": "NASA · Aniversario del amanecer de Apollo 8",
+      "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001279"
+    }
+  },
+  {
+    "id": "b8-04",
+    "frase": "¿Sabías que la constelación Cygnus, conocida como el Cisne, se observa fácilmente en el cielo del hemisferio norte durante el verano?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Formación estelar en la constelación del Cisne",
+      "url": "https://images.nasa.gov/details/PIA14102"
+    }
+  },
+  {
+    "id": "b8-05",
+    "frase": "¿Sabías que las auroras se forman cuando electrones energéticos caen desde la burbuja magnética de la Tierra e interactúan con partículas en la atmósfera superior?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Aurora tenue sobre el Centro Espacial Kennedy",
+      "url": "https://images.nasa.gov/details/KSC-20251111-PH-JBS01_0011"
+    }
+  },
+  {
+    "id": "b8-06",
+    "frase": "¿Sabías que la imaginería infrarroja del Mars Odyssey reveló capas expuestas en la superficie de la región marciana llamada Terra Meridiani?",
+    "tema": "b4",
+    "fuente": {
+      "nombre": "NASA · Capas superficiales de Marte en infrarrojo",
+      "url": "https://images.nasa.gov/details/PIA03806"
+    }
+  },
+  {
+    "id": "b8-07",
+    "frase": "¿Sabías que el objetivo llamado Monte Sharp se ubica cerca de la base de una montaña dentro del cráter Gale en Marte?",
+    "tema": "b4",
+    "fuente": {
+      "nombre": "NASA · Área de Aterrizaje del Rover Curiosity",
+      "url": "https://images.nasa.gov/details/PIA15293"
+    }
+  },
+  {
+    "id": "b8-08",
+    "frase": "¿Sabías que desde 220 millas sobre la Tierra, un astronauta de la Expedición 25 capturó una imagen nocturna del Mediterráneo que muestra la costa desde Valencia hasta Livorno?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Vista nocturna del Mediterráneo desde la ISS",
+      "url": "https://images.nasa.gov/details/iss025e011750"
+    }
+  },
+  {
+    "id": "b8-09",
+    "frase": "¿Sabías que la Tierra aparece como una delicada media luna, con solo su borde derecho iluminado, en la foto tomada desde Orión?",
+    "tema": "b3",
+    "fuente": {
+      "nombre": "NASA · Amanecer terrestre visto desde Orion",
+      "url": "https://images.nasa.gov/details/art002e009280b"
+    }
+  },
+  {
+    "id": "b8-10",
+    "frase": "¿Sabías que la vista más profunda del universo, el Hubble Deep Field, muestra varios cientos de galaxias nunca antes vistas?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Campo profundo del Hubble revela miles de galaxias",
+      "url": "https://images.nasa.gov/details/PIA12110"
+    }
+  },
+  {
+    "id": "b8-11",
+    "frase": "¿Sabías que desde la Estación Espacial Internacional, a 220 millas de altura, se pueden reconocer claramente partes de Europa y África en una foto nocturna tomada el 28 de octubre?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Observación nocturna de la Tierra desde la Estación Espacial Internacional",
+      "url": "https://images.nasa.gov/details/iss025e009840"
+    }
+  },
+  {
+    "id": "b8-12",
+    "frase": "¿Sabías que se identificó una estructura de aproximadamente 3 000 años luz en el brazo de Sagitario de la Vía Láctea, con una orientación dramáticamente diferente?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Ruptura en el brazo de Sagitario de la Vía Láctea",
+      "url": "https://images.nasa.gov/details/PIA24576"
+    }
+  },
+  {
+    "id": "b8-13",
+    "frase": "¿Sabías que el Lunar Reconnaissance Orbiter lleva orbitando la Luna desde el verano de 2009?",
+    "tema": "b3",
+    "fuente": {
+      "nombre": "NASA · Luna llena sobre el horizonte",
+      "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000868"
+    }
+  },
+  {
+    "id": "b8-14",
+    "frase": "¿Sabías que dos naves rusas, Soyuz MS‑17 y Progress 77, se acoplaron a la ISS mientras esta orbitaba a 264 millas sobre Kazajistán con una aurora cerca del horizonte?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Naves rusas acopladas a la ISS con aurora",
+      "url": "https://images.nasa.gov/details/iss064e044527"
+    }
+  },
+  {
+    "id": "b8-15",
+    "frase": "¿Sabías que la aurora austral se extendió sobre la Tierra mientras la ISS orbitaba a 272 millas sobre el Océano Pacífico, al sur de Nueva Zelanda?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Aurora austral sobre el Pacífico vista desde la ISS",
+      "url": "https://images.nasa.gov/details/iss072e083078"
+    }
+  },
+  {
+    "id": "b8-16",
+    "frase": "¿Sabías que el brazo de Sagitario tiene un ángulo de espiral de unos 12 grados, mientras la estructura sobresaliente alcanza casi 60 grados?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Ruptura en el brazo de Sagitario de la Vía Láctea",
+      "url": "https://images.nasa.gov/details/PIA24576"
+    }
+  },
+  {
+    "id": "b8-17",
+    "frase": "¿Sabías que un astronauta de la Expedición 25 capturó una foto nocturna desde 220 millas de altura, mirando al sur a lo largo del Atlántico desde Lisboa hasta el Estrecho de Gibraltar?",
+    "tema": "b5",
+    "fuente": {
+      "nombre": "NASA · Vista nocturna del Atlántico desde la ISS",
+      "url": "https://images.nasa.gov/details/iss025e011731"
+    }
+  },
+  {
+    "id": "b8-18",
+    "frase": "¿Sabías que en la región estelar 30 Doradus se descubrieron dos cúmulos que difieren en edad aproximadamente un millón de años?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Astrónomos capturan dos cúmulos estelares en colisión",
+      "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001677"
+    }
+  },
+  {
+    "id": "b8-19",
+    "frase": "¿Sabías que el complejo 30 Doradus ha formado estrellas durante 25 millones de años y aún se desconoce cuánto tiempo más continuará creando nuevas estrellas?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Astrónomos capturan dos cúmulos estelares en colisión",
+      "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001677"
+    }
+  },
+  {
+    "id": "b8-20",
+    "frase": "¿Sabías que los sistemas más pequeños que se fusionan en otros mayores podrían ayudar a explicar el origen de algunos de los cúmulos estelares más grandes conocidos?",
+    "tema": "b1",
+    "fuente": {
+      "nombre": "NASA · Astrónomos capturan dos cúmulos estelares en colisión",
+      "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001677"
+    }
+  },
+  {
+    "id": "b8-21",
+    "frase": "¿Sabías que el asteroide cercano a la Tierra 2018 SP2 pasará a 1 927 097 km de nuestro planeta el 30 de septiembre de 2026 a 51 337 km/h y mide hasta 65 metros?",
+    "tema": "neows",
+    "fuente": {
+      "nombre": "NASA/JPL · NeoWs (Near Earth Object Web Service)",
+      "url": "https://api.nasa.gov"
+    }
+  },
+  {
+    "id": "b8-22",
+    "frase": "¿Sabías que el asteroide 2014 QJ33 cruzará a 16 885 637 km de la Tierra el 30 de septiembre de 2026 a 21 439 km/h y su diámetro estimado alcanza 108 metros?",
+    "tema": "neows",
+    "fuente": {
+      "nombre": "NASA/JPL · NeoWs (Near Earth Object Web Service)",
+      "url": "https://api.nasa.gov"
+    }
+  },
+  {
+    "id": "b8-23",
+    "frase": "¿Sabías que el asteroide 2010 TW54 pasará a 17 457 205 km de la Tierra el 30 de septiembre de 2026 a 16 242 km/h y mide hasta 18 metros?",
+    "tema": "neows",
+    "fuente": {
+      "nombre": "NASA/JPL · NeoWs (Near Earth Object Web Service)",
+      "url": "https://api.nasa.gov"
+    }
+  },
+  {
+    "id": "b8-24",
+    "frase": "¿Sabías que la misión Crew‑13 está programada para lanzarse el 1 de octubre de 2026 con un Falcon 9 Block 5 desde Cape Canaveral y será el decimotercer vuelo tripulado del Dragon a la ISS?",
+    "tema": "lanzamientos",
+    "fuente": {
+      "nombre": "The Space Devs · Launch Library 2",
+      "url": "https://thespacedevs.com/llapi"
+    }
+  },
+  {
+    "id": "b8-25",
+    "frase": "¿Sabías que la misión Transporter 18 (Dedicated SSO Rideshare) tiene previsto despegar el 1 de octubre de 2026 a bordo de un Falcon 9 Block 5 desde Vandenberg y llevará decenas de microsatélites a órbita sun‑synchronous?",
+    "tema": "lanzamientos",
+    "fuente": {
+      "nombre": "The Space Devs · Launch Library 2",
+      "url": "https://thespacedevs.com/llapi"
+    }
+  },
+  {
+    "id": "b8-26",
+    "frase": "¿Sabías que la misión NROL‑97 está programada para lanzarse el 2 de octubre de 2026 con un Falcon Heavy desde Kennedy Space Center y transportará una carga clasificada para la Oficina Nacional de Reconocimiento?",
+    "tema": "lanzamientos",
+    "fuente": {
+      "nombre": "The Space Devs · Launch Library 2",
+      "url": "https://thespacedevs.com/llapi"
+    }
+  },
+  {
+    "id": "b8-27",
+    "frase": "¿Sabías que el vuelo 2 está previsto para despegar el 5 de octubre de 2026 a bordo del SR75 desde SaxaVord Spaceport y será una prueba del cohete sónico HyImpulse?",
+    "tema": "lanzamientos",
+    "fuente": {
+      "nombre": "The Space Devs · Launch Library 2",
+      "url": "https://thespacedevs.com/llapi"
+    }
+  }
+]

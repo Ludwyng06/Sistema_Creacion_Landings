@@ -1,0 +1,30 @@
+node_modules/
+.next/
+.env
+.env*.local
+*.db
+*.db-journal
+referencias/compraya/
+app/public/media/**/*-frames/
+!app/public/media/home/home-loop-frames/
+referencias/grok/
+app/public/media/**/*-frames-movil/
+
+# artefactos locales
+app/test-results/
+app/playwright-report/
+app/public/media/cm*/
+app/public/media/investigar/
+
+# Bancos de medios: se regeneran con `npm run bancos` (la vitrina va en app/public/media/vitrina/)
+app/public/media/bancos/
+
+# Documentación interna, contexto de agentes y material de referencia (no se publica)
+docs/
+CLAUDE.md
+**/CLAUDE.md
+app/AGENTS.md
+.claude/
+.orca/
+referencias/
+scratch-*

@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+/* ── Sistema de diseño de la APP (editorial, sobrio) ─────────────────────────
+   No aplica a las landings: ellas leen solo las variables --c-*, --f-*, etc.
+   que `tokensAVariables` pone en su contenedor. */
+:root {
+  --papel: #f5f2ea;
+  --papel-hondo: #ebe6da;
+  --tinta: #1a1915;
+  --tinta-suave: #5e5a50;
+  --linea: #d8d2c4;
+  --marca: #1f4b3b;
+  --marca-texto: #f5f2ea;
+  --error: #9b2c1f;
+  /* Los 4 bloques del prompt (Rol azul, Tarea naranja, Contexto verde, Formato morado). */
+  --bloque-rol: #1d4f8c;
+  --bloque-rol-suave: #e4edf7;
+  --bloque-tarea: #b5570f;
+  --bloque-tarea-suave: #f8eadb;
+  --bloque-contexto: #2b6b3f;
+  --bloque-contexto-suave: #e3f0e7;
+  --bloque-formato: #6a3fa0;
+  --bloque-formato-suave: #eee6f7;
+}
+
+@theme inline {
+  /* App */
+  --color-papel: var(--papel);
+  --color-papel-hondo: var(--papel-hondo);
+  --color-tinta: var(--tinta);
+  --color-tinta-suave: var(--tinta-suave);
+  --color-linea: var(--linea);
+  --color-marca: var(--marca);
+  --color-marca-texto: var(--marca-texto);
+  --color-error: var(--error);
+  --color-rol: var(--bloque-rol);
+  --color-rol-suave: var(--bloque-rol-suave);
+  --color-tarea: var(--bloque-tarea);
+  --color-tarea-suave: var(--bloque-tarea-suave);
+  --color-contexto: var(--bloque-contexto);
+  --color-contexto-suave: var(--bloque-contexto-suave);
+  --color-formato: var(--bloque-formato);
+  --color-formato-suave: var(--bloque-formato-suave);
+  --font-editorial: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-ui: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Landings: utilidades que apuntan a las variables de tokens (nunca hex) */
+  --color-fondo: var(--c-fondo);
+  --color-superficie: var(--c-superficie);
+  --color-texto: var(--c-texto);
+  --color-suave: var(--c-texto-suave);
+  --color-acento: var(--c-acento);
+  --color-acento-texto: var(--c-acento-texto);
+  --color-borde: var(--c-borde);
+  --font-titulos: var(--f-titulos);
+  --font-cuerpo: var(--f-cuerpo);
+  --radius-token: var(--radio);
+  --radius-tarjeta: min(var(--radio), 1.5rem);
+  --spacing-espacio: var(--espacio);
+
+  --text-cuerpo: max(1rem, calc(1rem * var(--escala)));
+  --text-cuerpo--line-height: 1.6;
+  --text-lead: max(1.0625rem, calc(1.1875rem * var(--escala-s, var(--escala))));
+  --text-lead--line-height: 1.5;
+  --text-h2: calc(clamp(1.75rem, 5.5vw, 2.75rem) * var(--escala-t, var(--escala)));
+  --text-h2--line-height: 1.1;
+  --text-h1: calc(clamp(2.25rem, 8vw, 4.5rem) * var(--escala-t, var(--escala)));
+  --text-h1--line-height: 1.02;
+  --text-display: calc(clamp(3rem, 14vw, 7rem) * var(--escala-t, var(--escala)));
+  --text-display--line-height: 0.92;
+}
+
+/* Borde de las landings según `tokens.borde` (0, 1 o 3 px). */
+@utility borde-token {
+  border: var(--borde-ancho) solid var(--c-borde);
+}
+
+html {
+  background: var(--papel);
+}
+
+/* Foco visible en toda la app: red de seguridad para lo que no trae su propio anillo. Las landings usan el suyo. */
+@layer base {
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible:not(.landing *) {
+    outline: 2px solid var(--marca);
+    outline-offset: 2px;
+  }
+}
+
+body {
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--font-ui);
+}
+
+/* Tratamiento de imagen según `tokens.imagen`. */
+.landing[data-imagen="duotono"] .media-slot img {
+  filter: grayscale(1) contrast(1.08);
+}
+.landing[data-imagen="marco"] .media-slot {
+  padding: 0.5rem;
+  background: var(--c-superficie);
+  border: var(--borde-ancho) solid var(--c-borde);
+}
+.landing[data-imagen="recorte"] .media-slot {
+  border-radius: 0 0 var(--radius-tarjeta) 0;
+}
+
+/* Indicador de scroll del héroe «problema-primero». */
+@keyframes flecha-scroll {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+}
+.flecha-scroll {
+  animation: flecha-scroll 1.8s ease-in-out infinite;
+}
+
+/* Grano de película (efecto `grano`): solo transform, en pasos. */
+@keyframes grano-mover {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  20% {
+    transform: translate3d(-3%, 2%, 0);
+  }
+  40% {
+    transform: translate3d(3%, -2%, 0);
+  }
+  60% {
+    transform: translate3d(-2%, -3%, 0);
+  }
+  80% {
+    transform: translate3d(2%, 3%, 0);
+  }
+}
+.grano-capa {
+  animation: grano-mover 0.9s steps(5) infinite;
+}
+
+/* Morph del editor: las variables de color se registran como <color> para poder animarlas. */
+@property --c-fondo {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-superficie {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-texto {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-texto-suave {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-acento {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-acento-texto {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --c-borde {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --radio {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+.landing[data-morph] {
+  transition:
+    --c-fondo 400ms ease,
+    --c-superficie 400ms ease,
+    --c-texto 400ms ease,
+    --c-texto-suave 400ms ease,
+    --c-acento 400ms ease,
+    --c-acento-texto 400ms ease,
+    --c-borde 400ms ease,
+    --radio 400ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing[data-morph] {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing *,
+  .landing *::before,
+  .landing *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Entrada de sección (`<Entrada>`): CSS puro, arranca con el primer pintado. `backwards` deja el estado inicial durante el retraso
+   y no deja transform activo al terminar (no crea contexto de apilamiento ni rompe `sticky`). */
+@keyframes entrada-aparecer { from { opacity: 0.01; } }
+@keyframes entrada-subir { from { opacity: 0.01; transform: translateY(24px); } }
+@keyframes entrada-escala { from { opacity: 0.01; transform: scale(0.96); } }
+.entrada-aparecer, .entrada-subir, .entrada-escala {
+  animation: 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--retraso-entrada, 0s) backwards;
+}
+.entrada-aparecer { animation-name: entrada-aparecer; }
+.entrada-subir { animation-name: entrada-subir; }
+.entrada-escala { animation-name: entrada-escala; }
+.landing[data-reducido] [class^="entrada-"] { animation: none; }
+@keyframes letra-sube { from { transform: translateY(40%); } }
+.letra-sube { animation: letra-sube 500ms ease-out backwards; }
+
+/* Página pública: las secciones de abajo se pintan al acercarse (ver `diferirSecciones` en LandingRender). */
+.seccion-diferida { content-visibility: auto; contain-intrinsic-size: auto 720px; }
+
+/* Tamaño de letra (17-B): un titular nunca se sale de su contenedor y el peso se puede elegir por sección. */
+.landing :is(h1, h2, h3) { overflow-wrap: anywhere; hyphens: manual; }
+.landing [data-peso-titulo] :is(h1, h2) { font-weight: var(--peso-titulo); }

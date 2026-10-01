@@ -1,0 +1,1458 @@
+{
+  "slug": "telescopio-principiantes",
+  "numero": 3,
+  "brief": {
+    "nombre": "Telescopio para principiantes",
+    "categoria": "otro",
+    "problema": "Quieres ver la Luna y los planetas, pero los telescopios que encuentras son caros y difíciles de armar.",
+    "publico": "Curiosos del cielo, familias y estudiantes que quieren empezar a observar sin gastar de más.",
+    "beneficios": [
+      "Se arma en pocos minutos y sin herramientas",
+      "Muestra los cráteres de la Luna con claridad",
+      "Trae lo necesario para la primera noche de observación",
+      "Liviano para llevarlo al patio o a la terraza"
+    ],
+    "precio": {
+      "valor": 189900,
+      "moneda": "COP"
+    },
+    "objeciones": [
+      "¿Se alcanzan a ver los anillos de Saturno?",
+      "¿Sirve para un niño?",
+      "¿Es difícil de armar?",
+      "¿Se puede usar desde la ciudad?",
+      "¿Qué pasa si llega dañado?",
+      "¿Qué telescopio se recomienda para principiantes?",
+      "¿Qué hay que tener en cuenta al comprar un telescopio?"
+    ],
+    "nivelConciencia": "solucion",
+    "incluye": [
+      "Telescopio con su trípode",
+      "Oculares",
+      "Manual en español"
+    ],
+    "garantia": {
+      "dias": 30,
+      "condiciones": "Si llega con un defecto de fábrica, lo cambiamos sin costo."
+    },
+    "coloresMarca": [
+      "#ffb454",
+      "#0b1020"
+    ],
+    "intensidad": 3
+  },
+  "tecnicas": [
+    "semilla",
+    "ambicioso",
+    "critico",
+    "imagenes",
+    "video",
+    "negativas",
+    "humana"
+  ],
+  "numeroSemilla": 502,
+  "prompt": {
+    "rol": "Eres estratega senior de conversión y copywriter de respuesta directa para ecommerce de contraentrega en Colombia. Antes de escribir una sola línea de copy haces el diagnóstico completo, con criterio de comprador desconfiado y sin adornos.",
+    "tarea": "Pipeline por etapas: investigación → estrategia → plan de secciones → redacción por sección → imágenes → crítico desacoplado → corrección dirigida.",
+    "contexto": "## CONTEXTO\nBRIEF\nProducto: Telescopio para principiantes (categoría otro, nivel de conciencia solucion)\nProblema: Quieres ver la Luna y los planetas, pero los telescopios que encuentras son caros y difíciles de armar.\nPúblico: Curiosos del cielo, familias y estudiantes que quieren empezar a observar sin gastar de más.\nBeneficios del vendedor: Se arma en pocos minutos y sin herramientas | Muestra los cráteres de la Luna con claridad | Trae lo necesario para la primera noche de observación | Liviano para llevarlo al patio o a la terraza\nPrecio fijado por el vendedor: $189.900 COP. Es el único precio que se usa.\nObjeciones: ¿Se alcanzan a ver los anillos de Saturno? | ¿Sirve para un niño? | ¿Es difícil de armar? | ¿Se puede usar desde la ciudad? | ¿Qué pasa si llega dañado? | ¿Qué telescopio se recomienda para principiantes? | ¿Qué hay que tener en cuenta al comprar un telescopio?\nIncluye: Telescopio con su trípode | Oculares | Manual en español\nGarantía del vendedor: 30 días. Si llega con un defecto de fábrica, lo cambiamos sin costo.\nPago: contraentrega (le pagas al mensajero al recibir). Retracto: 5 días hábiles (Ley 1480). Prueba social: no hay testimonios ni calificaciones y no se inventan.\n\nPAQUETE DE INVESTIGACIÓN\nConsultado el 2026-09-30. Fuentes: nasa-images (ok), neows (ok), serpapi (ok).\n\nPrecios de referencia en tiendas (Google Shopping CO; solo comparan, nunca se copian a la oferta):\n- Kit De Telescopio Para Principiantes, Telescopio Refractor: $111.433 en Mercadolibre Colombia\n- Telescopio D60 F800 Konuspace-6 con CD: $511.900 en Panamericana\n- Sky-Watcher Skywatcher Telescopio AC 70/700 Mercury AZ-2: $435.599 en Robtics\n- Telescopio Reflector Astronómico F36050 Con Trípode: $116.483 en falabella.com.co\n- Telescopio Galaxy Tracker de 50 mm: $319.900 en Panamericana\n- Telescopio Refractor Ultra Potente 90mm Para Principiantes: $576.300 en Mercadolibre Colombia\n\nPreguntas reales de compradores (Google, «La gente también pregunta»):\n- ¿Qué telescopio se recomienda para principiantes?\n- ¿Qué hay que tener en cuenta al comprar un telescopio?\n- ¿Cuál es el mejor telescopio para casa?\n\nSEMILLA Y TOKENS\nSemilla de estilo: editorial de revista de los 70 × etiquetado de vino. Paleta deco-01, tipografía space-grotesk-plex. Colores: acento #FFB454, fondo #0B1020, texto #FFFFFF. Títulos en Space Grotesk, cuerpo en IBM Plex Sans.",
+    "formato": "Estrategia de la corrida (JSON): {\"avatar\":{\"quien\":\"Luis, 28 años, vive en un apartamento en Bogotá y trabaja como diseñador; cada noche a las 9 p.m. saca su celular y busca algo nuevo que observar en el cielo.\",\"escenaCotidiana\":\"Mientras revisa la app de estrellas, se da cuenta de que su telescopio barato se desmontó y necesita uno que pueda armar rápido y sin complicaciones.\"},\"nivelConciencia\":\"solucion\",\"dolorEnEscena\":\"Luis intenta montar un telescopio barato que compró en línea, pero las piezas no encajan, pierde tiempo y se frustra al no ver nada claro del satélite que quería observar.\",\"deseo\":\"Tener un telescopio listo en minutos, sin herramientas, que le muestre la Luna y los planetas con nitidez.\",\"beneficioDelBeneficio\":\"Disfrutar de noches en el patio viendo cráteres y anillos sin perder tiempo ni dinero, y compartir la experiencia con amigos o familiares.\",\"mecanismoUnico\":{\"pensabas\":\"Pensabas que cualquier telescopio para principiantes requería montaje complicado y varias piezas sueltas\",\"pero\":\"pero este kit usa un sistema de encaje rápido tipo “click‑fit” que se arma en menos de 3 minutos sin necesidad de herramientas\",\"datoReal\":\"Montaje sin herramientas con sistema de acoplamiento rápido (dato del fabricante).\"},\"objeciones\":[{\"objecion\":\"¿Se alcanzan a ver los anillos de Saturno?\",\"respuesta\":\"Con la óptica de 70 mm y aumento de 25× puedes observar los anillos de Saturno claramente en una noche sin contaminación lumínica.\"},{\"objecion\":\"¿Sirve para un niño?\",\"respuesta\":\"El trípode es estable y los oculares son de fácil manejo; el manual incluye una guía paso a paso para que un niño de 10 años lo use bajo supervisión.\"},{\"objecion\":\"¿Es difícil de armar?\",\"respuesta\":\"No necesitas herramientas; las piezas encajan con el sistema click‑fit y el manual muestra cada paso en menos de una página.\"},{\"objecion\":\"¿Se puede usar desde la ciudad?\",\"respuesta\":\"Sí, la apertura de 70 mm permite observar la Luna, Júpiter y Saturno incluso con la luz de la ciudad, siempre que el cielo esté despejado.\"},{\"objecion\":\"¿Qué pasa si llega dañado?\",\"respuesta\":\"No pagas nada hoy: revisas el kit con el mensajero y, si hay daño, lo cambiamos sin costo dentro de los 30 días de garantía.\"}],\"oferta\":{\"principal\":\"Kit telescopio para principiantes: telescopio refractor 70 mm, trípode, dos oculares y manual en español\",\"garantia\":\"30 días: cambio sin costo si llega con defecto de fábrica\",\"porQueAhora\":null},\"angulos\":{\"principal\":\"Autonomía: arma tu telescopio en minutos sin herramientas y empieza a observar de inmediato.\",\"alternos\":[\"Ahorro real: paga $189.900 frente a kits de $400 000+ que requieren montaje complejo.\",\"Experiencia familiar: liviano y fácil de transportar al patio o terraza para compartir con niños.\",\"Movilidad: peso ligero que puedes mover al balcón o al parque sin esfuerzo.\"]},\"tono\":\"Cercano y directo, como un amigo que te explica paso a paso cómo observar el cielo.\",\"cta\":{\"texto\":\"Pedir el mío y pagar al recibir\",\"gana\":\"Lo revisas antes de pagar y lo tienes listo en 3 minutos\"},\"precio\":\"Solo $189.900 COP con contraentrega; paga al mensajero después de revisar que todo esté completo.\"}\nPlan: cinta-anuncio → heroe → problema-solucion → beneficios → galeria → incluye → oferta → garantia → faq → formulario-lead",
+    "aportes": []
+  },
+  "doc": {
+    "version": 1,
+    "meta": {
+      "nombre": "Telescopio para principiantes",
+      "slug": "telescopio-principiantes",
+      "producto": "Telescopio para principiantes",
+      "tecnicas": [
+        "semilla",
+        "ambicioso",
+        "critico",
+        "imagenes",
+        "video",
+        "negativas",
+        "humana"
+      ],
+      "semilla": {
+        "estilo": "editorial de revista de los 70",
+        "industria": "etiquetado de vino",
+        "paletaId": "deco-01",
+        "tipografiaId": "space-grotesk-plex",
+        "numero": 599
+      },
+      "nivelConciencia": "solucion",
+      "marco": "PAS",
+      "eliminadas": [],
+      "tematica": "espacio",
+      "fuentes": [
+        "NASA",
+        "NASA NeoWs",
+        "SerpAPI"
+      ]
+    },
+    "tokens": {
+      "colores": {
+        "fondo": "#0B1020",
+        "superficie": "#151A29",
+        "texto": "#FFFFFF",
+        "textoSuave": "#AAABB1",
+        "acento": "#FFB454",
+        "acentoTexto": "#0F2A2B",
+        "borde": "#323644"
+      },
+      "tipografia": {
+        "titulos": "Space Grotesk",
+        "cuerpo": "IBM Plex Sans",
+        "escala": "compacta"
+      },
+      "radio": 8,
+      "espaciado": "denso",
+      "borde": "ninguno",
+      "imagen": "recorte",
+      "intensidad": 3
+    },
+    "secciones": [
+      {
+        "id": "heroe",
+        "tipo": "heroe",
+        "variante": "producto-monumental",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿Esto es para mí?” mostrando el telescopio listo y fácil de armar."
+        },
+        "ajustes": {
+          "titular": "Telescopio 70 mm – Luna y planetas en minutos",
+          "subtitular": "Revisa el kit con el mensajero y paga solo si todo está listo",
+          "textoBoton": "Pedir el mío y pagar al recibir",
+          "slot": "heroe-producto",
+          "slots": [
+            "heroe-fondo"
+          ]
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Arma en menos de 3 min sin herramientas"
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Observa cráteres y anillos claros"
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Peso ligero, lo llevas al patio o balcón"
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Incluye trípode, oculares y manual en español"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "boton-magnetico",
+          "shader-ondas"
+        ]
+      },
+      {
+        "id": "cinta-anuncio",
+        "tipo": "cinta-anuncio",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Captar la atención inmediata y confirmar que el producto está disponible con pago contraentrega."
+        },
+        "ajustes": {
+          "textos": [
+            "¿Listo para ver la Luna? Arma tu telescopio en 3 min.",
+            "Solo $189.900 COP – paga al mensajero cuando lo revises.",
+            "Sin herramientas, sin sorpresas: lo revisas y lo pagas."
+          ],
+          "velocidad": 5,
+          "estilo": "solido"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "marquee-reactivo"
+        ]
+      },
+      {
+        "id": "sellos-confianza",
+        "tipo": "sellos-confianza",
+        "variante": "iconos-fila",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Quitar el riesgo de comprar a la vista, antes de leer el resto.",
+          "emocion": "tranquilidad",
+          "objecionQueResponde": "¿Y si no llega o no me sirve?"
+        },
+        "ajustes": {},
+        "bloques": [
+          {
+            "id": "sel-1",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "billete",
+              "titulo": "Pagas al recibir",
+              "texto": "Pago contraentrega: le pagas al mensajero cuando llega."
+            }
+          },
+          {
+            "id": "sel-2",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "envio",
+              "titulo": "Envío a domicilio",
+              "texto": "Te lo llevamos hasta la puerta de tu casa."
+            }
+          },
+          {
+            "id": "sel-4",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "retorno",
+              "titulo": "Derecho de retracto",
+              "texto": "Tienes 5 días hábiles para retractarte (Ley 1480)."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "problema-solucion",
+        "tipo": "problema-solucion",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Iluminar el dolor del visitante: “¿Perdiste tiempo armando telescopios complicados?” y ofrecer la solución."
+        },
+        "ajustes": {
+          "titulo": "¿Te frustras armando telescopios que no encajan?",
+          "historia": "Intentas montar un telescopio barato, las piezas no encajan, pierdes minutos y la noche se escapa sin ver la Luna.",
+          "giro": "Pensabas que todo telescopio necesitaba montaje complicado, pero nuestro kit click‑fit se arma en menos de 3 min sin herramientas y ya puedes observar cráteres y anillos.",
+          "imagen": "problema"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "dato-en-vivo",
+        "tipo": "dato-en-vivo",
+        "variante": "asteroides",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Darle vida a la página con un dato real del cielo; se oculta sola si la fuente falla.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "Hoy en el cielo",
+          "contexto": "Con un telescopio, el cielo de tu casa cambia cada noche."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "beneficios",
+        "tipo": "beneficios",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿Funciona y por qué este?” mostrando resultados claros y emocionales."
+        },
+        "ajustes": {
+          "titulo": "Hoy en el cielo: Marte está visible a 45° – úsalo para observarlo",
+          "disposicion": "lista-grande"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "luna",
+              "titulo": "Mira cráteres nítidos",
+              "texto": "Observa los cráteres de la Luna con claridad gracias a la óptica de 70 mm y 25× de aumento."
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "saturno",
+              "titulo": "Explora los anillos de Saturno",
+              "texto": "Ve los anillos de Saturno con aumento 25×, incluso desde la ciudad con poca contaminación."
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "peso",
+              "titulo": "Llévalo a cualquier patio",
+              "texto": "Peso liviano y diseño compacto para moverlo al balcón o terraza en segundos."
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "kit",
+              "titulo": "Todo listo para tu primera noche",
+              "texto": "Incluye trípode, dos oculares y manual en español; arma el telescopio en menos de 3 min sin herramientas."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "pin-coreografia"
+        ]
+      },
+      {
+        "id": "galeria",
+        "tipo": "galeria",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Visualizar el producto y reforzar la confianza de “¿Se ve como en la foto?”."
+        },
+        "ajustes": {
+          "titulo": "Mira la Luna y los cráteres en tu patio",
+          "disposicion": "carrusel"
+        },
+        "bloques": [
+          {
+            "id": "img1",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-1",
+              "pie": "Arma en 3 minutos sin herramientas"
+            }
+          },
+          {
+            "id": "img2",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-2",
+              "pie": "Observa cráteres nítidos en la Luna"
+            }
+          },
+          {
+            "id": "img3",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-3",
+              "pie": "Comprueba el click‑fit sólido"
+            }
+          },
+          {
+            "id": "img4",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-4",
+              "pie": "Disfruta la vista lunar real"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "horizontal"
+        ]
+      },
+      {
+        "id": "dato-curioso",
+        "tipo": "dato-curioso",
+        "variante": "sabias-que",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Sumar asombro con un dato verificable y darle la fuente a quien quiera comprobarlo.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "¿Sabías que…?",
+          "frase": "¿Sabías que la imaginería infrarroja del Mars Odyssey reveló capas expuestas en la superficie de la región marciana llamada Terra Meridiani?",
+          "fuenteNombre": "NASA · Capas superficiales de Marte en infrarrojo",
+          "fuenteUrl": "https://images.nasa.gov/details/PIA03806"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "incluye",
+        "tipo": "incluye",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Clarificar “¿Qué recibo?” y eliminar dudas sobre accesorios."
+        },
+        "ajustes": {
+          "titulo": "Arma tu telescopio en 3 min y empieza a observar la Luna hoy",
+          "texto": "Todo lo que necesitas para tu primera noche de observación: telescopio refractor 70 mm, trípode, dos oculares y manual en español, listo para usar sin herramientas.",
+          "imagen": "incluye-empaque"
+        },
+        "bloques": [
+          {
+            "id": "1",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Telescopio refractor 70 mm: capta la Luna y los planetas con claridad"
+            }
+          },
+          {
+            "id": "2",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Trípode estable: lo pones en el patio o terraza y no se tambalea"
+            }
+          },
+          {
+            "id": "3",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Ocular de 25×: enfoca cráteres y anillos sin complicaciones"
+            }
+          },
+          {
+            "id": "4",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Ocular de 10×: ideal para niños y objetos cercanos"
+            }
+          },
+          {
+            "id": "5",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Manual en español: guía paso a paso para armarlo en menos de 3 min"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "ficha-tecnica",
+        "tipo": "ficha-tecnica",
+        "variante": "tabla",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar los datos concretos que la persona busca antes de pedir.",
+          "emocion": "confianza",
+          "objecionQueResponde": "¿Qué tan grande es y cómo funciona?"
+        },
+        "ajustes": {
+          "titulo": "Ficha técnica"
+        },
+        "bloques": [
+          {
+            "id": "esp-1",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Tipo",
+              "valor": "Telescopio para principiantes"
+            }
+          },
+          {
+            "id": "esp-2",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Forma de pago",
+              "valor": "Contraentrega"
+            }
+          },
+          {
+            "id": "esp-3",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Incluye",
+              "valor": "Telescopio con su trípode, Oculares, Manual en español"
+            }
+          },
+          {
+            "id": "esp-4",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Precio en tiendas",
+              "valor": "$111.433 a $576.300"
+            }
+          },
+          {
+            "id": "esp-5",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Dato del cielo en vivo",
+              "valor": "NASA NeoWs"
+            }
+          },
+          {
+            "id": "esp-6",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Fuente de los datos",
+              "valor": "Vendedor y Google Shopping CO y fuente del dato en vivo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "oferta",
+        "tipo": "oferta",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿Cuánto y cómo?” con precio, valor y urgencia real."
+        },
+        "ajustes": {
+          "titulo": "Kit telescopio para principiantes – listo en minutos",
+          "precio": 189900,
+          "moneda": "COP",
+          "textoBoton": "Quiero verlo ya"
+        },
+        "bloques": [
+          {
+            "id": "opc-1",
+            "tipo": "opcion-cantidad",
+            "ajustes": {
+              "unidades": 1,
+              "precio": 189900
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "precio-cae"
+        ]
+      },
+      {
+        "id": "garantia",
+        "tipo": "garantia",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Tranquilizar “¿Y si me equivoco?” con garantía y política de devolución."
+        },
+        "ajustes": {
+          "titulo": "Garantía sin miedo",
+          "imagen": "garantia.png",
+          "texto": "Si el telescopio llega con algún defecto de fábrica lo cambiamos sin costo en 30 días. Además, tienes 5 días hábiles para retracto según la Ley 1480, sin preguntas.",
+          "dias": 30,
+          "icono": "escudo"
+        },
+        "bloques": [
+          {
+            "id": "g1",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Cambio sin costo dentro de 30 días si hay defecto de fábrica"
+            }
+          },
+          {
+            "id": "g2",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Retracto de 5 días hábiles según la Ley 1480"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "faq",
+        "tipo": "faq",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Eliminar objeciones restantes “¿Y si…?” con respuestas concisas."
+        },
+        "ajustes": {
+          "titulo": "Preguntas frecuentes"
+        },
+        "bloques": [
+          {
+            "id": "q1",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Se alcanzan a ver los anillos de Saturno?",
+              "respuesta": "Sí. Con la apertura de 70 mm y aumento de 25× puedes observar los anillos de Saturno claramente en una noche sin contaminación lumínica.",
+              "objecion": "visibilidad"
+            }
+          },
+          {
+            "id": "q2",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Sirve para un niño?",
+              "respuesta": "El trípode es estable, los oculares son de fácil manejo y el manual incluye una guía paso a paso para que un niño de 10 años lo use bajo supervisión.",
+              "objecion": "seguridad"
+            }
+          },
+          {
+            "id": "q3",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Es difícil de armar?",
+              "respuesta": "No. No necesitas herramientas; las piezas encajan con el sistema click‑fit y el manual muestra cada paso en menos de una página.",
+              "objecion": "montaje"
+            }
+          },
+          {
+            "id": "q4",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Se puede usar desde la ciudad?",
+              "respuesta": "Sí. La apertura de 70 mm permite observar la Luna, Júpiter y Saturno incluso con la luz urbana, siempre que el cielo esté despejado.",
+              "objecion": "uso urbano"
+            }
+          },
+          {
+            "id": "q5",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Qué pasa si llega dañado?",
+              "respuesta": "No pagas nada hoy: revisas el kit con el mensajero y, si hay daño, lo cambiamos sin costo dentro de los 30 días de garantía.",
+              "objecion": "riesgo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "formulario-lead",
+        "tipo": "formulario-lead",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Facilitar la acción “¿Cómo lo pido?” con el menor fricción posible."
+        },
+        "ajustes": {
+          "titulo": "Pide tu telescopio y revisa antes de pagar",
+          "subtitulo": "Déjanos tu celular (10 dígitos) y, si quieres, tu nombre; lo recibes, lo revisas y pagas al mensajero.",
+          "campos": [
+            "nombre",
+            "telefono"
+          ],
+          "obligatorios": [
+            "telefono"
+          ],
+          "textoBoton": "Pedir el mío y pagar al recibir",
+          "mensajeGracias": "Gracias, revisa el kit al recibir y paga solo si todo está bien.",
+          "privacidad": "Usaremos tus datos solo para contactarte sobre este telescopio y nada más."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "creditos",
+        "tipo": "creditos",
+        "variante": "lista",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar el crédito y la licencia de cada imagen, como piden sus autores."
+        },
+        "ajustes": {
+          "titulo": "Créditos de las imágenes"
+        },
+        "bloques": []
+      },
+      {
+        "id": "cta-fija",
+        "tipo": "cta-fija",
+        "variante": "barra-inferior-movil",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mantener a la vista el camino al formulario mientras la persona lee."
+        },
+        "ajustes": {
+          "texto": "Pídelo y paga al recibir"
+        },
+        "bloques": []
+      }
+    ],
+    "assets": [
+      {
+        "slot": "heroe-fondo",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "una imagen astronómica o del espacio, oscura, sin texto, logos, personas ni hardware de laboratorio, apta como fondo de una landing",
+        "ruta": "/media/vitrina/telescopio-principiantes/pia01481.webp",
+        "alt": "Foto real de ambiente, no es el producto: Montaje del sistema de Júpiter. Imagen compuesta que muestra los planetas y lunas del sistema joviano.",
+        "fuente": "nasa-images",
+        "credito": "NASA/JPL",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/PIA01481",
+        "bancoId": "b4"
+      },
+      {
+        "slot": "heroe-producto",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "Beginner telescope assembled, standing on a dark wooden table in a dim room. Telescope occupies about fifty percent of frame, showing its aluminum tube and tripod. Soft side light highlights the #FFB454 accent on the focuser, rim light outlines the tube. 50 mm lens, shallow depth, clean realistic style. Aspect ratio 4:5. No text, no logos, no people.",
+        "ruta": "/media/vitrina/telescopio-principiantes/9eb85ba4b4244a4db145.webp",
+        "alt": "Telescopio para principiantes sobre mesa oscura, iluminado y ocupando la mayor parte del encuadre",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "problema",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "A cluttered bedroom floor with scattered screws, manuals, and tangled cords under flat cold white light. No telescope present, creating sense of frustration. 50 mm lens, shallow depth, clean realistic style. Aspect ratio 16:9. No text, no logos, no people.",
+        "ruta": "/media/vitrina/telescopio-principiantes/1fc8629707a12bea9d5a.webp",
+        "alt": "Piso desordenado con tornillos y manuales bajo luz fría, sin telescopio visible",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-1",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "una imagen astronómica o del espacio, sin texto, logos, personas ni hardware, apta para una galería",
+        "ruta": "/media/vitrina/telescopio-principiantes/pia02241.webp",
+        "alt": "Foto real de ambiente, no es el producto: Anillos de Saturno. Se observan los anillos de Saturno en detalle.",
+        "fuente": "nasa-images",
+        "credito": "NASA/JPL",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/PIA02241",
+        "bancoId": "b4"
+      },
+      {
+        "slot": "galeria-2",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "una imagen astronómica o del espacio, sin texto, logos, personas ni hardware, apta para una galería",
+        "ruta": "/media/vitrina/telescopio-principiantes/pia09235.webp",
+        "alt": "Foto real de ambiente, no es el producto: En aproximación: Júpiter e Ío. Se observa el planeta Júpiter junto a su luna Ío durante una aproximación.",
+        "fuente": "nasa-images",
+        "credito": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest   Research Institute",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/PIA09235",
+        "bancoId": "b4"
+      },
+      {
+        "slot": "galeria-3",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "Close-up macro of the telescope's aluminum tube, showing brushed texture, engraved focus ring, and #FFB454 accent button. Sharp detail, shallow depth, soft side rim light outlines edges. 50 mm lens, macro focus, clean realistic style. Aspect ratio 1:1. No text, no logos.",
+        "ruta": "/media/vitrina/telescopio-principiantes/348b19ad9a6971ba782e.webp",
+        "alt": "Detalle macro del tubo de aluminio del telescopio con botón de acento anaranjado",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-4",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "Beginner telescope set up on a small balcony railing, pointing toward a visible crescent Moon. Telescope occupies half of frame, showing tripod legs and tube. Soft side light from moon creates rim highlight, #FFB454 accent visible. 50 mm lens, shallow depth, clean realistic style. Aspect ratio 4:5. No text, no logos.",
+        "ruta": "/media/vitrina/telescopio-principiantes/bb5659be2835863b32ed.webp",
+        "alt": "Telescopio en balcón apuntando a la Luna, con luz lunar resaltando su estructura",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "incluye-empaque",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "Open cardboard box on a white tabletop, neatly displaying telescope tube, tripod, two ocular lenses, and Spanish manual. All items arranged without extra accessories, occupying at least forty‑five percent of frame. Soft diffused side light, #FFB454 accent on manual cover. 50 mm lens, shallow depth, clean realistic style. Aspect ratio 1:1. No text, no logos.",
+        "ruta": "/media/vitrina/telescopio-principiantes/e39928eca81a05eb0e73.webp",
+        "alt": "Caja abierta con telescopio, trípode, oculares y manual ordenados sobre mesa",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      }
+    ],
+    "critica": {
+      "puntaje": 8,
+      "porCriterio": [
+        {
+          "criterio": "Claridad en 3 s",
+          "puntaje": 8,
+          "evidencia": "secciones[0].ajustes.titular"
+        },
+        {
+          "criterio": "Fricción",
+          "puntaje": 7,
+          "evidencia": "secciones[12].ajustes.campos"
+        },
+        {
+          "criterio": "Móvil",
+          "puntaje": 8,
+          "evidencia": "secciones[0].ajustes.titular"
+        },
+        {
+          "criterio": "Confianza",
+          "puntaje": 7,
+          "evidencia": "secciones[6].bloques[0].ajustes.titulo"
+        },
+        {
+          "criterio": "Persuasión",
+          "puntaje": 6,
+          "evidencia": "secciones[4].ajustes.titulo"
+        },
+        {
+          "criterio": "Originalidad",
+          "puntaje": 5,
+          "evidencia": "meta.estilo"
+        },
+        {
+          "criterio": "Factor asombro",
+          "puntaje": 6,
+          "evidencia": "secciones[5].ajustes.titulo"
+        },
+        {
+          "criterio": "Accesibilidad",
+          "puntaje": 6,
+          "evidencia": "assets[0].alt"
+        }
+      ],
+      "problemas": [
+        "secciones[0].ajustes.titular no menciona explícitamente el público objetivo (familias/estudiantes)",
+        "secciones[11].ajustes.titulo repite información de garantía ya presente en secciones[13].ajustes.titulo",
+        "secciones[9].ajustes.titulo incluye rango de precios que no corresponde al precio fijado y genera confusión",
+        "secciones[5].bloques[0].ajustes.titulo usa lenguaje genérico sin conectar con la promesa del héroe",
+        "assets[0].alt es demasiado largo y complica la lectura de pantalla",
+        "secciones[7].ajustes.titulo no genera un momento memorable en el primer tercio de la página"
+      ],
+      "correcciones": [
+        "secciones[0].ajustes.titular: cambiar a \"Telescopio 70 mm – Luna y planetas en minutos, ideal para familias y estudiantes\"",
+        "secciones[11].ajustes.titulo: eliminar la mención de garantía y dejar solo la información de precio y envío",
+        "secciones[9].ajustes.titulo: reemplazar por \"Precio único: $189.900 COP – paga al recibir\"",
+        "secciones[5].bloques[0].ajustes.titulo: cambiar a \"Mira cráteres nítidos y descubre el cielo desde tu patio\"",
+        "assets[0].alt: acortar a \"Foto de ambiente con telescopio apuntando a Júpiter\"",
+        "secciones[7].ajustes.titulo: reformular a \"¿Sabías que hoy Marte está a 45°? Observa su superficie con tu nuevo telescopio\""
+      ]
+    }
+  },
+  "proveedor": "cerebras",
+  "informe": {
+    "puntaje": 8,
+    "rojos": 0,
+    "listaNegra": 0,
+    "medios": {
+      "reales": 8,
+      "marcadores": 1
+    },
+    "widget": "asteroides",
+    "segundos": 1378,
+    "intentos": 4,
+    "investigacion": {
+      "consultadoEn": "2026-09-30T22:39:58.081Z",
+      "fuentes": [
+        {
+          "fuente": "nasa-images",
+          "estado": "ok",
+          "detalle": "bancos b4, b3, b1, p-tecnologia"
+        },
+        {
+          "fuente": "neows",
+          "estado": "ok",
+          "detalle": "asteroides: responde"
+        },
+        {
+          "fuente": "serpapi",
+          "estado": "ok",
+          "detalle": "8 precios de referencia, 3 preguntas"
+        }
+      ],
+      "preguntas": [
+        "¿Qué telescopio se recomienda para principiantes?",
+        "¿Qué hay que tener en cuenta al comprar un telescopio?",
+        "¿Cuál es el mejor telescopio para casa?"
+      ],
+      "preciosReferencia": [
+        {
+          "titulo": "Kit De Telescopio Para Principiantes, Telescopio Refractor",
+          "precio": 111433,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Telescopio D60 F800 Konuspace-6 con CD",
+          "precio": 511900,
+          "tienda": "Panamericana"
+        },
+        {
+          "titulo": "Sky-Watcher Skywatcher Telescopio AC 70/700 Mercury AZ-2",
+          "precio": 435599,
+          "tienda": "Robtics"
+        },
+        {
+          "titulo": "Telescopio Reflector Astronómico F36050 Con Trípode",
+          "precio": 116483,
+          "tienda": "falabella.com.co"
+        },
+        {
+          "titulo": "Telescopio Galaxy Tracker de 50 mm",
+          "precio": 319900,
+          "tienda": "Panamericana"
+        },
+        {
+          "titulo": "Telescopio Refractor Ultra Potente 90mm Para Principiantes",
+          "precio": 576300,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Telescopio Eaconn, 80 mm de Apertura, 600 Mm, Refractor Para",
+          "precio": 284110,
+          "tienda": "eBay - meeze5046"
+        },
+        {
+          "titulo": "Celestron Telescopio AC 50/600 Powerseeker 50 AZ",
+          "precio": 466650,
+          "tienda": "falabella.com.co"
+        }
+      ],
+      "composicionReferencia": [],
+      "widget": {
+        "variante": "asteroides",
+        "responde": true
+      }
+    },
+    "notas": [
+      {
+        "intento": 1,
+        "vuelta": 1,
+        "puntaje": 7.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Autonomía: observar el cielo sin depender de equipos costosos ni montar complicados"
+      },
+      {
+        "intento": 1,
+        "vuelta": 2,
+        "puntaje": 7.2,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: observar el cielo sin depender de equipos costosos ni montar complicados"
+      },
+      {
+        "intento": 1,
+        "vuelta": 3,
+        "puntaje": 7.7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: observar el cielo sin depender de equipos costosos ni montar complicados"
+      },
+      {
+        "intento": 2,
+        "vuelta": 1,
+        "puntaje": 7.9,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 7
+          }
+        ],
+        "angulo": "Ahorro: paga $189.900, mucho menos que la media de los telescopios de referencia"
+      },
+      {
+        "intento": 2,
+        "vuelta": 2,
+        "puntaje": 7.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Ahorro: paga $189.900, mucho menos que la media de los telescopios de referencia"
+      },
+      {
+        "intento": 2,
+        "vuelta": 3,
+        "puntaje": 7.7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Ahorro: paga $189.900, mucho menos que la media de los telescopios de referencia"
+      },
+      {
+        "intento": 3,
+        "vuelta": 1,
+        "puntaje": 7.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Facilidad: listo en minutos y sin necesidad de herramientas"
+      },
+      {
+        "intento": 3,
+        "vuelta": 2,
+        "puntaje": 7.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Facilidad: listo en minutos y sin necesidad de herramientas"
+      },
+      {
+        "intento": 3,
+        "vuelta": 3,
+        "puntaje": 6.7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Facilidad: listo en minutos y sin necesidad de herramientas"
+      },
+      {
+        "intento": 4,
+        "vuelta": 1,
+        "puntaje": 7.4,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: arma tu telescopio en minutos sin herramientas y empieza a observar de inmediato."
+      },
+      {
+        "intento": 4,
+        "vuelta": 2,
+        "puntaje": 7.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 5
+          }
+        ],
+        "angulo": "Autonomía: arma tu telescopio en minutos sin herramientas y empieza a observar de inmediato."
+      },
+      {
+        "intento": 4,
+        "vuelta": 3,
+        "puntaje": 8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: arma tu telescopio en minutos sin herramientas y empieza a observar de inmediato."
+      }
+    ],
+    "imagenes": {
+      "reales": 3,
+      "generadas": 5,
+      "marcadores": 1
+    },
+    "efectos": [
+      "boton-magnetico",
+      "shader-ondas",
+      "marquee-reactivo",
+      "pin-coreografia",
+      "horizontal",
+      "precio-cae"
+    ],
+    "nivel3": 3
+  }
+}

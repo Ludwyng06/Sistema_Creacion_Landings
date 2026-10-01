@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "meta": {
+    "nombre": "Timbre con cámara",
+    "slug": "timbre-camara",
+    "producto": "Timbre con cámara",
+    "tecnicas": [
+      "semilla",
+      "imagenes",
+      "video",
+      "negativas"
+    ],
+    "semilla": {
+      "estilo": "Swiss International",
+      "industria": "señalética de metro",
+      "paletaId": "farmacia-suiza",
+      "tipografiaId": "syne-manrope",
+      "numero": 74
+    },
+    "nivelConciencia": "solucion",
+    "marco": "PAS",
+    "eliminadas": [
+      {
+        "tipo": "video-scroll",
+        "motivo": "exceso de efectos nivel 3"
+      }
+    ]
+  },
+  "tokens": {
+    "colores": {
+      "fondo": "#F2F8F4",
+      "superficie": "#FFFFFF",
+      "texto": "#10261D",
+      "textoSuave": "#4C6357",
+      "acento": "#0E7A5A",
+      "acentoTexto": "#FFFFFF",
+      "borde": "#CFE0D6"
+    },
+    "tipografia": {
+      "titulos": "Syne",
+      "cuerpo": "Manrope",
+      "escala": "compacta"
+    },
+    "radio": 0,
+    "espaciado": "aireado",
+    "borde": "ninguno",
+    "imagen": "duotono",
+    "intensidad": 3
+  },
+  "secciones": [
+    {
+      "id": "hero-01",
+      "tipo": "heroe",
+      "variante": "video-inmersivo",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Presentar el timbre como la solución al problema de visitas"
+      },
+      "ajustes": {
+        "titular": "Sabe quién llega a casa desde su celular",
+        "subtitular": "Instale seguridad en su puerta sin cables ni técnicos",
+        "textoBoton": "Ver oferta",
+        "slot": "img-hero"
+      },
+      "bloques": [
+        {
+          "id": "b1",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Video en vivo al tocar"
+          }
+        },
+        {
+          "id": "b2",
+          "tipo": "beneficio-corto",
+          "ajustes": {
+            "texto": "Visión nocturna clara"
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0
+      },
+      "efectos": [
+        "revelar-suave"
+      ]
+    },
+    {
+      "id": "problema-01",
+      "tipo": "problema-solucion",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Validar la frustración de no estar presente",
+        "objecionQueResponde": "Ya no perderá más paquetes o visitas importantes"
+      },
+      "ajustes": {
+        "titulo": "No deje su puerta en el anonimato",
+        "historia": "Cuando llegan paquetes o visitas y no estás, la incertidumbre es constante.",
+        "giro": "Este timbre le permite ver quién llama desde cualquier lugar."
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0.2
+      }
+    },
+    {
+      "id": "beneficios-01",
+      "tipo": "beneficios",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Explicar las características principales"
+      },
+      "ajustes": {
+        "titulo": "Seguridad simplificada",
+        "disposicion": "tarjetas-apiladas"
+      },
+      "bloques": [
+        {
+          "id": "ben-1",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Conexión wifi",
+            "texto": "Instalación sin obra y sin cables molestos."
+          }
+        },
+        {
+          "id": "ben-2",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Audio bidireccional",
+            "texto": "Hable directamente con quien llega desde la app."
+          }
+        },
+        {
+          "id": "ben-3",
+          "tipo": "beneficio",
+          "ajustes": {
+            "icono": "check",
+            "titulo": "Visión nocturna",
+            "texto": "Vea claramente incluso en total oscuridad."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.4
+      },
+      "efectos": [
+        "pin-coreografia"
+      ]
+    },
+    {
+      "id": "faq-01",
+      "tipo": "faq",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Resolver dudas técnicas",
+        "objecionQueResponde": "Instalación y app"
+      },
+      "ajustes": {
+        "titulo": "Dudas frecuentes"
+      },
+      "bloques": [
+        {
+          "id": "f1",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Necesito un técnico para instalarlo?",
+            "respuesta": "No, está diseñado para una instalación sencilla sin obras adicionales."
+          }
+        },
+        {
+          "id": "f2",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿La aplicación está en español?",
+            "respuesta": "Sí, nuestra app permite gestionar todo en español de forma intuitiva."
+          }
+        },
+        {
+          "id": "f3",
+          "tipo": "pregunta",
+          "ajustes": {
+            "pregunta": "¿Funciona con wifi?",
+            "respuesta": "Sí, se conecta a su red inalámbrica para enviar la señal al celular."
+          }
+        }
+      ],
+      "animacion": {
+        "entrada": "subir",
+        "retraso": 0.6
+      }
+    },
+    {
+      "id": "lead-01",
+      "tipo": "formulario-lead",
+      "visible": true,
+      "intencion": {
+        "objetivo": "Captura de leads"
+      },
+      "ajustes": {
+        "titulo": "Reciba asesoría personalizada",
+        "campos": [
+          "nombre",
+          "correo",
+          "telefono"
+        ],
+        "obligatorios": [
+          "nombre",
+          "correo"
+        ],
+        "textoBoton": "Solicitar información",
+        "mensajeGracias": "Le contactaremos pronto.",
+        "privacidad": "Sus datos están protegidos bajo nuestra política de confidencialidad."
+      },
+      "bloques": [],
+      "animacion": {
+        "entrada": "aparecer",
+        "retraso": 0.8
+      },
+      "efectos": [
+        "boton-magnetico"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "slot": "img-hero",
+      "tipo": "imagen",
+      "relacion": "1:1",
+      "promptGrok": "A person holding a modern smartphone displaying a clear live video feed of a delivery person at the door, the background is a cozy blurred living room interior, soft daylight, documentary photo, natural film grain, real imperfections, 1:1 ratio with clear negative space at bottom for text, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+      "alt": "Timbre con cámara en uso"
+    }
+  ],
+  "critica": {
+    "puntaje": 6.5,
+    "porCriterio": [
+      {
+        "criterio": "Claridad en 3 s",
+        "puntaje": 6,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Fricción",
+        "puntaje": 8,
+        "evidencia": "secciones[4].ajustes.campo"
+      },
+      {
+        "criterio": "Móvil",
+        "puntaje": 7,
+        "evidencia": "secciones[0].ajustes.titular"
+      },
+      {
+        "criterio": "Confianza",
+        "puntaje": 5,
+        "evidencia": "ausencia de garantía y prueba social en el JSON"
+      },
+      {
+        "criterio": "Persuasión",
+        "puntaje": 7,
+        "evidencia": "secciones[3].bloques[*].ajustes.pregunta y respuesta"
+      },
+      {
+        "criterio": "Originalidad",
+        "puntaje": 6,
+        "evidencia": "meta.semilla.estilo='Swiss International' y uso de paleta única"
+      },
+      {
+        "criterio": "Factor asombro",
+        "puntaje": 6,
+        "evidencia": "secciones[0].animacion.entrada y assets[0].promptGrok"
+      },
+      {
+        "criterio": "Accesibilidad",
+        "puntaje": 6,
+        "evidencia": "assets[0].alt y ausencia de reduced-motion"
+      }
+    ],
+    "problemas": [
+      "secciones[0].ajustes.titular no menciona explícitamente el público objetivo",
+      "no se incluye garantía ni prueba social en ninguna sección",
+      "faltan indicaciones de reduced-motion para accesibilidad",
+      "el factor asombro está concentrado solo en el hero, faltan momentos memorables en los demás tercios",
+      "no hay evidencia de contraste suficiente entre texto y fondo en tokens.colores"
+    ],
+    "correcciones": [
+      "secciones[0].ajustes.titular = \"Sabe quién llega a su puerta, para familias, desde su celular\"",
+      "agregar sección confianza-01 con ajustes.titulo='Garantía de satisfacción' y ajustes.texto='30 días de devolución y 5 estrellas en reseñas'",
+      "meta.reducedMotion = false",
+      "agregar sección asombro-01 en el medio con animacion.entrada='zoom' y ajustes.titulo='Momento sorpresa: video en tiempo real al tocar'",
+      "verificar y ajustar tokens.colores.texto y tokens.colores.fondo para asegurar contraste WCAG AA"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "<think>Debo devolver {\"titulo\": ...} sin adornos.</think>\nClaro, aqui va el resultado:\n```json\n{\"titulo\": \"Titulo real\"}\n```\nEspero que sirva.",
+        "reasoning": null
+      }
+    }
+  ]
+}

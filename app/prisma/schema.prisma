@@ -1,0 +1,122 @@
+// Modelos de docs/05-secciones-y-esquema.md §5 y UsoIA de docs/07-proveedores-ia.md §3.
+// La URL de la base de datos vive en prisma.config.ts (Prisma 7).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Landing {
+  id            String   @id @default(cuid())
+  nombre        String
+  slug          String   @unique
+  brief         String // JSON Brief
+  tecnicas      String // JSON TecnicaId[]
+  prompt        String // prompt final ejecutado (texto)
+  promptBloques String // JSON { rol, tarea, contexto, formato }
+  doc           String // JSON LandingDoc actual
+  puntaje       Float?
+  favorita      Boolean  @default(false)
+  estado        String   @default("borrador") // borrador | en-banco
+  proveedor     String // gemini | groq | cerebras | openrouter | manual | duelo
+  miniatura     String? // ruta PNG
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+  versiones     Version[]
+  leads         Lead[]
+}
+
+model Version {
+  id        String   @id @default(cuid())
+  landingId String
+  doc       String
+  nota      String?
+  creadoEn  DateTime @default(now())
+  landing   Landing  @relation(fields: [landingId], references: [id], onDelete: Cascade)
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  landingId String
+  datos     String
+  creadoEn  DateTime @default(now())
+  landing   Landing  @relation(fields: [landingId], references: [id], onDelete: Cascade)
+}
+
+model Asset {
+  id         String   @id @default(cuid())
+  landingId  String?
+  slot       String
+  tipo       String
+  ruta       String
+  promptGrok String?
+  creadoEn   DateTime @default(now())
+}
+
+// proveedor, modelo, etc. (la API key vive en .env.local)
+model Ajuste {
+  clave String @id
+  valor String
+}
+
+model UsoIA {
+  id        String   @id @default(cuid())
+  tarea     String
+  proveedor String
+  modelo    String
+  ms        Int
+  ok        Boolean
+  error     String?
+  creadoEn  DateTime @default(now())
+}
+
+// Caché de las APIs externas (docs/bitacora/tarea-12-A.md §1): clave = fuente + consulta normalizada.
+model CacheApi {
+  clave     String   @id
+  fuente    String
+  valor     String // JSON
+  expiraEn  DateTime
+  creadoEn  DateTime @default(now())
+
+  @@index([fuente])
+}
+
+// Consultas por fuente y mes, para no pasarse del plan gratuito (al 90 % la fuente se desactiva).
+model UsoFuente {
+  id     String @id @default(cuid())
+  fuente String
+  mes    String // AAAA-MM
+  total  Int    @default(0)
+
+  @@unique([fuente, mes])
+}
+
+// Bancos de medios (docs/bitacora/plan-v2.md). Los archivos viven en public/media/bancos/<banco>/.
+model MedioBanco {
+  id                String   @id @default(cuid())
+  bancoId           String
+  tipo              String // imagen | video
+  fuente            String
+  idFuente          String
+  ruta              String
+  ancho             Int
+  alto              Int
+  orientacion       String
+  coloresDominantes String // JSON string[]
+  titulo            String
+  descripcion       String
+  etiquetas         String // JSON string[]
+  credito           String
+  licencia          String
+  usoComercial      Boolean
+  urlOrigen         String?
+  descripcionOrigen String? // texto original de la fuente (en inglés); no forma parte del contrato
+  creadoEn          DateTime @default(now())
+
+  @@unique([bancoId, fuente, idFuente])
+  @@index([bancoId])
+}

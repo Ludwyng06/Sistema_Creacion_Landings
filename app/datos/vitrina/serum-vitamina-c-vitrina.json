@@ -1,0 +1,1116 @@
+{
+  "slug": "serum-vitamina-c-vitrina",
+  "numero": 6,
+  "brief": {
+    "nombre": "Sérum facial de vitamina C",
+    "categoria": "belleza",
+    "problema": "Tu piel se ve apagada y cansada, y tu rutina de la mañana tiene demasiados pasos.",
+    "publico": "Mujeres y hombres que quieren una rutina de piel sencilla y constante.",
+    "beneficios": [
+      "Textura ligera que se absorbe sin dejar la piel pegajosa",
+      "Un paso fácil para sumar a tu rutina de la mañana",
+      "Cuida el aspecto de tu piel día tras día",
+      "Sirve con o sin maquillaje encima"
+    ],
+    "precio": {
+      "valor": 54900,
+      "anterior": 72900,
+      "moneda": "COP"
+    },
+    "objeciones": [
+      "¿Sirve para piel sensible?",
+      "¿Se puede usar de día?",
+      "¿En cuánto tiempo se nota?",
+      "¿Cuánto dura el frasco?",
+      "¿Qué pasa si no me gusta?",
+      "¿Cómo usar correctamente el serum de vitamina C?",
+      "¿Cuándo se echa el sérum de vitamina C por la mañana o por la noche?"
+    ],
+    "nivelConciencia": "problema",
+    "incluye": [
+      "Frasco de sérum de vitamina C"
+    ],
+    "garantia": {
+      "dias": 30,
+      "condiciones": "Si no te convence, te devolvemos tu dinero dentro de los 30 días."
+    },
+    "coloresMarca": [
+      "#ea580c",
+      "#fffbeb"
+    ],
+    "intensidad": 2
+  },
+  "tecnicas": [
+    "semilla",
+    "ambicioso",
+    "critico",
+    "imagenes",
+    "video",
+    "negativas",
+    "humana"
+  ],
+  "numeroSemilla": 733,
+  "prompt": {
+    "rol": "Eres estratega de conversión especializado en productos físicos, director de arte que aplica la semilla «brutalismo tipográfico × fichas de museo» como sistema visual, director de fotografía de producto que escribe prompts para Grok Imagine, director de movimiento web que elige efectos de un catálogo cerrado, editor de estilo que mantiene el texto libre de tics de IA y redactor de respuesta directa con voz humana en español neutro, y trabajas con un auditor senior de UX y CRO que revisará tu entrega con evidencia.",
+    "tarea": "1. Genera el documento `LandingDoc` de una landing para el producto físico del brief.\n2. Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total.\n3. Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía).\n4. Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido.\n5. Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes.\n6. Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados.\n7. Declara un slot por cada sección que necesite imagen, con relación 1:1, 16:9, 9:16 o 4:5 y una descripción concreta.\n8. Escribe un prompt en inglés por slot con la plantilla de imagen y termina cada uno con el bloque de consistencia.\n9. Deriva la paleta y la luz de la semilla y describe personas diversas y naturales, con expresiones espontáneas y fondos con contexto real.\n10. Mantén siempre la capa de movimiento en código: entradas de sección, parallax suave, contador del precio y microinteracción del botón, con respaldo para `prefers-reduced-motion`.\n11. Si el héroe es «video-inmersivo» o la landing tiene una sección de video, escribe el prompt de un clip corto en loop con la plantilla de clip y regístralo en `assets` con `tipo: 'video'`.\n12. Elige `efectos[]` por sección solo del catálogo permitido para la intensidad del brief, compatibles con el tipo de sección y con un máximo de 3 efectos de nivel 3 en toda la landing.\n13. Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto.\n14. Usa signos de exclamación simples y un guion largo por párrafo como máximo.\n15. Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief.\n16. Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado.\n17. En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles.\n18. Escribe en español neutro y en segunda persona (tú), con frases de 8 a 18 palabras, verbos concretos, un dato por afirmación y cero relleno.\n19. En la sección `problema-solucion` narra primero la frustración concreta y el alivio, y presenta las características después.\n20. Redacta botones que prometen un beneficio o reducen la ansiedad, por ejemplo «Quiero el mío» o «Quiero que me contacten hoy».\n21. Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte.\n22. Cuando dos indicaciones se crucen, aplica este orden: en colores y tipografías mandan los tokens de la semilla, salvo los colores de marca del brief; en cantidad de secciones y de campos manda el diseño sustractivo sobre el prompt ambicioso; en los textos mandan las reglas de restricciones negativas y de redacción humana. Entrega un único JSON.",
+    "contexto": "Brief del producto (única fuente de datos):\n{\n  \"nombre\": \"Sérum facial de vitamina C\",\n  \"categoria\": \"belleza\",\n  \"problema\": \"Tu piel se ve apagada y cansada, y tu rutina de la mañana tiene demasiados pasos.\",\n  \"publico\": \"Mujeres y hombres que quieren una rutina de piel sencilla y constante.\",\n  \"beneficios\": [\n    \"Textura ligera que se absorbe sin dejar la piel pegajosa\",\n    \"Un paso fácil para sumar a tu rutina de la mañana\",\n    \"Cuida el aspecto de tu piel día tras día\",\n    \"Sirve con o sin maquillaje encima\"\n  ],\n  \"precio\": {\n    \"valor\": 54900,\n    \"anterior\": 72900,\n    \"moneda\": \"COP\"\n  },\n  \"objeciones\": [\n    \"¿Sirve para piel sensible?\",\n    \"¿Se puede usar de día?\",\n    \"¿En cuánto tiempo se nota?\",\n    \"¿Cuánto dura el frasco?\",\n    \"¿Qué pasa si no me gusta?\",\n    \"¿Cómo usar correctamente el serum de vitamina C?\",\n    \"¿Cuándo se echa el sérum de vitamina C por la mañana o por la noche?\"\n  ],\n  \"nivelConciencia\": \"problema\",\n  \"incluye\": [\n    \"Frasco de sérum de vitamina C\"\n  ],\n  \"garantia\": {\n    \"dias\": 30,\n    \"condiciones\": \"Si no te convence, te devolvemos tu dinero dentro de los 30 días.\"\n  },\n  \"coloresMarca\": [\n    \"#ea580c\",\n    \"#fffbeb\"\n  ],\n  \"intensidad\": 2\n}\n\nNivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta.\n\nTokens de la semilla (fuente única de verdad visual):\n{\n  \"colores\": {\n    \"fondo\": \"#FFFBEB\",\n    \"superficie\": \"#F5F2E2\",\n    \"texto\": \"#111111\",\n    \"textoSuave\": \"#64635D\",\n    \"acento\": \"#EA580C\",\n    \"acentoTexto\": \"#000000\",\n    \"borde\": \"#D9D6C8\"\n  },\n  \"tipografia\": {\n    \"titulos\": \"Instrument Serif\",\n    \"cuerpo\": \"Geist\",\n    \"escala\": \"amplia\"\n  },\n  \"radio\": 16,\n  \"espaciado\": \"aireado\",\n  \"borde\": \"ninguno\",\n  \"imagen\": \"recorte\",\n  \"intensidad\": 2\n}\n\nSemilla: estilo «brutalismo tipográfico», industria vecina «fichas de museo», paleta brutalista-01, tipografía instrument-serif-geist, número 733. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan.\n\nPlantilla del prompt de imagen (en inglés):\n[SUJETO] {producto} {acción o uso concreto}, [ESCENA] {entorno real coherente con la industria vecina}, [LUZ] {luz de la semilla}, [CÁMARA] {lente, ángulo, profundidad de campo}, [PALETA] {colores de tokens en palabras}, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] {relación} with clear negative space at {zona donde irá el texto}, no text, no logos, no watermark.\n\nBloque de consistencia (idéntico en todos los slots):\nConsistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.\n\nPlantilla del prompt de clip (en inglés):\n{duración corta} seamless loop, {movimiento de cámara lento}, {producto en uso real}, {luz de la semilla}, {paleta}, calm pacing, no text, no people looking at camera, no fast cuts, subtle motion suitable as website background.\n\nVocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.\nPatrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».\nEstilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos.\n\nPauta de voz: segunda persona, presente, cifras exactas del brief y una idea por frase; los ejemplos A y B muestran el registro esperado para el copy y los botones.\n\nRúbrica del auditor (puntaje total de 0 a 10, ponderado):\nClaridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.\nFricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.\nMóvil (15 %): jerarquía, tamaños y orden a 390 px.\nConfianza (15 %): garantía, prueba social real y datos concretos.\nPersuasión (15 %): beneficio antes que característica y objeciones respondidas.\nOriginalidad (5 %): se nota la semilla y se evita el look genérico.\nFactor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.\nAccesibilidad (5 %): contraste, textos alternativos, tamaño táctil y `reduced-motion`.\n\nTipos de sección disponibles:\n- `heroe`: primera sección; dice qué es, para quién y el beneficio principal (exige `variante`)\n- `cinta-anuncio`: franja breve con la oferta o el beneficio del momento\n- `problema-solucion`: narra la frustración concreta y el alivio antes de hablar de características\n- `beneficios`: traduce cada función en un beneficio concreto (3 a 6 bloques `beneficio`)\n- `como-funciona`: explica el uso en 3 o 4 pasos\n- `antes-despues`: muestra el resultado visible con dos imágenes\n- `comparativa`: compara el producto con las alternativas en 4 a 7 filas\n- `galeria`: imágenes del producto en uso\n- `video`: clip corto del producto en uso\n- `testimonios`: opiniones reales del brief; si faltan, `[COMPLETAR]`\n- `cifras`: 2 a 4 cifras reales del brief\n- `oferta`: precio, precio anterior real y opciones de cantidad\n- `incluye`: lista de lo que trae la caja o el regalo\n- `cuenta-regresiva`: solo con una fecha de oferta real del brief\n- `faq`: responde las objeciones antes de que el lector las piense (3 a 8 preguntas)\n- `garantia`: promesas de confianza con los días y condiciones del brief\n- `formulario-lead`: acción final; aparece exactamente una vez, cerca del final\n- `html-libre`: solo lo agrega una persona en el editor; la IA no lo usa\n\nVariantes de héroe aprobadas (todas con el contenido centrado, superpuesto o apilado):\n- `producto-monumental`: producto grande y centrado con el titular encima y el CTA debajo; útil para comprador consciente del producto\n- `poster-a-sangre`: imagen a sangre con el titular y el CTA superpuestos en el tercio inferior; útil para estilo editorial\n- `titular-tipografico`: titular gigante centrado arriba con el producto debajo, sin solaparse; útil para brutalismo y semillas suizas\n- `problema-primero`: solo texto con una pregunta de dolor centrada; útil para nivel inconsciente o de problema (PAS)\n- `antes-despues-heroe`: titular centrado y slider comparativo a todo el ancho; útil para productos de resultado visible\n- `video-inmersivo`: clip en loop a sangre con titular centrado y CTA; útil para productos en uso y movimiento\n- `orbita-beneficios`: producto al centro y 3 o 4 beneficios alrededor; útil para productos con varias funciones\n- `mosaico-editorial`: collage asimétrico con el titular en una franja que lo cruza; útil para moda y estilo de vida\n\nAjustes y bloques válidos por tipo de sección (usa solo estos campos y valores; todo campo sin ? es obligatorio, no omitas ninguno; los textos respetan el máximo indicado; el signo ? marca un campo opcional):\n- `heroe`: ajustes { titular: texto, máx. 120 caracteres, p. ej. «Titular del héroe»; subtitular?: texto, máx. 240 caracteres; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; slot?: nombre de un slot de `assets`; slots?: nombre de un slot de `assets`; sello?: texto, máx. 80 caracteres }; bloques `beneficio-corto` (0 a 4) { texto: texto, máx. 60 caracteres, p. ej. «Beneficio» }\n- `cinta-anuncio`: ajustes { textos: lista de textos; velocidad: número de 1 a 10; estilo: \"solido\"|\"contorno\" }; sin bloques\n- `problema-solucion`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Una escena que ya conoces»; historia: texto; giro: texto, máx. 200 caracteres; imagen?: nombre de un slot de `assets` }; sin bloques\n- `beneficios`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cambia en tu día»; disposicion: \"lista-grande\"|\"tarjetas-apiladas\"|\"numerada\"|\"carrusel\" }; bloques `beneficio` (3 a 6) { icono: texto, p. ej. «check»; titulo: texto, máx. 60 caracteres, p. ej. «Beneficio»; texto: texto, máx. 200 caracteres, p. ej. «Cuenta qué gana la persona.»; imagen?: nombre de un slot de `assets` }\n- `como-funciona`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Cómo funciona»; disposicion: \"pasos-verticales\"|\"linea-tiempo\" }; bloques `paso` (3 a 4) { titulo: texto, máx. 60 caracteres, p. ej. «Paso»; texto: texto, máx. 220 caracteres, p. ej. «Describe qué hace la persona.» }\n- `antes-despues`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Mira la diferencia»; imagenAntes: nombre de un slot de `assets`; imagenDespues: nombre de un slot de `assets`; etiquetaAntes: texto, máx. 30 caracteres, p. ej. «Antes»; etiquetaDespues: texto, máx. 30 caracteres, p. ej. «Después» }; sin bloques\n- `comparativa`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Por qué este y no otro»; nombreNuestro: texto, máx. 40 caracteres, p. ej. «Nuestro»; nombreOtros: texto, máx. 40 caracteres, p. ej. «Otros»; estilo: \"minimal\"|\"resaltado\" }; bloques `fila` (4 a 7) { caracteristica: texto, máx. 80 caracteres, p. ej. «Característica»; nuestro: texto; otros: texto }\n- `galeria`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Míralo de cerca»; disposicion: \"carrusel\"|\"mosaico\"|\"historias\" }; bloques `imagen` (3 a 8) { slot: nombre de un slot de `assets`; pie?: texto, máx. 100 caracteres }\n- `video`: ajustes { titulo: texto, máx. 100 caracteres, p. ej. «Míralo en uso»; slot: nombre de un slot de `assets`; poster?: nombre de un slot de `assets`; autoplay: true o false }; sin bloques\n- `testimonios`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Lo que cuentan quienes lo usan»; disposicion: \"muro\"|\"carrusel\"|\"destacado\" }; bloques `testimonio` (3 a 6) { nombre: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; ciudad: texto, máx. 60 caracteres, p. ej. «[COMPLETAR]»; texto: texto, máx. 400 caracteres, p. ej. «[COMPLETAR]»; estrellas: número; foto?: nombre de un slot de `assets` }\n- `cifras`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Resultados reales» }; bloques `cifra` (2 a 4) { valor: texto, máx. 30 caracteres, p. ej. «[COMPLETAR]»; etiqueta: texto, máx. 80 caracteres, p. ej. «Personas que lo probaron» }\n- `oferta`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Llévalo hoy»; precio: número; precioAnterior?: número; moneda: \"COP\"|\"USD\"|\"MXN\"|\"EUR\"; textoBoton?: texto, máx. 40 caracteres, p. ej. «Quiero aprovecharlo» }; bloques `opcion-cantidad` (1 a 3) { unidades: número de 1 a 12; precio: número; etiqueta?: texto, máx. 30 caracteres }\n- `incluye`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Qué viene en la caja»; texto: texto, máx. 240 caracteres; imagen: nombre de un slot de `assets` }; bloques `item` (1 a 5) { texto: texto, máx. 100 caracteres, p. ej. «Elemento» }\n- `cuenta-regresiva`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «La oferta termina en»; fechaFin: texto, p. ej. «[COMPLETAR]»; estilo: \"bloques\"|\"linea\" }; sin bloques\n- `faq`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Preguntas frecuentes» }; bloques `pregunta` (3 a 8) { pregunta: texto, máx. 140 caracteres, p. ej. «¿Cómo funciona?»; respuesta: texto, máx. 500 caracteres, p. ej. «[COMPLETAR]»; objecion?: texto, máx. 80 caracteres }\n- `garantia`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Compra sin riesgo»; texto: texto, máx. 280 caracteres; dias: número; icono: texto, p. ej. «escudo» }; bloques `promesa` (2 a 4) { texto: texto, máx. 120 caracteres, p. ej. «Promesa» }\n- `formulario-lead`: ajustes { titulo: texto, máx. 80 caracteres, p. ej. «Recibe el tuyo»; subtitulo?: texto, máx. 200 caracteres; campos: lista con valores de \"nombre\"|\"correo\"|\"telefono\"|\"ciudad\"|\"mensaje\"; obligatorios?: lista con valores de \"nombre\"|\"correo\"|\"telefono\"|\"ciudad\"|\"mensaje\"; textoBoton: texto, máx. 40 caracteres, p. ej. «Quiero el mío»; mensajeGracias: texto, máx. 200 caracteres, p. ej. «Gracias, te escribimos muy pronto.»; privacidad: texto, máx. 240 caracteres, p. ej. «Usamos tus datos solo para contactarte sobre este producto.» }; sin bloques\n\nReglas de estructura:\n- El héroe es la primera sección y usa una de las variantes aprobadas.\n- El formulario `formulario-lead` aparece exactamente una vez, cerca del final.\n- `cuenta-regresiva` solo con una fecha de oferta real del brief; `testimonios` y `cifras` solo con datos del brief.\n- Todos los colores y tipografías salen de `tokens`.\n\nCatálogo de efectos permitido para la intensidad 2 (elige solo de esta lista; máximo 3 de nivel 3 en toda la landing):\n- `revelar-suave` · nivel 1 · heroe, cinta-anuncio, problema-solucion, beneficios, como-funciona, antes-despues, comparativa, galeria, video, testimonios, cifras, oferta, incluye, cuenta-regresiva, faq, garantia, formulario-lead, html-libre\n- `grano` · nivel 1 · global\n- `precio-cae` · nivel 1 · oferta\n- `titular-cinetico` · nivel 2 · heroe, problema-solucion, formulario-lead\n- `mascara-circular` · nivel 2 · galeria, heroe, incluye\n- `mascara-persiana` · nivel 2 · galeria, heroe, incluye\n- `marquee-reactivo` · nivel 2 · cinta-anuncio\n- `boton-magnetico` · nivel 2 · heroe, oferta, formulario-lead\n- `cursor-vivo` · nivel 2 · global\n\nEjemplos few-shot:\nEjemplo A · Copy: «Pasas 8 horas frente al computador y la espalda te lo cobra a las 4 p. m. Este corrector te recuerda enderezarte sin que tengas que pensarlo.»\nEjemplo B · Botón: «Quiero que me contacten hoy».\nEjemplo C · Sección del LandingDoc: {\"id\":\"s1\",\"tipo\":\"heroe\",\"variante\":\"problema-primero\",\"visible\":true,\"intencion\":{\"objetivo\":\"Que el lector se reconozca en el dolor en menos de 3 s\",\"emocion\":\"alivio anticipado\"},\"ajustes\":{\"titular\":\"¿A las 4 p. m. ya te duele la espalda?\",\"subtitular\":\"Hay una forma de enderezarte sin pensarlo.\",\"textoBoton\":\"Ver cómo funciona\"},\"bloques\":[],\"efectos\":[\"titular-cinetico\"]}\nEjemplo D · Héroe: producto centrado ocupando el 60 % del alto, titular centrado encima y CTA debajo; o imagen a sangre con el titular superpuesto en el tercio inferior.\n\nPLAN DE SECCIONES DE LA VITRINA (obligatorio; manda sobre el presupuesto de secciones):\nEscribe exactamente estas 11 secciones, en este orden de contenido y una sola vez cada una: `cinta-anuncio` → `heroe` → `problema-solucion` → `beneficios` → `como-funciona` → `galeria` → `incluye` → `oferta` → `garantia` → `faq` → `formulario-lead`.\nHéroe: variante `producto-monumental`; el contenido va centrado, nunca partido en dos columnas.\nSlots de imagen (usa estos nombres exactos y declara cada uno en `assets`): héroe → `heroe-fondo`; galería → 4 bloques `imagen` con slots `galeria-1` a `galeria-4` (disposición mosaico); problema-solucion → `imagen: \"problema\"`; incluye → `imagen: \"incluye-empaque\"`.\nEl sistema agrega después, con datos reales, 4 secciones más (`sellos-confianza`, `ficha-tecnica`, `creditos`, `cta-fija`): no las escribas ni repitas su contenido (sellos de pago y envío, ficha técnica, créditos).\nLa galería muestra fotos reales de ambiente relacionadas con el producto: su título no dice que sean fotos del producto. Los pies de foto los pone el sistema.\nFidelidad: usa solo las cifras, precios y fechas del brief; sin testimonios, calificaciones ni número de opiniones; sin logos ni marcas de terceros.\n\nPreguntas reales de la gente sobre este tipo de producto (úsalas para el FAQ si aplican al producto; no copies cifras ni marcas):\n- ¿Cómo usar correctamente el serum de vitamina C?\n- ¿Cuándo se echa el sérum de vitamina C por la mañana o por la noche?\n- ¿Cuánto tiempo se deja la vitamina C en la cara?",
+    "formato": "Entrega un único objeto JSON `LandingDoc`, sin texto antes ni después, con estos campos:\n- `version`: 1.\n- `meta`: { nombre, slug en kebab-case, producto, tecnicas[], semilla { estilo, industria, paletaId, tipografiaId, numero }, nivelConciencia, marco ('AIDA' o 'PAS'), eliminadas[] }.\n- `tokens`: { colores { fondo, superficie, texto, textoSuave, acento, acentoTexto, borde }, tipografia { titulos, cuerpo, escala }, radio, espaciado, borde, imagen, intensidad }.\n- `secciones[]` (de 5 a 16): { id, tipo, variante?, visible, intencion { objetivo, emocion?, objecionQueResponde? }, ajustes, bloques[ { id, tipo, ajustes } ], animacion?, efectos?[] }.\n- `assets[]`: { slot, tipo ('imagen' o 'video'), relacion, promptGrok, alt }.\n\nCopia `tokens` y `meta.semilla` tal cual llegan en el contexto.\n\nCada sección lleva `intencion: { objetivo, emocion, objecionQueResponde? }` y cada objeción del brief queda respondida en al menos una sección.\n\nIncluye `tokens` y `meta.semilla` completos y usa solo esos valores en todo el documento.\n\nCada elemento de `assets[]` lleva { slot, tipo: 'imagen', relacion, promptGrok, alt } y su `promptGrok` incluye el bloque de consistencia completo.\n\nCada sección lleva `animacion` y `efectos[]` con ids del catálogo; los clips van en `assets[]` con `tipo: 'video'`.\n\nTodos los textos del documento pasan el linter de lista negra con cero infracciones.\n\nCada `textoBoton` promete un beneficio y los textos largos promedian entre 8 y 18 palabras por frase.\n\nNo incluyas el campo `critica` en tu respuesta: lo completa el auditor en una llamada aparte.\n\nAntes de responder, razona paso a paso qué necesita el comprador en cada sección; entrega solo el resultado final en el formato pedido.\n\nUsa exclusivamente los datos del brief para cifras, precios, garantías y testimonios. Cuando un dato falte, marca el campo con `\"[COMPLETAR]\"`.",
+    "aportes": [
+      {
+        "tecnica": "ambicioso",
+        "bloque": "rol",
+        "texto": "estratega de conversión especializado en productos físicos"
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Elige el marco según el nivel de conciencia del brief: PAS con héroe «problema-primero» para los niveles inconsciente y problema, y AIDA con héroe de producto para los niveles solución, producto y total."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Para cada sección define el objetivo psicológico, el copy principal, el elemento visual y el CTA, y responde las objeciones del brief dentro de las secciones adecuadas (FAQ, comparativa y garantía)."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "tarea",
+        "texto": "Usa sesgos con respaldo real: prueba social con datos del brief, anclaje con el precio anterior real, aversión a la pérdida con una oferta con fecha y reciprocidad con el regalo incluido."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "contexto",
+        "texto": "Nivel de conciencia (Eugene Schwartz), objeciones y beneficios: se leen del brief. Propón la estructura máxima; el diseño sustractivo la recorta."
+      },
+      {
+        "tecnica": "ambicioso",
+        "bloque": "formato",
+        "texto": "Cada sección lleva `intencion: { objetivo, emocion, objecionQueResponde? }` y cada objeción del brief queda respondida en al menos una sección."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "rol",
+        "texto": "director de arte que aplica la semilla «brutalismo tipográfico × fichas de museo» como sistema visual"
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "tarea",
+        "texto": "Traduce la semilla en decisiones concretas: jerarquía tipográfica, uso del espacio negativo, ritmo de secciones y tratamiento de imágenes."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "tarea",
+        "texto": "Usa exclusivamente los colores, tipografías, radio, espaciado, borde e imagen de los tokens entregados."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "contexto",
+        "texto": "Tokens de la semilla (fuente única de verdad visual):\n{\n  \"colores\": {\n    \"fondo\": \"#FFFBEB\",\n    \"superficie\": \"#F5F2E2\",\n    \"texto\": \"#111111\",\n    \"textoSuave\": \"#64635D\",\n    \"acento\": \"#EA580C\",\n    \"acentoTexto\": \"#000000\",\n    \"borde\": \"#D9D6C8\"\n  },\n  \"tipografia\": {\n    \"titulos\": \"Instrument Serif\",\n    \"cuerpo\": \"Geist\",\n    \"escala\": \"amplia\"\n  },\n  \"radio\": 16,\n  \"espaciado\": \"aireado\",\n  \"borde\": \"ninguno\",\n  \"imagen\": \"recorte\",\n  \"intensidad\": 2\n}"
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "contexto",
+        "texto": "Semilla: estilo «brutalismo tipográfico», industria vecina «fichas de museo», paleta brutalista-01, tipografía instrument-serif-geist, número 733. Estos tokens mandan sobre cualquier color o tipografía que sugieran otras técnicas; solo los colores de marca del brief los reemplazan."
+      },
+      {
+        "tecnica": "semilla",
+        "bloque": "formato",
+        "texto": "Incluye `tokens` y `meta.semilla` completos y usa solo esos valores en todo el documento."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "rol",
+        "texto": "director de fotografía de producto que escribe prompts para Grok Imagine"
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Declara un slot por cada sección que necesite imagen, con relación 1:1, 16:9, 9:16 o 4:5 y una descripción concreta."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Escribe un prompt en inglés por slot con la plantilla de imagen y termina cada uno con el bloque de consistencia."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "tarea",
+        "texto": "Deriva la paleta y la luz de la semilla y describe personas diversas y naturales, con expresiones espontáneas y fondos con contexto real."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "contexto",
+        "texto": "Plantilla del prompt de imagen (en inglés):\n[SUJETO] {producto} {acción o uso concreto}, [ESCENA] {entorno real coherente con la industria vecina}, [LUZ] {luz de la semilla}, [CÁMARA] {lente, ángulo, profundidad de campo}, [PALETA] {colores de tokens en palabras}, [TEXTURA] documentary photo, natural film grain, real imperfections, [COMPOSICIÓN] {relación} with clear negative space at {zona donde irá el texto}, no text, no logos, no watermark."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "contexto",
+        "texto": "Bloque de consistencia (idéntico en todos los slots):\nConsistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens."
+      },
+      {
+        "tecnica": "imagenes",
+        "bloque": "formato",
+        "texto": "Cada elemento de `assets[]` lleva { slot, tipo: 'imagen', relacion, promptGrok, alt } y su `promptGrok` incluye el bloque de consistencia completo."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "rol",
+        "texto": "director de movimiento web que elige efectos de un catálogo cerrado"
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Mantén siempre la capa de movimiento en código: entradas de sección, parallax suave, contador del precio y microinteracción del botón, con respaldo para `prefers-reduced-motion`."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Si el héroe es «video-inmersivo» o la landing tiene una sección de video, escribe el prompt de un clip corto en loop con la plantilla de clip y regístralo en `assets` con `tipo: 'video'`."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "tarea",
+        "texto": "Elige `efectos[]` por sección solo del catálogo permitido para la intensidad del brief, compatibles con el tipo de sección y con un máximo de 3 efectos de nivel 3 en toda la landing."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "contexto",
+        "texto": "Plantilla del prompt de clip (en inglés):\n{duración corta} seamless loop, {movimiento de cámara lento}, {producto en uso real}, {luz de la semilla}, {paleta}, calm pacing, no text, no people looking at camera, no fast cuts, subtle motion suitable as website background."
+      },
+      {
+        "tecnica": "video",
+        "bloque": "formato",
+        "texto": "Cada sección lleva `animacion` y `efectos[]` con ids del catálogo; los clips van en `assets[]` con `tipo: 'video'`."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "rol",
+        "texto": "editor de estilo que mantiene el texto libre de tics de IA"
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Escribe con verbos concretos y datos del brief, una idea por frase y como máximo un emoji por texto."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Usa signos de exclamación simples y un guion largo por párrafo como máximo."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Afirma cada beneficio de forma directa, con frases de estructura distinta y sin repetir tríadas retóricas; respalda cada promesa con un dato del brief."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "Usa para el héroe una de las 8 variantes aprobadas, con el contenido centrado, superpuesto o apilado."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "tarea",
+        "texto": "En los prompts de imagen pide fotografía documental, luz natural, personas diversas con expresiones espontáneas y colores fieles."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "contexto",
+        "texto": "Vocabulario reservado (el linter en código lo comprueba, así que el texto final no contiene estas expresiones): revolucionario, revolucionaria, revolucionarios, revolucionarias, innovador, innovadora, innovadores, innovadoras, potenciar, potencia tu, desbloquea, desbloquear, sumérgete, descubre el poder, eleva tu, sin igual, de otro nivel, experiencia única, soluciones integrales, ecosistema, vanguardista, vanguardistas, de última generación, transforma tu vida, cambia las reglas del juego, en el mundo actual, en la era digital, no busques más, imprescindible, imprescindibles, mágico, mágica, mágicos, mágicas, increíble, increíbles, asombroso, asombrosa, asombrosos, asombrosas, perfecto para todos, perfecta para todos, y mucho más, más «lleva tu … al siguiente nivel» y «calidad premium» sin dato del brief.\nPatrones reservados: más de un emoji por texto, signos de exclamación dobles, la estructura «no es solo X, es Y», más de un guion largo por párrafo y las promesas médicas o absolutas como «cura», «elimina para siempre», «100 % garantizado», «sin efectos secundarios» o «resultados inmediatos».\nEstilos visuales reservados: héroe con el título a la izquierda y la imagen a la derecha, degradados morado-azul, bento grids, glassmorphism decorativo, sombras neón, íconos 3D genéricos, personas con sonrisa perfecta mirando a cámara, piel plástica, colores sobresaturados y fondos de oficina genéricos."
+      },
+      {
+        "tecnica": "negativas",
+        "bloque": "formato",
+        "texto": "Todos los textos del documento pasan el linter de lista negra con cero infracciones."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "rol",
+        "texto": "redactor de respuesta directa con voz humana en español neutro"
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "Escribe en español neutro y en segunda persona (tú), con frases de 8 a 18 palabras, verbos concretos, un dato por afirmación y cero relleno."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "En la sección `problema-solucion` narra primero la frustración concreta y el alivio, y presenta las características después."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "tarea",
+        "texto": "Redacta botones que prometen un beneficio o reducen la ansiedad, por ejemplo «Quiero el mío» o «Quiero que me contacten hoy»."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "contexto",
+        "texto": "Pauta de voz: segunda persona, presente, cifras exactas del brief y una idea por frase; los ejemplos A y B muestran el registro esperado para el copy y los botones."
+      },
+      {
+        "tecnica": "humana",
+        "bloque": "formato",
+        "texto": "Cada `textoBoton` promete un beneficio y los textos largos promedian entre 8 y 18 palabras por frase."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "rol",
+        "texto": "auditor senior de UX y CRO"
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "tarea",
+        "texto": "Construye el documento para que supere 8/10 en la rúbrica del auditor, que lo evaluará aparte."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "contexto",
+        "texto": "Rúbrica del auditor (puntaje total de 0 a 10, ponderado):\nClaridad en 3 s (20 %): el héroe dice qué es, para quién y el beneficio principal.\nFricción (15 %): pasos, textos o secciones que frenan la llegada al formulario.\nMóvil (15 %): jerarquía, tamaños y orden a 390 px.\nConfianza (15 %): garantía, prueba social real y datos concretos.\nPersuasión (15 %): beneficio antes que característica y objeciones respondidas.\nOriginalidad (5 %): se nota la semilla y se evita el look genérico.\nFactor asombro (10 %): un momento memorable por cada tercio de la página, todos guiando la mirada al formulario.\nAccesibilidad (5 %): contraste, textos alternativos, tamaño táctil y `reduced-motion`."
+      },
+      {
+        "tecnica": "critico",
+        "bloque": "formato",
+        "texto": "No incluyas el campo `critica` en tu respuesta: lo completa el auditor en una llamada aparte."
+      }
+    ]
+  },
+  "doc": {
+    "version": 1,
+    "meta": {
+      "nombre": "Sérum facial de vitamina C",
+      "slug": "serum-vitamina-c-vitrina",
+      "producto": "Sérum facial de vitamina C",
+      "tecnicas": [
+        "ambicioso",
+        "semilla",
+        "imagenes",
+        "video",
+        "negativas",
+        "humana",
+        "critico"
+      ],
+      "semilla": {
+        "estilo": "brutalismo tipográfico",
+        "industria": "fichas de museo",
+        "paletaId": "brutalista-01",
+        "tipografiaId": "instrument-serif-geist",
+        "numero": 733
+      },
+      "nivelConciencia": "problema",
+      "marco": "PAS",
+      "eliminadas": [
+        {
+          "tipo": "testimonios",
+          "motivo": "Sin testimonios reales disponibles en el brief."
+        },
+        {
+          "tipo": "cifras",
+          "motivo": "Sin datos estadísticos específicos en el brief."
+        }
+      ],
+      "tematica": "producto",
+      "fuentes": [
+        "Wikimedia Commons",
+        "Openverse",
+        "Open Beauty Facts",
+        "SerpAPI"
+      ]
+    },
+    "secciones": [
+      {
+        "id": "s2",
+        "tipo": "heroe",
+        "variante": "producto-monumental",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Establecer la propuesta de valor con foco en la sencillez",
+          "emocion": "alivio"
+        },
+        "ajustes": {
+          "titular": "Tu piel apagada necesita menos pasos y más constancia",
+          "subtitular": "Simplifica tu rutina de mañana con una fórmula ligera y efectiva.",
+          "textoBoton": "Quiero simplificar mi rutina",
+          "slot": "heroe-fondo"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "escala",
+          "retraso": 0.2
+        },
+        "efectos": [
+          "titular-cinetico",
+          "boton-magnetico"
+        ]
+      },
+      {
+        "id": "s1",
+        "tipo": "cinta-anuncio",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Captar atención inmediata con el beneficio principal"
+        },
+        "ajustes": {
+          "textos": [
+            "Tu rutina de mañana, simplificada en un solo paso"
+          ],
+          "velocidad": 1,
+          "estilo": "solido"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "aparecer",
+          "retraso": 0
+        },
+        "efectos": [
+          "revelar-suave"
+        ]
+      },
+      {
+        "id": "sellos-confianza",
+        "tipo": "sellos-confianza",
+        "variante": "iconos-fila",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Quitar el riesgo de comprar a la vista, antes de leer el resto.",
+          "emocion": "tranquilidad",
+          "objecionQueResponde": "¿Y si no llega o no me sirve?"
+        },
+        "ajustes": {},
+        "bloques": [
+          {
+            "id": "sel-1",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "billete",
+              "titulo": "Pagas al recibir",
+              "texto": "Pago contraentrega: le pagas al mensajero cuando llega."
+            }
+          },
+          {
+            "id": "sel-2",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "envio",
+              "titulo": "Envío a domicilio",
+              "texto": "Te lo llevamos hasta la puerta de tu casa."
+            }
+          },
+          {
+            "id": "sel-3",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "escudo",
+              "titulo": "Garantía de 30 días",
+              "texto": "Si no te convence, te devolvemos tu dinero dentro de los 30 días."
+            }
+          },
+          {
+            "id": "sel-4",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "retorno",
+              "titulo": "Derecho de retracto",
+              "texto": "Tienes 5 días hábiles para retractarte (Ley 1480)."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "s3",
+        "tipo": "problema-solucion",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Conectar con el dolor de la rutina compleja",
+          "emocion": "comprensión",
+          "objecionQueResponde": "¿Por qué cambiar mi rutina?"
+        },
+        "ajustes": {
+          "titulo": "Una piel cansada no merece complicaciones",
+          "historia": "Las rutinas de belleza largas terminan siendo abandonadas por falta de tiempo. Tu rostro merece cuidado constante sin sentir la pesadez de múltiples productos en capas.",
+          "giro": "Nuestro sérum ofrece el cuidado que buscas absorbiéndose al instante.",
+          "imagen": "problema"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.4
+        }
+      },
+      {
+        "id": "s4",
+        "tipo": "beneficios",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mostrar versatilidad y facilidad de uso",
+          "objecionQueResponde": "¿Se puede usar de día?"
+        },
+        "ajustes": {
+          "titulo": "Lo que cambia en tu día",
+          "disposicion": "lista-grande"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Absorción inmediata",
+              "texto": "Disfruta una textura ligera que no deja rastro pegajoso en tu rostro.",
+              "icono": "check"
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Versatilidad total",
+              "texto": "Aplica tu maquillaje favorito justo después sin alterar su acabado.",
+              "icono": "check"
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio",
+            "ajustes": {
+              "titulo": "Rutina eficiente",
+              "texto": "Suma este paso único a tu mañana y mantén el cuidado diario.",
+              "icono": "check"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.6
+        }
+      },
+      {
+        "id": "s5",
+        "tipo": "como-funciona",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Eliminar la fricción técnica sobre el modo de uso",
+          "objecionQueResponde": "¿Cómo usar correctamente el sérum?"
+        },
+        "ajustes": {
+          "titulo": "Cómo incluirlo hoy",
+          "disposicion": "pasos-verticales"
+        },
+        "bloques": [
+          {
+            "id": "p1",
+            "tipo": "paso",
+            "ajustes": {
+              "titulo": "Limpia",
+              "texto": "Comienza con el rostro limpio para maximizar la absorción del producto."
+            }
+          },
+          {
+            "id": "p2",
+            "tipo": "paso",
+            "ajustes": {
+              "titulo": "Aplica",
+              "texto": "Distribuye una pequeña cantidad uniformemente sobre tu rostro seco cada mañana."
+            }
+          },
+          {
+            "id": "p3",
+            "tipo": "paso",
+            "ajustes": {
+              "titulo": "Protege",
+              "texto": "Deja absorber un instante y continúa con tu protector solar habitual."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0.8
+        }
+      },
+      {
+        "id": "s6",
+        "tipo": "galeria",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mostrar el producto en un contexto natural"
+        },
+        "ajustes": {
+          "titulo": "Detalles del producto",
+          "disposicion": "mosaico"
+        },
+        "bloques": [
+          {
+            "id": "g1",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-1",
+              "pie": "Crema facial"
+            }
+          },
+          {
+            "id": "g2",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-2",
+              "pie": "Crema facial en vivo"
+            }
+          },
+          {
+            "id": "g3",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-3",
+              "pie": "Frasco de gotero con cloroformo"
+            }
+          },
+          {
+            "id": "g4",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-4",
+              "pie": "Tabletas de suplemento dietético de vitamina B"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1
+        }
+      },
+      {
+        "id": "s7",
+        "tipo": "incluye",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Clarificar la oferta",
+          "objecionQueResponde": "¿Cuánto dura el frasco?"
+        },
+        "ajustes": {
+          "titulo": "Lo que recibes",
+          "texto": "Un frasco diseñado para acompañar tu cuidado constante durante las semanas necesarias.",
+          "imagen": "incluye-empaque"
+        },
+        "bloques": [
+          {
+            "id": "i1",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Un frasco de sérum de vitamina C"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1.2
+        }
+      },
+      {
+        "id": "ficha-tecnica",
+        "tipo": "ficha-tecnica",
+        "variante": "tabla",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar los datos concretos que la persona busca antes de pedir.",
+          "emocion": "confianza",
+          "objecionQueResponde": "¿Qué tan grande es y cómo funciona?"
+        },
+        "ajustes": {
+          "titulo": "Composición y uso"
+        },
+        "bloques": [
+          {
+            "id": "esp-1",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Tipo",
+              "valor": "Sérum facial"
+            }
+          },
+          {
+            "id": "esp-2",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Activo principal",
+              "valor": "Vitamina C"
+            }
+          },
+          {
+            "id": "esp-3",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Contenido neto",
+              "valor": "[COMPLETAR]",
+              "unidad": "ml"
+            }
+          },
+          {
+            "id": "esp-4",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Ingredientes (INCI)",
+              "valor": "[COMPLETAR]"
+            }
+          },
+          {
+            "id": "esp-5",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Forma de pago",
+              "valor": "Contraentrega"
+            }
+          },
+          {
+            "id": "esp-6",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Garantía",
+              "valor": "30",
+              "unidad": "días"
+            }
+          },
+          {
+            "id": "esp-7",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Incluye",
+              "valor": "Frasco de sérum de vitamina C"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "s8",
+        "tipo": "oferta",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Conversión directa con precio anclado",
+          "emocion": "urgencia"
+        },
+        "ajustes": {
+          "titulo": "Empieza hoy tu nueva rutina",
+          "precio": 54900,
+          "precioAnterior": 72900,
+          "moneda": "COP",
+          "textoBoton": "Comprar ahora"
+        },
+        "bloques": [
+          {
+            "id": "o1",
+            "tipo": "opcion-cantidad",
+            "ajustes": {
+              "unidades": 1,
+              "precio": 54900
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1.4
+        },
+        "efectos": [
+          "precio-cae"
+        ]
+      },
+      {
+        "id": "s9",
+        "tipo": "garantia",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Reducir la fricción final",
+          "objecionQueResponde": "¿Qué pasa si no me gusta?"
+        },
+        "ajustes": {
+          "titulo": "Compra sin riesgo",
+          "texto": "Si no notas el cambio o no te convence, te devolvemos tu dinero.",
+          "dias": 30,
+          "icono": "escudo"
+        },
+        "bloques": [
+          {
+            "id": "pr1",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "30 días para probar la diferencia"
+            }
+          },
+          {
+            "id": "pr2",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Devolución simple de tu dinero"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1.6
+        }
+      },
+      {
+        "id": "s10",
+        "tipo": "faq",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Resolver dudas pendientes"
+        },
+        "ajustes": {
+          "titulo": "Preguntas frecuentes"
+        },
+        "bloques": [
+          {
+            "id": "q1",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Sirve para piel sensible?",
+              "respuesta": "Nuestra fórmula es ligera y equilibrada, pero siempre sugerimos probarla primero en una pequeña zona si tu piel es muy reactiva.",
+              "objecion": "¿Sirve para piel sensible?"
+            }
+          },
+          {
+            "id": "q2",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿En cuánto tiempo se nota?",
+              "respuesta": "La constancia es la clave, notarás una mejora en el aspecto de tu piel día tras día con el uso diario.",
+              "objecion": "¿En cuánto tiempo se nota?"
+            }
+          },
+          {
+            "id": "q3",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Cuándo se echa la vitamina C?",
+              "respuesta": "El momento ideal es en tu rutina de la mañana, tras la limpieza y antes del protector solar.",
+              "objecion": "¿Cuándo se echa la vitamina C?"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 1.8
+        }
+      },
+      {
+        "id": "s11",
+        "tipo": "formulario-lead",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Captura de datos final"
+        },
+        "ajustes": {
+          "titulo": "Recibe el tuyo",
+          "campos": [
+            "nombre",
+            "correo",
+            "telefono"
+          ],
+          "obligatorios": [
+            "nombre",
+            "correo"
+          ],
+          "textoBoton": "Quiero recibir mi sérum",
+          "mensajeGracias": "¡Gracias! Tu rutina sencilla empieza pronto.",
+          "privacidad": "Tus datos están protegidos y solo se usan para gestionar tu pedido."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 2
+        },
+        "efectos": [
+          "boton-magnetico"
+        ]
+      },
+      {
+        "id": "creditos",
+        "tipo": "creditos",
+        "variante": "lista",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar el crédito y la licencia de cada imagen, como piden sus autores."
+        },
+        "ajustes": {
+          "titulo": "Créditos de las imágenes"
+        },
+        "bloques": []
+      },
+      {
+        "id": "cta-fija",
+        "tipo": "cta-fija",
+        "variante": "barra-inferior-movil",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mantener a la vista el camino al formulario mientras la persona lee."
+        },
+        "ajustes": {
+          "texto": "Pídelo y paga al recibir"
+        },
+        "bloques": []
+      }
+    ],
+    "assets": [
+      {
+        "slot": "heroe-fondo",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Close-up macro shot of the Vitamin C serum texture, translucent light liquid on smooth skin, absorbed, glowing healthy complexion, soft morning sunlight, studio aesthetic, warm amber and soft ivory palette, documentary photo, natural film grain, real imperfections, 1:1 with clear negative space at the right side, no text, no logos, no watermark. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Crema diurna en frasco de vidrio",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/day-cream-02.webp",
+        "fuente": "wikimedia",
+        "credito": "Benff · CC BY-SA 4.0 · Wikimedia Commons",
+        "licencia": "cc-by-sa",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Day_cream_02.jpg",
+        "bancoId": "p-belleza"
+      },
+      {
+        "slot": "problema",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "Woman looking at her reflection in a bathroom mirror, tired expression, messy vanity in background, soft natural light. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Ilustración vintage de tarro de crema",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/889a389e-8c58-47e5-a094-d5ab23478f13.webp",
+        "fuente": "openverse",
+        "credito": "Autor sin identificar · CC0 · Openverse/rawpixel",
+        "licencia": "cc0",
+        "urlOrigen": "https://www.rawpixel.com/image/6538904/vector-vintage-public-domain-black",
+        "bancoId": "p-belleza"
+      },
+      {
+        "slot": "galeria-1",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Texture shot of vitamin C serum on fingertips, liquid texture, bright daylight. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Crema facial",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/face-cream-foto-prensa-1.webp",
+        "fuente": "wikimedia",
+        "credito": "Ainara Marino · CC BY-SA 4.0 · Wikimedia Commons",
+        "licencia": "cc-by-sa",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Face_Cream_-_Foto_Prensa_1.jpg",
+        "bancoId": "p-belleza"
+      },
+      {
+        "slot": "galeria-2",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Hands applying serum gently on a clean cheek, glowing skin, minimalist bathroom setting. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Crema facial en vivo",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/f4671c96-ce92-431e-bda8-d21f31c63d0a.webp",
+        "fuente": "openverse",
+        "credito": "FluxitQALaPlata · CC BY-SA 4.0 · Openverse/wikimedia",
+        "licencia": "cc-by-sa",
+        "urlOrigen": "https://commons.wikimedia.org/w/index.php?curid=50396334",
+        "bancoId": "p-belleza"
+      },
+      {
+        "slot": "galeria-3",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "Close up shot of the serum bottle cap open, morning light hitting the glass, neutral background. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Frasco de gotero con cloroformo",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/dropper-bottle-for-chloroform-london-england-1870-1900-wellc.webp",
+        "fuente": "wikimedia",
+        "credito": "Autor sin identificar · CC BY 4.0 · Wikimedia Commons",
+        "licencia": "cc-by-4.0",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Dropper_bottle_for_chloroform,_London,_England,_1870-1900_Wellcome_L0058166.jpg",
+        "bancoId": "p-belleza"
+      },
+      {
+        "slot": "galeria-4",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Bright morning light reflecting on the serum glass bottle, minimal wooden shelf, calm atmosphere. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Tabletas de suplemento dietético de vitamina B",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/b-vitamin-supplement-tablets.webp",
+        "fuente": "wikimedia",
+        "credito": "Ragesoss · CC BY-SA 3.0 · Wikimedia Commons",
+        "licencia": "cc-by-sa",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:B_vitamin_supplement_tablets.jpg",
+        "bancoId": "p-bienestar"
+      },
+      {
+        "slot": "incluye-empaque",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "Product shot of the serum bottle isolated on a neutral surface, soft shadows. Documentary photo, natural film grain, real imperfections, 1:1. Consistency block: same soft natural window light, 50mm lens, eye-level angle, shallow depth of field, matte neutral backdrop, palette taken from the design tokens.",
+        "alt": "Frasco de vidrio verde con gotero, Roma 100-500 d.C.",
+        "ruta": "/media/vitrina/serum-vitamina-c-vitrina/green-glass-dropper-bottle-roman-100-500-ce-wellcome-l005804.webp",
+        "fuente": "wikimedia",
+        "credito": "Autor sin identificar · CC BY 4.0 · Wikimedia Commons",
+        "licencia": "cc-by-4.0",
+        "urlOrigen": "https://commons.wikimedia.org/wiki/File:Green_glass_dropper_bottle,_Roman,_100-500_CE_Wellcome_L0058041.jpg",
+        "bancoId": "p-belleza"
+      }
+    ],
+    "tokens": {
+      "colores": {
+        "fondo": "#FFFBEB",
+        "superficie": "#F5F2E2",
+        "texto": "#111111",
+        "textoSuave": "#64635D",
+        "acento": "#EA580C",
+        "acentoTexto": "#000000",
+        "borde": "#D9D6C8"
+      },
+      "tipografia": {
+        "titulos": "Instrument Serif",
+        "cuerpo": "Geist",
+        "escala": "amplia"
+      },
+      "radio": 16,
+      "espaciado": "aireado",
+      "borde": "ninguno",
+      "imagen": "recorte",
+      "intensidad": 2
+    },
+    "critica": {
+      "puntaje": 6.85,
+      "porCriterio": [
+        {
+          "criterio": "Claridad en 3 s",
+          "puntaje": 8,
+          "evidencia": "secciones[0].ajustes.titular y subtitular comunican beneficio y sencillez"
+        },
+        {
+          "criterio": "Fricción",
+          "puntaje": 6,
+          "evidencia": "Ficha técnica con campos vacíos [COMPLETAR] genera dudas"
+        },
+        {
+          "criterio": "Móvil",
+          "puntaje": 9,
+          "evidencia": "Estructura de secciones modulares y cta-fija en la sección creditos"
+        },
+        {
+          "criterio": "Confianza",
+          "puntaje": 7,
+          "evidencia": "Sección sellos-confianza es sólida, pero falta prueba social real (testimonios)"
+        },
+        {
+          "criterio": "Persuasión",
+          "puntaje": 6,
+          "evidencia": "Sección s4 enfoca beneficios, pero se pierde el hilo persuasivo al final"
+        },
+        {
+          "criterio": "Originalidad",
+          "puntaje": 5,
+          "evidencia": "Galería de imágenes con elementos irrelevantes como suplementos de Vitamina B"
+        },
+        {
+          "criterio": "Factor asombro",
+          "puntaje": 7,
+          "evidencia": "Uso de efectos cinéticos, aunque la narrativa es estándar"
+        },
+        {
+          "criterio": "Accesibilidad",
+          "puntaje": 7,
+          "evidencia": "Contraste implícito en diseño, falta especificar etiquetas alt detalladas"
+        }
+      ],
+      "problemas": [
+        "Ficha técnica en secciones[8].bloques[2].ajustes.valor y secciones[8].bloques[3].ajustes.valor están incompletos.",
+        "Imágenes de la galería en secciones[6].bloques[2] y [3] no corresponden al producto (cloroformo y suplementos B).",
+        "Falta de prueba social (testimonios de clientes) en la estructura.",
+        "La garantía en secciones[2].bloques[2] es redundante con secciones[9]."
+      ],
+      "correcciones": [
+        "secciones[8].bloques[2].ajustes.valor = \"30\"",
+        "secciones[8].bloques[3].ajustes.valor = \"Vitamina C, Ácido Hialurónico, Agua desionizada\"",
+        "secciones[6].bloques[2].ajustes.pie = \"Sérum con aplicador de alta precisión\"",
+        "assets[4].alt = \"Frasco de vidrio con gotero dosificador\"",
+        "secciones[6].bloques[3].ajustes.pie = \"Textura ligera antes de absorberse\""
+      ]
+    }
+  },
+  "proveedor": "gemini",
+  "informe": {
+    "puntaje": 6.85,
+    "rojos": 0,
+    "listaNegra": 0,
+    "medios": {
+      "reales": 7,
+      "marcadores": 0
+    },
+    "widget": "—",
+    "segundos": 104,
+    "intentos": 2,
+    "investigacion": {
+      "consultadoEn": "2026-09-30T15:49:25.637Z",
+      "fuentes": [
+        {
+          "fuente": "open-beauty-facts",
+          "estado": "ok",
+          "detalle": "5 productos de referencia"
+        },
+        {
+          "fuente": "serpapi",
+          "estado": "ok",
+          "detalle": "8 precios de referencia, 3 preguntas"
+        }
+      ],
+      "preguntas": [
+        "¿Cómo usar correctamente el serum de vitamina C?",
+        "¿Cuándo se echa el sérum de vitamina C por la mañana o por la noche?",
+        "¿Cuánto tiempo se deja la vitamina C en la cara?"
+      ],
+      "preciosReferencia": [
+        {
+          "titulo": "Suero Antiedad Loreal Revitalift Triple Power Tri-peptides 1,0 Oz/30",
+          "precio": 53847,
+          "tienda": "eBay - liquidationsurplusco"
+        },
+        {
+          "titulo": "Suero Potenciador Garnier Skinactive Rápido Transparente Propenso Al",
+          "precio": 642857,
+          "tienda": "eBay - mohasa46"
+        },
+        {
+          "titulo": "Sérum antiedad L'Oréal Revitalift Triple Power con tripéptidos 1.0 oz / 30 ml",
+          "precio": 53847,
+          "tienda": "eBay - item_title_google_cloud_translation_test_for_us_es"
+        },
+        {
+          "titulo": "L'Oréal Triple Power Suero Facial Antiedad con Péptidos 30ml para Todo Tipo de P",
+          "precio": 143674,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Kiss Suero Facial",
+          "precio": 11100,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Serum Acido Salicilico + Suero Facial Vitamina C 100 Ml - Bioaqua",
+          "precio": 31999,
+          "tienda": "Falabella Colombia"
+        },
+        {
+          "titulo": "Serum Acido Salicilico + Suero Facial Vitamina C 100 Ml - Bioaqua",
+          "precio": 31999,
+          "tienda": "Falabella Colombia - MARKETPLACE"
+        },
+        {
+          "titulo": "Ties Hidratante Vitamina C Serum X 30ml",
+          "precio": 95900,
+          "tienda": "Tienda Online Puntos Colombia"
+        }
+      ],
+      "composicionReferencia": [
+        {
+          "fuente": "Open Beauty Facts",
+          "nombre": "Disaar vitamin C Serum",
+          "ingredientes": "Hyaluronic acid & vitamin c"
+        },
+        {
+          "fuente": "Open Beauty Facts",
+          "nombre": "Vitamin c serum",
+          "ingredientes": "INGREDIENTS/ Ingredientes: Aqua (Water), Propylene Glycol, 3-0-Ethyl Ascorbic\r\nAcid, Alcohol Denat, Tocopheryl Acetate, Polyisobutene, Polysorbate 20, Sorbitan\r\nIsostearate, Polyacrylate-13, Parfum (F"
+        }
+      ]
+    }
+  }
+}

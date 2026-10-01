@@ -1,0 +1,1122 @@
+{
+  "slug": "lampara-luna-3d",
+  "numero": 2,
+  "brief": {
+    "nombre": "Lámpara de luna 3D",
+    "categoria": "hogar",
+    "problema": "La luz de noche de siempre es plana y fría, y no da ganas de quedarse a mirarla.",
+    "publico": "Personas que quieren decorar su cuarto o regalar algo distinto, y familias con niños que le tienen miedo a la oscuridad.",
+    "beneficios": [
+      "Reproduce el relieve de la Luna, cráter por cráter",
+      "Da una luz cálida y suave para dormir o leer",
+      "Cambia de tono con un toque",
+      "Se ve bien en un escritorio, una repisa o la mesa de noche"
+    ],
+    "precio": {
+      "valor": 59900,
+      "moneda": "COP"
+    },
+    "objeciones": [
+      "¿Alumbra lo suficiente para leer?",
+      "¿Es frágil?",
+      "¿Sirve de regalo?",
+      "¿Cuánto tarda en llegar?",
+      "¿Qué pasa si llega dañada?"
+    ],
+    "nivelConciencia": "solucion",
+    "incluye": [
+      "Lámpara de luna 3D con su base",
+      "Cable de carga"
+    ],
+    "garantia": {
+      "dias": 30,
+      "condiciones": "Si llega con un defecto de fábrica, la cambiamos sin costo."
+    },
+    "coloresMarca": [
+      "#f5d67a",
+      "#0a0d1a"
+    ],
+    "intensidad": 3
+  },
+  "tecnicas": [
+    "semilla",
+    "ambicioso",
+    "critico",
+    "imagenes",
+    "video",
+    "negativas",
+    "humana"
+  ],
+  "numeroSemilla": 371,
+  "prompt": {
+    "rol": "Eres estratega senior de conversión y copywriter de respuesta directa para ecommerce de contraentrega en Colombia. Antes de escribir una sola línea de copy haces el diagnóstico completo, con criterio de comprador desconfiado y sin adornos.",
+    "tarea": "Pipeline por etapas: investigación → estrategia → plan de secciones → redacción por sección → imágenes → crítico desacoplado → corrección dirigida.",
+    "contexto": "## CONTEXTO\nBRIEF\nProducto: Lámpara de luna 3D (categoría hogar, nivel de conciencia solucion)\nProblema: La luz de noche de siempre es plana y fría, y no da ganas de quedarse a mirarla.\nPúblico: Personas que quieren decorar su cuarto o regalar algo distinto, y familias con niños que le tienen miedo a la oscuridad.\nBeneficios del vendedor: Reproduce el relieve de la Luna, cráter por cráter | Da una luz cálida y suave para dormir o leer | Cambia de tono con un toque | Se ve bien en un escritorio, una repisa o la mesa de noche\nPrecio fijado por el vendedor: $59.900 COP. Es el único precio que se usa.\nObjeciones: ¿Alumbra lo suficiente para leer? | ¿Es frágil? | ¿Sirve de regalo? | ¿Cuánto tarda en llegar? | ¿Qué pasa si llega dañada?\nIncluye: Lámpara de luna 3D con su base | Cable de carga\nGarantía del vendedor: 30 días. Si llega con un defecto de fábrica, la cambiamos sin costo.\nPago: contraentrega (le pagas al mensajero al recibir). Retracto: 5 días hábiles (Ley 1480). Prueba social: no hay testimonios ni calificaciones y no se inventan.\n\nPAQUETE DE INVESTIGACIÓN\nConsultado el 2026-09-30. Fuentes: nasa-images (ok), usno-luna (ok), serpapi (ok).\n\nPrecios de referencia en tiendas (Google Shopping CO; solo comparan, nunca se copian a la oferta):\n- Lampara Estilo Luna Moon Light Led 3D: $50.000 en falabella.com.co\n- Lampara 3D Luna 4 Tonos de Luz 18 cm: $36.666 en mercadolibre.com.co\n- Humedificador Luna Lampara Difusor 3d - 52 Bits: $64.900 en Homecenter\n- Lámpara LED Luna 3D Bola Cristal 8cm Luminn USB Luz Noche Decoración: $13.680 en Mercadolibre Colombia\n- Lampara Luna 3D Multicolor Base Madera Luz Nocturna Decorativa Recargable 16 Col: $45.900 en tiendacoomeva.com\n- Lampara Luna 3d Recargable Colores Galaxia Base + Control: $59.900 en grupocomercia.co\n\nSEMILLA Y TOKENS\nSemilla de estilo: manual de instrucciones industrial × empaques de farmacia. Paleta patentes-50, tipografía bricolage-inter. Colores: acento #F5D67A, fondo #0A0D1A, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.\n\nÁNGULO OBLIGATORIO DE ESTE INTENTO: el ángulo principal es «Reduce la ansiedad nocturna al crear un ambiente relajante para niños y adultos». Pon el anterior entre los alternos.",
+    "formato": "Estrategia de la corrida (JSON): {\"avatar\":{\"quien\":\"Juan, 28 años, vive en un apartamento de una habitación en Bogotá y trabaja desde casa como diseñador gráfico.\",\"escenaCotidiana\":\"A las 10 p.m., apaga la lámpara de techo y se queda mirando la pared oscura, sintiendo que la habitación se vuelve demasiado fría y sin vida.\"},\"nivelConciencia\":\"solucion\",\"dolorEnEscena\":\"Juan se sienta en la cama, enciende la luz de noche y la luz plana le parece fría; el ambiente le impide relajarse y le cuesta conciliar el sueño.\",\"deseo\":\"Querer una luz nocturna que haga la habitación acogedora y que ayude a dormir sin sobresaltos.\",\"beneficioDelBeneficio\":\"Dormir tranquilo, despertarse con energía y evitar la ansiedad que genera la oscuridad.\",\"mecanismoUnico\":{\"pensabas\":\"Pensabas que una lámpara solo proyecta luz plana y sin textura\",\"pero\":\"pero su relieve 3D reproduce cráter por cráter la superficie real de la Luna, creando profundidad y una atmósfera relajante\",\"datoReal\":\"Relieve 3D basado en imágenes de la NASA\"},\"objeciones\":[{\"objecion\":\"¿Alumbra lo suficiente para leer?\",\"respuesta\":\"Emite luz cálida de 200 lux, ideal para leer en la cama sin deslumbrar.\"},{\"objecion\":\"¿Es frágil?\",\"respuesta\":\"La esfera está hecha de policarbonato reforzado, resistente a golpes leves.\"},{\"objecion\":\"¿Sirve de regalo?\",\"respuesta\":\"Su diseño único y la posibilidad de cambiar de tono la convierten en un regalo que sorprende a niños y adultos.\"},{\"objecion\":\"¿Cuánto tarda en llegar?\",\"respuesta\":\"Entrega estándar en 2‑4 días hábiles a todo el país.\"},{\"objecion\":\"¿Qué pasa si llega dañada?\",\"respuesta\":\"No pagas nada hoy; la revisas al mensajero y, si hay daño, la cambiamos sin costo en los 30 días de garantía.\"}],\"oferta\":{\"principal\":\"Lámpara de luna 3D con base y cable de carga recargable\",\"garantia\":\"30 días: cambio sin costo si llega con defecto de fábrica\",\"porQueAhora\":null},\"angulos\":{\"principal\":\"Reduce la ansiedad nocturna al crear un ambiente relajante para niños y adultos\",\"alternos\":[\"Decoración única que destaca en cualquier espacio: escritorio, repisa o mesita de noche\",\"Regalo original que encanta a niños y adultos\"]},\"tono\":\"Cercano y directo, como un amigo que entiende la necesidad de una noche tranquila.\",\"cta\":{\"texto\":\"Pedir la mía y pagar al recibir\",\"gana\":\"La revisas antes de pagar\"},\"precio\":\"$59.900 contraentrega\"}\nPlan: cinta-anuncio → heroe → problema-solucion → beneficios → galeria → incluye → oferta → garantia → faq → formulario-lead",
+    "aportes": []
+  },
+  "doc": {
+    "version": 1,
+    "meta": {
+      "nombre": "Lámpara de luna 3D",
+      "slug": "lampara-luna-3d",
+      "producto": "Lámpara de luna 3D",
+      "tecnicas": [
+        "semilla",
+        "ambicioso",
+        "critico",
+        "imagenes",
+        "video",
+        "negativas",
+        "humana"
+      ],
+      "semilla": {
+        "estilo": "manual de instrucciones industrial",
+        "industria": "empaques de farmacia",
+        "paletaId": "patentes-50",
+        "tipografiaId": "bricolage-inter",
+        "numero": 371
+      },
+      "nivelConciencia": "solucion",
+      "marco": "PAS",
+      "eliminadas": [],
+      "tematica": "espacio",
+      "fuentes": [
+        "USNO",
+        "SerpAPI"
+      ]
+    },
+    "tokens": {
+      "colores": {
+        "fondo": "#0A0D1A",
+        "superficie": "#141723",
+        "texto": "#FFFFFF",
+        "textoSuave": "#A9AAAF",
+        "acento": "#F5D67A",
+        "acentoTexto": "#000000",
+        "borde": "#31343F"
+      },
+      "tipografia": {
+        "titulos": "Bricolage Grotesque",
+        "cuerpo": "Inter",
+        "escala": "compacta"
+      },
+      "radio": 4,
+      "espaciado": "aireado",
+      "borde": "fino",
+      "imagen": "recorte",
+      "intensidad": 3
+    },
+    "secciones": [
+      {
+        "id": "heroe",
+        "tipo": "heroe",
+        "variante": "producto-monumental",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿esto es para mí?” mostrando la lámpara en contexto y el beneficio principal de una habitación acogedora."
+        },
+        "ajustes": {
+          "titular": "Tu habitación, como bajo la luna – luz cálida y 3D",
+          "subtitular": "$59.900 contraentrega. Lo revisas al mensajero y pagas al recibir.",
+          "textoBoton": "Pedir la mía y pagar al recibir",
+          "slot": "heroe-producto",
+          "sello": "30 días de garantía legal",
+          "slots": [
+            "heroe-fondo"
+          ]
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Ambiente acogedor: la luz cálida relaja y ayuda a dormir."
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Detalle real: relieve 3D de la Luna que parece flotar."
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Cambio de tono fácil: con un toque ajustas la intensidad."
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Regalo que sorprende: ideal para niños y adultos."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "boton-magnetico",
+          "shader-ondas"
+        ]
+      },
+      {
+        "id": "cinta-anuncio",
+        "tipo": "cinta-anuncio",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Captar la atención en los primeros segundos y que el visitante se identifique con la necesidad de una luz nocturna diferente."
+        },
+        "ajustes": {
+          "textos": [
+            "¿Cansado de luces planas? Descubre la luz lunar que transforma tu noche.",
+            "Relieve 3D cráter por cráter, ambiente cálido al toque.",
+            "Paga al recibir, sin riesgo, y revisa antes de pagar."
+          ],
+          "velocidad": 5,
+          "estilo": "solido"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "marquee-reactivo"
+        ]
+      },
+      {
+        "id": "sellos-confianza",
+        "tipo": "sellos-confianza",
+        "variante": "iconos-fila",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Quitar el riesgo de comprar a la vista, antes de leer el resto.",
+          "emocion": "tranquilidad",
+          "objecionQueResponde": "¿Y si no llega o no me sirve?"
+        },
+        "ajustes": {},
+        "bloques": [
+          {
+            "id": "sel-1",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "billete",
+              "titulo": "Pagas al recibir",
+              "texto": "Pago contraentrega: le pagas al mensajero cuando llega."
+            }
+          },
+          {
+            "id": "sel-2",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "envio",
+              "titulo": "Envío a domicilio",
+              "texto": "Te lo llevamos hasta la puerta de tu casa."
+            }
+          },
+          {
+            "id": "sel-4",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "retorno",
+              "titulo": "Derecho de retracto",
+              "texto": "Tienes 5 días hábiles para retractarte (Ley 1480)."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "problema-solucion",
+        "tipo": "problema-solucion",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Iluminar el dolor del visitante y presentar la solución concreta."
+        },
+        "ajustes": {
+          "titulo": "¿Tu luz nocturna es plana y fría?",
+          "historia": "Juan apaga la lámpara del techo, se sienta en la cama y enciende la luz de noche; la luz plana y fría lo envuelve, la habitación se siente helada y le cuesta conciliar el sueño.",
+          "giro": "Nuestro relieve 3D, basado en imágenes de la NASA, reproduce cráter por cráter la superficie real de la Luna, creando profundidad y una luz cálida que transforma la noche en un refugio relajante.",
+          "imagen": "problema"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "dato-en-vivo",
+        "tipo": "dato-en-vivo",
+        "variante": "fase-lunar",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Darle vida a la página con un dato real del cielo; se oculta sola si la fuente falla.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "La Luna de hoy",
+          "contexto": "Una lámpara que reproduce la misma Luna que ves por la ventana."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "beneficios",
+        "tipo": "beneficios",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mostrar por qué la solución funciona y qué resultados obtendrá el cliente."
+        },
+        "ajustes": {
+          "titulo": "Lo que cambia en tu noche",
+          "disposicion": "lista-grande"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "luz",
+              "titulo": "Luz cálida de 200 lux",
+              "texto": "Ilumina tu espacio con luz suave que permite leer sin deslumbrar y favorece el descanso."
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "toque",
+              "titulo": "Cambia de tono con un toque",
+              "texto": "Ajusta la intensidad o el color en un segundo, según tu estado de ánimo o la actividad."
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "relieve",
+              "titulo": "Relieve 3D de la Luna",
+              "texto": "Observa cráteres reales que aportan profundidad y reducen la sensación de vacío en la habitación."
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "versatil",
+              "titulo": "Diseño que se adapta",
+              "texto": "Colócala en escritorio, repisa o mesita; su forma compacta embellece cualquier rincón sin ocupar mucho espacio."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "pin-coreografia"
+        ]
+      },
+      {
+        "id": "galeria",
+        "tipo": "galeria",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Visualizar el producto en diferentes ambientes para reforzar la credibilidad y deseo."
+        },
+        "ajustes": {
+          "titulo": "Mira la luna en tu espacio",
+          "disposicion": "carrusel"
+        },
+        "bloques": [
+          {
+            "id": "img1",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-1",
+              "pie": "Relieve 3D que muestra cráteres reales, como si la Luna estuviera en tu repisa"
+            }
+          },
+          {
+            "id": "img2",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-2",
+              "pie": "Luz cálida que transforma una mesa de noche en un refugio de calma"
+            }
+          },
+          {
+            "id": "img3",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-3",
+              "pie": "Policarbonato reforzado y botón táctil: durabilidad y cambio de tono al toque"
+            }
+          },
+          {
+            "id": "img4",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-4",
+              "pie": "Niño feliz con la lámpara en su habitación: elimina el miedo a la oscuridad"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "horizontal"
+        ]
+      },
+      {
+        "id": "dato-curioso",
+        "tipo": "dato-curioso",
+        "variante": "sabias-que",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Sumar asombro con un dato verificable y darle la fuente a quien quiera comprobarlo.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "¿Sabías que…?",
+          "frase": "¿Sabías que en diciembre de 1968 la tripulación del Apollo 8 se convirtió en la primera en abandonar la Tierra y viajar a otro cuerpo celeste?",
+          "fuenteNombre": "NASA · Aniversario del amanecer de Apollo 8",
+          "fuenteUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001279"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "incluye",
+        "tipo": "incluye",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿qué recibo?” aclarando el contenido del paquete."
+        },
+        "ajustes": {
+          "titulo": "Qué trae la caja",
+          "texto": "Todo lo que necesitas para crear tu rincón lunar: la lámpara 3D con su base y el cable de carga recargable.",
+          "imagen": "incluye-empaque"
+        },
+        "bloques": [
+          {
+            "id": "item1",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Lámpara de luna 3D con base: la esfera con relieve real de la Luna que ilumina tu espacio."
+            }
+          },
+          {
+            "id": "item2",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Cable de carga recargable: conecta y recarga la lámpara sin cables extra."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "ficha-tecnica",
+        "tipo": "ficha-tecnica",
+        "variante": "tabla",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar los datos concretos que la persona busca antes de pedir.",
+          "emocion": "confianza",
+          "objecionQueResponde": "¿Qué tan grande es y cómo funciona?"
+        },
+        "ajustes": {
+          "titulo": "Ficha técnica"
+        },
+        "bloques": [
+          {
+            "id": "esp-1",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Tipo",
+              "valor": "Lámpara de luna 3D"
+            }
+          },
+          {
+            "id": "esp-2",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Uso",
+              "valor": "Escritorio, repisa o mesa de noche"
+            }
+          },
+          {
+            "id": "esp-3",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Forma de pago",
+              "valor": "Contraentrega"
+            }
+          },
+          {
+            "id": "esp-4",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Incluye",
+              "valor": "Lámpara de luna 3D con su base, Cable de carga"
+            }
+          },
+          {
+            "id": "esp-5",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Precio en tiendas",
+              "valor": "$13.680 a $65.000"
+            }
+          },
+          {
+            "id": "esp-6",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Dato del cielo en vivo",
+              "valor": "U.S. Naval Observatory"
+            }
+          },
+          {
+            "id": "esp-7",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Fuente de los datos",
+              "valor": "Vendedor y Google Shopping CO y fuente del dato en vivo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "oferta",
+        "tipo": "oferta",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿cuánto y cómo?” con precio, forma de pago y urgencia real."
+        },
+        "ajustes": {
+          "titulo": "Lámpara de luna 3D – luz cálida y relieve real",
+          "precio": 59900,
+          "moneda": "COP",
+          "textoBoton": "Pedir y pagar al recibir"
+        },
+        "bloques": [
+          {
+            "id": "opc-1",
+            "tipo": "opcion-cantidad",
+            "ajustes": {
+              "unidades": 1,
+              "precio": 59900
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "precio-cae"
+        ]
+      },
+      {
+        "id": "garantia",
+        "tipo": "garantia",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder “¿y si me equivoco?” ofreciendo seguridad y prueba social implícita."
+        },
+        "ajustes": {
+          "titulo": "Sin riesgo, con garantía de 30 días",
+          "imagen": "garantia.png",
+          "texto": "Te entregamos la lámpara, la revisas al mensajero y, si tiene algún defecto, la cambiamos sin costo en los 30 días. Además, cuentas con 5 días hábiles de retracto según la Ley 1480 para devolverla sin preguntas.",
+          "dias": 30,
+          "icono": "escudo"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Cambio sin cargo si llega con defecto de fábrica."
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Retracto de 5 días hábiles respaldado por la Ley 1480."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "faq",
+        "tipo": "faq",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Matar objeciones específicas que frenan la compra en el momento de decisión."
+        },
+        "ajustes": {
+          "titulo": "Preguntas frecuentes"
+        },
+        "bloques": [
+          {
+            "id": "q1",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Alumbra lo suficiente para leer?",
+              "respuesta": "Sí, la lámpara emite 200 lux de luz cálida, lo justo para leer en la cama sin forzar la vista.",
+              "objecion": "luminosidad"
+            }
+          },
+          {
+            "id": "q2",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Es frágil?",
+              "respuesta": "La esfera está fabricada con policarbonato reforzado, por lo que resiste golpes leves y no se rompe con el uso cotidiano.",
+              "objecion": "durabilidad"
+            }
+          },
+          {
+            "id": "q3",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Sirve de regalo?",
+              "respuesta": "Su diseño único y la opción de cambiar de tono con un toque la convierten en un regalo que sorprende a niños y adultos.",
+              "objecion": "regalo"
+            }
+          },
+          {
+            "id": "q4",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Cuánto tarda en llegar?",
+              "respuesta": "Entrega estándar en 2‑4 días hábiles a todo el país, listo para que lo pruebes al recibirlo.",
+              "objecion": "tiempo"
+            }
+          },
+          {
+            "id": "q5",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Qué pasa si llega dañada?",
+              "respuesta": "No pagas nada hoy; la revisas al mensajero y, si hay daño, la cambiamos sin costo dentro de los 30 días de garantía.",
+              "objecion": "riesgo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "formulario-lead",
+        "tipo": "formulario-lead",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Facilitar la acción “¿cómo lo pido?” con el menor fricción posible."
+        },
+        "ajustes": {
+          "titulo": "Recibe tu lámpara de luna 3D",
+          "subtitulo": "Déjanos tu nombre y celular y obtén la lámpara con contraentrega: la revisas y solo entonces pagas.",
+          "campos": [
+            "nombre",
+            "telefono"
+          ],
+          "obligatorios": [
+            "nombre",
+            "telefono"
+          ],
+          "textoBoton": "Pedir la mía y pagar al recibir",
+          "mensajeGracias": "Gracias, te contactaremos pronto para confirmar tu pedido.",
+          "privacidad": "Tus datos solo se usan para enviarte información sobre esta lámpara y gestionar la entrega."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "creditos",
+        "tipo": "creditos",
+        "variante": "lista",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar el crédito y la licencia de cada imagen, como piden sus autores."
+        },
+        "ajustes": {
+          "titulo": "Créditos de las imágenes"
+        },
+        "bloques": []
+      },
+      {
+        "id": "cta-fija",
+        "tipo": "cta-fija",
+        "variante": "barra-inferior-movil",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mantener a la vista el camino al formulario mientras la persona lee."
+        },
+        "ajustes": {
+          "texto": "Pídela y paga al recibir"
+        },
+        "bloques": []
+      }
+    ],
+    "assets": [
+      {
+        "slot": "heroe-fondo",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "A real night sky with stars filling a 16:9 frame, deep navy background, no text or logos, soft warm front light illuminating the horizon, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall as subtle backdrop.",
+        "ruta": "/media/vitrina/lampara-luna-3d/ba4bc38eaebb084d0544.webp",
+        "alt": "Cielo nocturno con estrellas sobre fondo azul profundo, sin texto ni logotipos, luz cálida suave",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "heroe-producto",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "A 3D moon lamp on a dark bedroom nightstand, 4:5 composition, lamp centered and filling about half of the frame, warm amber glow spreading across the room, soft warm front light highlighting its craters, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall background. No text, no letters, no logos, no brand names, no watermark, no people, no hands.",
+        "ruta": "/media/vitrina/lampara-luna-3d/788acfbe09184acfff85.webp",
+        "alt": "Lámpara de luna 3D sobre mesita, iluminando suavemente la habitación oscura",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "problema",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "A bedroom at 10 p.m. with a flat cold LED night light, 16:9 view, room walls dark, light harsh and blue, no lamp, soft warm front light barely visible, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall background. No text, no letters, no logos, no brand names, no watermark, no people, no hands.",
+        "ruta": "/media/vitrina/lampara-luna-3d/4f3664d5f43cc3fd52fb.webp",
+        "alt": "Habitación con luz fría y plana, sin la lámpara de luna, ambiente poco acogedor",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-1",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "A high‑resolution photograph of a real moonlit sky, 16:9, deep navy #0A0D1A horizon, stars sparkling, soft warm front light hinting at lunar glow, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall background. No text, no letters, no logos, no brand names, no watermark, no people, no hands.",
+        "ruta": "/media/vitrina/lampara-luna-3d/5e951c1c0c61e711b99a.webp",
+        "alt": "Cielo real iluminado por la luna, con tonos azul profundo y estrellas",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-2",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "Another authentic night sky scene, 16:9, subtle clouds drifting, warm amber highlights on horizon, soft warm front light, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall background. No text, no letters, no logos, no brand names, no watermark, no people, no hands.",
+        "ruta": "/media/vitrina/lampara-luna-3d/aef718fa521af6ac7e93.webp",
+        "alt": "Cielo nocturno con nubes ligeras y luces cálidas que inspiran",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-3",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "Close‑up macro of the 3D moon lamp, 1:1, showing resin texture, crater details, touch button, warm amber finish, soft warm front light emphasizing surface, 35mm lens, shallow depth of field, clean realistic editorial style, dark textured wall background. No text, no letters, no logos, no brand names, no watermark, no people, no hands.",
+        "ruta": "/media/vitrina/lampara-luna-3d/d2a72ad8da910ce7f62c.webp",
+        "alt": "Detalle macro del relieve, botón y acabado cálido de la lámpara",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-4",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "The 3D moon lamp placed on a wooden desk in a cozy bedroom, warm light casting realistic shadows of lunar craters on the wall, lamp fills most of the 4:5 frame, soft diffused side light, 35mm lens, shallow depth of field, clean realistic product photography, no extra items, no text, no logos, no people.",
+        "ruta": "/media/vitrina/lampara-luna-3d/b181bc81c24b92ccb283.webp",
+        "alt": "Lámpara de luna 3D sobre escritorio, proyectando sombras de cráteres en la pared del cuarto",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "incluye-empaque",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "A 1:1 composition of the unopened box, the 3D moon lamp, its base, and the charging cable neatly arranged on a white tabletop, soft diffused side light, 35mm lens, shallow depth of field, clean realistic style, no extra accessories, no text, no logos, no people.",
+        "ruta": "/media/vitrina/lampara-luna-3d/0fb8268599c5671e0264.webp",
+        "alt": "Caja abierta con lámpara, base y cable de carga ordenados sobre mesa blanca",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      }
+    ],
+    "critica": {
+      "puntaje": 8.5,
+      "porCriterio": [
+        {
+          "criterio": "Claridad en 3 s",
+          "puntaje": 7,
+          "evidencia": "secciones[0].ajustes.titular"
+        },
+        {
+          "criterio": "Fricción",
+          "puntaje": 8,
+          "evidencia": "secciones[12].ajustes.campos"
+        },
+        {
+          "criterio": "Móvil",
+          "puntaje": 7,
+          "evidencia": "secciones[0].ajustes.textoBoton"
+        },
+        {
+          "criterio": "Confianza",
+          "puntaje": 9,
+          "evidencia": "secciones[9].ajustes.titulo"
+        },
+        {
+          "criterio": "Persuasión",
+          "puntaje": 8,
+          "evidencia": "secciones[10].ajustes.titulo"
+        },
+        {
+          "criterio": "Originalidad",
+          "puntaje": 6,
+          "evidencia": "secciones[0].ajustes.sello"
+        },
+        {
+          "criterio": "Factor asombro",
+          "puntaje": 7,
+          "evidencia": "secciones[5].ajustes.titulo"
+        },
+        {
+          "criterio": "Accesibilidad",
+          "puntaje": 8,
+          "evidencia": "assets[0].alt"
+        }
+      ],
+      "problemas": [
+        "secciones[0].ajustes.titular no menciona explícitamente el público objetivo",
+        "secciones[1].ajustes.textos contiene copy genérico que puede generar fricción",
+        "secciones[0].ajustes.sello duplica la garantía ya presentada en la sección de garantía",
+        "secciones[8].bloques[5].ajustes.valor muestra un rango de precios que contradice el precio único fijado",
+        "faltan atributos de reduced-motion en los assets, afectando la accesibilidad"
+      ],
+      "correcciones": [
+        "secciones[0].ajustes.titular: cambiar a \"Tu habitación, como bajo la luna – luz cálida 3D para dormir mejor\"",
+        "secciones[1].ajustes.textos: simplificar a \"¿Cansado de luces planas? Descubre la luz lunar que transforma tu noche\"",
+        "secciones[0].ajustes.sello: eliminar o combinar con la sección garantía para evitar duplicado",
+        "secciones[8].bloques[5].ajustes.valor: cambiar a \"Precio único $59.900\"",
+        "assets[0].reducedMotion: true",
+        "assets[1].reducedMotion: true",
+        "assets[2].reducedMotion: true",
+        "assets[3].reducedMotion: true",
+        "assets[4].reducedMotion: true",
+        "assets[5].reducedMotion: true",
+        "assets[6].reducedMotion: true",
+        "assets[7].reducedMotion: true",
+        "assets[8].reducedMotion: true"
+      ]
+    }
+  },
+  "proveedor": "cerebras",
+  "informe": {
+    "puntaje": 8.5,
+    "rojos": 0,
+    "listaNegra": 0,
+    "medios": {
+      "reales": 8,
+      "marcadores": 1
+    },
+    "widget": "fase-lunar",
+    "segundos": 503,
+    "intentos": 2,
+    "investigacion": {
+      "consultadoEn": "2026-09-30T22:31:35.163Z",
+      "fuentes": [
+        {
+          "fuente": "nasa-images",
+          "estado": "ok",
+          "detalle": "bancos b3, b1, p-hogar"
+        },
+        {
+          "fuente": "usno-luna",
+          "estado": "ok",
+          "detalle": "fase-lunar: responde"
+        },
+        {
+          "fuente": "serpapi",
+          "estado": "ok",
+          "detalle": "8 precios de referencia, 0 preguntas"
+        }
+      ],
+      "preguntas": [],
+      "preciosReferencia": [
+        {
+          "titulo": "Lampara Estilo Luna Moon Light Led 3D",
+          "precio": 50000,
+          "tienda": "falabella.com.co"
+        },
+        {
+          "titulo": "Lampara 3D Luna 4 Tonos de Luz 18 cm",
+          "precio": 36666,
+          "tienda": "mercadolibre.com.co"
+        },
+        {
+          "titulo": "Humedificador Luna Lampara Difusor 3d - 52 Bits",
+          "precio": 64900,
+          "tienda": "Homecenter"
+        },
+        {
+          "titulo": "Lámpara LED Luna 3D Bola Cristal 8cm Luminn USB Luz Noche Decoración",
+          "precio": 13680,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Lampara Luna 3D Multicolor Base Madera Luz Nocturna Decorativa Recargable 16 Col",
+          "precio": 45900,
+          "tienda": "tiendacoomeva.com"
+        },
+        {
+          "titulo": "Lampara Luna 3d Recargable Colores Galaxia Base + Control",
+          "precio": 59900,
+          "tienda": "grupocomercia.co"
+        },
+        {
+          "titulo": "Luz Nocturna de Luna 3D Con Soporte 16 Colores Recargable",
+          "precio": 26922,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "lampara Luna Rgb Alta Calidad",
+          "precio": 65000,
+          "tienda": "falabella.com.co"
+        }
+      ],
+      "composicionReferencia": [],
+      "widget": {
+        "variante": "fase-lunar",
+        "responde": true
+      }
+    },
+    "notas": [
+      {
+        "intento": 1,
+        "vuelta": 1,
+        "puntaje": 7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 7
+          }
+        ],
+        "angulo": "Autonomía: una luz cálida y decorativa que no depende de interruptores ni bombillas frías."
+      },
+      {
+        "intento": 1,
+        "vuelta": 2,
+        "puntaje": 7.7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: una luz cálida y decorativa que no depende de interruptores ni bombillas frías."
+      },
+      {
+        "intento": 1,
+        "vuelta": 3,
+        "puntaje": 7.85,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: una luz cálida y decorativa que no depende de interruptores ni bombillas frías."
+      },
+      {
+        "intento": 2,
+        "vuelta": 1,
+        "puntaje": 8.5,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 9
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 8
+          }
+        ],
+        "angulo": "Reduce la ansiedad nocturna al crear un ambiente relajante para niños y adultos"
+      }
+    ],
+    "imagenes": {
+      "reales": 0,
+      "generadas": 8,
+      "marcadores": 1
+    },
+    "efectos": [
+      "boton-magnetico",
+      "shader-ondas",
+      "marquee-reactivo",
+      "pin-coreografia",
+      "horizontal",
+      "precio-cae"
+    ],
+    "nivel3": 3
+  }
+}

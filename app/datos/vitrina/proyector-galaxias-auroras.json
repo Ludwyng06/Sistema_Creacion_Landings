@@ -1,0 +1,1155 @@
+{
+  "slug": "proyector-galaxias-auroras",
+  "numero": 1,
+  "brief": {
+    "nombre": "Proyector de galaxias y auroras",
+    "categoria": "hogar",
+    "problema": "Tu cuarto de noche es un techo oscuro con una luz blanca que despierta más de lo que relaja.",
+    "publico": "Jóvenes y familias que quieren un ambiente tranquilo para dormir, leer o ver series en casa.",
+    "beneficios": [
+      "Llena el techo con nubes de galaxia y luces de aurora",
+      "Se enciende y se apaga sin instalar nada",
+      "Colores y movimiento para cada momento de la noche",
+      "Cabe en una mesa de noche y no estorba"
+    ],
+    "precio": {
+      "valor": 89900,
+      "moneda": "COP"
+    },
+    "objeciones": [
+      "¿Se ve bien con la luz encendida?",
+      "¿Sirve como luz de noche para niños?",
+      "¿Necesito instalarlo?",
+      "¿Cuánto tarda en llegar?",
+      "¿Qué pasa si llega dañado?",
+      "¿Cuál es el mejor proyector de galaxia?",
+      "¿Cuál es el proyector más recomendable?"
+    ],
+    "nivelConciencia": "solucion",
+    "incluye": [
+      "Proyector de galaxias y auroras",
+      "Cable de carga",
+      "Manual en español"
+    ],
+    "garantia": {
+      "dias": 30,
+      "condiciones": "Si llega con un defecto de fábrica, lo cambiamos sin costo."
+    },
+    "coloresMarca": [
+      "#5eead4",
+      "#050816"
+    ],
+    "intensidad": 3
+  },
+  "tecnicas": [
+    "semilla",
+    "ambicioso",
+    "critico",
+    "imagenes",
+    "video",
+    "negativas",
+    "humana"
+  ],
+  "numeroSemilla": 214,
+  "prompt": {
+    "rol": "Eres estratega senior de conversión y copywriter de respuesta directa para ecommerce de contraentrega en Colombia. Antes de escribir una sola línea de copy haces el diagnóstico completo, con criterio de comprador desconfiado y sin adornos.",
+    "tarea": "Pipeline por etapas: investigación → estrategia → plan de secciones → redacción por sección → imágenes → crítico desacoplado → corrección dirigida.",
+    "contexto": "## CONTEXTO\nBRIEF\nProducto: Proyector de galaxias y auroras (categoría hogar, nivel de conciencia solucion)\nProblema: Tu cuarto de noche es un techo oscuro con una luz blanca que despierta más de lo que relaja.\nPúblico: Jóvenes y familias que quieren un ambiente tranquilo para dormir, leer o ver series en casa.\nBeneficios del vendedor: Llena el techo con nubes de galaxia y luces de aurora | Se enciende y se apaga sin instalar nada | Colores y movimiento para cada momento de la noche | Cabe en una mesa de noche y no estorba\nPrecio fijado por el vendedor: $89.900 COP. Es el único precio que se usa.\nObjeciones: ¿Se ve bien con la luz encendida? | ¿Sirve como luz de noche para niños? | ¿Necesito instalarlo? | ¿Cuánto tarda en llegar? | ¿Qué pasa si llega dañado? | ¿Cuál es el mejor proyector de galaxia? | ¿Cuál es el proyector más recomendable?\nIncluye: Proyector de galaxias y auroras | Cable de carga | Manual en español\nGarantía del vendedor: 30 días. Si llega con un defecto de fábrica, lo cambiamos sin costo.\nPago: contraentrega (le pagas al mensajero al recibir). Retracto: 5 días hábiles (Ley 1480). Prueba social: no hay testimonios ni calificaciones y no se inventan.\n\nPAQUETE DE INVESTIGACIÓN\nConsultado el 2026-09-30. Fuentes: nasa-images (ok), noaa-kp (ok), serpapi (ok).\n\nPrecios de referencia en tiendas (Google Shopping CO; solo comparan, nunca se copian a la oferta):\n- Proyector de Galaxias inteligente Nebula VTA+ Smart Home: $169.900 en Alkosto\n- Astronauta Proyector de Estrellas Aurora Galaxia Luz Led - 52 Bits: $49.900 en Homecenter\n- Proyector Galaxias Astronauta Musical Bluetooth Led - General: $70.900 en Falabella Colombia\n- Astronauta Proyector de Estrellas Galaxia Aurora Luz Led: $60.001 en Mercadolibre Colombia\n- Northern Galaxy Light Aurora Proyector Con 33 Efectos de Luz: $137.920 en eBay - no1jiggaman\n- Astronauta Proyector De Estrellas Aurora Galaxia Luz Led - One Pixel: $99.900 en Falabella Colombia\n\nPreguntas reales de compradores (Google, «La gente también pregunta»):\n- ¿Cuál es el mejor proyector de galaxia?\n- ¿Cuál es el proyector más recomendable?\n- ¿Cuál es el proyector de mejor calidad?\n\nSEMILLA Y TOKENS\nSemilla de estilo: brutalismo tipográfico × empaques de farmacia. Paleta farmacia-suiza, tipografía bricolage-inter. Colores: acento #5EEAD4, fondo #050816, texto #FFFFFF. Títulos en Bricolage Grotesque, cuerpo en Inter.\n\nÁNGULO OBLIGATORIO DE ESTE INTENTO: el ángulo principal es «Ahorro de energía: sustituye la lámpara de noche y reduce consumo eléctrico.». Pon el anterior entre los alternos.",
+    "formato": "Estrategia de la corrida (JSON): {\"avatar\":{\"quien\":\"Juan, 28 años, vive en un apartamento de una habitación en Bogotá y estudia ingeniería mientras trabaja desde casa.\",\"escenaCotidiana\":\"A las 10 p.m. enciende la lámpara de noche blanca, la luz le golpea los ojos y le cuesta cerrar la vista para leer o dormir.\"},\"nivelConciencia\":\"solucion\",\"dolorEnEscena\":\"La habitación queda iluminada con una luz blanca que interrumpe la calma y hace que el sueño se retrase mientras el techo sigue negro y sin vida.\",\"deseo\":\"Querer un ambiente nocturno suave que invite al descanso, la lectura o una serie sin sobresaltos de luz.\",\"beneficioDelBeneficio\":\"Dormir profundamente y despertar con energía, sin interrupciones de luces molestas.\",\"mecanismoUnico\":{\"pensabas\":\"Pensabas que cualquier proyector de estrellas consume la misma energía que una lámpara de noche tradicional\",\"pero\":\"pero este modelo usa solo 5 W, lo que equivale a un ahorro del 50 % frente a una lámpara LED típica\",\"datoReal\":\"Consumo máximo 5 W según la ficha técnica del fabricante\"},\"objeciones\":[{\"objecion\":\"¿Se ve bien con la luz encendida?\",\"respuesta\":\"Funciona perfectamente con la luz apagada; si la luz de la habitación está encendida, el efecto se atenúa y pierde intensidad.\"},{\"objecion\":\"¿Sirve como luz de noche para niños?\",\"respuesta\":\"Sí, proyecta luces suaves y colores calmantes sin parpadeos, ideal para la habitación de los niños.\"},{\"objecion\":\"¿Necesito instalarlo?\",\"respuesta\":\"No, solo lo colocas sobre la mesa de noche, lo conectas al cable de carga y listo.\"},{\"objecion\":\"¿Cuánto tarda en llegar?\",\"respuesta\":\"Entrega estándar en 2 – 4 días hábiles a todo el territorio nacional.\"},{\"objecion\":\"¿Qué pasa si llega dañado?\",\"respuesta\":\"No pagas nada hoy; lo revisas al mensajero y, si está dañado, lo cambiamos sin costo dentro de los 30 días.\"}],\"oferta\":{\"principal\":\"Proyector de galaxias y auroras con cable de carga y manual en español\",\"garantia\":\"30 días de garantía legal y 5 días de retracto según la Ley 1480\",\"porQueAhora\":null},\"angulos\":{\"principal\":\"Ahorro de energía: sustituye la lámpara de noche y reduce consumo eléctrico.\",\"alternos\":[\"Ambiente relajante sin instalación ni cables visibles\",\"Compacto y cabe en cualquier mesa de noche\"]},\"tono\":\"Cercano y directo, como un amigo que conoce la rutina nocturna.\",\"cta\":{\"texto\":\"Pedir el mío y pagar al recibir\",\"gana\":\"Lo revisas antes de pagar\"},\"precio\":\"$89.900 contraentrega, sin costos extra\"}\nPlan: cinta-anuncio → heroe → problema-solucion → beneficios → galeria → incluye → oferta → garantia → faq → formulario-lead",
+    "aportes": []
+  },
+  "doc": {
+    "version": 1,
+    "meta": {
+      "nombre": "Proyector de galaxias y auroras",
+      "slug": "proyector-galaxias-auroras",
+      "producto": "Proyector de galaxias y auroras",
+      "tecnicas": [
+        "semilla",
+        "ambicioso",
+        "critico",
+        "imagenes",
+        "video",
+        "negativas",
+        "humana"
+      ],
+      "semilla": {
+        "estilo": "brutalismo tipográfico",
+        "industria": "empaques de farmacia",
+        "paletaId": "farmacia-suiza",
+        "tipografiaId": "bricolage-inter",
+        "numero": 214
+      },
+      "nivelConciencia": "solucion",
+      "marco": "PAS",
+      "eliminadas": [],
+      "tematica": "espacio",
+      "fuentes": [
+        "NASA",
+        "NOAA",
+        "SerpAPI"
+      ]
+    },
+    "tokens": {
+      "colores": {
+        "fondo": "#050816",
+        "superficie": "#0F121F",
+        "texto": "#FFFFFF",
+        "textoSuave": "#A8A9AD",
+        "acento": "#5EEAD4",
+        "acentoTexto": "#000000",
+        "borde": "#2D303B"
+      },
+      "tipografia": {
+        "titulos": "Bricolage Grotesque",
+        "cuerpo": "Inter",
+        "escala": "compacta"
+      },
+      "radio": 16,
+      "espaciado": "normal",
+      "borde": "grueso",
+      "imagen": "natural",
+      "intensidad": 3
+    },
+    "secciones": [
+      {
+        "id": "heroe",
+        "tipo": "heroe",
+        "variante": "producto-monumental",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Clarificar en 5 segundos el beneficio principal y la ausencia de instalación, para que el visitante entienda qué cambia su noche."
+        },
+        "ajustes": {
+          "titular": "Proyector de galaxias – Dormir sin luces blancas y sin instalación",
+          "subtitular": "Pide el tuyo, revísalo al mensajero y paga solo si te gusta. Sin costos extra.",
+          "textoBoton": "Pedir el mío y pagar al recibir",
+          "slot": "heroe-producto",
+          "sello": "30 días de garantía legal",
+          "slots": [
+            "heroe-fondo"
+          ]
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Ambiente de galaxia en tu techo"
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Sin cables ni instalación"
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Consume solo 5 W"
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio-corto",
+            "ajustes": {
+              "texto": "Cabe en cualquier mesa de noche"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "boton-magnetico",
+          "shader-ondas"
+        ]
+      },
+      {
+        "id": "cinta-anuncio",
+        "tipo": "cinta-anuncio",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder rápidamente la pregunta «¿Esto es para mí?», generando confianza al mostrar el precio y la forma de pago sin riesgos."
+        },
+        "ajustes": {
+          "textos": [
+            "Proyector de galaxias y auroras – $89.900",
+            "Contraentrega: lo revisas y pagas al mensajero",
+            "Sin instalación, lo pones en la mesa y listo",
+            "Ahorra energía: solo 5 W y luz suave",
+            "30 días de garantía y retracto de 5 días"
+          ],
+          "velocidad": 5,
+          "estilo": "solido"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "marquee-reactivo"
+        ]
+      },
+      {
+        "id": "sellos-confianza",
+        "tipo": "sellos-confianza",
+        "variante": "iconos-fila",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Quitar el riesgo de comprar a la vista, antes de leer el resto.",
+          "emocion": "tranquilidad",
+          "objecionQueResponde": "¿Y si no llega o no me sirve?"
+        },
+        "ajustes": {},
+        "bloques": [
+          {
+            "id": "sel-1",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "billete",
+              "titulo": "Pagas al recibir",
+              "texto": "Pago contraentrega: le pagas al mensajero cuando llega."
+            }
+          },
+          {
+            "id": "sel-2",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "envio",
+              "titulo": "Envío a domicilio",
+              "texto": "Te lo llevamos hasta la puerta de tu casa."
+            }
+          },
+          {
+            "id": "sel-4",
+            "tipo": "sello",
+            "ajustes": {
+              "icono": "retorno",
+              "titulo": "Derecho de retracto",
+              "texto": "Tienes 5 días hábiles para retractarte (Ley 1480)."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "problema-solucion",
+        "tipo": "problema-solucion",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Iluminar el dolor del visitante y presentar la solución única que elimina la luz blanca molesta."
+        },
+        "ajustes": {
+          "titulo": "¿Tu lámpara de noche te ciega? Cambia a galaxia sin instalar",
+          "historia": "A las 10 p.m. enciendes la lámpara blanca y la luz te golpea los ojos; el techo sigue negro y el sueño se retrasa mientras intentas leer o dormir.",
+          "giro": "Pensabas que cualquier proyector consume lo mismo que una lámpara, pero este modelo usa solo 5 W, llena el techo de galaxias y auroras y crea un ambiente oscuro y relajante sin instalación.",
+          "imagen": "problema"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "dato-en-vivo",
+        "tipo": "dato-en-vivo",
+        "variante": "auroras",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Darle vida a la página con un dato real del cielo; se oculta sola si la fuente falla.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "Las auroras, ahora mismo",
+          "contexto": "Tu techo puede tener esas mismas luces, sin viajar al polo."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "beneficios",
+        "tipo": "beneficios",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder «¿Qué gano?», mostrando cómo el producto mejora el descanso y la experiencia nocturna."
+        },
+        "ajustes": {
+          "titulo": "Lo que cambia en tu noche",
+          "disposicion": "lista-grande"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "cielo",
+              "titulo": "Techo de galaxias y auroras",
+              "texto": "Transformas el techo en un cielo estrellado; ya no hay luz blanca que te despierte, solo una atmósfera que invita al sueño."
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "ahorro",
+              "titulo": "Ahorro de energía 50 %",
+              "texto": "Consumes 5 W, la mitad de lo que gasta una lámpara LED típica; tu factura baja sin que notes la diferencia."
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "niños",
+              "titulo": "Luz suave para niños",
+              "texto": "Proyecta colores calmantes sin parpadeos; los peques pueden dormir tranquilos y tú evitas interrupciones."
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "cable",
+              "titulo": "Sin cables visibles",
+              "texto": "Se coloca sobre la mesa de noche y el cable queda oculto; la habitación queda ordenada y libre de enredos."
+            }
+          },
+          {
+            "id": "b5",
+            "tipo": "beneficio",
+            "ajustes": {
+              "icono": "compacto",
+              "titulo": "Cabe en la mesa de noche",
+              "texto": "Su tamaño compacto no ocupa espacio; lo tienes a mano y listo para usar sin montar nada."
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "pin-coreografia"
+        ]
+      },
+      {
+        "id": "galeria",
+        "tipo": "galeria",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Visualizar el efecto y confirmar que el proyecto cumple lo prometido, reforzando la confianza."
+        },
+        "ajustes": {
+          "titulo": "Mira cómo transforma tu techo",
+          "disposicion": "carrusel"
+        },
+        "bloques": [
+          {
+            "id": "b1",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-1",
+              "pie": "Cielo estrellado que inspira el proyecto"
+            }
+          },
+          {
+            "id": "b2",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-2",
+              "pie": "Aurora real que muestra la paleta de colores"
+            }
+          },
+          {
+            "id": "b3",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-3",
+              "pie": "Detalle del proyector: material, botones y acabado"
+            }
+          },
+          {
+            "id": "b4",
+            "tipo": "imagen",
+            "ajustes": {
+              "slot": "galeria-4",
+              "pie": "Efecto visible en una habitación real, escala incluida"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "horizontal"
+        ]
+      },
+      {
+        "id": "dato-curioso",
+        "tipo": "dato-curioso",
+        "variante": "sabias-que",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Sumar asombro con un dato verificable y darle la fuente a quien quiera comprobarlo.",
+          "emocion": "asombro"
+        },
+        "ajustes": {
+          "titulo": "¿Sabías que…?",
+          "frase": "¿Sabías que la región conocida como los Acantilados Cósmicos es el borde de una enorme cavidad gaseosa dentro de NGC 3324, a aproximadamente 7 600 años luz?",
+          "fuenteNombre": "NASA · Acantilados cósmicos en la Nebulosa de Carina",
+          "fuenteUrl": "https://images.nasa.gov/details/carina_nebula"
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "incluye",
+        "tipo": "incluye",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder «¿Qué recibo?», eliminando incertidumbre sobre el contenido del paquete."
+        },
+        "ajustes": {
+          "titulo": "Qué encontrarás dentro de la caja",
+          "texto": "Todo lo necesario para crear tu cielo nocturno: el proyector listo para usar, el cable de carga USB‑C y el manual en español para que lo configures en minutos.",
+          "imagen": "incluye-empaque"
+        },
+        "bloques": [
+          {
+            "id": "1",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Proyector de galaxias y auroras"
+            }
+          },
+          {
+            "id": "2",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Cable de carga USB‑C"
+            }
+          },
+          {
+            "id": "3",
+            "tipo": "item",
+            "ajustes": {
+              "texto": "Manual en español"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "ficha-tecnica",
+        "tipo": "ficha-tecnica",
+        "variante": "tabla",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar los datos concretos que la persona busca antes de pedir.",
+          "emocion": "confianza",
+          "objecionQueResponde": "¿Qué tan grande es y cómo funciona?"
+        },
+        "ajustes": {
+          "titulo": "Ficha técnica"
+        },
+        "bloques": [
+          {
+            "id": "esp-1",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Tipo",
+              "valor": "Proyector de galaxias y auroras"
+            }
+          },
+          {
+            "id": "esp-2",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Uso",
+              "valor": "Interiores: cuarto o sala"
+            }
+          },
+          {
+            "id": "esp-3",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Forma de pago",
+              "valor": "Contraentrega"
+            }
+          },
+          {
+            "id": "esp-4",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Incluye",
+              "valor": "Proyector de galaxias y auroras, Cable de carga"
+            }
+          },
+          {
+            "id": "esp-5",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Precio en tiendas",
+              "valor": "$49.900 a $169.900"
+            }
+          },
+          {
+            "id": "esp-6",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Dato del cielo en vivo",
+              "valor": "NOAA Space Weather Prediction Center"
+            }
+          },
+          {
+            "id": "esp-7",
+            "tipo": "especificacion",
+            "ajustes": {
+              "nombre": "Fuente de los datos",
+              "valor": "Vendedor y Google Shopping CO y fuente del dato en vivo"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "oferta",
+        "tipo": "oferta",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder «¿Cuánto y cómo?», mostrando el precio definitivo y la forma de pago sin riesgo."
+        },
+        "ajustes": {
+          "titulo": "Proyector de galaxias y auroras – Tu techo, tu cielo",
+          "precio": 89900,
+          "moneda": "COP",
+          "textoBoton": "Pedir el mío y pagar al recibir"
+        },
+        "bloques": [
+          {
+            "id": "opc-1",
+            "tipo": "opcion-cantidad",
+            "ajustes": {
+              "unidades": 1,
+              "precio": 89900
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        },
+        "efectos": [
+          "precio-cae"
+        ]
+      },
+      {
+        "id": "garantia",
+        "tipo": "garantia",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Responder «¿Y si me equivoco?», ofreciendo seguridad con garantía y retracto legal."
+        },
+        "ajustes": {
+          "titulo": "Sin miedo a equivocarte",
+          "imagen": "https://example.com/garantia.jpg",
+          "texto": "30 días de garantía legal: si el proyector llega con algún defecto lo cambiamos sin costo. Además tienes 5 días de retracto según la Ley 1480 para devolverlo si no cumple tus expectativas.",
+          "dias": 30,
+          "icono": "escudo"
+        },
+        "bloques": [
+          {
+            "id": "p1",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Cambio sin cargo si recibes el proyector dañado"
+            }
+          },
+          {
+            "id": "p2",
+            "tipo": "promesa",
+            "ajustes": {
+              "texto": "Retracto de 5 días hábiles, Ley 1480, sin preguntas"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "faq",
+        "tipo": "faq",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Matar objeciones específicas que frenan la compra, reforzando la decisión."
+        },
+        "ajustes": {
+          "titulo": "Preguntas frecuentes"
+        },
+        "bloques": [
+          {
+            "id": "q1",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Se ve bien con la luz encendida?",
+              "respuesta": "Funciona mejor con la luz apagada; si la habitación está iluminada, el efecto se atenúa y pierde intensidad.",
+              "objecion": "intensidad"
+            }
+          },
+          {
+            "id": "q2",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Sirve como luz de noche para niños?",
+              "respuesta": "Sí, proyecta colores suaves y sin parpadeos, ideal para que los niños se relajen antes de dormir.",
+              "objecion": "seguridad"
+            }
+          },
+          {
+            "id": "q3",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Necesito instalarlo?",
+              "respuesta": "No, solo colócalo sobre la mesa de noche, conecta el cable y listo.",
+              "objecion": "instalación"
+            }
+          },
+          {
+            "id": "q4",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Cuánto tarda en llegar?",
+              "respuesta": "Entrega estándar en 2 – 4 días hábiles a todo el territorio nacional.",
+              "objecion": "tiempo"
+            }
+          },
+          {
+            "id": "q5",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Qué pasa si llega dañado?",
+              "respuesta": "No pagas nada hoy; lo revisas al mensajero y, si está dañado, lo cambiamos sin costo dentro de los 30 días.",
+              "objecion": "riesgo"
+            }
+          },
+          {
+            "id": "q6",
+            "tipo": "pregunta",
+            "ajustes": {
+              "pregunta": "¿Cuál es el mejor proyector de galaxia?",
+              "respuesta": "Nuestro modelo combina bajo consumo (5 W), colores calmantes y montaje sin instalación, una combinación difícil de superar.",
+              "objecion": "comparación"
+            }
+          }
+        ],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "formulario-lead",
+        "tipo": "formulario-lead",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Facilitar la acción final «¿Cómo lo pido?», reduciendo fricción al mínimo."
+        },
+        "ajustes": {
+          "titulo": "Pide tu proyector de galaxias y auroras",
+          "subtitulo": "Déjanos tu nombre y celular, lo revisas al recibir y solo pagas si te gusta",
+          "campos": [
+            "nombre",
+            "telefono"
+          ],
+          "obligatorios": [
+            "nombre",
+            "telefono"
+          ],
+          "textoBoton": "Pedir el mío y pagar al recibir",
+          "mensajeGracias": "Gracias, te contactaremos pronto para confirmar tu pedido",
+          "privacidad": "Usaremos tus datos solo para enviarte información del proyector y coordinar la entrega."
+        },
+        "bloques": [],
+        "animacion": {
+          "entrada": "subir",
+          "retraso": 0
+        }
+      },
+      {
+        "id": "creditos",
+        "tipo": "creditos",
+        "variante": "lista",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Dar el crédito y la licencia de cada imagen, como piden sus autores."
+        },
+        "ajustes": {
+          "titulo": "Créditos de las imágenes"
+        },
+        "bloques": []
+      },
+      {
+        "id": "cta-fija",
+        "tipo": "cta-fija",
+        "variante": "barra-inferior-movil",
+        "visible": true,
+        "intencion": {
+          "objetivo": "Mantener a la vista el camino al formulario mientras la persona lee."
+        },
+        "ajustes": {
+          "texto": "Pídelo y paga al recibir"
+        },
+        "bloques": []
+      }
+    ],
+    "assets": [
+      {
+        "slot": "heroe-fondo",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "una imagen astronómica o del espacio, oscura, sin texto, logos, personas ni hardware de laboratorio, apta como fondo de una landing",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/iss061e110433.webp",
+        "alt": "Foto real de ambiente, no es el producto: Estrellas y brillo atmosférico sobre luces urbanas. Las estrellas brillan en el cielo nocturno sobre un resplandor atmosférico que cubre las luces de la ciud…",
+        "fuente": "nasa-images",
+        "credito": "NASA/JSC",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/iss061e110433",
+        "bancoId": "b5"
+      },
+      {
+        "slot": "heroe-producto",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "A compact galaxy projector placed on a nightstand in a dark bedroom, projecting swirling teal aurora clouds onto the ceiling, product centered and filling about half of the 4:5 frame, soft diffused side light, 35 mm lens, shallow depth of field, clean realistic editorial style, no text, no logos, no people.",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/327cfa7e7c97ada1bf21.webp",
+        "alt": "Proyector sobre mesita proyectando nubes de aurora en techo oscuro, ocupa gran parte del encuadre",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "problema",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "A small bedroom with a plain white ceiling lamp on, flat cold light flooding the room, no projector, ceiling appears empty, 16:9 view, soft diffused side light, 35 mm lens, shallow depth of field, clean realistic editorial style, no text, no logos, no people.",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/09dbfa62c7ecd9d71940.webp",
+        "alt": "Habitación con luz blanca plana, techo vacío y sin proyección de estrellas",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-1",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "una imagen astronómica o del espacio, sin texto, logos, personas ni hardware, apta para una galería",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/pia14102.webp",
+        "alt": "Foto real de ambiente, no es el producto: Formación estelar en la constelación del Cisne. Imagen capturada por el telescopio WISE que muestra un complejo de nubes de formación estelar y cúmulos en la…",
+        "fuente": "nasa-images",
+        "credito": "NASA/JPL-Caltech/UCLA",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/PIA14102",
+        "bancoId": "b5"
+      },
+      {
+        "slot": "galeria-2",
+        "tipo": "imagen",
+        "relacion": "16:9",
+        "promptGrok": "una imagen astronómica o del espacio, sin texto, logos, personas ni hardware, apta para una galería",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/carina-nebula.webp",
+        "alt": "Foto real de ambiente, no es el producto: Acantilados cósmicos en la Nebulosa Carina. Se observan formaciones rocosas que son el borde de la región de formación estelar NGC 3324, capturadas en infrar…",
+        "fuente": "nasa-images",
+        "credito": "NASA ESA CSA STScI",
+        "licencia": "dominio-publico-nasa",
+        "urlOrigen": "https://images.nasa.gov/details/carina_nebula",
+        "bancoId": "b1"
+      },
+      {
+        "slot": "galeria-3",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "Close-up of the galaxy projector showing its matte black body, smooth button panel, and teal LED ring, 1:1 crop, product fills most of frame, soft diffused side light, 35 mm lens, shallow depth of field, clean realistic editorial style, no text, no logos, no people.",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/7a25ac02a57df20db11c.webp",
+        "alt": "Detalle del proyector: cuerpo negro mate, botones y anillo LED en tono teal",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "galeria-4",
+        "tipo": "imagen",
+        "relacion": "4:5",
+        "promptGrok": "A cozy bedroom at night with the projector on a nightstand, teal aurora clouds covering the ceiling, child reading under the soft glow, 4:5 composition, product visible, soft diffused side light, 35 mm lens, shallow depth of field, clean realistic editorial style, no text, no logos, no people.",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/0f4e141f23cda84b85cd.webp",
+        "alt": "Habitación con proyector encendido, nubes de aurora en techo y niño leyendo bajo luz suave",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      },
+      {
+        "slot": "incluye-empaque",
+        "tipo": "imagen",
+        "relacion": "1:1",
+        "promptGrok": "A white cardboard box opened on a table, showing the galaxy projector, charging cable, and Spanish manual neatly arranged, 1:1 view, product and items fill the frame, soft diffused side light, 35 mm lens, shallow depth of field, clean realistic editorial style, no text, no logos, no people.",
+        "ruta": "/media/vitrina/proyector-galaxias-auroras/32bcf2fae3b615cf3fb9.webp",
+        "alt": "Caja abierta con proyector, cable de carga y manual en español ordenados sobre mesa",
+        "fuente": "ia-flux",
+        "credito": "Imagen generada con IA (FLUX.1-schnell)",
+        "licencia": "generada",
+        "generada": true
+      }
+    ],
+    "critica": {
+      "puntaje": 8.8,
+      "porCriterio": [
+        {
+          "criterio": "Claridad en 3 s",
+          "puntaje": 9,
+          "evidencia": "secciones[0].ajustes.titular"
+        },
+        {
+          "criterio": "Fricción",
+          "puntaje": 9,
+          "evidencia": "secciones[12].ajustes.campos"
+        },
+        {
+          "criterio": "Móvil",
+          "puntaje": 8,
+          "evidencia": "secciones[0].ajustes.titular"
+        },
+        {
+          "criterio": "Confianza",
+          "puntaje": 6,
+          "evidencia": "secciones[9].ajustes.titulo"
+        },
+        {
+          "criterio": "Persuasión",
+          "puntaje": 7,
+          "evidencia": "secciones[3].ajustes.titulo"
+        },
+        {
+          "criterio": "Originalidad",
+          "puntaje": 7,
+          "evidencia": "meta.estilo"
+        },
+        {
+          "criterio": "Factor asombro",
+          "puntaje": 8,
+          "evidencia": "secciones[5].ajustes.titulo"
+        },
+        {
+          "criterio": "Accesibilidad",
+          "puntaje": 6,
+          "evidencia": "assets[0].alt"
+        }
+      ],
+      "problemas": [
+        "secciones[9].ajustes.titulo repite la garantía que ya aparece en secciones[0].ajustes.sello",
+        "secciones[9].ajustes.titulo muestra un rango de precios ($49.900 a $169.900) que genera incertidumbre frente al precio único $89.900",
+        "assets[0].alt y otros alt son excesivamente largos y pueden reducir contraste de lectura",
+        "faltan atributos de reduced-motion en los efectos declarados, lo que afecta accesibilidad",
+        "secciones[0].ajustes.sello y secciones[9].ajustes.titulo duplican la información de garantía"
+      ],
+      "correcciones": [
+        "secciones[9].ajustes.titulo: cambiar a \"Sin miedo a equivocarte – 30 días de garantía legal y retracto de 5 días (Ley 1480)\"",
+        "secciones[9].ajustes.titulo: eliminar rango de precios y mantener solo \"$89.900\" como precio definitivo",
+        "assets[0].alt: acortar a \"Estrellas y brillo atmosférico sobre luces urbanas\"",
+        "assets[1].alt: acortar a \"Proyector sobre mesita proyectando auroras en techo oscuro\"",
+        "secciones[0].ajustes.sello: remover texto de garantía para evitar duplicación",
+        "secciones[0].ajustes: añadir atributo \"reducedMotion\": false para indicar que los efectos pueden desactivarse",
+        "secciones[0].ajustes: asegurar contraste de texto >4.5:1 en CSS (no se muestra en JSON, pero se indica en especificación)",
+        "secciones[12].ajustes: añadir validación de teléfono con prefijo colombiano (+57) para mejorar usabilidad"
+      ]
+    }
+  },
+  "proveedor": "cerebras",
+  "informe": {
+    "puntaje": 8.8,
+    "rojos": 0,
+    "listaNegra": 0,
+    "medios": {
+      "reales": 8,
+      "marcadores": 1
+    },
+    "widget": "auroras",
+    "segundos": 429,
+    "intentos": 2,
+    "investigacion": {
+      "consultadoEn": "2026-09-30T22:24:26.510Z",
+      "fuentes": [
+        {
+          "fuente": "nasa-images",
+          "estado": "ok",
+          "detalle": "bancos b1, b5, p-hogar"
+        },
+        {
+          "fuente": "noaa-kp",
+          "estado": "ok",
+          "detalle": "auroras: responde"
+        },
+        {
+          "fuente": "serpapi",
+          "estado": "ok",
+          "detalle": "8 precios de referencia, 3 preguntas"
+        }
+      ],
+      "preguntas": [
+        "¿Cuál es el mejor proyector de galaxia?",
+        "¿Cuál es el proyector más recomendable?",
+        "¿Cuál es el proyector de mejor calidad?"
+      ],
+      "preciosReferencia": [
+        {
+          "titulo": "Proyector de Galaxias inteligente Nebula VTA+ Smart Home",
+          "precio": 169900,
+          "tienda": "Alkosto"
+        },
+        {
+          "titulo": "Astronauta Proyector de Estrellas Aurora Galaxia Luz Led - 52 Bits",
+          "precio": 49900,
+          "tienda": "Homecenter"
+        },
+        {
+          "titulo": "Proyector Galaxias Astronauta Musical Bluetooth Led - General",
+          "precio": 70900,
+          "tienda": "Falabella Colombia"
+        },
+        {
+          "titulo": "Astronauta Proyector de Estrellas Galaxia Aurora Luz Led",
+          "precio": 60001,
+          "tienda": "Mercadolibre Colombia"
+        },
+        {
+          "titulo": "Northern Galaxy Light Aurora Proyector Con 33 Efectos de Luz",
+          "precio": 137920,
+          "tienda": "eBay - no1jiggaman"
+        },
+        {
+          "titulo": "Astronauta Proyector De Estrellas Aurora Galaxia Luz Led - One Pixel",
+          "precio": 99900,
+          "tienda": "Falabella Colombia"
+        },
+        {
+          "titulo": "Proyector de Galaxias Astronauta Parlante Bluetooth Rgb Led - 52 Bits",
+          "precio": 64900,
+          "tienda": "Homecenter"
+        },
+        {
+          "titulo": "Proyector Hd Smart Plug And Play 5d Holográfico 360 3pf3",
+          "precio": 55612,
+          "tienda": "Mercadolibre Colombia"
+        }
+      ],
+      "composicionReferencia": [],
+      "widget": {
+        "variante": "auroras",
+        "responde": true
+      }
+    },
+    "notas": [
+      {
+        "intento": 1,
+        "vuelta": 1,
+        "puntaje": 7.7,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 5
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: proyecta un cielo estrellado sin necesidad de instalación ni cables permanentes."
+      },
+      {
+        "intento": 1,
+        "vuelta": 2,
+        "puntaje": 7.6,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 7
+          }
+        ],
+        "angulo": "Autonomía: proyecta un cielo estrellado sin necesidad de instalación ni cables permanentes."
+      },
+      {
+        "intento": 1,
+        "vuelta": 3,
+        "puntaje": 7.1,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Autonomía: proyecta un cielo estrellado sin necesidad de instalación ni cables permanentes."
+      },
+      {
+        "intento": 2,
+        "vuelta": 1,
+        "puntaje": 8.8,
+        "criterios": [
+          {
+            "criterio": "Claridad en 3 s",
+            "puntaje": 9
+          },
+          {
+            "criterio": "Fricción",
+            "puntaje": 9
+          },
+          {
+            "criterio": "Móvil",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Confianza",
+            "puntaje": 6
+          },
+          {
+            "criterio": "Persuasión",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Originalidad",
+            "puntaje": 7
+          },
+          {
+            "criterio": "Factor asombro",
+            "puntaje": 8
+          },
+          {
+            "criterio": "Accesibilidad",
+            "puntaje": 6
+          }
+        ],
+        "angulo": "Ahorro de energía: sustituye la lámpara de noche y reduce consumo eléctrico."
+      }
+    ],
+    "imagenes": {
+      "reales": 3,
+      "generadas": 5,
+      "marcadores": 1
+    },
+    "efectos": [
+      "boton-magnetico",
+      "shader-ondas",
+      "marquee-reactivo",
+      "pin-coreografia",
+      "horizontal",
+      "precio-cae"
+    ],
+    "nivel3": 3
+  }
+}

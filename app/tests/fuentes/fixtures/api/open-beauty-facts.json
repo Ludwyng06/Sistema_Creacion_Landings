@@ -1,0 +1,29 @@
+{
+ "count": 45,
+ "page": 1,
+ "page_count": 3,
+ "page_size": 3,
+ "products": [
+  {
+   "brands": "Revuele",
+   "code": "5060565106215",
+   "image_front_url": "https://images.openbeautyfacts.org/images/products/506/056/510/6215/front_es.3.400.jpg",
+   "ingredients_text": "",
+   "product_name": "Vitamin C serum"
+  },
+  {
+   "brands": "Garnier",
+   "code": "8901526005161",
+   "image_front_url": "https://images.openbeautyfacts.org/images/products/890/152/600/5161/front_en.3.400.jpg",
+   "ingredients_text": "",
+   "product_name": "Garnier Bright Complete Vitamin C Serum Cream"
+  },
+  {
+   "brands": "Disaar",
+   "code": "6932511219364",
+   "ingredients_text": "Hyaluronic acid & vitamin c",
+   "product_name": "Disaar vitamin C Serum"
+  }
+ ],
+ "skip": 0
+}

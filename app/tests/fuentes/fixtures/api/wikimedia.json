@@ -1,0 +1,182 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 3,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "87599206": {
+    "pageid": 87599206,
+    "ns": 6,
+    "title": "File:Oral-B Pro 2 2500 Electric Toothbrush - 41646996702.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 239095,
+      "width": 1000,
+      "height": 1000,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Oral-B_Pro_2_2500_Electric_Toothbrush_-_41646996702.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1280,
+      "thumbheight": 1280,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Oral-B_Pro_2_2500_Electric_Toothbrush_-_41646996702.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oral-B_Pro_2_2500_Electric_Toothbrush_-_41646996702.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=87599206",
+      "extmetadata": {
+       "ObjectName": {
+        "value": "Oral-B Pro 2 2500 Electric Toothbrush - 41646996702",
+        "source": "mediawiki-metadata"
+       },
+       "ImageDescription": {
+        "value": "www.electricteeth.co.uk &amp; www.electricteeth.com\n<p>You are free to:\n</p><p>Share — copy and redistribute the material in any medium or format\n</p><p>Adapt — remix, transform, and build upon the material for any purpose, even commercially.\n</p><p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. \n</p><p>You must give appropriate credit and provide a link to the original post: www.electricteeth.co.uk/oral-b-pro-2-2500-review/\n</p><p>Creative Commons Attribution 4.0 International\n</p>\ncreativecommons.org/licenses/by/4.0/legalcode",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/156498286@N05/41646996702/\">https://www.flickr.com/photos/156498286@N05/41646996702/</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "electricteeth",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "144131293": {
+    "pageid": 144131293,
+    "ns": 6,
+    "title": "File:2024 Szczoteczka do zębów Oral-B Pro 3 3000 (1).jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3367961,
+      "width": 4536,
+      "height": 2409,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%281%29.jpg/1280px-2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1280,
+      "thumbheight": 680,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_(1).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=144131293",
+      "extmetadata": {
+       "ObjectName": {
+        "value": "2024 Szczoteczka do zębów Oral-B Pro 3 3000 (1)",
+        "source": "mediawiki-metadata"
+       },
+       "ImageDescription": {
+        "value": "Oral-B Pro 3 3000 toothbrush",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jacek_Halicki\" title=\"User:Jacek Halicki\">Jacek Halicki</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "144131294": {
+    "pageid": 144131294,
+    "ns": 6,
+    "title": "File:2024 Szczoteczka do zębów Oral-B Pro 3 3000 (2).jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3833950,
+      "width": 4744,
+      "height": 2537,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%282%29.jpg/1280px-2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1280,
+      "thumbheight": 685,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:2024_Szczoteczka_do_z%C4%99b%C3%B3w_Oral-B_Pro_3_3000_(2).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=144131294",
+      "extmetadata": {
+       "ObjectName": {
+        "value": "2024 Szczoteczka do zębów Oral-B Pro 3 3000 (2)",
+        "source": "mediawiki-metadata"
+       },
+       "ImageDescription": {
+        "value": "Oral-B Pro 3 3000 toothbrush",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jacek_Halicki\" title=\"User:Jacek Halicki\">Jacek Halicki</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
